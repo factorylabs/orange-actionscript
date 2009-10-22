@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+log/
+log/*.log
+config/database.yml
+config/*.sphinx.conf
+db/sphinx/
+*.iml
+*.ipr
+*.iws
+*.log
+.as2_classpath
+.as3_classpath
+.project
+.settings
+.svn
