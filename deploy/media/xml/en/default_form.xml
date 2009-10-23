@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+	<form submitUrl="" method="post" target="_blank" thankYouMsg="">
+		<!-- <attachBmp linkage="libraryBmp" x="0" y="0"></attachBmp> -->
+		<!-- <attachClip linkage="libraryClip" x="0" y="0"></attachClip> -->
+		<checkBox id="checkBox1" value="checkBox1" x="0" y="0" w="100" h="20"><![CDATA[CHECK BOX]]></checkBox>
+		<colorPicker id="colorPicker1" value="0xFFFFFF" x="0" y="25" w="150" h="70" pickerX="25" pickerY="2" validate="isNotEmpty" errorTxt="Error Color Picker"></colorPicker>
+		<comboBox id="comboBox1" value="" x="0" y="50" w="100" h="24" rows="4" listW="100" rowH="24" validate="isNotEmpty|isNotDefault" errorTxt="Error Combo Box">
+			<item value="combo1"><![CDATA[COMBO 1]]></item>
+			<item value="combo2"><![CDATA[COMBO 2]]></item>
+			<item value="combo3"><![CDATA[COMBO 3]]></item>
+			<item value="combo4"><![CDATA[COMBO 4]]></item>
+		</comboBox>
+		<label x="0" y="75" w="100" h="20" html="true" selectable="false" wordWrap="false"><![CDATA[LABEL]]></label>
+		<numericStepper id="numericStepper1" value="20" x="0" y="100" w="100" h="20" min="8" max="70" stepSize="1"></numericStepper>
+		<radioGroup id="radioGroup1" x="0" y="125">
+			<item value="radio1" x="0" y="0" w="10" h="10" selected="true"><![CDATA[RADIO 1]]></item>
+			<item value="radio2" x="75" y="0" w="10" h="10"><![CDATA[RADIO 2]]></item>
+			<item value="radio3" x="150" y="0" w="10" h="10"><![CDATA[RADIO 3]]></item>
+			<item value="radio4" x="225" y="0" w="10" h="10"><![CDATA[RADIO 4]]></item>
+		</radioGroup> 
+		<textArea id="textArea1" x="0" y="150" w="200" h="40" pass="" enabled="" restrict="" tab="" visible="" focus="true" multiline="true" maxChars="" validate="isNotEmpty|isNotDefault" errorTxt="Error Text Area"><![CDATA[enter text here...]]></textArea>
+		<textInput id="textInput1" x="0" y="195" w="200" h="20" pass="" enabled="" restrict="" tab="" visible="" focus="false" multiline="false" maxChars="" validate="isNotEmpty|isNotDefault" errorTxt="Error Text Input"><![CDATA[enter text here...]]></textInput>
+		<submitButton id="submitButton1" x="0" y="220" w="100" h="20"><![CDATA[SUBMIT]]></submitButton>
+		<errorTxt id="errorText1" x="0" y="245" w="500" h="20" html="" selectable="false" style="" wordWrap="false"></errorTxt>
+		<successTxt id="successText" x="0" y="245" w="500" h="22" html="" selectable="false" style="" wordWrap="false"><![CDATA[Thank You for submitting.]]></successTxt>
+	</form>
+</node>

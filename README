@@ -1,0 +1,3 @@
+Files to get rid of.
+
+com.factorylabs.core.crypto.MD5.as ( will be replaced by com.adobe.crypto.MD5.as in the as3corelib )

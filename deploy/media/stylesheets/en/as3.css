@@ -1,0 +1,89 @@
+
+/**
+ *	Flash Application CSS:
+ *
+ *	Available Font Families:
+ *		SansBold = Helvetica 75 Bold
+ *
+ *	Available Text Properties:
+ *		font-family:Font's Registered Classname (i.e. _Univers55);
+ *		font-size:12px;
+ *		font-style:normal or italic;
+ *		font-weight:normal or bold;
+ *		color:#333333;
+ *		letter-spacing:50px;
+ *		text-align: left, center or right;
+ *		text-decoration:none or underline;
+ *		text-indent:20px;
+ *		display:inline, block, and none
+ */
+
+/**
+ * HTML Hyperlinks
+*********************************************************************************/
+a:link
+{
+  color:#cc6633;	
+}
+a:visited
+{
+  color:#663300;
+}
+a:active
+{
+  color:#cc3300;
+  text-decoration:none;
+}
+a:hover
+{
+  color:#ff9900;
+  text-decoration:underline;
+}
+
+/**
+ * HTML Copy
+*********************************************************************************/
+.h1
+{
+  font-family:Arial;
+  font-size:20px;
+  text-align:left;
+  color:#000000;
+}
+
+.h2
+{
+  font-family:Arial;
+  font-size:16px;
+  text-align:left;
+  color:#000000;
+}
+
+p
+{
+  font-family:Arial;
+  font-size:12px;
+  text-align:left;
+  color:#000000;
+}
+
+/**
+ * Button Styles
+*********************************************************************************/
+.mainNavButton
+{
+  font-family:Arial;
+  font-weight:bold;
+  font-size:12px;
+  text-align:center;
+  color:#FF0000;
+}
+
+.utilNavButton
+{
+  font-family:Arial;
+  font-weight:bold;
+  font-size:9px;
+  text-align:center;
+  color:#999999;
+}

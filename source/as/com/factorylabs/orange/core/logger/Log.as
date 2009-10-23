@@ -114,7 +114,7 @@
 		 */
 		public static function toString() :String 
 		{
-			return "com.factorylabs.core.logger.Log";
+			return "com.factorylabs.orange.core.logger.Log";
 		}
 
 /*

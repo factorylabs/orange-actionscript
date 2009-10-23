@@ -85,7 +85,7 @@
 		*/
 		public override function toString():String
 		{
-			return "[ com.factorylabs.core.display.FSprite ]";
+			return "[ com.factorylabs.orange.core.display.FSprite ]";
 		}
 		
 		/**
