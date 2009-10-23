@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<data>
-	<videos title="Videos" wv="320" hv="240">
-		<video title="Missing 1" path="media/flvs/missing.flv" />
-		<video title="Missing 2" path="media/flvs/missing.flv" />
-		<video title="Missing 3" path="media/flvs/missing.flv" />
-	</videos>
-</data>
