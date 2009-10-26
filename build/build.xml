@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	* Build items for the dev project.
+	* Matthew Kitt
+	* Ryan Boyajian
+	* Sean Dougherty
+	*
+	* ant howto: http://ant.apache.org/manual/running.html
+-->
+
+<project name='orange-actionscript' basedir='../' default='fdtResetFCSH'>
+	
+	<!--
+	include the properties for running builds -->
+	<property file="./build/build.properties"/>
+	
+<!-- 
+FDT SPECIFIC ANT TASKS 
+-->
+	<!--
+	public -->
+    <target name='fdtResetFCSH' description='forces the mxmlc to refresh its cached data.'>
+        <fdt.launch.resetFCSH/>
+    	<echo>Pipes are cleaned in the ${ant.project.name} project.</echo>
+    </target>
+	
+	<!-- 
+		public -->         
+		<target name='fdtDebugCoreTests' depends='-fdtStartDebugger, -fdtCompileCoreTests' 
+				description='launches and debugs the unit tests gui through the default browser using the mxml launcher.'>
+			<fdt.browse location='${tests.core.url}'/>
+		</target>
+	
+	<!-- 
+		public -->         
+		<target name='fdtRunCoreTests' depends='-setDebugFalse, -fdtCompileCoreTests' 
+				description='launches the unit tests gui through the default browser using the mxml launcher.'>
+			<fdt.browse location='${tests.core.url}'/>
+		</target>
+	
+	<!-- 
+	 	private: build using the FDT launch method for the Testing framework. -->
+	    <target name='-fdtCompileCoreTests' >
+	    	<fdt.launch.application 
+	    		projectname="${ant.project.name}" 
+	    		mainclass="${tests.core}"
+	    		debug="${isDebug}"
+	    		target="${tests.core.swf}" 
+	    		startswf="${autostart}"
+	    		compilerarguments="-default-size ${width} ${height} -default-frame-rate ${framerate} -default-background-color ${background} -as3=${as3} -optimize=${optimize} -show-actionscript-warnings=${showWarn}"
+	    	/>
+		</target>
+	
+	<!-- DEBUGGING METHODS
+	private: kick start the FDT bugger and allow the .swf to be compiled in debug mode. **This one still requires FDT for having debugging in the console.** -->
+    <target name='-fdtStartDebugger' >
+    	<property name='isDebug' value='true'/>
+		<property name='useNetwork' value='true'/>
+    	<fdt.startDebugger projectname="${ant.project.name}" savelocation="build"/>
+    </target>
+	<!--
+	private: compile the .swf without debug mode. -->
+    <target name='-setDebugFalse' >
+    	<property name='isDebug' value='false'/>
+		<property name='useNetwork' value='true'/>
+    </target>
+
+
+</project>
