@@ -151,6 +151,7 @@ package asunit.textui {
         public function printDefect(booBoo:TestFailure, count:int ):void { // only public for testing purposes
             printDefectHeader(booBoo, count);
             printDefectTrace(booBoo);
+           
         }
 
         protected function printDefectHeader(booBoo:TestFailure, count:int):void {
@@ -158,6 +159,10 @@ package asunit.textui {
             // before we get to the stack trace.
             var startIndex:uint = textArea.text.length;
             println(count + ") " + booBoo.failedFeature());
+			if( showTrace )
+			{
+            	println("    " + booBoo.exceptionMessage());
+			}
             var endIndex:uint = textArea.text.length;
 
             var format:TextFormat = textArea.getTextFormat();

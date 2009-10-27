@@ -1,11 +1,12 @@
-package com.factorylabs.orange.core
+package com.factorylabs.orange.core.gc
 {
+	import flash.utils.Dictionary;
+	
 	/**
-	 * Provides an interface with a public <code>dispose()</code> method.
-	 * 
-	 * <p>This interface allows implementing classes to adhere to the standard
-	 * dispose() method which is called when preparing an object for garbage collection</p>
-	 * 
+	 * 	WeakReference class from gSkinner
+	 *
+	 *	enables weakreference for the GC.
+	 *	
  	 * <p>Copyright 2004-2009 by Factory Design Labs</p>
      * 
      * Permission is hereby granted, free of charge, to any person obtaining
@@ -27,18 +28,29 @@ package com.factorylabs.orange.core
      * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
      * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  	 * <a href="http://www.factorylabs.com/">www.factorylabs.com</a>
-	 *
-	 * @author		Grant
-	 * @version		1.0.0 :: May 9, 2008
 	 */
-	public interface IDisposable
+	public final class WeakReference 
 	{
+		private var dictionary:Dictionary;
+		
+		public function WeakReference(obj:*) 
+		{
+			dictionary = new Dictionary(true);
+			dictionary[obj] = null;
+		}
+		
+		public function get():* 
+		{
+			for (var n:* in dictionary) { return n; }
+			return null;
+		}
+		
 		/**
-		 * Prepares this object for garbage collection.
-		 * 
-		 * <p>This can include removing listeners, references to other objects,
-		 * invoking any other process to facilitate in garbage collection, etc.</p>
+		 * @return	string equivalent of this class.
 		 */
-		function dispose():void;
+		public function toString() :String 
+		{
+			return "com.factorylabs.orange.core.gc.WeakReference";
+		}
 	}
 }
