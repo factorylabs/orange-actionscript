@@ -14,3 +14,4 @@ db/sphinx/
 .project
 .settings
 .svn
+.launch

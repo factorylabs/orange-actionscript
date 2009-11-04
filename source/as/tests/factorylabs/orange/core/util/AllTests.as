@@ -1,8 +1,9 @@
 package tests.factorylabs.orange.core.util
 {
 	import asunit.framework.TestSuite;
+	
 	/**
- 	 * Runs all of the tests in the logger package
+ 	 * Runs all of the tests in the util package
 	 *
  	 * <p>Copyright 2004-2009 by Factory Design Labs</p>
      * 
@@ -32,17 +33,6 @@ package tests.factorylabs.orange.core.util
 	public class AllTests 
 		extends TestSuite
 	{
-/*
- * PROPERTIES
-**************************************************************************************************** */
-/*
- * PROPERTY ACCESS
-**************************************************************************************************** */
-/*
- * CONSTRUCTOR
-**************************************************************************************************** */
-	
-
 		public function AllTests()
 		{
 			addTest( new ArrayUtilTest() );
@@ -54,19 +44,9 @@ package tests.factorylabs.orange.core.util
 		}
 
 		
-		override public function toString() : String 
+		override public function toString() :String 
 		{
-			return "tests.factorylabs.orange.core.logger.AllTests";
+			return 'tests.factorylabs.orange.core.logger.AllTests';
 		}
-
-/*
- * PUBLIC ACCESS
-**************************************************************************************************** */
-/*
- * INTERNAL ACCESS
-**************************************************************************************************** */
-/*
- * EVENT HANDLING
-**************************************************************************************************** */
 	}
 }

@@ -1,3 +1,4 @@
+
 package com.factorylabs.orange.core.util
 {
 	
@@ -31,59 +32,54 @@ package com.factorylabs.orange.core.util
 	 */
 	public final class Convert
 	{
-		// TODO: is it necessary to throw an error here? or should we just go ahead and return false - MK
-		public static function toBool(value:*):Boolean
+		public static function toBool( value :* ) :Boolean
 		{			
-			if(value is String)
+			if( value is String )
 			{
-				if(value == "false")
+				if( value == 'false' )
 					return false;
-				else if (value == "true")
+				else if ( value == 'true' )
 					return true;
 				else
-					throw new ConversionError("Invalid format for Boolean: " + value);
+					throw new ConversionError( 'Invalid format for Boolean: ' + value );
 			}
-			else if(value is int)
+			else if( value is int )
 			{
-				if(value == 0)
+				if( value == 0 )
 					return false;
-				else if (value == 1)
+				else if ( value == 1 )
 					return true;
 				else
-					throw new ConversionError("Invalid format for Boolean: " + value);
+					throw new ConversionError( 'Invalid format for Boolean: ' + value );
 			}
 			else
 			{
-				throw new ConversionError("Invalid format for Boolean: " + value);
+				throw new ConversionError( 'Invalid format for Boolean: ' + value );
 			}
 		}
 		
 		/**
-		 * TODO: This is a number formatter.. get this out of here - MK
+* TODO: This is a number formatter.. get this out of here! - MK
 		 *	Converts milliseconds into a nicely-formatted time display
 		 *	@param	milliSeconds		the milliseconds to convert
 		 */
-		public static function convertTime( milliSeconds:Number ):String
+		public static function convertTime( milliSeconds:Number ) :String
 		{
-			var secs:Number = Math.floor(milliSeconds/1000);
-			var mins:Number = Math.floor(secs/60);
+			var secs :Number = Math.floor( milliSeconds / 1000 );
+			var mins :Number = Math.floor( secs / 60 );
 			secs %= 60;
 			
-			var secsStr:String = String( secs );
-			var minsStr:String = String( mins );
+			var secsStr :String = String( secs );
+			var minsStr :String = String( mins );
 			
-			if ( secs < 10 ) secsStr = "0"+secs; 
-			if ( mins < 10)  minsStr = "0"+mins;
+			if( secs < 10 ) secsStr = '0' + secs; 
+			if( mins < 10)  minsStr = '0' + mins;
 			
 			// don't return if NaN
 			if( minsStr == 'NaN' || secsStr == 'NaN' )
-			{
 				return( '' );
-			}
 			else
-			{
-				return( minsStr + ":" + secsStr );
-			}
+				return( minsStr + ':' + secsStr );
 		}
 	}
 }
