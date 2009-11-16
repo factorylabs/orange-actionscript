@@ -195,7 +195,7 @@ package tests.factorylabs.orange.core.collections
 			assertThat( tmp.hasValue( 'value_2' ), equalTo( true ) );
 			assertThat( tmp.hasValue( 'value_3' ), equalTo( true ) );
 			assertThat( tmp.hasValue( 'value_4' ), equalTo( true ) );
-			assertThat( tmp.hasValue( 'value_5' ), equalTo( true ) );
+			assertThat( tmp.hasValue( 'value_5' ), equalTo( true ) ); 
 			
 			Assert.assertEquals( _map.get( 'key_1'), tmp.get( 'key_1') );
 		}

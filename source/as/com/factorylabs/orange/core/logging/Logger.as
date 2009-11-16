@@ -1,8 +1,6 @@
 ﻿
 package com.factorylabs.orange.core.logging
 {
-	import com.factorylabs.orange.core.logging.events.LoggerEvent;
-
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;

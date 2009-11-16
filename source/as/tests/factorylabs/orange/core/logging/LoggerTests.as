@@ -2,12 +2,13 @@
 package tests.factorylabs.orange.core.logging 
 {
 	import com.factorylabs.orange.core.logging.LogLevels;
-	import org.flexunit.Assert;
-	import com.factorylabs.orange.core.logging.events.LoggerEvent;
-	import org.flexunit.async.Async;
-	import org.hamcrest.object.equalTo;
-	import org.hamcrest.assertThat;
 	import com.factorylabs.orange.core.logging.Logger;
+	import com.factorylabs.orange.core.logging.LoggerEvent;
+
+	import org.flexunit.Assert;
+	import org.flexunit.async.Async;
+	import org.hamcrest.assertThat;
+	import org.hamcrest.object.equalTo;
 
 	/**
 	 * Summary

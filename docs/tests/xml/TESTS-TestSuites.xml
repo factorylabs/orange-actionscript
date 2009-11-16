@@ -39,7 +39,7 @@
 
   </testsuite>
   <testsuite errors="0" failures="0" id="1" name="LoggerTests" package="tests.factorylabs.orange.core.logging" skipped="0" tests="10" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" status="success" time="0.000" />
 
@@ -47,7 +47,7 @@
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="isSilent" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="error" status="success" time="0.000" />
 
@@ -55,9 +55,9 @@
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="info" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="log" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" status="success" time="0.000" />
 
   </testsuite>
 </testsuites>
