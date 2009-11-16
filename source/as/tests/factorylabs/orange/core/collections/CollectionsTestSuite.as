@@ -17,6 +17,6 @@ package tests.factorylabs.orange.core.collections
 	[RunWith("org.flexunit.runners.Suite")]
 	public class CollectionsTestSuite 
 	{
-		public var mapTests	:FMapTests;
+		public var mapTests	:MapTests;
 	}
 }

@@ -102,6 +102,13 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/object/equalTo)" mod="1240917356000" size="494" optimizedsize="149">
+      <def id="org.hamcrest.object:equalTo" />
+      <dep id="Object" />
+      <dep id="AS3" />
+      <dep id="org.hamcrest.object:IsEqualMatcher" />
+      <dep id="org.hamcrest:Matcher" />
+    </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/styles/StyleManager)" mod="1247688610498" size="4991" optimizedsize="2151">
       <def id="mx.styles:StyleManager" />
       <pre id="Object" />
@@ -151,10 +158,10 @@
       <dep id="flash.events:IEventDispatcher" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/CollectionsTestSuite.as" mod="1258336629000" size="736" optimizedsize="272">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/CollectionsTestSuite.as" mod="1258355149000" size="735" optimizedsize="271">
       <def id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
       <pre id="Object" />
-      <dep id="tests.factorylabs.orange.core.collections:FMapTests" />
+      <dep id="tests.factorylabs.orange.core.collections:MapTests" />
       <dep id="AS3" />
     </script>
     <script name="_ToolTipStyle.as" mod="9223372036854775807" size="954" optimizedsize="784">
@@ -504,7 +511,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1258336868487" size="3174" optimizedsize="2513">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1258355170273" size="3174" optimizedsize="2513">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -679,14 +686,6 @@
       <pre id="flash.events:Event" />
       <dep id="mx.core:mx_internal" />
       <dep id="mx.logging:LogEventLevel" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/FMapTests.as" mod="1258336858000" size="1828" optimizedsize="818">
-      <def id="tests.factorylabs.orange.core.collections:FMapTests" />
-      <pre id="Object" />
-      <dep id="flash.utils:Dictionary" />
-      <dep id="com.factorylabs.orange.core.collections:Map" />
-      <dep id="asunit.framework:Assert" />
       <dep id="AS3" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/core/ComponentDescriptor)" mod="1247688623965" size="1510" optimizedsize="775">
@@ -1148,7 +1147,14 @@
       <dep id="AS3" />
       <dep id="org.flexunit.runner.manipulation:Sorter" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1258336629000" size="707" optimizedsize="303">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/TypeSafeMatcher)" mod="1240917356000" size="1052" optimizedsize="511">
+      <def id="org.hamcrest:TypeSafeMatcher" />
+      <pre id="org.hamcrest:BaseMatcher" />
+      <dep id="flash.errors:IllegalOperationError" />
+      <dep id="ArgumentError" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1258336629000" size="702" optimizedsize="298">
       <def id="tests.factorylabs.orange.core:FCoreTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
@@ -1169,6 +1175,16 @@
       <dep id="AS3" />
       <dep id="flash.utils:getQualifiedClassName" />
       <dep id="flash.utils:getDefinitionByName" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/asunit/framework/Assert.as" mod="1258336629000" size="5258" optimizedsize="3301">
+      <def id="asunit.framework:Assert" />
+      <pre id="flash.events:EventDispatcher" />
+      <dep id="asunit.errors:AssertionFailedError" />
+      <dep id="flash.errors:IllegalOperationError" />
+      <dep id="Error" />
+      <dep id="AS3" />
+      <dep id="Math" />
+      <dep id="flash.utils:getQualifiedClassName" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/managers/SystemManager)" mod="1249588275103" size="67947" optimizedsize="37452">
       <def id="mx.managers:SystemManager" />
@@ -1251,16 +1267,6 @@
       <dep id="flash.text:Font" />
       <dep id="mx.core:IRawChildrenContainer" />
       <dep id="mx.managers:PopUpManagerChildList" />
-      <dep id="flash.utils:getQualifiedClassName" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/asunit/framework/Assert.as" mod="1258336629000" size="5258" optimizedsize="3301">
-      <def id="asunit.framework:Assert" />
-      <pre id="flash.events:EventDispatcher" />
-      <dep id="asunit.errors:AssertionFailedError" />
-      <dep id="flash.errors:IllegalOperationError" />
-      <dep id="Error" />
-      <dep id="AS3" />
-      <dep id="Math" />
       <dep id="flash.utils:getQualifiedClassName" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4CIListener.swc(net/digitalprimates/fluint/assertion/AssertionFailedError)" mod="1251053200124" size="763" optimizedsize="260">
@@ -1399,6 +1405,15 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/assertThat)" mod="1240917356000" size="830" optimizedsize="450">
+      <def id="org.hamcrest:assertThat" />
+      <dep id="Boolean" />
+      <dep id="org.hamcrest:assertThatBoolean" />
+      <dep id="org.hamcrest:assertThatMatcher" />
+      <dep id="ArgumentError" />
+      <dep id="AS3" />
+      <dep id="org.hamcrest:Matcher" />
+    </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/managers/ToolTipManager)" mod="1247688631721" size="3748" optimizedsize="1509">
       <def id="mx.managers:ToolTipManager" />
       <pre id="flash.events:EventDispatcher" />
@@ -1443,6 +1458,13 @@
       <def id="org.flexunit.runner:Descriptor" />
       <pre id="Object" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/collection/IsArrayContainingMatcher)" mod="1240917356000" size="1302" optimizedsize="607">
+      <def id="org.hamcrest.collection:IsArrayContainingMatcher" />
+      <pre id="org.hamcrest:TypeSafeMatcher" />
+      <dep id="org.hamcrest:Description" />
+      <dep id="AS3" />
+      <dep id="org.hamcrest:Matcher" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/effects/IAbstractEffect)" mod="1247688607189" size="407" optimizedsize="144">
       <def id="mx.effects:IAbstractEffect" />
@@ -2344,7 +2366,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1258336868484" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1258355170271" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -2667,6 +2689,14 @@
       <dep id="AS3" />
       <dep id="mx.core:Singleton" />
       <dep id="mx.styles:IStyleManager2" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/collection/hasItem)" mod="1240917356000" size="586" optimizedsize="219">
+      <def id="org.hamcrest.collection:hasItem" />
+      <dep id="org.hamcrest.collection:IsArrayContainingMatcher" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="Object" />
+      <dep id="AS3" />
+      <dep id="org.hamcrest:Matcher" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4CIListener.swc(org/flexunit/runner/notification/IAsyncStartupRunListener)" mod="1250962813673" size="844" optimizedsize="250">
       <def id="org.flexunit.runner.notification:IAsyncStartupRunListener" />
@@ -3090,6 +3120,16 @@
       <dep id="mx.styles:StyleManager" />
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/assertThatMatcher)" mod="1240917356000" size="864" optimizedsize="440">
+      <def id="org.hamcrest:assertThatMatcher" />
+      <dep id="String" />
+      <dep id="org.hamcrest:Description" />
+      <dep id="org.hamcrest:AssertionError" />
+      <dep id="Object" />
+      <dep id="AS3" />
+      <dep id="org.hamcrest:Matcher" />
+      <dep id="org.hamcrest:StringDescription" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/internals/runners/statements/ExpectException)" mod="1249565342000" size="2837" optimizedsize="1691">
       <def id="org.flexunit.internals.runners.statements:ExpectException" />
@@ -3630,6 +3670,17 @@
       <dep id="flash.utils:getQualifiedClassName" />
       <dep id="mx.effects.effectClasses:PropertyChanges" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/MapTests.as" mod="1258355149000" size="4673" optimizedsize="2265">
+      <def id="tests.factorylabs.orange.core.collections:MapTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="org.hamcrest.collection:hasItem" />
+      <dep id="com.factorylabs.orange.core.collections:Map" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="asunit.framework:Assert" />
+      <dep id="AS3" />
+    </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/flex.swc(mx/core/IRepeaterClient)" mod="1247688623668" size="1227" optimizedsize="321">
       <def id="mx.core:IRepeaterClient" />
       <pre id="Object" />
@@ -3952,6 +4003,15 @@
       <pre id="Error" />
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/BaseMatcher)" mod="1240917356000" size="1246" optimizedsize="612">
+      <def id="org.hamcrest:BaseMatcher" />
+      <pre id="Object" />
+      <pre id="org.hamcrest:Matcher" />
+      <dep id="org.hamcrest:Description" />
+      <dep id="flash.errors:IllegalOperationError" />
+      <dep id="AS3" />
+      <dep id="org.hamcrest:StringDescription" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/preloaders/IPreloaderDisplay)" mod="1247688632376" size="2127" optimizedsize="508">
       <def id="mx.preloaders:IPreloaderDisplay" />
@@ -4402,6 +4462,12 @@
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/object/IsEqualMatcher)" mod="1240917356000" size="1841" optimizedsize="825">
+      <def id="org.hamcrest.object:IsEqualMatcher" />
+      <pre id="org.hamcrest:BaseMatcher" />
+      <dep id="org.hamcrest:Description" />
+      <dep id="AS3" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/internals/flexunit_internal)" mod="1249565342000" size="233" optimizedsize="130">
       <def id="org.flexunit.internals:flexunit_internal" />
       <dep id="AS3" />
@@ -4421,6 +4487,13 @@
       <def id="mx.events:FlexChangeEvent" />
       <pre id="flash.events:Event" />
       <dep id="mx.core:mx_internal" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/hamcrest/assertThatBoolean)" mod="1240917356000" size="527" optimizedsize="154">
+      <def id="org.hamcrest:assertThatBoolean" />
+      <dep id="String" />
+      <dep id="Boolean" />
+      <dep id="org.hamcrest:AssertionError" />
       <dep id="AS3" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/flex.swc(mx/core/SpriteAsset)" mod="1247688625947" size="1596" optimizedsize="900">
@@ -4776,7 +4849,7 @@
       <pre id="mx.core:Container" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/Map.as" mod="1258336629000" size="3679" optimizedsize="1713">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/Map.as" mod="1258354891000" size="3679" optimizedsize="1713">
       <def id="com.factorylabs.orange.core.collections:Map" />
       <pre id="com.factorylabs.orange.core.collections:IMap" />
       <pre id="com.factorylabs.orange.core:ICloneable" />
