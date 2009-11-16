@@ -11,7 +11,7 @@ package asunit.textui {
     *   @author Ian
     *   @playerversion AIR 1.1
     **/
-    public class AirRunner extends WindowedApplication {
+    public class AirRunner {
         
         protected var runner:TestRunner;
 

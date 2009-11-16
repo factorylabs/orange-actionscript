@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+				creationComplete="onCreationComplete()"
+				width="200" height="200"
+				backgroundColor="#FF8500" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+	<mx:Script>
+		<![CDATA[		
+			import org.flexunit.internals.TraceListener;
+			import org.flexunit.listeners.CIListener;
+			import org.flexunit.runner.FlexUnitCore;
+			import tests.factorylabs.orange.core.FCoreTestSuite;
+			
+			private var _core	:FlexUnitCore;
+			
+			private function onCreationComplete():void
+			{
+				_core = new FlexUnitCore();
+				_core.addListener( new CIListener() );
+				_core.addListener( new TraceListener() );
+				_core.run( FCoreTestSuite );
+			}
+		]]>
+	</mx:Script>
+</mx:Application>

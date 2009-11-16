@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" id="0" name="FMapTests" package="tests.factorylabs.orange.core.collections" skipped="0" tests="1" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.collections::FMapTests" name="get" status="success" time="0.000" />
+
+  </testsuite>
+</testsuites>

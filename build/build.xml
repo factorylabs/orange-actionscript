@@ -8,14 +8,136 @@
 	* ant howto: http://ant.apache.org/manual/running.html
 -->
 
-<project name='orange-actionscript' basedir='../' default='fdtResetFCSH'>
+<project name='orange-actionscript' basedir='../' default='usage'>
 	
 	<!--
-	include the properties for running builds -->
+	Include the properties for running builds -->
 	<property file="./build/build.properties"/>
+    
+    <!-- 
+    Set up FlexUnit Ant tasks -->
+    <taskdef resource="flexUnitTasks.tasks" classpath="${build.tasks}/flexUnitTasks.jar"/>
+    
+    <target name="usage" description='So here is how you use this thing.' >
+        <echo message="${project.version}"/>
+        <echo message="----------------------------------------------------------------------"/>
+        <echo message="Available Orange Targets:"/>
+        <echo message="test			=> Run FlexUnit 4 tests on Orange"/>
+        <echo message="asdoc		=> Generates the ASDOCs for all Orange packages"/>
+        <echo message="fdtResetFCSH	=> FDT specific task for resetting the FCSH compiler"/>
+        <echo message="----------------------------------------------------------------------"/>
+        <echo message="www.factorylabs.com"/>
+      </target>
+    
+<!-- 
+	MELT FACES 
+-->    
+    <!-- 
+    public -->
+    <target name="test" description='Runs the FlexUnit 4 Unit Tests' depends='init-test-docs'>
+        <echo>[test] Running unit tests</echo>
+       
+        <!-- Compile FCoreTestRunner.mxml as a .swf -->
+        <java jar="${FLEX_HOME}/lib/mxmlc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
+            <arg value="${test.core.runner}" />
+            <arg value="-source-path=${source.as}" />
+            <arg value="-output=${test.core.swf}" />
+            <arg value="-default-size=200,200" />
+            <arg value="-default-background-color=0xFF8500" />
+            <arg value="-library-path+=${libs}" />
+            <arg value="-incremental=true" />
+            <arg value="-verbose-stacktraces=true" />
+            <arg value="-headless-server=true" />
+            <arg value="-default-frame-rate=30" />
+            <arg value="-as3=true" />
+            <arg value="-debug=true" />
+            <arg value="-show-actionscript-warnings=false" />
+            <arg value="-use-network=true" />
+            <arg value="-link-report=${docs.reports}/xml/FCoreTestRunner.xml" />
+        </java>
+        
+        <!-- Execute FCoreTestRunner.swf as FlexUnit tests and publish JUnit style reports -->
+        <flexunit swf="${test.core.swf}" toDir="${docs.tests}/xml" haltonfailure="true" verbose="true" localTrusted="true"/>
+        <junitreport todir="${docs.tests}/xml">
+            <fileset dir="${docs.tests}/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${docs.tests}/html"/>
+        </junitreport>
+        
+        <echo>[test] Unit tests complete</echo>
+    </target>
+
+    <!-- 
+    public -->
+	<target name="asdoc" depends="test, init-asdocs" description='Generates the ASDOCs for all orange packages'>
+	    <echo>[asdoc] Generating documentation</echo>
+	    <tstamp>
+	        <format property="docgen.time" pattern="MM/dd/yyyy hh:mm aa" unit="hour"/>
+	    </tstamp>
+	    <java jar="${FLEX_HOME}/lib/asdoc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
+	        <arg line="-external-library-path ${libs}"/>
+	        <arg line="-doc-sources ${source.as}"/>
+	        <arg line="-source-path ${source.as}"/>
+	        <arg line="-output ${docs.asdocs}"/>
+	        <arg line="-window-title 'Factory Design Labs ${project.version}'"/>
+	        <arg line="-main-title 'Factory Design Labs ${project.version}'"/>
+	        <arg line="-footer 'Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: ${docgen.time}'" />
+	        <arg line="-package com.factorylabs.orange.core 'This is the core'"/>
+	    </java>
+	    <echo>[asdocs] Documentation generated</echo>
+	</target>
+   
+<!-- 
+	CLEAN UP AND CREATION TASKS 
+-->
+    <!-- 
+    protected -->
+    <target name="clean-test-docs">
+        <echo>[clean-test-docs] Removing directories</echo>
+        <delete includeemptydirs="true" failonerror="false">
+            <fileset dir="${docs.tests}/html" defaultexcludes="false">
+                <include name="**/*"/>
+            </fileset>
+            <fileset dir="${docs.tests}/xml" defaultexcludes="false">
+                <include name="**/*"/>
+            </fileset>
+        </delete>
+        <delete file="${docs.reports}/xml/FCoreTestRunner.xml" />
+        <echo>[clean-test-docs] Directories removed</echo>
+    </target>
+    
+	<!-- 
+	protected -->
+    <target name="init-test-docs" depends="clean-test-docs">
+        <echo>[init-test-docs] Creating directories</echo>
+        <mkdir dir="${docs.tests}/html"/>
+        <mkdir dir="${docs.tests}/xml"/>
+        <echo>[init-test-docs] Directories created</echo>
+    </target>
+    
+    <!-- 
+    protected -->
+    <target name="clean-asdocs">
+        <echo>[clean-asdocs] Removing directories</echo>
+        <delete includeemptydirs="true" failonerror="false">
+            <fileset dir="${docs.asdocs}" defaultexcludes="false">
+                <include name="**/*"/>
+            </fileset>
+        </delete>
+        <echo>[clean-asdocs] Directories removed</echo>
+    </target>
+    
+	<!-- 
+	protected -->
+    <target name="init-asdocs" depends="clean-asdocs">
+        <echo>[init-asdocs] Creating directories</echo>
+        <mkdir dir="${docs.asdocs}"/>
+        <echo>[init-asdocs] Directories created</echo>
+    </target>
 	
 <!-- 
-FDT SPECIFIC ANT TASKS 
+	FDT SPECIFIC TASKS 
 -->
 	<!--
 	public -->
@@ -25,45 +147,43 @@ FDT SPECIFIC ANT TASKS
     </target>
 	
 	<!-- 
-		public -->         
-		<target name='fdtDebugCoreTests' depends='-fdtStartDebugger, -fdtCompileCoreTests' 
-				description='launches and debugs the unit tests gui through the default browser using the mxml launcher.'>
-			<fdt.browse location='${tests.core.url}'/>
-		</target>
+	public          
+	<target name='fdtDebugCoreTests' depends='-fdtStartDebugger, -fdtCompileCoreTests' 
+			description='launches and debugs the unit tests gui through the default browser using the mxml launcher.'>
+		<fdt.browse location='${tests.core.url}'/>
+	</target>
+	-->
 	
 	<!-- 
-		public -->         
-		<target name='fdtRunCoreTests' depends='-setDebugFalse, -fdtCompileCoreTests' 
-				description='launches the unit tests gui through the default browser using the mxml launcher.'>
-			<fdt.browse location='${tests.core.url}'/>
-		</target>
+ 	private: build using the FDT launch method for the Testing framework. 
+    <target name='-fdtCompileCoreTests' >
+    	<fdt.launch.application 
+    		projectname="${ant.project.name}" 
+    		mainclass="${tests.core}"
+    		debug="${isDebug}"
+    		target="${tests.core.swf}" 
+    		startswf="${autostart}"
+    		compilerarguments="-default-size ${width} ${height} -default-frame-rate ${framerate} -default-background-color ${background} -as3=${as3} -optimize=${optimize} -show-actionscript-warnings=${showWarn}"
+    	/>
+	</target>
+	-->
 	
-	<!-- 
-	 	private: build using the FDT launch method for the Testing framework. -->
-	    <target name='-fdtCompileCoreTests' >
-	    	<fdt.launch.application 
-	    		projectname="${ant.project.name}" 
-	    		mainclass="${tests.core}"
-	    		debug="${isDebug}"
-	    		target="${tests.core.swf}" 
-	    		startswf="${autostart}"
-	    		compilerarguments="-default-size ${width} ${height} -default-frame-rate ${framerate} -default-background-color ${background} -as3=${as3} -optimize=${optimize} -show-actionscript-warnings=${showWarn}"
-	    	/>
-		</target>
-	
-	<!-- DEBUGGING METHODS
+<!-- 
+	FDT DEBUGGING METHODS 
+-->    
+    <!--
 	private: kick start the FDT bugger and allow the .swf to be compiled in debug mode. **This one still requires FDT for having debugging in the console.** -->
     <target name='-fdtStartDebugger' >
     	<property name='isDebug' value='true'/>
 		<property name='useNetwork' value='true'/>
     	<fdt.startDebugger projectname="${ant.project.name}" savelocation="build"/>
     </target>
-	<!--
+	
+    <!--
 	private: compile the .swf without debug mode. -->
     <target name='-setDebugFalse' >
     	<property name='isDebug' value='false'/>
 		<property name='useNetwork' value='true'/>
     </target>
-
 
 </project>

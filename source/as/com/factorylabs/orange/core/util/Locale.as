@@ -1,4 +1,7 @@
+
 /**
+ * TODO: We need to figure out where this came from and give propery props to them – I think we need to check with Gabe -MK 
+ * 
  * <p>Copyright 2004-2009 by Factory Design Labs</p>
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -27,7 +30,6 @@ package com.factorylabs.orange.core.util
 	import flash.system.Capabilities;	
 	public final class Locale
 	{
-
 	    public static const ENGLISH:String = "en";
 	    public static const SPANISH:String = "es";
 	    public static const FRENCH:String = "fr";

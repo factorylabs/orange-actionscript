@@ -32,40 +32,40 @@ package com.factorylabs.orange.core.util
 	 */
 	public final class Convert
 	{
-		public static function toBool( value :* ) :Boolean
+		public static function toBool( $value :* ) :Boolean
 		{			
-			if( value is String )
+			if( $value is String )
 			{
-				if( value == 'false' )
+				if( $value == 'false' )
 					return false;
-				else if ( value == 'true' )
+				else if ( $value == 'true' )
 					return true;
 				else
-					throw new ConversionError( 'Invalid format for Boolean: ' + value );
+					throw new ConversionError( 'Invalid format for Boolean: ' + $value );
 			}
-			else if( value is int )
+			else if( $value is int )
 			{
-				if( value == 0 )
+				if( $value == 0 )
 					return false;
-				else if ( value == 1 )
+				else if ( $value == 1 )
 					return true;
 				else
-					throw new ConversionError( 'Invalid format for Boolean: ' + value );
+					throw new ConversionError( 'Invalid format for Boolean: ' + $value );
 			}
 			else
 			{
-				throw new ConversionError( 'Invalid format for Boolean: ' + value );
+				throw new ConversionError( 'Invalid format for Boolean: ' + $value );
 			}
 		}
 		
 		/**
 * TODO: This is a number formatter.. get this out of here! - MK
 		 *	Converts milliseconds into a nicely-formatted time display
-		 *	@param	milliSeconds		the milliseconds to convert
+		 *	@param	$milliSeconds	the milliseconds to convert
 		 */
-		public static function convertTime( milliSeconds:Number ) :String
+		public static function convertTime( $milliSeconds:Number ) :String
 		{
-			var secs :Number = Math.floor( milliSeconds / 1000 );
+			var secs :Number = Math.floor( $milliSeconds / 1000 );
 			var mins :Number = Math.floor( secs / 60 );
 			secs %= 60;
 			
@@ -87,8 +87,8 @@ package com.factorylabs.orange.core.util
 class ConversionError
 	extends Error
 {
-	public function ConversionError(msg:String)
+	public function ConversionError( $msg :String )
 	{
-		super(msg);
+		super( $msg );
 	}
 }
