@@ -1,8 +1,8 @@
 
 package tests.factorylabs.orange.core 
 {
-
 	import tests.factorylabs.orange.core.collections.CollectionsTestSuite;
+	import tests.factorylabs.orange.core.logging.LoggingTestSuite;
 
 	/**
 	 * Summary
@@ -20,5 +20,6 @@ package tests.factorylabs.orange.core
 	public class FCoreTestSuite 
 	{
 		public var collectionsTestSuite	:CollectionsTestSuite;
+		public var loggingTestSuite		:LoggingTestSuite;
 	}
 }

@@ -1,12 +1,12 @@
 
 package tests.factorylabs.orange.core.collections 
 {
-	import org.hamcrest.object.equalTo;
-	import org.hamcrest.collection.hasItem;
-	import org.hamcrest.assertThat;
-	import asunit.framework.Assert;
-
 	import com.factorylabs.orange.core.collections.Map;
+
+	import org.flexunit.Assert;
+	import org.hamcrest.assertThat;
+	import org.hamcrest.collection.hasItem;
+	import org.hamcrest.object.equalTo;
 
 	import flash.utils.Dictionary;
 

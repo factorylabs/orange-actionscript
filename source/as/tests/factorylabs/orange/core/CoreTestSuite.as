@@ -3,13 +3,11 @@ package tests.factorylabs.orange.core
 {
 	import asunit.framework.TestSuite;
 
-	import tests.factorylabs.orange.core.collections.MapTest;
 	import tests.factorylabs.orange.core.gc.JanitorConnectionsTest;
 	import tests.factorylabs.orange.core.gc.JanitorIntervalTest;
 	import tests.factorylabs.orange.core.gc.JanitorManagerTest;
 	import tests.factorylabs.orange.core.gc.JanitorSoundChannelTest;
 	import tests.factorylabs.orange.core.gc.JanitorTest;
-	import tests.factorylabs.orange.core.logging.LoggerTest;
 	import tests.factorylabs.orange.core.util.ArrayUtilTest;
 	import tests.factorylabs.orange.core.util.ColorUtilTest;
 	import tests.factorylabs.orange.core.util.ConvertTest;
@@ -61,8 +59,6 @@ package tests.factorylabs.orange.core
 		
 		protected function addTestCases() :void
 		{
-			// orange.core.collections
-			addTest(new MapTest() );
 			
 			// orange.core.gc
 			addTest( new JanitorConnectionsTest() );
@@ -70,9 +66,6 @@ package tests.factorylabs.orange.core
 			addTest( new JanitorIntervalTest() );
 			addTest( new JanitorManagerTest() );
 			addTest( new JanitorSoundChannelTest() );
-			
-			// orange.core.logger
-			addTest( new LoggerTest() );
 			
 			// orange.core.util
 			addTest( new ArrayUtilTest() );
