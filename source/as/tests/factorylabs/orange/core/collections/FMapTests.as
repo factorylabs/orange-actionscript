@@ -1,9 +1,11 @@
 
 package tests.factorylabs.orange.core.collections 
 {
+	import asunit.framework.Assert;
+
 	import com.factorylabs.orange.core.collections.Map;
 
-	import org.flexunit.Assert;
+	import flash.utils.Dictionary;
 
 	/**
 	 * Summary
@@ -52,7 +54,7 @@ package tests.factorylabs.orange.core.collections
 		[Test]
 		public function iterator() :void
 		{
-			assertTrue( _map.iterator is Dictionary );
+			Assert.assertTrue( _map.iterator is Dictionary );
 		}
 		
 		[Test]
