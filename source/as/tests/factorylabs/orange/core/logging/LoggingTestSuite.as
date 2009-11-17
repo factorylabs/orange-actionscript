@@ -17,6 +17,7 @@ package tests.factorylabs.orange.core.logging
 	[RunWith("org.flexunit.runners.Suite")]
 	public class LoggingTestSuite 
 	{
-		public var loggerTests	:LoggerTests;
+		public var loggerTests			:LoggerTests;
+		public var loggerEventTests		:LoggerEventTests;
 	}
 }

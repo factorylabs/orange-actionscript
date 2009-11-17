@@ -58,7 +58,7 @@ package tests.factorylabs.orange.core.collections
 		[Test]
 		public function iterator() :void
 		{
-			Assert.assertTrue( _map.iterator is Dictionary );
+			assertThat( _map.iterator is Dictionary, equalTo( true ) );
 		}
 		
 		[Test]

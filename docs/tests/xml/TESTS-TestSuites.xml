@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
   <testsuite errors="0" failures="0" id="0" name="MapTests" package="tests.factorylabs.orange.core.collections" skipped="2" tests="15" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="iterator" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="each" status="ignore" time="0.000">
-          <skipped />
-
-      </testcase>
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasValue" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="find" status="ignore" time="0.000">
           <skipped />
 
       </testcase>
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="values" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="get" status="success" time="0.000" />
 
@@ -21,43 +18,58 @@
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="add" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasValue" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="iterator" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="values" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="dispose" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="keys" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="extend" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasKey" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="each" status="ignore" time="0.000">
+          <skipped />
+
+      </testcase>
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="dispose" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="length" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clone" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasKey" status="success" time="0.000" />
+  </testsuite>
+  <testsuite errors="0" failures="0" id="1" name="LoggerEventTests" package="tests.factorylabs.orange.core.logging" skipped="0" tests="5" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="name" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="keys" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="object" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="message" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="clone" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="level" status="success" time="0.000" />
 
   </testsuite>
-  <testsuite errors="0" failures="0" id="1" name="LoggerTests" package="tests.factorylabs.orange.core.logging" skipped="0" tests="10" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="trace" status="success" time="0.000" />
+  <testsuite errors="0" failures="0" id="2" name="LoggerTests" package="tests.factorylabs.orange.core.logging" skipped="0" tests="10" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="isSilent" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="trace" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="error" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="core" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="info" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="log" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="log" status="success" time="0.000" />
 
   </testsuite>
 </testsuites>
