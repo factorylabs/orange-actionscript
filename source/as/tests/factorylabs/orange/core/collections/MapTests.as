@@ -11,7 +11,7 @@ package tests.factorylabs.orange.core.collections
 	import flash.utils.Dictionary;
 
 	/**
-	 * Summary
+	 * Ugh Sir..
 	 * 
 	 * <p>Description</p>
 	 * 

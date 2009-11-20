@@ -7,7 +7,7 @@ package tests.factorylabs.orange.core.logging
 	import org.hamcrest.object.equalTo;
 
 	/**
-	 * Summary
+	 * Ugh...
 	 * 
 	 * <p>Description</p>
 	 * 

@@ -1,6 +1,7 @@
 
 package tests.factorylabs.orange.core 
 {
+	import tests.factorylabs.orange.core.gc.GCTestSuite;
 	import tests.factorylabs.orange.core.collections.CollectionsTestSuite;
 	import tests.factorylabs.orange.core.logging.LoggingTestSuite;
 
@@ -20,6 +21,7 @@ package tests.factorylabs.orange.core
 	public class FCoreTestSuite 
 	{
 		public var collectionsTestSuite	:CollectionsTestSuite;
+		public var gcTestSuite			:GCTestSuite;
 		public var loggingTestSuite		:LoggingTestSuite;
 	}
 }
