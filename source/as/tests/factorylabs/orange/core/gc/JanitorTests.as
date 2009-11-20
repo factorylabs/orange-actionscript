@@ -1,6 +1,7 @@
-
 package tests.factorylabs.orange.core.gc 
 {
+	import com.factorylabs.orange.core.gc.Janitor;
+	import flash.display.MovieClip;
 
 	/**
 	 * Summary
@@ -15,5 +16,37 @@ package tests.factorylabs.orange.core.gc
 	 */
 	public class JanitorTests 
 	{
+		private var _janitor		:Janitor;
+		
+		[BeforeClass]
+		public static function runBeforeEntireSuite():void
+		{
+			
+		}
+		
+		[AfterClass]
+		public static function runAfterEntireSuite():void
+		{
+			
+		}
+		
+		[Before]
+		public function runBeforeEachTest():void
+		{
+			_janitor = new Janitor( this );
+		}
+		
+		[After]
+		public function runAfterEachTest():void
+		{
+			
+		}
+		
+		[Test]
+		public function example() :void
+		{
+			var mc :MovieClip = new MovieClip();
+			mc.alpha = 0;
+		}
 	}
 }

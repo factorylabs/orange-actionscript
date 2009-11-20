@@ -9,6 +9,7 @@ db/sphinx/
 *.ipr
 *.iws
 *.log
+*.tmproj
 .as2_classpath
 .as3_classpath
 .project
