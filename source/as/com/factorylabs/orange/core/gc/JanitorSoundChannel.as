@@ -1,7 +1,9 @@
 package com.factorylabs.orange.core.gc
 {
-	import flash.media.SoundChannel;	import flash.utils.Dictionary;	
-	/**
+	import flash.media.SoundChannel;
+	import flash.utils.Dictionary;
+
+	/**
 	 * The janitor is used for garbage collection dealing with SoundChannel objects.
  	 * 
  	 * <p>Janitor has methods within it to add and remove various objects that need to be removed from memory. There is also a one off clean method to collect everything.</p>
@@ -66,7 +68,6 @@ package com.factorylabs.orange.core.gc
 		public function JanitorSoundChannel( target :Object )
 		{
 			_target = target;
-			JanitorManager.instance.addJanitor( this );
 		}
 
 		/**
@@ -74,11 +75,8 @@ package com.factorylabs.orange.core.gc
 		 */
 		public function toString() :String 
 		{
-			return "com.factorylabs.orange.core.gc.JanitorSoundChannel";
+			return 'com.factorylabs.orange.core.gc.JanitorSoundChannel';
 		}
-/*
- * PUBLIC ACCESS
-**************************************************************************************************** */
 
 		/**
 		 * Clean the sound channels and itself out of the manager.
@@ -86,7 +84,6 @@ package com.factorylabs.orange.core.gc
 		public function cleanUp() :void
 		{
 			cleanUpSoundChannels();
-			JanitorManager.instance.removeJanitor( this );
 		}
 		
 		/**
@@ -116,7 +113,9 @@ package com.factorylabs.orange.core.gc
 		{
 			for( var soundChannel :Object in _soundChannels )
 			{
-				( soundChannel as SoundChannel ).stop();
+				var sc :SoundChannel = SoundChannel( soundChannel ); 
+				sc.stop();
+				removeSoundChannel( sc );
 			}
 		}
 	}

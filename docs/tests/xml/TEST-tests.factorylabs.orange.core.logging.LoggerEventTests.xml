@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.logging.LoggerEventTests" tests="5" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="clone" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="name" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="message" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="object" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="name" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="clone" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="level" time="0.000" status="success"/>
 </testsuite>

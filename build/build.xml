@@ -25,6 +25,7 @@
         <echo message="test			=> Run FlexUnit 4 tests on Orange"/>
         <echo message="asdoc		=> Generates the ASDOCs for all Orange packages"/>
         <echo message="fdtResetFCSH	=> FDT specific task for resetting the FCSH compiler"/>
+        <echo message="fdtTest			=> Run FlexUnit 4 tests on Orange with the FDT Debugger enabled"/>
         <echo message="----------------------------------------------------------------------"/>
         <echo message="www.factorylabs.com"/>
       </target>
@@ -144,6 +145,11 @@
     <target name='fdtResetFCSH' description='forces the mxmlc to refresh its cached data.'>
         <fdt.launch.resetFCSH/>
     	<echo>Pipes are cleaned in the ${ant.project.name} project.</echo>
+    </target>
+
+    <!--
+	public -->
+    <target name='fdtTest' description='Runs the FlexUnit 4 Unit Tests with the FDT debugger enabled' depends='-fdtStartDebugger, test'>     
     </target>
 	
 	<!-- 

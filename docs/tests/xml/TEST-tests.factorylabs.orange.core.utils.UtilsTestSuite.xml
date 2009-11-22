@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testsuite name="tests.factorylabs.orange.core.utils.UtilsTestSuite" tests="1" failures="0" errors="0" skipped="1" time="0.0">
+  <testcase classname="tests.factorylabs.orange.core.utils::UtilsTestSuite" name="null" time="0.000" status="ignore">
+    <skipped/>
+  </testcase>
+</testsuite>

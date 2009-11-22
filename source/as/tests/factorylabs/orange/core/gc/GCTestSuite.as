@@ -17,6 +17,10 @@ package tests.factorylabs.orange.core.gc
 	[RunWith("org.flexunit.runners.Suite")]
 	public class GCTestSuite 
 	{
-		public var janitorTests		:JanitorTests;
+		public var janitorTests				:JanitorTests;
+		public var janitorConnectionsTests	:JanitorConnectionsTests;
+		public var janitorManagerTests		:JanitorManagerTests;
+		public var janitorSoundChannelTests	:JanitorSoundChannelTests;
+		public var weakReferenceTests		:WeakReferenceTests;
 	}
 }

@@ -156,14 +156,14 @@ package tests.factorylabs.orange.core.logging
 		
 		private function onLoggerEvent( $e :LoggerEvent, $pass :Object ) :void
 		{
-			Assert.assertEquals( $e.message, $pass.msg );
-			Assert.assertEquals( $e.object, $pass.obj );
-			Assert.assertEquals( $e.level, $pass.level );
+			Assert.assertEquals( $e.message, $pass[ 'msg' ] );
+			Assert.assertEquals( $e.object, $pass[ 'obj' ] );
+			Assert.assertEquals( $e.level, $pass[ 'level' ] );
 		}
 		
 		private function onFault( $pass :Object ) :void
 		{
-			Assert.fail( '[LoggerTest].onFault()' + String( $pass.msg ) );
+			Assert.fail( '[LoggerTest].onFault()' + String( $pass[ 'msg' ] ) );
 		}
 	}
 }
