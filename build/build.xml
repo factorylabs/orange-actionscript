@@ -78,12 +78,13 @@
 	    </tstamp>
 	    <java jar="${FLEX_HOME}/lib/asdoc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
 	        <arg line="-external-library-path ${libs}"/>
-	        <arg line="-doc-sources ${source.as}"/>
+	        <arg line="-doc-sources ${source.as}/com"/>
 	        <arg line="-source-path ${source.as}"/>
 	        <arg line="-output ${docs.asdocs}"/>
 	        <arg line="-window-title 'Factory Design Labs ${project.version}'"/>
 	        <arg line="-main-title 'Factory Design Labs ${project.version}'"/>
 	        <arg line="-footer 'Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: ${docgen.time}'" />
+	        <arg line="-left-frameset-width=250" />
 	        <arg line="-package com.factorylabs.orange.core 'This is the core'"/>
 	    </java>
 	    <echo>[asdocs] Documentation generated</echo>

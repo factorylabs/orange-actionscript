@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
   <testsuite errors="0" failures="0" id="0" name="MapTests" package="tests.factorylabs.orange.core.collections" skipped="2" tests="15" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="values" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="find" status="ignore" time="0.000">
           <skipped />
 
@@ -10,30 +8,32 @@
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="dispose" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="get" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasKey" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="remove" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasValue" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="iterator" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clear" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="add" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="keys" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="each" status="ignore" time="0.000">
           <skipped />
 
       </testcase>
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="iterator" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="extend" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="keys" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="remove" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasKey" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasValue" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="get" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clone" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="extend" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="values" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="length" status="success" time="0.000" />
 
@@ -41,9 +41,9 @@
   <testsuite errors="0" failures="0" id="1" name="JanitorManagerTests" package="tests.factorylabs.orange.core.gc" skipped="0" tests="4" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorManagerTests" name="cleanUp" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorManagerTests" name="addJanitor" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorManagerTests" name="removeJanitor" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorManagerTests" name="addJanitor" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorManagerTests" name="cleanUpJanitor" status="success" time="0.000" />
 
@@ -51,45 +51,45 @@
   <testsuite errors="0" failures="0" id="2" name="JanitorSoundChannelTests" package="tests.factorylabs.orange.core.gc" skipped="0" tests="3" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorSoundChannelTests" name="cleanUpSoundChannels" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorSoundChannelTests" name="removeSoundChannel" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorSoundChannelTests" name="addSoundChannel" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorSoundChannelTests" name="removeSoundChannel" status="success" time="0.000" />
 
   </testsuite>
   <testsuite errors="0" failures="0" id="3" name="JanitorTests" package="tests.factorylabs.orange.core.gc" skipped="0" tests="17" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addEventListener" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeEventListener" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeDisposable" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addTimer" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpChildren" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addDisposable" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpTimers" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpDisposable" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpEventListeners" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpTimer" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addConnection" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeTimer" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeConnection" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addTimer" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpEventListeners" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpDisposables" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addEventListener" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="recurseCleanChildren" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeEventListener" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpConnections" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addDisposables" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpConnections" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeDisposable" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addConnection" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpTimer" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpChildren" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addDisposable" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpDisposables" status="success" time="0.000" />
 
   </testsuite>
   <testsuite errors="0" failures="0" id="4" name="WeakReferenceTests" package="tests.factorylabs.orange.core.gc" skipped="0" tests="1" time="0.0">
@@ -99,42 +99,170 @@
   <testsuite errors="0" failures="0" id="5" name="LoggerEventTests" package="tests.factorylabs.orange.core.logging" skipped="0" tests="5" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="name" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="message" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="object" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="level" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="message" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="clone" status="success" time="0.000" />
 
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="level" status="success" time="0.000" />
+
   </testsuite>
   <testsuite errors="0" failures="0" id="6" name="LoggerTests" package="tests.factorylabs.orange.core.logging" skipped="0" tests="10" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="isSilent" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="log" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="trace" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="error" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="core" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="info" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="error" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" status="success" time="0.000" />
 
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="info" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="log" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="core" status="success" time="0.000" />
+
   </testsuite>
-  <testsuite errors="0" failures="0" id="7" name="UtilsTestSuite" package="tests.factorylabs.orange.core.utils" skipped="1" tests="1" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.utils::UtilsTestSuite" name="null" status="ignore" time="0.000">
+  <testsuite errors="0" failures="0" id="7" name="ArrayMethodsTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="7" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="loop" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="shuffle" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="random" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="clone" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="remove" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="search" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="contains" status="success" time="0.000" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="8" name="ColorMethodsTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="6" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToARGB" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToRGB" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="flashColorNumberToHexString" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="rgbToHex" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToFlashColorNumber" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="argbToHex" status="success" time="0.000" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="9" name="ConvertTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="3" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.utils::ConvertTests" name="toBooleanShouldFail" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ConvertTests" name="convertTime" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ConvertTests" name="toBoolean" status="success" time="0.000" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="10" name="LocaleTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="4" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="variant" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="language" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="languageVariant" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="reset" status="success" time="0.000" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="11" name="StringMethodsTests" package="tests.factorylabs.orange.core.utils" skipped="3" tests="32" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="quote" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trim" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="wordCount" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trimLeft" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isNumeric" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="formatNumber" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="hasText" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="reverse" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beginsWith" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="stripTags" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="reverseWords" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterLast" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="padLeft" status="ignore" time="0.000">
           <skipped />
 
       </testcase>
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="swapCase" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="block" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeLast" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="similarity" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isEmpty" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="truncate" status="ignore" time="0.000">
+          <skipped />
+
+      </testcase>
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="countOf" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="removeExtraWhitespace" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeFirst" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trimRight" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="between" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterFirst" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="endsWith" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="editDistance" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="remove" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="properCase" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="contains" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="capitalize" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="padRight" status="ignore" time="0.000">
+          <skipped />
+
+      </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="12" name="ValidateMethodsTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="5" time="0.0">
+      <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidUSZip" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidCanPostal" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidEmail" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidPhoneNumber" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidAreaCode" status="success" time="0.000" />
 
   </testsuite>
 </testsuites>

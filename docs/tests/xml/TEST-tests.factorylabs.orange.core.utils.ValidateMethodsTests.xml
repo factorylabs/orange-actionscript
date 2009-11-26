@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testsuite name="tests.factorylabs.orange.core.utils.ValidateMethodsTests" tests="5" failures="0" errors="0" skipped="0" time="0.0">
+  <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidUSZip" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidCanPostal" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidEmail" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidPhoneNumber" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ValidateMethodsTests" name="isValidAreaCode" time="0.000" status="success"/>
+</testsuite>
