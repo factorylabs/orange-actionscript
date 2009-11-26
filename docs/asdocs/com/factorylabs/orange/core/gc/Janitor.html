@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print">
-<meta content="Janitor,com.factorylabs.orange.core.gc.Janitor,addDisposable,addDisposables,addEventListener,cleanUp,cleanUpChildren,cleanUpConnection,cleanUpDisposable,cleanUpDisposables,cleanUpEventListeners,cleanUpTarget,recurseCleanChildren,removeDisposable,removeEventListener,toString" name="keywords">
+<meta content="Janitor,com.factorylabs.orange.core.gc.Janitor,connections,disposables,listeners,timers,addConnection,addDisposable,addDisposables,addEventListener,addTimer,cleanUp,cleanUpChildren,cleanUpConnection,cleanUpConnections,cleanUpDisposable,cleanUpDisposables,cleanUpEventListeners,cleanUpTarget,cleanUpTimer,cleanUpTimers,recurseCleanChildren,removeConnection,removeDisposable,removeEventListener,removeTimer,toString" name="keywords">
 <title>com.factorylabs.orange.core.gc.Janitor</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
 <td align="left" class="titleTableTitle">Factory Design Labs orange-actionscript-v1.0RC0</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../index-list.html')" href="../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../index.html?com/factorylabs/orange/core/gc/Janitor.html&amp;com/factorylabs/orange/core/gc/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../images/logo.jpg"></td>
 </tr>
 <tr class="titleTableRow2">
-<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Janitor</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Janitor</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
 </tr>
 <tr class="titleTableRow3">
 <td colspan="2">&nbsp;</td>
@@ -27,7 +27,7 @@
 </table>
 <script type="text/javascript" language="javascript">
 <!--
-if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Janitor"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Janitor"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
 --></script>
 <div class="MainContent">
 <table cellspacing="0" cellpadding="0" class="classHeaderTable">
@@ -42,40 +42,63 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 </table>
 <p></p>
-  The janitor is used for garbage collection.
+  The Janitor is used for garbage collection.
    
    <p>Janitor has methods within it to add and remove various objects that need to be removed from memory. There is also a one off clean method to collect everything.</p>
    
-    <p>The following people are credited with originating all or parts of this code:
-  Grant Skinner :: www.gskinner.com
-  
-   <p>Copyright 2004-2009 by Factory Design Labs</p>
-     
-     Permission is hereby granted, free of charge, to any person obtaining
-     a copy of this software and associated documentation files (the
-     "Software"), to deal in the Software without restriction, including
-     without limitation the rights to use, copy, modify, merge, publish,
-     distribute, sublicense, and/or sell copies of the Software, and to
-     permit persons to whom the Software is furnished to do so, subject to
-     the following conditions:
-     
-     The above copyright notice and this permission notice shall be
-     included in all copies or substantial portions of the Software.
-     
-     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-     EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-     NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-     LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-     OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-     WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-   <a href="http://www.factorylabs.com/">www.factorylabs.com</a>
-   
-   TODO It might be more convenient to change the Dictionary's to Maps, this way we we can access disposables and listeners via Keys.. ?
-   
-   <p></p>
+   <p>The following people are credited with originating all or parts of this code:<br />
+  Grant Skinner :: www.gskinner.com</p>
+    <hr />
+  <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+    Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this software and associated documentation files (the
+  "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to
+  the following conditions:<br /><br />
+    The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.<br /><br />
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    TODO It might be more convenient to change the Dictionary's to Maps, this way we we can access disposables and listeners via Keys.. ? – MK
+      <p></p>
 <br>
 <hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#connections">connections</a> : Dictionary<div class="summaryTableDescription">[read-only]
+   </div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#disposables">disposables</a> : Dictionary<div class="summaryTableDescription">[read-only]
+   </div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#listeners">listeners</a> : Dictionary<div class="summaryTableDescription">[read-only]
+   </div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#timers">timers</a> : Dictionary<div class="summaryTableDescription">[read-only]
+   return Dictionary for storing timers.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+</table>
 </div>
 <a name="methodSummary"></a>
 <div class="summarySection">
@@ -87,7 +110,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#Janitor()">Janitor</a>(target:Object)</div>
+<a class="signatureLink" href="#Janitor()">Janitor</a>($target:Object)</div>
 <div class="summaryTableDescription">
    Create an instance of a Janitor and add it to the JanitorManager for cleanup.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
@@ -95,7 +118,15 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#addDisposable()">addDisposable</a>(disposable:<a href="../IDisposable.html">IDisposable</a>):void</div>
+<a class="signatureLink" href="#addConnection()">addConnection</a>($connection:Object):void</div>
+<div class="summaryTableDescription">
+   Add a connection to it's Dictionary.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addDisposable()">addDisposable</a>($disposable:<a href="../IDisposable.html">IDisposable</a>):void</div>
 <div class="summaryTableDescription">
    Adds an IDisposable to it's Dictionary.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
@@ -111,7 +142,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#addEventListener()">addEventListener</a>(dispatcher:IEventDispatcher, type:String, listener:Function, useCapture:Boolean = false, add:Boolean = true, priority:int = 0):void</div>
+<a class="signatureLink" href="#addEventListener()">addEventListener</a>($dispatcher:IEventDispatcher, $type:String, $listener:Function, $useCapture:Boolean = false, $add:Boolean = true, $priority:int = 0):void</div>
 <div class="summaryTableDescription">
    Adds an event listener for forwarding from the Janitor object.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
@@ -119,9 +150,18 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
+<a class="signatureLink" href="#addTimer()">addTimer</a>($timer:Timer):void</div>
+<div class="summaryTableDescription">
+   Adds a Timer to it's Dictionary.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
 <a class="signatureLink" href="#cleanUp()">cleanUp</a>():void</div>
 <div class="summaryTableDescription">
-   Cleans those dirty little event listeners, children, disposables, the target and itself out of the manager.</div>
+   
+   Prepares an IJanitor object for garbage collection.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
 </tr>
 <tr class="">
@@ -135,7 +175,15 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#cleanUpDisposable()">cleanUpDisposable</a>(disposable:<a href="../IDisposable.html">IDisposable</a>):void</div>
+<a class="signatureLink" href="#cleanUpConnections()">cleanUpConnections</a>():void</div>
+<div class="summaryTableDescription">
+   Cleans up all connections in it's Dictionary.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#cleanUpDisposable()">cleanUpDisposable</a>($disposable:<a href="../IDisposable.html">IDisposable</a>):void</div>
 <div class="summaryTableDescription">
    Call the dispose method on the IDisposable and remove it from the Dictionary.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
@@ -167,7 +215,23 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#recurseCleanChildren()">recurseCleanChildren</a>(dispObj:*):void</div>
+<a class="signatureLink" href="#cleanUpTimer()">cleanUpTimer</a>($timer:Timer):void</div>
+<div class="summaryTableDescription">
+   Removes a Timer from it's Dictionary and stop it.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#cleanUpTimers()">cleanUpTimers</a>():void</div>
+<div class="summaryTableDescription">
+   Cleans up all timers in it's Dictionary by calling stop() on them.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#recurseCleanChildren()">recurseCleanChildren</a>($dispObj:*):void</div>
 <div class="summaryTableDescription">
    Added recursive display object removal, just to be sure everything's removed from the end leaf on up the display list.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
@@ -175,7 +239,15 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#removeDisposable()">removeDisposable</a>(disposable:<a href="../IDisposable.html">IDisposable</a>):void</div>
+<a class="signatureLink" href="#removeConnection()">removeConnection</a>($connection:Object):void</div>
+<div class="summaryTableDescription">
+   Remove a connection from it's Dictionary.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeDisposable()">removeDisposable</a>($disposable:<a href="../IDisposable.html">IDisposable</a>):void</div>
 <div class="summaryTableDescription">
    Removes an IDisposable from it's Dictionary and does not call it's dispose function.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
@@ -183,9 +255,17 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#removeEventListener()">removeEventListener</a>(dispatcher:IEventDispatcher, type:String, listener:Function, useCapture:Boolean = false, remove:Boolean = true):void</div>
+<a class="signatureLink" href="#removeEventListener()">removeEventListener</a>($dispatcher:IEventDispatcher, $type:String, $listener:Function, $useCapture:Boolean = false, $remove:Boolean = true):void</div>
 <div class="summaryTableDescription">
    Removes an event listener via the Janitor object.</div>
+</td><td class="summaryTableOwnerCol">Janitor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeTimer()">removeTimer</a>($timer:Timer):void</div>
+<div class="summaryTableDescription">
+   Removes a Timer from it's Dictionary but not from existance.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
 </tr>
 <tr class="">
@@ -208,7 +288,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#cleanUpConnection()">cleanUpConnection</a>(connection:Object):void</div>
+<a class="signatureLink" href="#cleanUpConnection()">cleanUpConnection</a>($connection:Object):void</div>
 <div class="summaryTableDescription">
    Cleans up a connection using a series of try catch statements.</div>
 </td><td class="summaryTableOwnerCol">Janitor</td>
@@ -220,6 +300,61 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 showHideInherited();
 --></script>
 <div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="connections"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">connections</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>connections:Dictionary</code>&nbsp;&nbsp;[read-only]<p>
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get connections():Dictionary</code>
+<br>
+</div>
+<a name="disposables"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">disposables</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>disposables:Dictionary</code>&nbsp;&nbsp;[read-only]<p>
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get disposables():Dictionary</code>
+<br>
+</div>
+<a name="listeners"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">listeners</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>listeners:Dictionary</code>&nbsp;&nbsp;[read-only]<p>
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get listeners():Dictionary</code>
+<br>
+</div>
+<a name="timers"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">timers</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>timers:Dictionary</code>&nbsp;&nbsp;[read-only]<p>
+   return Dictionary for storing timers.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get timers():Dictionary</code>
+<br>
+</div>
 <a name="constructorDetail"></a>
 <div class="detailSectionHeader">Constructor detail</div>
 <a name="Janitor()"></a>
@@ -229,31 +364,49 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function Janitor(target:Object)</code><p>
+<code>public function Janitor($target:Object)</code><p>
    Create an instance of a Janitor and add it to the JanitorManager for cleanup.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">target</span>:Object</code> &mdash; who needs cleaning.
+<td width="20px"></td><td><code><span class="label">$target</span>:Object</code> &mdash; who needs cleaning.
    </td>
 </tr>
 </table>
 </div>
 <a name="methodDetail"></a>
 <div class="detailSectionHeader">Method detail</div>
-<a name="addDisposable()"></a>
+<a name="addConnection()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">addDisposable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+<td class="detailHeaderName">addConnection</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>public function addDisposable(disposable:<a href="../IDisposable.html">IDisposable</a>):void</code><p>
+<code>public function addConnection($connection:Object):void</code><p>
+   Add a connection to it's Dictionary.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$connection</span>:Object</code> &mdash; the connection object to add.
+   </td>
+</tr>
+</table>
+</div>
+<a name="addDisposable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addDisposable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addDisposable($disposable:<a href="../IDisposable.html">IDisposable</a>):void</code><p>
    Adds an IDisposable to it's Dictionary.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">disposable</span>:<a href="../IDisposable.html">IDisposable</a></code></td>
+<td width="20px"></td><td><code><span class="label">$disposable</span>:<a href="../IDisposable.html">IDisposable</a></code> &mdash; an IDisposable object to add.
+   </td>
 </tr>
 </table>
 </div>
@@ -281,48 +434,65 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function addEventListener(dispatcher:IEventDispatcher, type:String, listener:Function, useCapture:Boolean = false, add:Boolean = true, priority:int = 0):void</code><p>
+<code>public function addEventListener($dispatcher:IEventDispatcher, $type:String, $listener:Function, $useCapture:Boolean = false, $add:Boolean = true, $priority:int = 0):void</code><p>
    Adds an event listener for forwarding from the Janitor object.
-   skinner note: useWeakReference is always true, this is a bit convoluted, but we don't want to maintain strong references back to event dispatchers.
+   </p><p>Skinner note: useWeakReference is always true, this is a bit convoluted, but we don't want to maintain strong references back to event dispatchers.</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$dispatcher</span>:IEventDispatcher</code> &mdash; The object sending out the event.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$type</span>:String</code> &mdash;   The Event.type
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$listener</span>:Function</code> &mdash;  The callback function
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines whether the listener works in the capture phase or the target and bubbling phases.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$add</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   Whether to actually listen or not.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$priority</span>:int</code> (default = <code>0</code>)<code></code> &mdash;  The level of priority, the higher the number the greater the priority.
+   </td>
+</tr>
+</table>
+</div>
+<a name="addTimer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addTimer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addTimer($timer:Timer):void</code><p>
+   Adds a Timer to it's Dictionary.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">dispatcher</span>:IEventDispatcher</code> &mdash; The object sending out the event.
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;   The Event.type
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">listener</span>:Function</code> &mdash;  The callback function
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines whether the listener works in the capture phase or the target and bubbling phases.
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">add</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   Whether to actually listen or not.
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">priority</span>:int</code> (default = <code>0</code>)<code></code> &mdash;  The level of priority, the higher the number the greater the priority.
+<td width="20px"></td><td><code><span class="label">$timer</span>:Timer</code> &mdash; the timer object to add.
    </td>
 </tr>
 </table>
@@ -335,7 +505,8 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function cleanUp():void</code><p>
-   Cleans those dirty little event listeners, children, disposables, the target and itself out of the manager.
+   
+   Prepares an IJanitor object for garbage collection.
    </p></div>
 <a name="cleanUpChildren()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
@@ -354,17 +525,27 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>protected function cleanUpConnection(connection:Object):void</code><p>
+<code>protected function cleanUpConnection($connection:Object):void</code><p>
    Cleans up a connection using a series of try catch statements.
-   skinner note: because we're unsure what type of connection we have, and what it's status is, we have to use try catch.
-   </p><span class="label">Parameters</span>
+   </p><p>Skinner note: because we're unsure what type of connection we have, and what it's status is, we have to use try catch.</p>
+   <span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">connection</span>:Object</code> &mdash; an open connection.
+<td width="20px"></td><td><code><span class="label">$connection</span>:Object</code> &mdash; an open connection.
    </td>
 </tr>
 </table>
 </div>
+<a name="cleanUpConnections()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cleanUpConnections</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function cleanUpConnections():void</code><p>
+   Cleans up all connections in it's Dictionary.
+   </p></div>
 <a name="cleanUpDisposable()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -372,12 +553,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function cleanUpDisposable(disposable:<a href="../IDisposable.html">IDisposable</a>):void</code><p>
+<code>public function cleanUpDisposable($disposable:<a href="../IDisposable.html">IDisposable</a>):void</code><p>
    Call the dispose method on the IDisposable and remove it from the Dictionary.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">disposable</span>:<a href="../IDisposable.html">IDisposable</a></code></td>
+<td width="20px"></td><td><code><span class="label">$disposable</span>:<a href="../IDisposable.html">IDisposable</a></code> &mdash; an IDisposable object to cleanup.
+   </td>
 </tr>
 </table>
 </div>
@@ -411,6 +593,33 @@ showHideInherited();
 <code>public function cleanUpTarget():void</code><p>
    If the target is a movie clip, halt the timeline.
    </p></div>
+<a name="cleanUpTimer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cleanUpTimer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function cleanUpTimer($timer:Timer):void</code><p>
+   Removes a Timer from it's Dictionary and stop it.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$timer</span>:Timer</code> &mdash; the timer object to remove and stop.
+   </td>
+</tr>
+</table>
+</div>
+<a name="cleanUpTimers()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cleanUpTimers</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function cleanUpTimers():void</code><p>
+   Cleans up all timers in it's Dictionary by calling stop() on them.
+   </p></div>
 <a name="recurseCleanChildren()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -418,12 +627,29 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function recurseCleanChildren(dispObj:*):void</code><p>
+<code>public function recurseCleanChildren($dispObj:*):void</code><p>
    Added recursive display object removal, just to be sure everything's removed from the end leaf on up the display list.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">dispObj</span>:*</code> &mdash; the display object getting swept in the loop.
+<td width="20px"></td><td><code><span class="label">$dispObj</span>:*</code> &mdash; the display object getting swept in the loop.
+   </td>
+</tr>
+</table>
+</div>
+<a name="removeConnection()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeConnection</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeConnection($connection:Object):void</code><p>
+   Remove a connection from it's Dictionary.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$connection</span>:Object</code> &mdash; the connection object to remove.
    </td>
 </tr>
 </table>
@@ -435,12 +661,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function removeDisposable(disposable:<a href="../IDisposable.html">IDisposable</a>):void</code><p>
+<code>public function removeDisposable($disposable:<a href="../IDisposable.html">IDisposable</a>):void</code><p>
    Removes an IDisposable from it's Dictionary and does not call it's dispose function.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">disposable</span>:<a href="../IDisposable.html">IDisposable</a></code></td>
+<td width="20px"></td><td><code><span class="label">$disposable</span>:<a href="../IDisposable.html">IDisposable</a></code> &mdash; an IDisposable object to remove.
+   </td>
 </tr>
 </table>
 </div>
@@ -451,40 +678,57 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function removeEventListener(dispatcher:IEventDispatcher, type:String, listener:Function, useCapture:Boolean = false, remove:Boolean = true):void</code><p>
+<code>public function removeEventListener($dispatcher:IEventDispatcher, $type:String, $listener:Function, $useCapture:Boolean = false, $remove:Boolean = true):void</code><p>
    Removes an event listener via the Janitor object.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">dispatcher</span>:IEventDispatcher</code> &mdash; The object sending out the event.
+<td width="20px"></td><td><code><span class="label">$dispatcher</span>:IEventDispatcher</code> &mdash; The object sending out the event.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;   The Event.type
+<td width="20px"></td><td><code><span class="label">$type</span>:String</code> &mdash;   The Event.type
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">listener</span>:Function</code> &mdash;  The callback function
+<td width="20px"></td><td><code><span class="label">$listener</span>:Function</code> &mdash;  The callback function
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines whether the listener works in the capture phase or the target and bubbling phases.
+<td width="20px"></td><td><code><span class="label">$useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines whether the listener works in the capture phase or the target and bubbling phases.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">remove</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;  Whether to remove it from the dispatcher or just the janitor.
+<td width="20px"></td><td><code><span class="label">$remove</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;  Whether to remove it from the dispatcher or just the janitor.
+   </td>
+</tr>
+</table>
+</div>
+<a name="removeTimer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeTimer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeTimer($timer:Timer):void</code><p>
+   Removes a Timer from it's Dictionary but not from existance.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$timer</span>:Timer</code> &mdash; the timer object to remove.
    </td>
 </tr>
 </table>
@@ -511,8 +755,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/22/2009 02:31 AM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/25/2009 05:45 PM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/22/2009 02:31 AM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/25/2009 05:45 PM-->

@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print">
-<meta content="JanitorSoundChannelTests,tests.factorylabs.orange.core.gc.JanitorSoundChannelTests,addSoundChannel,cleanUpSoundChannels,removeSoundChannel,runAfterEachTest,runAfterEntireSuite,runBeforeEachTest,runBeforeEntireSuite" name="keywords">
+<meta content="JanitorSoundChannelTests,tests.factorylabs.orange.core.gc.JanitorSoundChannelTests,addSoundChannel,cleanUpSoundChannels,removeSoundChannel,runAfterClass,runAfterEachTest,runBeforeClass,runBeforeEachTest" name="keywords">
 <title>tests.factorylabs.orange.core.gc.JanitorSoundChannelTests</title>
 </head>
 <body>
@@ -39,12 +39,25 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 </table>
 <p></p>
-  Summary
-  
-  <p>Description</p>
-  
-  <p>Copyright 2009 by Factory Design Labs, All Rights Reserved.</p>
-  <a href="http://www.factorylabs.com/">www.factorylabs.com</a>
+  Generate the test cases for the JanitorSoundChannel class.
+    <hr />
+  <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+    Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this software and associated documentation files (the
+  "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to
+  the following conditions:<br /><br />
+    The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.<br /><br />
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <p></p>
 <br>
 <hr>
@@ -80,6 +93,13 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
+<a class="signatureLink" href="#runAfterClass()">runAfterClass</a>():void</div>
+<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">JanitorSoundChannelTests</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
 <a class="signatureLink" href="#runAfterEachTest()">runAfterEachTest</a>():void</div>
 <div class="summaryTableDescription"></div>
 </td><td class="summaryTableOwnerCol">JanitorSoundChannelTests</td>
@@ -87,7 +107,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#runAfterEntireSuite()">runAfterEntireSuite</a>():void</div>
+<a class="signatureLink" href="#runBeforeClass()">runBeforeClass</a>():void</div>
 <div class="summaryTableDescription">[static]</div>
 </td><td class="summaryTableOwnerCol">JanitorSoundChannelTests</td>
 </tr>
@@ -96,13 +116,6 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#runBeforeEachTest()">runBeforeEachTest</a>():void</div>
 <div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">JanitorSoundChannelTests</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#runBeforeEntireSuite()">runBeforeEntireSuite</a>():void</div>
-<div class="summaryTableDescription">[static]</div>
 </td><td class="summaryTableOwnerCol">JanitorSoundChannelTests</td>
 </tr>
 </table>
@@ -141,6 +154,15 @@ showHideInherited();
 <div class="detailBody">
 <code>public function removeSoundChannel():void</code>
 </div>
+<a name="runAfterClass()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">runAfterClass</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function runAfterClass():void</code>
+</div>
 <a name="runAfterEachTest()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -150,14 +172,14 @@ showHideInherited();
 <div class="detailBody">
 <code>public function runAfterEachTest():void</code>
 </div>
-<a name="runAfterEntireSuite()"></a>
+<a name="runBeforeClass()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">runAfterEntireSuite</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+<td class="detailHeaderName">runBeforeClass</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>public static function runAfterEntireSuite():void</code>
+<code>public static function runBeforeClass():void</code>
 </div>
 <a name="runBeforeEachTest()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
@@ -168,22 +190,13 @@ showHideInherited();
 <div class="detailBody">
 <code>public function runBeforeEachTest():void</code>
 </div>
-<a name="runBeforeEntireSuite()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">runBeforeEntireSuite</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function runBeforeEntireSuite():void</code>
-</div>
 <br>
 <br>
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/22/2009 02:31 AM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/25/2009 05:45 PM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/22/2009 02:31 AM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/25/2009 05:45 PM-->

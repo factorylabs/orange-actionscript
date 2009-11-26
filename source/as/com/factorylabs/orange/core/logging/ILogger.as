@@ -2,10 +2,10 @@
 package com.factorylabs.orange.core.logging 
 {
 	/**
-	 * Basic necessities for capturing incoming messages and objects categorized by levels and a logger's indentifier. 
- 	 * 
- 	 * <p>Copyright 2004-2010 by Factory Design Labs</p>
- 	 * <a href="http://www.factorylabs.com/">www.factorylabs.com</a>
+	 * Basic necessities for capturing incoming messages and objects categorized by levels and a logger's indentifier.
+	 * 
+	 * <hr />
+	 * <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p> 
      * 
      * Permission is hereby granted, free of charge, to any person obtaining
      * a copy of this software and associated documentation files (the
@@ -13,10 +13,10 @@ package com.factorylabs.orange.core.logging
      * without limitation the rights to use, copy, modify, merge, publish,
      * distribute, sublicense, and/or sell copies of the Software, and to
      * permit persons to whom the Software is furnished to do so, subject to
-     * the following conditions:
+     * the following conditions:<br /><br />
      * 
      * The above copyright notice and this permission notice shall be
-     * included in all copies or substantial portions of the Software.
+     * included in all copies or substantial portions of the Software.<br /><br />
      * 
      * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
      * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF

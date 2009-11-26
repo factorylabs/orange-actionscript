@@ -42,34 +42,28 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 </table>
 <p></p>
-   
-   Maps provide access to stored values through a specific key.
+  Maps provide access to stored values through a specific key.
   
   <p>Keys are used as unique identifers to store values. Only one key may exist in each map.</p>
-   
-   <p>Copyright 2004-2009 by Factory Design Labs</p>
-     
-     Permission is hereby granted, free of charge, to any person obtaining
-     a copy of this software and associated documentation files (the
-     "Software"), to deal in the Software without restriction, including
-     without limitation the rights to use, copy, modify, merge, publish,
-     distribute, sublicense, and/or sell copies of the Software, and to
-     permit persons to whom the Software is furnished to do so, subject to
-     the following conditions:
-     
-     The above copyright notice and this permission notice shall be
-     included in all copies or substantial portions of the Software.
-     
-     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-     EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-     NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-     LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-     OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-     WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-   <a href="http://www.factorylabs.com/">www.factorylabs.com</a>
-   
-   <p></p>
+    <hr />
+  <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+    Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this software and associated documentation files (the
+  "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to
+  the following conditions:<br /><br />
+    The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.<br /><br />
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    <p></p>
 <br>
 <hr>
 </div>
@@ -116,7 +110,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#Map()">Map</a>(weakKeys:Boolean = false)</div>
+<a class="signatureLink" href="#Map()">Map</a>($weakKeys:Boolean = false)</div>
 <div class="summaryTableDescription">
    Constructor for the Map.</div>
 </td><td class="summaryTableOwnerCol">Map</td>
@@ -124,7 +118,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#add()">add</a>(key:*, value:Boolean, force:* = false):void</div>
+<a class="signatureLink" href="#add()">add</a>($key:*, $value:Boolean, $force:* = false):void</div>
 <div class="summaryTableDescription">
    
    Add an object referenced by it's key.</div>
@@ -144,7 +138,6 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#clone()">clone</a>():*</div>
 <div class="summaryTableDescription">
-   returns a copy of this Map
    </div>
 </td><td class="summaryTableOwnerCol">Map</td>
 </tr>
@@ -153,14 +146,14 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#dispose()">dispose</a>():void</div>
 <div class="summaryTableDescription">
-   delete all keys and values in current map
-   </div>
+   
+   Prepares this object for garbage collection.</div>
 </td><td class="summaryTableOwnerCol">Map</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#each()">each</a>(func:Function):void</div>
+<a class="signatureLink" href="#each()">each</a>($func:Function):void</div>
 <div class="summaryTableDescription">
    
    Execute a function on each key and value in the dictionary
@@ -170,7 +163,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#extend()">extend</a>(map:*):<a href="../collections/IMap.html">IMap</a>
+<a class="signatureLink" href="#extend()">extend</a>($map:*):<a href="../collections/IMap.html">IMap</a>
 </div>
 <div class="summaryTableDescription">
    
@@ -180,7 +173,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#find()">find</a>(func:Function):*</div>
+<a class="signatureLink" href="#find()">find</a>($func:Function):*</div>
 <div class="summaryTableDescription">
    
    Find a value in the dictionary based on custom conditional logic.</div>
@@ -189,7 +182,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#get()">get</a>(key:*):*</div>
+<a class="signatureLink" href="#get()">get</a>($key:*):*</div>
 <div class="summaryTableDescription">
    </div>
 </td><td class="summaryTableOwnerCol">Map</td>
@@ -197,16 +190,16 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#hasKey()">hasKey</a>(key:*):Boolean</div>
+<a class="signatureLink" href="#hasKey()">hasKey</a>($key:*):Boolean</div>
 <div class="summaryTableDescription">
    
-   Merge the current map with another overwriting any old values.</div>
+   Merge the current map with another overwriting any old values if they exist.</div>
 </td><td class="summaryTableOwnerCol">Map</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#hasValue()">hasValue</a>(value:*):Boolean</div>
+<a class="signatureLink" href="#hasValue()">hasValue</a>($value:*):Boolean</div>
 <div class="summaryTableDescription">
    
    Test for a value in the map.</div>
@@ -215,7 +208,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#remove()">remove</a>(key:*):*</div>
+<a class="signatureLink" href="#remove()">remove</a>($key:*):*</div>
 <div class="summaryTableDescription">
    
    Remove an item and it's key out of the map.</div>
@@ -306,12 +299,12 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function Map(weakKeys:Boolean = false)</code><p>
+<code>public function Map($weakKeys:Boolean = false)</code><p>
    Constructor for the Map.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">weakKeys</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Boolean whether or not to use a weak reference on the keys.
+<td width="20px"></td><td><code><span class="label">$weakKeys</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Boolean whether or not to use a weak reference on the keys.
    </td>
 </tr>
 </table>
@@ -325,27 +318,28 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function add(key:*, value:Boolean, force:* = false):void</code><p>
+<code>public function add($key:*, $value:Boolean, $force:* = false):void</code><p>
    
    Add an object referenced by it's key.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">key</span>:*</code> &mdash; reference or value of datatype held as key in map
+<td width="20px"></td><td><code><span class="label">$key</span>:*</code> &mdash;  Reference or value of datatype held as key in map
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; the value to be retrieved by it's key.
+<td width="20px"></td><td><code><span class="label">$value</span>:Boolean</code> &mdash; The value to be retrieved by it's key.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">force</span>:*</code> (default = <code>false</code>)<code></code></td>
+<td width="20px"></td><td><code><span class="label">$force</span>:*</code> (default = <code>false</code>)<code></code> &mdash; Override for creating duplicate keys.
+   </td>
 </tr>
 </table>
 </div>
@@ -368,12 +362,12 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function clone():*</code><p>
-   returns a copy of this Map
    </p><p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20"></td><td><code>*</code></td>
+<td width="20"></td><td><code>*</code> &mdash; a copy of this Map.
+   </td>
 </tr>
 </table>
 </div>
@@ -385,8 +379,12 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function dispose():void</code><p>
-   delete all keys and values in current map
-   </p></div>
+   
+   Prepares this object for garbage collection.
+   
+   </p><p>This can include removing listeners, references to other objects,
+   invoking any other process to facilitate in garbage collection, etc.</p>
+   </div>
 <a name="each()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -394,13 +392,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function each(func:Function):void</code><p>
+<code>public function each($func:Function):void</code><p>
    
    Execute a function on each key and value in the dictionary
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">func</span>:Function</code> &mdash; function that returns void based on key: value:params.
+<td width="20px"></td><td><code><span class="label">$func</span>:Function</code> &mdash; Function that returns void based on key: value:params.
    </td>
 </tr>
 </table>
@@ -412,13 +410,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function extend(map:*):<a href="../collections/IMap.html">IMap</a></code><p>
+<code>public function extend($map:*):<a href="../collections/IMap.html">IMap</a></code><p>
    
    Extend the current map by adding another to it.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">map</span>:*</code> &mdash; Dictionary or Map to be added to the map.
+<td width="20px"></td><td><code><span class="label">$map</span>:*</code> &mdash; Dictionary or Map to be added to the map.
    </td>
 </tr>
 </table>
@@ -437,13 +435,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function find(func:Function):*</code><p>
+<code>public function find($func:Function):*</code><p>
    
    Find a value in the dictionary based on custom conditional logic.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">func</span>:Function</code> &mdash; function that return boolean based on key: value:params.
+<td width="20px"></td><td><code><span class="label">$func</span>:Function</code> &mdash; Function that return boolean based on key: value:params.
    </td>
 </tr>
 </table>
@@ -463,11 +461,11 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function get(key:*):*</code><p>
+<code>public function get($key:*):*</code><p>
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">key</span>:*</code></td>
+<td width="20px"></td><td><code><span class="label">$key</span>:*</code></td>
 </tr>
 </table>
 <p></p>
@@ -485,14 +483,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function hasKey(key:*):Boolean</code><p>
+<code>public function hasKey($key:*):Boolean</code><p>
    
-   Merge the current map with another overwriting any old values.
-   if they exist.
+   Merge the current map with another overwriting any old values if they exist.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">key</span>:*</code> &mdash; Dictionary or Map to be added to the map.
+<td width="20px"></td><td><code><span class="label">$key</span>:*</code> &mdash; Dictionary or Map to be added to the map.
    </td>
 </tr>
 </table>
@@ -511,13 +508,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function hasValue(value:*):Boolean</code><p>
+<code>public function hasValue($value:*):Boolean</code><p>
    
    Test for a value in the map.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">value</span>:*</code> &mdash; reference or value of datatype held in map
+<td width="20px"></td><td><code><span class="label">$value</span>:*</code> &mdash; reference or value of datatype held in map.
    </td>
 </tr>
 </table>
@@ -537,13 +534,13 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function remove(key:*):*</code><p>
+<code>public function remove($key:*):*</code><p>
    
    Remove an item and it's key out of the map.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">key</span>:*</code> &mdash; reference or value of datatype held as key in map
+<td width="20px"></td><td><code><span class="label">$key</span>:*</code> &mdash; reference or value of datatype held as key in map.
    </td>
 </tr>
 </table>
@@ -577,8 +574,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/22/2009 02:31 AM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/25/2009 05:45 PM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/22/2009 02:31 AM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/25/2009 05:45 PM-->

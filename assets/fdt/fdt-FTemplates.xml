@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="AreaController subclass to create a custom area." enabled="true" name="FAreaController Subclass">&#13;
+package ${enclosing_package}&#13;
+{&#13;
+	import flash.display.DisplayObjectContainer;&#13;
+	&#13;
+	import com.factorylabs.orange.framework.controller.AreaControllerBase;&#13;
+	import com.factorylabs.orange.framework.controller.IAreaController;&#13;
+	import com.factorylabs.orange.framework.navigation.Node;&#13;
+	import com.factorylabs.orange.framework.view.ViewBase;&#13;
+	&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type} &#13;
+		extends AreaControllerBase&#13;
+			implements IAreaController&#13;
+	{	&#13;
+		/**&#13;
+		 * @param $$container 	Container for this area.&#13;
+		 * @param $$node			Navigation node associated with this area. &#13;
+		 */&#13;
+		public function ${enclosing_type}( $$container :DisplayObjectContainer, $$node :Node )&#13;
+		{&#13;
+			super( $$container, $$node );&#13;
+			${cursor}&#13;
+		}&#13;
+		&#13;
+		override public function toString() :String &#13;
+		{&#13;
+			return '${enclosing_package_and_type}';&#13;
+		}&#13;
+		&#13;
+		protected override function createViews() :void&#13;
+		{&#13;
+			var viewBase :ViewBase = new ${ViewType}( _holder, {}, this, _data );&#13;
+			addView( viewBase );&#13;
+		}&#13;
+	}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a subclass of ButtonBase with basic button overrides to customize functionality." enabled="true" name="FButton Subclass">&#13;
+package ${enclosing_package}&#13;
+{&#13;
+	import flash.display.DisplayObjectContainer;&#13;
+	&#13;
+	import com.factorylabs.orange.core.display.buttons.ButtonState;&#13;
+	import com.factorylabs.orange.core.display.buttons.FButton;&#13;
+	&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type} &#13;
+		extends FButton &#13;
+	{&#13;
+		${cursor}&#13;
+	&#13;
+		/**&#13;
+		 * @param $$container 	Container for the button.&#13;
+		 * @param $$init			Initialization objects. &#13;
+		 */&#13;
+		public function ${enclosing_type}( $$container :DisplayObjectContainer = null, $$init :Object = null )&#13;
+		{&#13;
+			super( $$container, $$init );&#13;
+		}&#13;
+		&#13;
+		override public function toString() :String &#13;
+		{&#13;
+			return '${enclosing_package_and_type}';&#13;
+		}&#13;
+&#13;
+		override protected function setSelected() :void&#13;
+		{&#13;
+			&#13;
+		}&#13;
+		&#13;
+		override protected function setUnselected() :void&#13;
+		{&#13;
+			&#13;
+		}&#13;
+		&#13;
+		override protected function setDisabled() :void&#13;
+		{&#13;
+			&#13;
+		}&#13;
+		&#13;
+		override protected function setEnabled() :void&#13;
+		{&#13;
+			rollOut();&#13;
+		}&#13;
+		&#13;
+		override protected function rollOver() :void&#13;
+		{&#13;
+			if ( this._state == ButtonState.DISABLED || this._state == ButtonState.SELECTED ) &#13;
+				return;&#13;
+		}&#13;
+		&#13;
+		override protected function rollOut() :void&#13;
+		{&#13;
+			if ( this._state == ButtonState.DISABLED || this._state == ButtonState.SELECTED ) &#13;
+				return;&#13;
+		}&#13;
+	}&#13;
+}&#13;
+</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a basic AS3 class" enabled="true" name="FClass">&#13;
+package ${enclosing_package}&#13;
+{&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type} &#13;
+	{&#13;
+	&#13;
+		public function ${enclosing_type}()&#13;
+		{&#13;
+			${cursor}&#13;
+		}&#13;
+		&#13;
+		public function toString() :String &#13;
+		{&#13;
+			return '${enclosing_package_and_type}';&#13;
+		}&#13;
+	}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a javadoc comment block for a class." enabled="true" name="FClass Comment Block">/**&#13;
+ * ${Summary}.&#13;
+ * &#13;
+ * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ *&#13;
+ * &lt;hr /&gt;&#13;
+ * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ *&#13;
+ * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ * a copy of this software and associated documentation files (the&#13;
+ * "Software"), to deal in the Software without restriction, including&#13;
+ * without limitation the rights to use, copy, modify, merge, publish,&#13;
+ * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+ * permit persons to whom the Software is furnished to do so, subject to&#13;
+ * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+ *&#13;
+ * The above copyright notice and this permission notice shall be&#13;
+ * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+ *&#13;
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ *&#13;
+ * @author		${user}&#13;
+ * @version		1.0.0 :: ${date}&#13;
+ */</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a private static constant" enabled="true" name="FCPrivate">private static const ${VARIABLE}	:${Type} = ${cursor};</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a static protected constant declaration." enabled="true" name="FCProtected">protected static const ${VARIABLE}	:${Type} = ${cursor};</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a static constant public declaration." enabled="true" name="FCPublic">public static const ${VARIABLE}	:${Type} = ${cursor};</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a comment line which act as a divider for sections of code" enabled="true" name="FDivider">/*
+ * ${SECTION}
+**************************************************************************************************** */
+
+		${cursor}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a subclass of Event" enabled="true" name="FEvent">&#13;
+package ${enclosing_package}&#13;
+{	&#13;
+	import flash.events.Event;&#13;
+	&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type}&#13;
+		extends Event&#13;
+	{&#13;
+		public static const ${EVENT_TYPE}	:String = '${enclosing_type}.${cursor}';&#13;
+	&#13;
+		/**&#13;
+		 * Creates a ${enclosing_type} object to pass as a parameter to event listeners.&#13;
+		 * @param	$$type		The type of the event, accessible as Event.type.&#13;
+		 * @param	$$bubbles	Determines whether the Event object participates in the bubbling stage of the event flow. The default value is false.&#13;
+		 * @param	$$cancelable	Determines whether the Event object can be canceled. The default values is false.&#13;
+		 */&#13;
+		public function  ${enclosing_type}( $$type :String, $$bubbles :Boolean = false, $$cancelable :Boolean = false )&#13;
+		{&#13;
+			super( $$type, $$bubbles, $$cancelable );&#13;
+		}&#13;
+		&#13;
+		override public function toString() :String &#13;
+		{&#13;
+			return '${enclosing_package_and_type}';&#13;
+		}&#13;
+&#13;
+		/**&#13;
+		 * Duplicates an instance of an ${enclosing_type}.&#13;
+		 * &lt;p&gt;Returns a new ${enclosing_type} that is a copy of the original instance of the ${enclosing_type} object.&lt;/p&gt;&#13;
+		 * @return	A new ${enclosing_type} object that is identical to the original.&#13;
+		 */&#13;
+		override public function clone() :Event&#13;
+		{&#13;
+			return new ${enclosing_type}( this.type, this.bubbles, this.cancelable );&#13;
+		}&#13;
+	}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates a getter and a setter" enabled="true" name="FGet/Set">public function get ${variable}() :${Type} { return _${variable}; }
+public function set ${variable}( $$${variable} :${Type} ) :void
+{
+	_${variable} = $$${variable};
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a public getter method." enabled="true" name="FGetter">public function get ${variable}() :${Type} { return _${variable}; }</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Sets up a basic event handler function" enabled="true" name="FHandler">private function ${onEvent}( $$e :${Event} ) :void&#13;
+{&#13;
+	${cursor}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a set of methods for adding, removing, and handling basic loader events." enabled="true" name="FLoader Methods">/**&#13;
+ * Adds listeners to the specified loader object.&#13;
+ * @param $$loader	Loader to add listeners to.&#13;
+ */&#13;
+private function addLoadListeners( $$loader :Loader ) :void&#13;
+{&#13;
+	$$loader.contentLoaderInfo.addEventListener( Event.UNLOAD, onUnload, false, 0, true );&#13;
+	$$loader.contentLoaderInfo.addEventListener( Event.INIT, onLoadInit, false, 0, true );&#13;
+	$$loader.contentLoaderInfo.addEventListener( Event.COMPLETE, onLoadComplete, false, 0, true );&#13;
+	$$loader.contentLoaderInfo.addEventListener( IOErrorEvent.IO_ERROR, onError, false, 0, true );&#13;
+	$$loader.contentLoaderInfo.addEventListener( SecurityErrorEvent.SECURITY_ERROR, onError, false, 0, true );&#13;
+}&#13;
+&#13;
+/**&#13;
+ * Removes loader listeners from the specified loader object. &#13;
+ * @param $$loader Loader to remove listeners from. &#13;
+ */&#13;
+private function removeLoadListeners( $$loader :Loader ) :void&#13;
+{&#13;
+	$$loader.contentLoaderInfo.removeEventListener( Event.UNLOAD, onUnload );&#13;
+	$$loader.contentLoaderInfo.removeEventListener( Event.INIT, onLoadInit );&#13;
+	$$loader.contentLoaderInfo.removeEventListener( Event.COMPLETE, onLoadComplete );&#13;
+	$$loader.contentLoaderInfo.removeEventListener( IOErrorEvent.IO_ERROR, onError );&#13;
+	$$loader.contentLoaderInfo.removeEventListener( SecurityErrorEvent.SECURITY_ERROR, onError );&#13;
+}&#13;
+&#13;
+/**&#13;
+ * Handles a failed load when the load operation was interrupted before finished.&#13;
+ * &lt;p&gt;Dispatched by a LoaderInfo object whenever a loaded object is removed by using the unload()&#13;
+ * method of the Loader object, or when a second load is performed by the same Loader object&#13;
+ * and the original content is removed prior to the load beginning.&lt;/p&gt;&#13;
+ * @param	$$e		Event object from dispatching Loader. &#13;
+ */&#13;
+private function onUnload( $$e :Event ) :void&#13;
+{&#13;
+	&#13;
+}&#13;
+&#13;
+/**&#13;
+ * Handler for init event when the properties and methods of a loaded SWF file are accessible.&#13;
+ * &lt;p&gt;This event is always fired prior to the complete event.&lt;/p&gt;&#13;
+ * @param	$$e		Event object from dispatching Loader. &#13;
+ */&#13;
+private function onLoadInit( $$e :Event ) :void&#13;
+{&#13;
+	&#13;
+}&#13;
+&#13;
+/**&#13;
+ * Dispatched when data has loaded successfully. Always occurs after the init event. &#13;
+ * @param	$$e		Event object from dispatching Loader. &#13;
+ */&#13;
+private function onLoadComplete( $$e :Event ) :void&#13;
+{&#13;
+	&#13;
+}&#13;
+&#13;
+/**&#13;
+ * Dispatched when an input or output error occurs that causes a load operation to fail&#13;
+ * @param	$$e		Event object from dispatching Loader. &#13;
+ */&#13;
+private function onError( $$e :ErrorEvent ) :void&#13;
+{&#13;
+	trace( '[${enclosing_type}].${enclosing_method}() =&gt; ' + $$e.text );&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a Log trace using the CORE level." enabled="true" name="FLogCore">_logger.core( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Traces a message to the Log using the debug level" enabled="true" name="FLogDebug">_logger.debug( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Traces a message to the log using the error level" enabled="true" name="FLogError">_logger.error( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Traces a message to the log using fatal level" enabled="true" name="FLogFatal">_logger.fatal( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Traces a message to the Log using the info level" enabled="true" name="FLogInfo">_logger.info( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Traces a message to the Log using log level" enabled="true" name="FLogLog">_logger.log( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Quick trace line with the source class name filled in. Helps identify where all traces are coming from." enabled="true" name="FLogTrace">_logger.trace( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Traces a message to the Log using warn level" enabled="true" name="FLogWarn">_logger.warn( '[${enclosing_type}].${enclosing_method}() =&gt; ', ${cursor} );</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a class which implements IMapper" enabled="true" name="FMapper">&#13;
+package ${enclosing_package}&#13;
+{&#13;
+	import com.factorylabs.orange.framework.services.IMapper;&#13;
+	&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type}&#13;
+		implements IMapper&#13;
+		{&#13;
+		&#13;
+		private var _data :${CustomDTO};&#13;
+		&#13;
+		/**&#13;
+		 * Constructor information.&#13;
+		 */  &#13;
+        public function ${enclosing_type}()&#13;
+		{&#13;
+			&#13;
+		}&#13;
+		&#13;
+		public function toString() :String&#13;
+		{&#13;
+			return '[${enclosing_package_and_type}]';&#13;
+		}&#13;
+		&#13;
+		public function setData( $$data :XMLList ) :void&#13;
+		{&#13;
+			${cursor}&#13;
+		}&#13;
+		&#13;
+		public function getData() :*&#13;
+		{&#13;
+			return _data;&#13;
+		}&#13;
+		&#13;
+		public function dispose() :void&#13;
+		{&#13;
+			_data = null;&#13;
+		}&#13;
+	}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a private function" enabled="true" name="FPrivate">private function ${foo}(${}) :${void}&#13;
+{&#13;
+	${cursor}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a Getter/Setter pair as a public property" enabled="true" name="FProperty">public function get ${variable}() :${Type} { return _${variable}; }&#13;
+public function set ${variable}( $$${variable} :${Type} ) :void&#13;
+{&#13;
+	_${variable} = $$${variable};&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a protected function" enabled="true" name="FProtected">protected function ${foo}(${}) :${void}&#13;
+{&#13;
+	${cursor}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a public function" enabled="true" name="FPublic">public function ${foo}(${}) :${void}&#13;
+{&#13;
+	${cursor}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a setter function." enabled="true" name="FSetter">public function set ${variable}( $$${variable} :${Type} ) :void&#13;
+{&#13;
+	_${variable} = $$${variable};&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates complete Singleton" enabled="true" name="FSingleton">
+package ${enclosing_package}
+{	
+	/**
+ 	 * ${Summary}.
+ 	 * 
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;
+ 	 *
+ 	 * &lt;hr /&gt;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;
+ 	 *
+ 	 * Permission is hereby granted, free of charge, to any person obtaining
+ 	 * a copy of this software and associated documentation files (the
+	 * "Software"), to deal in the Software without restriction, including
+	 * without limitation the rights to use, copy, modify, merge, publish,
+	 * distribute, sublicense, and/or sell copies of the Software, and to
+	 * permit persons to whom the Software is furnished to do so, subject to
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * The above copyright notice and this permission notice shall be
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 	 *
+	 * @author		${user}
+	 * @version		1.0.0 :: ${date}
+	 */
+	public class ${enclosing_type} 
+	{
+		private static var _instance		:${enclosing_type};
+	
+		/**
+		 * @param enforcer	Internal type only available to this class. 
+		 */
+		public function ${enclosing_type}( $$enforcer :SingletonEnforcer )
+		{
+			$$enforcer = null;
+			${cursor}
+		}
+
+		/**
+		 * @return	The single instance of ${enclosing_type}
+		 */
+		public static function getInstance() :${enclosing_type}
+		{
+			if ( _instance == null ) _instance = new ${enclosing_type}( new SingletonEnforcer() );
+			return _instance;
+		}
+				
+		public function toString() :String 
+		{
+			return '${enclosing_package_and_type}';
+		}
+	}
+}
+internal class SingletonEnforcer {}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a class that subclasses FSprite" enabled="true" name="FSprite Subclass ">&#13;
+package ${enclosing_package}&#13;
+{	&#13;
+	import flash.display.DisplayObjectContainer;	&#13;
+	import com.factorylabs.orange.core.display.FSprite;&#13;
+	&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type} &#13;
+		extends FSprite&#13;
+	{	&#13;
+		/**&#13;
+		 * @param $$container 	Container for the button.&#13;
+		 * @param $$init			Initialization objects. &#13;
+		 */&#13;
+		public function ${enclosing_type}( $$container :DisplayObjectContainer = null, $$init :Object = null )&#13;
+		{&#13;
+			super( $$container, $$init );&#13;
+			${cursor}&#13;
+		}&#13;
+		&#13;
+		override public function toString() :String &#13;
+		{&#13;
+			return '${enclosing_package_and_type}';&#13;
+		}&#13;
+	}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a class that subclasses FSprite" enabled="true" name="FSprite Subclass Disposable">&#13;
+package ${enclosing_package}&#13;
+{	&#13;
+	import com.factorylabs.orange.core.display.FSprite;&#13;
+	import com.factorylabs.orange.core.IDisposable;&#13;
+	import com.factorylabs.orange.core.gc.Janitor;&#13;
+	&#13;
+	import flash.display.DisplayObjectContainer;&#13;
+	&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type} &#13;
+		extends FSprite&#13;
+			implements IDisposable&#13;
+	{&#13;
+		private var _janitor	:Janitor;&#13;
+		&#13;
+		/**&#13;
+		 * @param $$container 	Container for the button.&#13;
+		 * @param $$init			Initialization objects. &#13;
+		 */&#13;
+		public function ${enclosing_type}( $$container :DisplayObjectContainer = null, $$init :Object = null )&#13;
+		{&#13;
+			super( $$container, $$init );&#13;
+			${cursor}&#13;
+			initialize();&#13;
+		}&#13;
+		&#13;
+		override public function toString() :String &#13;
+		{&#13;
+			return '${enclosing_package_and_type}';&#13;
+		}&#13;
+		&#13;
+		public function dispose() :void&#13;
+		{&#13;
+			_janitor.cleanUp();&#13;
+		}&#13;
+&#13;
+		private function initialize() :void&#13;
+		{&#13;
+			_janitor = new Janitor( this );&#13;
+		}&#13;
+	}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a static class" enabled="true" name="FStaticClass">
+package ${enclosing_package}
+{
+	/**
+ 	 * ${Summary}.
+ 	 * 
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;
+ 	 *
+ 	 * &lt;hr /&gt;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;
+ 	 *
+ 	 * Permission is hereby granted, free of charge, to any person obtaining
+ 	 * a copy of this software and associated documentation files (the
+	 * "Software"), to deal in the Software without restriction, including
+	 * without limitation the rights to use, copy, modify, merge, publish,
+	 * distribute, sublicense, and/or sell copies of the Software, and to
+	 * permit persons to whom the Software is furnished to do so, subject to
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * The above copyright notice and this permission notice shall be
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 	 *
+	 * @author		${user}
+	 * @version		1.0.0 :: ${date}
+	 */
+	final public class ${enclosing_type} 
+	{
+
+		public function ${enclosing_type}(){}
+		
+		public static function toString() :String 
+		{
+			return '${enclosing_package_and_type}';
+		}
+	
+		public static function ${name}() :${void}
+		{
+			${cursor}
+		}
+	}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a public method within a Test Case." enabled="true" name="FTest _Method">[Test]
+public function ${foo}() :void
+{
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates default handlers for running an Asynchronous test case." enabled="true" name="FTest Async Handlers">private function ${onEvent}( $$e :${Event}, $$data ) :void
+{
+	Assert.assertEquals( $$e.${param}, $$data[ '${param}' ] );
+	${cursor}
+}
+
+private function ${onEvent}Failed( $$data ) :void
+{
+	Assert.fail( '[${enclosing_type}].${onEvent}Failed() =&gt; ' + $$data[ '${param}' ] );
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates a public method for testing Asynchronous calls." enabled="true" name="FTest Async Method">[Test(async, timeout='100')]
+public function ${foo}() :void
+{
+	${cursor}
+	Async.handleEvent( ${testCase}, ${target}, ${eventName}, ${eventHandler}, ${timeout}, ${passThroughData}, ${timeoutHandler} );
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates a public method for testing exception handling." enabled="true" name="FTest Exception Method">[Test(expects='${Error}')]
+public function ${foo}() :void
+{
+	${method_which_generates_an_error};
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates the class used for running Test Cases in FlexUnit 4" enabled="true" name="FTestCase Class">
+package ${enclosing_package}
+{
+	/**
+ 	 * Generate the test cases for the ${Klass} class.
+ 	 *
+ 	 * &lt;hr /&gt;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;
+ 	 *
+ 	 * Permission is hereby granted, free of charge, to any person obtaining
+ 	 * a copy of this software and associated documentation files (the
+	 * "Software"), to deal in the Software without restriction, including
+	 * without limitation the rights to use, copy, modify, merge, publish,
+	 * distribute, sublicense, and/or sell copies of the Software, and to
+	 * permit persons to whom the Software is furnished to do so, subject to
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * The above copyright notice and this permission notice shall be
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 	 *
+	 * @author		${user}
+	 * @version		1.0.0 :: ${date}
+	 */
+	public class ${enclosing_type} 
+	{
+		
+		[BeforeClass]
+		public static function runBeforeClass() :void
+		{
+			
+		}
+		
+		[AfterClass]
+		public static function runAfterClass() :void
+		{
+			
+		}
+		
+		[Before]
+		public function runBeforeEachTest() :void
+		{
+			
+		}
+		
+		[After]
+		public function runAfterEachTest() :void
+		{
+			
+		}
+		
+		[Test]
+		public function ${foo}() :void
+		{
+			${cursor}
+		}
+	}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates a metadata line for describinig the expectations of a test method." enabled="true" name="FTestMetadata Description">[Test(description='${cursor}', tracker_id='')]</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates a metadata line for ignoring a test." enabled="true" name="FTestMetadata Ignore">[Ignore('${reason}')]</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates a class for a FlexUnit 4 Test Suite" enabled="true" name="FTestSuite Class">
+package ${enclosing_package}
+{
+	/**
+ 	 * Suite of test cases for the ${package_name} package.
+ 	 *
+ 	 * &lt;hr /&gt;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;
+ 	 *
+ 	 * Permission is hereby granted, free of charge, to any person obtaining
+ 	 * a copy of this software and associated documentation files (the
+	 * "Software"), to deal in the Software without restriction, including
+	 * without limitation the rights to use, copy, modify, merge, publish,
+	 * distribute, sublicense, and/or sell copies of the Software, and to
+	 * permit persons to whom the Software is furnished to do so, subject to
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * The above copyright notice and this permission notice shall be
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 	 *
+	 * @author		${user}
+	 * @version		1.0.0 :: ${date}
+	 */
+	[Suite]
+	[RunWith('org.flexunit.runners.Suite')]
+	public class ${enclosing_type} 
+	{
+		public var the${Class}Tests	:${Class}Tests;
+		${cursor}
+	}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Generates a property to be added into a Test Suite" enabled="true" name="FTestSuite Property">public var the${Class}Tests	:${Class}Tests;</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a subclass of ViewBase with standard Factory markup" enabled="true" name="FViewBase Subclass">&#13;
+package ${enclosing_package}&#13;
+{	&#13;
+	import flash.display.DisplayObjectContainer;&#13;
+	import com.factorylabs.orange.core.gc.Janitor;&#13;
+	import com.factorylabs.orange.framework.controller.AreaControllerBase;&#13;
+	import com.factorylabs.orange.framework.view.ViewBase;&#13;
+	&#13;
+	/**&#13;
+ 	 * ${Summary}.&#13;
+ 	 * &#13;
+ 	 * &lt;p&gt;${Description}.&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * &lt;hr /&gt;&#13;
+ 	 * &lt;p&gt;Copyright 2004-${year} by &lt;a href="http://www.factorylabs.com/"&gt;Factory Design Labs&lt;/a&gt;&lt;/p&gt;&#13;
+ 	 *&#13;
+ 	 * Permission is hereby granted, free of charge, to any person obtaining&#13;
+ 	 * a copy of this software and associated documentation files (the&#13;
+	 * "Software"), to deal in the Software without restriction, including&#13;
+	 * without limitation the rights to use, copy, modify, merge, publish,&#13;
+	 * distribute, sublicense, and/or sell copies of the Software, and to&#13;
+	 * permit persons to whom the Software is furnished to do so, subject to&#13;
+	 * the following conditions:&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * The above copyright notice and this permission notice shall be&#13;
+	 * included in all copies or substantial portions of the Software.&lt;br /&gt;&lt;br /&gt;&#13;
+	 *&#13;
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,&#13;
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF&#13;
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND&#13;
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE&#13;
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION&#13;
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION&#13;
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#13;
+ 	 *&#13;
+	 * @author		${user}&#13;
+	 * @version		1.0.0 :: ${date}&#13;
+	 */&#13;
+	public class ${enclosing_type} &#13;
+		extends ViewBase&#13;
+	{&#13;
+		private var _janitor	:Janitor;&#13;
+		private var _data		:${TypedData};&#13;
+&#13;
+		/**&#13;
+		 * @param $$container		[Optional] Container for this view. &#13;
+		 * @param $$init				[Optional] Object with properties to initialize the sprite with. &#13;
+		 * @param $$baseController	[Optional] Controller that built this view.&#13;
+		 * @param $$data				[Optional] Untyped data object. &#13;
+		 */&#13;
+		public function ${enclosing_type}( $$container :DisplayObjectContainer = null, $$init :Object = null, $$baseController :AreaControllerBase = null, $$data :${TypedData} = null )&#13;
+		{&#13;
+			super( $$container, $$init, $$baseController );&#13;
+			_data = ${TypedData}( $$data );&#13;
+		}&#13;
+		&#13;
+		override public function toString() :String &#13;
+		{&#13;
+			return '${enclosing_package_and_type}';&#13;
+		}&#13;
+		&#13;
+		/**&#13;
+		 * Builds this view. &#13;
+		 * &lt;p&gt;Call &lt;code&gt;super.build()&lt;/code&gt; to dispatch the &lt;code&gt;'ready'&lt;/code&gt; event&#13;
+		 * which notifies the controller the area is ready,&#13;
+		 * and the &lt;code&gt;show()&lt;/code&gt; method can be called. &lt;/p&gt;&#13;
+		 */&#13;
+		override public function build() :void&#13;
+		{&#13;
+			super.build();&#13;
+		}&#13;
+&#13;
+		/**&#13;
+		 * Shows this view. &#13;
+		 * &lt;p&gt;Call &lt;code&gt;super.show()&lt;/code&gt; to dispatch the &lt;code&gt;'shown'&lt;/code&gt; event&#13;
+		 * which notifies the controller and FrontController the area is built. &#13;
+		 * Use once all transitions are complete. &lt;/p&gt;&#13;
+		 */&#13;
+		override public function show() :void&#13;
+		{&#13;
+			super.show();&#13;
+		}&#13;
+		&#13;
+		/**&#13;
+		 * Hides this view. &#13;
+		 * &lt;p&gt;Call &lt;code&gt;super.show()&lt;/code&gt; to dispatch the &lt;code&gt;'hidden'&lt;/code&gt; event &#13;
+		 * which notifies the controller to then call &lt;code&gt;dispose()&lt;/code&gt;.&#13;
+		 * Use once all transitions are complete.&lt;/p&gt;&#13;
+		 */&#13;
+		override public function hide() :void&#13;
+		{&#13;
+			super.hide();&#13;
+		}&#13;
+		&#13;
+		/**&#13;
+		 * Performs final cleanup operations to destroy this view.&#13;
+		 * &lt;p&gt;Call &lt;code&gt;super.dispose()&lt;/code&gt; to dispatch the area &lt;code&gt;'deconstructed'&lt;/code&gt; event&#13;
+		 * which notifies the controller and FrontController it can build the next area.&#13;
+		 * Use after all cleanup is done. &lt;/p&gt;&#13;
+		 */&#13;
+		override public function dispose() :void&#13;
+		{&#13;
+			_janitor.cleanUp();&#13;
+			super.dispose();&#13;
+		}&#13;
+	}&#13;
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a local variable" enabled="true" name="FVLocal">var ${variable}	:${Type} = ${cursor};</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a private variable" enabled="true" name="FVPrivate">private var _${variable}	:${Type};${cursor}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a protected variable" enabled="true" name="FVProtected">protected var ${variable}	:${Type};${cursor}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates a private variable" enabled="true" name="FVPublic">public var ${variable}	:${Type};${cursor}</template></templates>

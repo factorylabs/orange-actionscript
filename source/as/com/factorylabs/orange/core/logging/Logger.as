@@ -6,13 +6,13 @@ package com.factorylabs.orange.core.logging
 	import flash.events.IEventDispatcher;
 
 	/**
-	 * Captures incoming messages and objects categorized by levels and a logger's indentifier, broadcasts their log information out to observers.
+	 * Captures incoming messages and objects categorized by levels and a logger's identifier, broadcasts their log information out to observers.
 	 * 
 	 * <p>Acts as a facade for capturing logging calls in an application and allows the results to be easily rewired to specific services.
-	 * Logger's should be injected at startup</p> 
- 	 * 
- 	 * <p>Copyright 2004-2009 by Factory Design Labs</p>
- 	 * <a href="http://www.factorylabs.com/">www.factorylabs.com</a>
+	 * Logger's should be injected at startup.</p> 
+	 * 
+	 * <hr />
+	 * <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
      * 
      * Permission is hereby granted, free of charge, to any person obtaining
      * a copy of this software and associated documentation files (the
@@ -20,10 +20,10 @@ package com.factorylabs.orange.core.logging
      * without limitation the rights to use, copy, modify, merge, publish,
      * distribute, sublicense, and/or sell copies of the Software, and to
      * permit persons to whom the Software is furnished to do so, subject to
-     * the following conditions:
+     * the following conditions:<br /><br />
      * 
      * The above copyright notice and this permission notice shall be
-     * included in all copies or substantial portions of the Software.
+     * included in all copies or substantial portions of the Software.<br /><br />
      * 
      * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
      * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF

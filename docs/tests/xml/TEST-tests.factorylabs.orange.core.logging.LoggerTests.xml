@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.logging.LoggerTests" tests="10" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="core" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="trace" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="error" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="isSilent" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="log" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="trace" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="error" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="core" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="info" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" time="0.000" status="success"/>
 </testsuite>

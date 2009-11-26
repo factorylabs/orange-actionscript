@@ -1,5 +1,7 @@
+
 package tests.factorylabs.orange.core.gc 
 {
+	import tests.factorylabs.orange.helpers.MockBaseClass;
 	import tests.factorylabs.orange.helpers.MockDisposableClass;
 
 	import com.factorylabs.orange.core.gc.Janitor;
@@ -18,32 +20,52 @@ package tests.factorylabs.orange.core.gc
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.utils.Timer;
 
 	/**
-	 * Summary
-	 * 
-	 * <p>Description</p>
-	 * 
-	 * <p>Copyright 2009 by Factory Design Labs, All Rights Reserved.</p>
-	 * <a href="http://www.factorylabs.com/">www.factorylabs.com</a>
+	 * Generate the test cases for the Janitor class.
+	 *
+	 * <hr />
+	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+	 *
+	 * Permission is hereby granted, free of charge, to any person obtaining
+	 * a copy of this software and associated documentation files (the
+	 * "Software"), to deal in the Software without restriction, including
+	 * without limitation the rights to use, copy, modify, merge, publish,
+	 * distribute, sublicense, and/or sell copies of the Software, and to
+	 * permit persons to whom the Software is furnished to do so, subject to
+	 * the following conditions:<br /><br />
+	 *
+	 * The above copyright notice and this permission notice shall be
+	 * included in all copies or substantial portions of the Software.<br /><br />
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	 * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	 * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	 * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+	 * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+	 * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	 *
 	 * @author		Matthew Kitt
 	 * @version		1.0.0 :: Nov 19, 2009
 	 */
 	public class JanitorTests 
 	{
-		private var _janitor		:Janitor;
-		private var _container		:Sprite;
-		private var _logger			:Logger;
+		private var _janitor	:Janitor;
+		private var _container	:Sprite;
+		private var _logger		:Logger;
+		private var _timer		:Timer;
+		private var _mocker		:MockBaseClass;
 		
 		[BeforeClass]
-		public static function runBeforeEntireSuite():void
+		public static function runBeforeClass():void
 		{
 			
 		}
 		
 		[AfterClass]
-		public static function runAfterEntireSuite():void
+		public static function runAfterClass():void
 		{
 			
 		}
@@ -53,7 +75,9 @@ package tests.factorylabs.orange.core.gc
 		{
 			_container = new Sprite();
 			_janitor = new Janitor( _container );
+			_timer = new Timer( 500, 0 );
 			_logger = new Logger();
+			_mocker = new MockBaseClass();
 		}
 		
 		[After]
@@ -63,6 +87,9 @@ package tests.factorylabs.orange.core.gc
 			_janitor = null;
 			_logger = null;
 			_container = null;
+			_mocker = null;
+			_timer.stop();
+			_timer = null;
 		}
 		
 		[Test(async,timeout='100')]
@@ -75,7 +102,7 @@ package tests.factorylabs.orange.core.gc
 			
 			_janitor.addEventListener( _logger, LoggerEvent.UPDATE, onFauxEventListener );
 			assertThat( _janitor.listeners[ _logger ][ LoggerEvent.UPDATE ], notNullValue() );
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onFault );
+			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
 			_logger.trace( msg, obj, level );
 		}
 		
@@ -154,6 +181,40 @@ package tests.factorylabs.orange.core.gc
 		}
 		
 		[Test]
+		public function addConnection() :void
+		{
+			_janitor.addConnection( _mocker );
+			assertThat( _janitor.connections, notNullValue() );
+			assertThat( _janitor.connections[ _mocker ], notNullValue() );
+		}
+		
+		[Test]
+		public function removeConnection() :void
+		{
+			_janitor.addConnection( _mocker );
+			assertThat( _janitor.connections, notNullValue() );
+			
+			_janitor.removeConnection( _mocker );
+			assertThat( _janitor.connections[ _mocker ], nullValue() );
+		}
+		
+		[Test]
+		public function cleanUpConnections() :void
+		{
+			var mocker2 :MockBaseClass = new MockBaseClass();
+			
+			_janitor.addConnection( _mocker );
+			_janitor.addConnection( mocker2 );
+			assertThat( _janitor.connections, notNullValue() );
+			assertThat( _janitor.connections[ _mocker ], notNullValue() );
+			assertThat( _janitor.connections[ mocker2 ], notNullValue() );
+			
+			_janitor.cleanUpConnections();
+			assertThat( _janitor.connections[ _mocker ], nullValue() );
+			assertThat( _janitor.connections[ mocker2 ], nullValue() );
+		}
+		
+		[Test]
 		public function addDisposable() :void
 		{
 			var disposer1 :MockDisposableClass = new MockDisposableClass();
@@ -173,7 +234,7 @@ package tests.factorylabs.orange.core.gc
 			assertThat( _janitor.disposables[ disposer3 ], notNullValue() );
 		}
 		
-		[Test(description="Only removes the IDisposable from access to the Janitor, does not call the dispose method")]
+		[Test(description='Only removes the IDisposable from access to the Janitor, does not call the dispose method')]
 		public function removeDisposable() :void
 		{
 			var disposer1 :MockDisposableClass = new MockDisposableClass();
@@ -184,7 +245,7 @@ package tests.factorylabs.orange.core.gc
 			assertThat( disposer1.isDisposed, equalTo( false ) );
 		}
 		
-		[Test(description="Removes the IDisposable and calls it's dispose method")]
+		[Test(description='Removes the IDisposable and calls the dispose method')]
 		public function cleanUpDisposable() :void
 		{
 			var disposer1 :MockDisposableClass = new MockDisposableClass();
@@ -219,6 +280,51 @@ package tests.factorylabs.orange.core.gc
 			assertThat( disposer3.isDisposed, equalTo( true ) );
 		}
 		
+		[Test]
+		public function addTimer() :void
+		{
+			_janitor.addTimer( _timer );
+			assertThat( _janitor.timers[ _timer ], notNullValue() );
+		}
+		
+		[Test]
+		public function removeTimer() :void
+		{
+			_janitor.addTimer( _timer );
+			assertThat( _janitor.timers[ _timer ], notNullValue() );
+			_janitor.removeTimer( _timer );
+			assertThat( _janitor.timers[ _timer ], nullValue() );
+		}
+		
+		[Test]
+		public function cleanUpTimer() :void
+		{
+			_janitor.addTimer( _timer );
+			assertThat( _janitor.timers[ _timer ], notNullValue() );
+			_timer.start();	
+			_janitor.cleanUpTimer( _timer );
+			assertThat( _timer.running, equalTo( false ) );
+			assertThat( _janitor.timers[ _timer ], nullValue() );
+		}
+		
+		[Test]
+		public function cleanUpTimers() :void
+		{
+			var timer2 :Timer = new Timer( 1000, 0 );
+			
+			_janitor.addTimer( _timer );
+			_janitor.addTimer( timer2 );
+			assertThat( _janitor.timers[ _timer ], notNullValue() );
+			assertThat( _janitor.timers[ timer2 ], notNullValue() );
+			_timer.start();
+			timer2.start();
+			_janitor.cleanUpTimers();
+			assertThat( _timer.running, equalTo( false ) );
+			assertThat( timer2.running, equalTo( false ) );
+			assertThat( _janitor.timers[ _timer ], nullValue() );
+			assertThat( _janitor.timers[ timer2 ], nullValue() );
+		}
+		
 		private function onFauxEventListener( $e :LoggerEvent ) :void
 		{
 			assertThat( $e.message, equalTo( '[JanitorTests].addEventListener()' ) );
@@ -231,9 +337,9 @@ package tests.factorylabs.orange.core.gc
 			Assert.assertEquals( $e.level, $pass[ 'level' ] );
 		}
 		
-		private function onFault( $pass :Object ) :void
+		private function onLoggerEventFailed( $pass :Object ) :void
 		{
-			Assert.fail( '[JanitorTests].onFault()' + String( $pass[ 'msg' ] ) );
+			Assert.fail( '[JanitorTests].onLoggerEventFailed()' + String( $pass[ 'msg' ] ) );
 		}
 	}
 }

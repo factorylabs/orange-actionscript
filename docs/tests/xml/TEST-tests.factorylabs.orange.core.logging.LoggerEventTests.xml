@@ -4,6 +4,6 @@
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="name" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="message" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="object" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="clone" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="level" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.logging::LoggerEventTests" name="clone" time="0.000" status="success"/>
 </testsuite>
