@@ -2,8 +2,11 @@
 package tests.factorylabs.orange.core 
 {
 	import tests.factorylabs.orange.core.collections.CollectionsTestSuite;
+	import tests.factorylabs.orange.core.display.DisplayTestSuite;
+	import tests.factorylabs.orange.core.errors.ErrorsTestSuite;
 	import tests.factorylabs.orange.core.gc.GCTestSuite;
 	import tests.factorylabs.orange.core.logging.LoggingTestSuite;
+	import tests.factorylabs.orange.core.math.MathTestSuite;
 	import tests.factorylabs.orange.core.utils.UtilsTestSuite;
 
 	/**
@@ -39,8 +42,11 @@ package tests.factorylabs.orange.core
 	public class FCoreTestSuite 
 	{
 		public var collectionsTestSuite	:CollectionsTestSuite;
+		public var displayTestSuite		:DisplayTestSuite;
+		public var errorTestSuite		:ErrorsTestSuite;
 		public var gcTestSuite			:GCTestSuite;
 		public var loggingTestSuite		:LoggingTestSuite;
+		public var mathTestSuite		:MathTestSuite;
 		public var utilsTestSuite		:UtilsTestSuite;
 	}
 }

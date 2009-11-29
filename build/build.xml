@@ -41,6 +41,7 @@
         <!-- Compile FCoreTestRunner.mxml as a .swf -->
         <java jar="${FLEX_HOME}/lib/mxmlc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
             <arg value="${test.core.runner}" />
+            <arg value="-target-player=10.0.0" />
             <arg value="-source-path=${source.as}" />
             <arg value="-output=${test.core.swf}" />
             <arg value="-default-size=200,200" />

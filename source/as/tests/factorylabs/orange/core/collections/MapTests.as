@@ -122,7 +122,7 @@ package tests.factorylabs.orange.core.collections
 			_map.add( 'tmp_key_1', 'tmp_value_1' );
 			assertThat( _map.hasKey( 'tmp_key_1'), equalTo( true ) );
 			assertThat( _map.hasValue( 'tmp_value_1'), equalTo( true ) );
-			_map.add( 'tmp_key_1', 'tmp_value_1', false );
+			_map.add( 'key_1', 'value_1', false );
 		}
 		
 		[Test]
