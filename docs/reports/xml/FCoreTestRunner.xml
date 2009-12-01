@@ -545,7 +545,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1259649966592" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1259651381297" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -1199,7 +1199,7 @@
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTextTests.as" mod="1259479183000" size="1910" optimizedsize="873">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTextTests.as" mod="1259651097000" size="1910" optimizedsize="873">
       <def id="tests.factorylabs.orange.core.display:FBitmapTextTests" />
       <pre id="Object" />
       <dep id="com.factorylabs.orange.core.display:FBitmapText" />
@@ -2548,7 +2548,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1259649966590" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1259651381296" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -5242,7 +5242,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/StringMethods.as" mod="1259649579000" size="8851" optimizedsize="3801">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/StringMethods.as" mod="1259651142000" size="8832" optimizedsize="3796">
       <def id="com.factorylabs.orange.core.utils:StringMethods" />
       <pre id="Object" />
       <dep id="RegExp" />
