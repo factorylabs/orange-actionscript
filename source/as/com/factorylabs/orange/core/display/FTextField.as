@@ -48,10 +48,10 @@ package com.factorylabs.orange.core.display
 		protected var _container	:DisplayObjectContainer;
 		
         /**
-		 * Sets the multiline and wordwrap properties through one accessor.
-		 * <p><b>NOTE: </b>You set wordWrap after setting <code>FTextField.multiline</code> in the case
-		 * where you want to have multiilne set to false, and wordWrap as true.</p>
-		 * @param $value	the boolean value to set wordWrap and multiline to.
+		 * Sets the <code>multiline</code> and <code>wordWrap</code> properties through one accessor.
+		 * <p><b>NOTE: </b>You set <code>wordWrap</code> after setting <code>FTextField.multiline</code> in the case
+		 * where you want to have <code>multiline</code> set to <code>false</code>, and <code>wordWrap</code> as true.</p>
+		 * @param $value	the value to set <code>wordWrap</code> and <code>multiline</code>.
 		 */
 		override public function set multiline( $value :Boolean ) :void
 		{
@@ -64,7 +64,7 @@ package com.factorylabs.orange.core.display
 		 *
 		 * <p>Meant to be used in place of the native flash <code>TextField</code> class.</p>
 		 * 
-		 * @param $container The <code>DisplayObject</code> to add this <code>FTextFiedl</code> to, if null this 
+		 * @param $container The <code>DisplayObject</code> to add this <code>FTextFiedl</code> to, if <code>null</code> this 
 		 * <code>FTextField</code> will not automatically be added to the display tree of another <code>DisplayObject</code>.
 		 * @param $init Object containting all parameters to automatically asign upon instantiation.
 		 * @example The following code is the simplest example of how to use FTextField. 

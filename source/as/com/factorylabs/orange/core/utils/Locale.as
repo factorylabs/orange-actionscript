@@ -5,6 +5,7 @@ package com.factorylabs.orange.core.utils
 
 	/**
 	 * TODO: We need to figure out where this came from and give props to them – Need to check with Gabe – MK.
+	 * TODO: Format the ASDocs for this thing and look at cleaning it up some, it's messy – MK.
 	 * 
 	 * <p><strong><em>If performance and file size have super high priority, it is highly recommended to internalize 
 	 * one of these functions into the Class that needs it. Word to your mother.</p></em></strong>

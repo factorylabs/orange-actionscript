@@ -50,7 +50,7 @@ package com.factorylabs.orange.core.gc
 		}
 		
 		/**
-		 * @return	the objects residing in the Dictionary
+		 * The objects residing in the <code>Dictionary</code>.
 		 */
 		public function get() :* 
 		{
@@ -59,7 +59,7 @@ package com.factorylabs.orange.core.gc
 		}
 		
 		/**
-		 * @return	string equivalent of this class.
+		 * @return	The string equivalent of this class.
 		 */
 		public function toString() :String 
 		{

@@ -42,9 +42,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 </table>
 <p></p>
-  FBitmapText is an FTextField, immediately turned into a Bitmap, for performance reasons.
+  FBitmapText is an <code>FTextField</code>, immediately turned into a <code>Bitmap</code>, for performance reasons.
   
-  <p>This class operates much in the same way as an FTextField, except the text is immediately turned into a Bitmap.</p>
+  <p>This class operates much in the same way as an <code>FTextField</code>, except the text is immediately turned into a <code>Bitmap</code>.</p>
     <hr />
   <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
     Permission is hereby granted, free of charge, to any person obtaining
@@ -77,7 +77,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fBitmap">fBitmap</a> : <a href="../display/FBitmap.html">FBitmap</a>
 <div class="summaryTableDescription">[read-only]
-   </div>
+   The <code>FBitmap</code> object of the <code>FTextField</code> stored in this instance.</div>
 </td><td class="summaryTableOwnerCol">FBitmapText</td>
 </tr>
 </table>
@@ -124,7 +124,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#FBitmapText()">FBitmapText</a>($container:DisplayObjectContainer = null, $init:Object = null, $smooth:Boolean = false)</div>
 <div class="summaryTableDescription">
-   Instantiate the FSprite masked as a TextField and create a Bitmap snapshot of that TextField.</div>
+   Instantiate the <code>FSprite</code> masked as a <code>TextField</code> and create a <code>Bitmap</code> snapshot of that <code>TextField</code>.</div>
 </td><td class="summaryTableOwnerCol">FBitmapText</td>
 </tr>
 <tr class="hideInheritedMethod">
@@ -142,7 +142,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <a class="signatureLink" href="FSprite.html#setDisplayObjectProperties()">setDisplayObjectProperties</a>($object:Object):void</div>
 <div class="summaryTableDescription">
    
-   Maps all the object's properties to the DisplayObject.</div>
+   Maps all the object's properties to the <code>DisplayObject</code>.</div>
 </td><td class="summaryTableOwnerCol"><a href="FSprite.html">FSprite</a></td>
 </tr>
 <tr class="">
@@ -167,7 +167,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#build()">build</a>($init:Object = null, $smooth:Boolean = false):void</div>
 <div class="summaryTableDescription">
-   Build the FTextField, take a snapshot, and get rid of the textfield.</div>
+   Build the <code>FTextField</code>, take a snapshot, and get rid of the <code>TextField</code>.</div>
 </td><td class="summaryTableOwnerCol">FBitmapText</td>
 </tr>
 </table>
@@ -187,6 +187,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>fBitmap:<a href="../display/FBitmap.html">FBitmap</a></code>&nbsp;&nbsp;[read-only]<p>
+   The <code>FBitmap</code> object of the <code>FTextField</code> stored in this instance.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get fBitmap():<a href="../display/FBitmap.html">FBitmap</a></code>
@@ -202,11 +203,11 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function FBitmapText($container:DisplayObjectContainer = null, $init:Object = null, $smooth:Boolean = false)</code><p>
-   Instantiate the FSprite masked as a TextField and create a Bitmap snapshot of that TextField.
+   Instantiate the <code>FSprite</code> masked as a <code>TextField</code> and create a <code>Bitmap</code> snapshot of that <code>TextField</code>.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">$container</span>:DisplayObjectContainer</code> (default = <code>null</code>)<code></code> &mdash; The <code>DisplayObject</code> to add this <code>FSprite</code> to, if null this 
+<td width="20px"></td><td><code><span class="label">$container</span>:DisplayObjectContainer</code> (default = <code>null</code>)<code></code> &mdash; The <code>DisplayObject</code> to add this <code>FSprite</code> to, if <code>null</code> this 
    <code>FSprite</code> will not automatically be added to the display tree of another <code>DisplayObject</code>.
    </td>
 </tr>
@@ -245,7 +246,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>protected function build($init:Object = null, $smooth:Boolean = false):void</code><p>
-   Build the FTextField, take a snapshot, and get rid of the textfield.
+   Build the <code>FTextField</code>, take a snapshot, and get rid of the <code>TextField</code>.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
@@ -256,7 +257,7 @@ showHideInherited();
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$smooth</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Whether to apply the BitmapData's smooth property.
+<td width="20px"></td><td><code><span class="label">$smooth</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Whether to apply the <code>BitmapData</code>'s <code>smooth</code> property.
    </td>
 </tr>
 </table>
@@ -283,8 +284,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM-->

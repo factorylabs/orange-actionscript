@@ -4,7 +4,7 @@ package com.factorylabs.orange.core.gc
 	import com.factorylabs.orange.core.collections.IMap;
 
 	/**
-	 * Provides an interface for storing a number of Janitor instances for quick and automated cleanup.
+	 * Provides an interface for storing a number of <code>Janitor</code> instances for quick and automated cleanup.
 	 *
 	 * <hr />
 	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
@@ -34,30 +34,30 @@ package com.factorylabs.orange.core.gc
 	public interface IJanitorManager 
 	{
 		/**
-		 * @return	IMap to store all IJanitor instances.
+		 * The <code>IMap</code> to store all <code>IJanitor</code> instances.
 		 */
 		function get map() :IMap;
 		
 		/**
-		 * Adds a Janitor instance to the IJanitor's IMap.
-		 * @param	$janitor	IJanitor to add.
+		 * Adds a <code>Janitor</code> instance to the <code>IJanitor</code>'s <code>IMap</code>.
+		 * @param	$janitor	<code>IJanitor</code> to add.
 		 */	
 		function addJanitor( $janitor :IJanitor ) :void;
 		
 		/**
-		 * Removes a IJanitor instance from the IMap.
-		 * @param	$janitor	IJanitor to remove.
+		 * Removes a <code>IJanitor</code> instance from the <code>IMap</code>.
+		 * @param	$janitor	<code>IJanitor</code> to remove.
 		 */
 		function removeJanitor( $janitor :IJanitor ) :void;
 		
 		/**
-		 * Explicitly remove and call the cleanup for an IJanitor.
-		 * @param $janitor	IJanitor to remove.
+		 * Explicitly remove and call the cleanup for an <code>IJanitor</code>.
+		 * @param $janitor	<code>IJanitor</code> to remove.
 		 */
 		function cleanUpJanitor( $janitor :IJanitor ) :void;
 		
 		/**
-		 * Cleans up all IJanitors registered to the manager.
+		 * Cleans up all <code>IJanitors</code> registered to the manager.
 		 */
 		function cleanUp() :void;
 	}

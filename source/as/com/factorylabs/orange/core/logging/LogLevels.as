@@ -32,37 +32,37 @@ package com.factorylabs.orange.core.logging
 	public class LogLevels 
 	{
 		/**
-		 * Filter level of Log and custom levels get through.
+		 * Filter level of <code>Log</code> and custom levels get through.
 		 */		
 		public static const LOG		:String = 'LOG';
 
 		/**
-		 * Filter level of Debug, Log and custom levels get through.
+		 * Filter level of <code>Debug</code>, <code>Log</code> and custom levels get through.
 		 */		
 		public static const DEBUG	:String = 'DEBUG';
 
 		/**
-		 * Filter level of Info, Debug, Log and custom levels get through.
+		 * Filter level of <code>Info</code>, <code>Debug</code>, <code>Log</code> and custom levels get through.
 		 */
 		public static const INFO	:String = 'INFO';
 
 		/**
-		 * Filter level of Warn, Info, Debug, Log and custom levels get through.
+		 * Filter level of <code>Warn</code>, <code>Info</code>, <code>Debug</code>, <code>Log</code> and custom levels get through.
 		 */
 		public static const WARN	:String = 'WARN';
 
 		/**
-		 * Filter level of Error, Warn, Info, Debug, Log and custom levels get through.
+		 * Filter level of <code>Error</code>, <code>Warn</code>, <code>Info</code>, <code>Debug</code>, <code>Log</code> and custom levels get through.
 		 */		
 		public static const ERROR	:String = 'ERROR';
 
 	 	/**
-		 * Filter level of Fatal, Error, Warn, Info, Debug, Log and custom levels get through.
+		 * Filter level of <code>Fatal</code>, <code>Error</code>, <code>Warn</code>, <code>Info</code>, <code>Debug</code>, <code>Log</code> and custom levels get through.
 		 */
 	 	public static const FATAL	:String = 'FATAL';
 	 	
 	 	/**
-		 * Filter level of Core, Fatal, Error, Warn, Info, Debug, Log and custom levels get through.
+		 * Filter level of <code>Core</code>, <code>Fatal</code>, <code>Error</code>, <code>Warn</code>, <code>Info</code>, <code>Debug</code>, <code>Log</code> and custom levels get through.
 		 */
 	 	public static const CORE	:String = 'CORE';
 	 	
@@ -81,6 +81,9 @@ package com.factorylabs.orange.core.logging
 		 */
 		public function LogLevels(){}
 		
+		/**
+		 * @return	The string equivalent of this class.
+		 */
 		public function toString() :String 
 		{
 			return 'com.factorylabs.orange.core.logger.LogLevels';

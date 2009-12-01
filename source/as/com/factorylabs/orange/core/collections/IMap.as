@@ -4,7 +4,7 @@ package com.factorylabs.orange.core.collections
 	import flash.utils.Dictionary;
 	
 	/**
-	 * Provides the basic methods to create a Map objects.
+	 * Provides the basic methods to create Map objects.
 	 *
 	 * <hr />
 	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
@@ -69,6 +69,7 @@ package com.factorylabs.orange.core.collections
 		 * @param $key		Reference or value of datatype held as key in map
 		 * @param $value	The value to be retrieved by it's key.
 		 * @param $force	Override for creating duplicate keys.
+		 * @throws	com.factorylabs.orange.core.collections.MapError When a duplicate key is already in the Map.
 		 */
 		function add( $key :*, $value :*, $force :Boolean = false ) :void
 		
@@ -86,6 +87,7 @@ package com.factorylabs.orange.core.collections
 		function extend( $map :* ) :IMap;
 		
 		/**
+		 * @private
 		 * Merge the current map with another overwriting any old values if they exist.
 		 * @param $map Dictionary or Map to be added to the map.
 		 */

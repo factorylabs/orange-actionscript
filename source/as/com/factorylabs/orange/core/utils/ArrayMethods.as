@@ -4,7 +4,7 @@ package com.factorylabs.orange.core.utils
 	import flash.utils.ByteArray;
 
 	/**
-	 * The Array methods class is an all-static class with methods to extend the capabilities of the Array object.
+	 * The ArrayMethods class is an all-static class with methods to extend the capabilities of the <code>Array</code> object.
 	 * 
 	 * <p><strong><em>If performance and file size have super high priority, it is highly recommended to internalize 
 	 * one of these functions into the Class that needs it. Word to your mother.</p></em></strong>
@@ -83,7 +83,7 @@ package com.factorylabs.orange.core.utils
 		}
 		
 		/**
-		 *	Retrieve a random element from an Array.
+		 *	Retrieve a random element from an <code>Array</code>.
 		 *	@param	$a	the array to select a random item from.
 		 *	@return	the object at the random index.
 		 */

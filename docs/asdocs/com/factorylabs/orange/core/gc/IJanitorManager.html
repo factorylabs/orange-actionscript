@@ -42,7 +42,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 </tr>
 </table>
 <p></p>
-  Provides an interface for storing a number of Janitor instances for quick and automated cleanup.
+  Provides an interface for storing a number of <code>Janitor</code> instances for quick and automated cleanup.
     <hr />
   <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
     Permission is hereby granted, free of charge, to any person obtaining
@@ -75,7 +75,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#map">map</a> : <a href="../collections/IMap.html">IMap</a>
 <div class="summaryTableDescription">[read-only]
-   </div>
+   The <code>IMap</code> to store all <code>IJanitor</code> instances.</div>
 </td><td class="summaryTableOwnerCol">IJanitorManager</td>
 </tr>
 </table>
@@ -92,7 +92,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <div class="summarySignature">
 <a class="signatureLink" href="#addJanitor()">addJanitor</a>($janitor:<a href="IJanitor.html">IJanitor</a>):void</div>
 <div class="summaryTableDescription">
-   Adds a Janitor instance to the IJanitor's IMap.</div>
+   Adds a <code>Janitor</code> instance to the <code>IJanitor</code>'s <code>IMap</code>.</div>
 </td><td class="summaryTableOwnerCol">IJanitorManager</td>
 </tr>
 <tr class="">
@@ -100,7 +100,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <div class="summarySignature">
 <a class="signatureLink" href="#cleanUp()">cleanUp</a>():void</div>
 <div class="summaryTableDescription">
-   Cleans up all IJanitors registered to the manager.</div>
+   Cleans up all <code>IJanitors</code> registered to the manager.</div>
 </td><td class="summaryTableOwnerCol">IJanitorManager</td>
 </tr>
 <tr class="">
@@ -108,7 +108,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <div class="summarySignature">
 <a class="signatureLink" href="#cleanUpJanitor()">cleanUpJanitor</a>($janitor:<a href="IJanitor.html">IJanitor</a>):void</div>
 <div class="summaryTableDescription">
-   Explicitly remove and call the cleanup for an IJanitor.</div>
+   Explicitly remove and call the cleanup for an <code>IJanitor</code>.</div>
 </td><td class="summaryTableOwnerCol">IJanitorManager</td>
 </tr>
 <tr class="">
@@ -116,7 +116,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <div class="summarySignature">
 <a class="signatureLink" href="#removeJanitor()">removeJanitor</a>($janitor:<a href="IJanitor.html">IJanitor</a>):void</div>
 <div class="summaryTableDescription">
-   Removes a IJanitor instance from the IMap.</div>
+   Removes a <code>IJanitor</code> instance from the <code>IMap</code>.</div>
 </td><td class="summaryTableOwnerCol">IJanitorManager</td>
 </tr>
 </table>
@@ -136,6 +136,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>map:<a href="../collections/IMap.html">IMap</a></code>&nbsp;&nbsp;[read-only]<p>
+   The <code>IMap</code> to store all <code>IJanitor</code> instances.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get map():<a href="../collections/IMap.html">IMap</a></code>
@@ -151,11 +152,11 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function addJanitor($janitor:<a href="IJanitor.html">IJanitor</a>):void</code><p>
-   Adds a Janitor instance to the IJanitor's IMap.
+   Adds a <code>Janitor</code> instance to the <code>IJanitor</code>'s <code>IMap</code>.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">$janitor</span>:<a href="IJanitor.html">IJanitor</a></code> &mdash; IJanitor to add.
+<td width="20px"></td><td><code><span class="label">$janitor</span>:<a href="IJanitor.html">IJanitor</a></code> &mdash; <code>IJanitor</code> to add.
    </td>
 </tr>
 </table>
@@ -168,7 +169,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function cleanUp():void</code><p>
-   Cleans up all IJanitors registered to the manager.
+   Cleans up all <code>IJanitors</code> registered to the manager.
    </p></div>
 <a name="cleanUpJanitor()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
@@ -178,11 +179,11 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function cleanUpJanitor($janitor:<a href="IJanitor.html">IJanitor</a>):void</code><p>
-   Explicitly remove and call the cleanup for an IJanitor.
+   Explicitly remove and call the cleanup for an <code>IJanitor</code>.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">$janitor</span>:<a href="IJanitor.html">IJanitor</a></code> &mdash; IJanitor to remove.
+<td width="20px"></td><td><code><span class="label">$janitor</span>:<a href="IJanitor.html">IJanitor</a></code> &mdash; <code>IJanitor</code> to remove.
    </td>
 </tr>
 </table>
@@ -195,11 +196,11 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function removeJanitor($janitor:<a href="IJanitor.html">IJanitor</a>):void</code><p>
-   Removes a IJanitor instance from the IMap.
+   Removes a <code>IJanitor</code> instance from the <code>IMap</code>.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">$janitor</span>:<a href="IJanitor.html">IJanitor</a></code> &mdash; IJanitor to remove.
+<td width="20px"></td><td><code><span class="label">$janitor</span>:<a href="IJanitor.html">IJanitor</a></code> &mdash; <code>IJanitor</code> to remove.
    </td>
 </tr>
 </table>
@@ -209,8 +210,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM-->

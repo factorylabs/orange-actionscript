@@ -34,9 +34,10 @@ package com.factorylabs.orange.core.display
 	public interface IFDisplayObject 
 	{
 		/**
-		 * Maps all the object's properties to the DisplayObject.
+		 * Maps all the object's properties to the <code>DisplayObject</code>.
 		 * If there are properties that do not exist, an error is thrown. 
 		 * @param $object	Object to map properties from.
+		 * @throws	com.factorylabs.orange.core.errors.IllegalSetDisplayObjectPropertiesError When an invalid property assignment was attempted.
 		 */
 		function setDisplayObjectProperties( $object :Object ) :void;
 		

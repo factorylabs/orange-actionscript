@@ -74,22 +74,22 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#level">level</a> : String<div class="summaryTableDescription">[read-only]
-   </div>
+   The <code>LogLevels</code> constant or custom notification filter.</div>
 </td><td class="summaryTableOwnerCol">LoggerEvent</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#message">message</a> : String<div class="summaryTableDescription">[read-only]
-   </div>
+   The <code>String</code> message to trace out.</div>
 </td><td class="summaryTableOwnerCol">LoggerEvent</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : String<div class="summaryTableDescription">[read-only]
-   </div>
+   The name of the logger dispatching events.</div>
 </td><td class="summaryTableOwnerCol">LoggerEvent</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#object">object</a> : Object<div class="summaryTableDescription">[read-only]
-   </div>
+   The <code>Object</code> to be inspected via a debugger.</div>
 </td><td class="summaryTableOwnerCol">LoggerEvent</td>
 </tr>
 </table>
@@ -114,7 +114,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#clone()">clone</a>():Event</div>
 <div class="summaryTableDescription">
-   Duplicates an instance of a LogEvent.</div>
+   Duplicates an instance of a <code>LogEvent</code>.</div>
 </td><td class="summaryTableOwnerCol">LoggerEvent</td>
 </tr>
 <tr class="">
@@ -135,7 +135,8 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#UPDATE">UPDATE</a> : String = "LogEvent.UPDATE"<div class="summaryTableDescription">[static]</div>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#UPDATE">UPDATE</a> : String = "LogEvent.UPDATE"<div class="summaryTableDescription">[static]
+   The type of event dispatched when a logger is updated.</div>
 </td><td class="summaryTableOwnerCol">LoggerEvent</td>
 </tr>
 </table>
@@ -155,6 +156,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>level:String</code>&nbsp;&nbsp;[read-only]<p>
+   The <code>LogLevels</code> constant or custom notification filter.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get level():String</code>
@@ -168,6 +170,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>message:String</code>&nbsp;&nbsp;[read-only]<p>
+   The <code>String</code> message to trace out.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get message():String</code>
@@ -181,6 +184,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>name:String</code>&nbsp;&nbsp;[read-only]<p>
+   The name of the logger dispatching events.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():String</code>
@@ -194,6 +198,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>object:Object</code>&nbsp;&nbsp;[read-only]<p>
+   The <code>Object</code> to be inspected via a debugger.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get object():Object</code>
@@ -220,21 +225,21 @@ showHideInherited();
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$msg</span>:String</code> &mdash;   String message to print out.
+<td width="20px"></td><td><code><span class="label">$msg</span>:String</code> &mdash;   <code>String</code> message to print out.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$object</span>:Object</code> &mdash;  Object to be inspected via a debugger.
+<td width="20px"></td><td><code><span class="label">$object</span>:Object</code> &mdash;  <code>Object</code> to be inspected via a debugger.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$level</span>:String</code> &mdash;  LogLevels constant or custom notification filter.
+<td width="20px"></td><td><code><span class="label">$level</span>:String</code> &mdash;  <code>LogLevels</code> constant or custom notification filter.
    </td>
 </tr>
 <tr>
@@ -248,14 +253,14 @@ showHideInherited();
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$bubbles</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  Determines whether the Event object participates in the bubbling stage of the event flow. The default value is false.
+<td width="20px"></td><td><code><span class="label">$bubbles</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  Determines whether the <code>Event</code> object participates in the bubbling stage of the event flow. The default value is false.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$cancelable</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines whether the Event object can be canceled. The default values is false.
+<td width="20px"></td><td><code><span class="label">$cancelable</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines whether the <code>Event</code> object can be canceled. The default values is false.
    
    </td>
 </tr>
@@ -278,13 +283,13 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public override function clone():Event</code><p>
-   Duplicates an instance of a LogEvent.
-   </p><p>Returns a new LogEvent that is a copy of the original instance of the LogEvent object.</p>
+   Duplicates an instance of a <code>LogEvent</code>.
+   </p><p>Returns a new <code>LogEvent</code> that is a copy of the original instance of the <code>LogEvent</code> object.</p>
    <p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20"></td><td><code>Event</code> &mdash; A new LogEvent object that is identical to the original.
+<td width="20"></td><td><code>Event</code> &mdash; A new <code>LogEvent</code> object that is identical to the original.
    </td>
 </tr>
 </table>
@@ -315,15 +320,16 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public static const UPDATE:String = "LogEvent.UPDATE"</code>
-</div>
+<code>public static const UPDATE:String = "LogEvent.UPDATE"</code><p>
+   The type of event dispatched when a logger is updated.
+   </p></div>
 <br>
 <br>
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM-->

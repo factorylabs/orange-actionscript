@@ -3,9 +3,9 @@ package com.factorylabs.orange.core.display
 {	import com.factorylabs.orange.core.errors.IllegalSetDisplayObjectPropertiesError;		import flash.display.Bitmap;	import flash.display.BitmapData;	import flash.display.DisplayObjectContainer;	
 	
 	/**
-	 * FBitmap is the base class for all Bitmap objects.
+	 * FBitmap is the base class for all <code>Bitmap</code> objects.
 	 * 
-	 * <p>Utilize this class to inline and automate basic needs of a visual Bitmap.</p>
+	 * <p>Utilize this class to inline and automate basic needs of a visual <code>Bitmap</code>.</p>
 	 *
 	 * <hr />
 	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
@@ -46,7 +46,7 @@ package com.factorylabs.orange.core.display
 		 *
 		 * <p>Meant to be used in place of the native flash <code>Bitmap</code> class.</p>
 		 * 
-		 * @param $container The <code>DisplayObject</code> to add this <code>FBitmap</code> to. If null this 
+		 * @param $container The <code>DisplayObject</code> to add this <code>FBitmap</code> to. If <code>null</code> this 
 		 * <code>FBitmap</code> will not automatically be added to the display tree of another <code>DisplayObject</code>.
 		 * @param $init Object containting all parameters to automatically asign upon instantiation.
 		 * @example The following code is the simplest example of how to use <code>FBitmap</code>. 

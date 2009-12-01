@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print">
+<meta content="IGraphic,com.factorylabs.orange.core.display.graphics.IGraphic,fill,height,width,x,y,redraw" name="keywords">
+<title>com.factorylabs.orange.core.display.graphics.IGraphic</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'IGraphic - Factory Design Labs orange-actionscript-v1.0RC0';
+				var baseRef = '../../../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Factory Design Labs orange-actionscript-v1.0RC0</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../index-list.html')" href="../../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../../index.html?com/factorylabs/orange/core/display/graphics/IGraphic.html&amp;com/factorylabs/orange/core/display/graphics/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Interface&nbsp;IGraphic</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Interface IGraphic"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.factorylabs.orange.core.display.graphics</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Interface</td><td class="classSignature">public interface IGraphic</td>
+</tr>
+</table>
+<p></p>
+  IGraphic is the interface used for drawing graphic shapes.
+    <hr />
+  <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+    Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this software and associated documentation files (the
+  "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to
+  the following conditions:<br /><br />
+    The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.<br /><br />
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  
+  <p></p>
+<br>
+<span class="label">Example</span>
+<br>The following code creates a class which shows examples of all shapes and fills for use with the drawing API.
+  <div class='listing'><pre>
+  package com.factorylabs.barebones.views 
+  {
+   import flash.display.BitmapData;
+   import flash.display.Loader;
+   import flash.events.Event;
+   import flash.net.URLRequest;
+   import com.factorylabs.orange.core.display.FSprite;
+   import com.factorylabs.orange.core.display.graphics.FArcLine;
+   import com.factorylabs.orange.core.display.graphics.FArrow;
+   import com.factorylabs.orange.core.display.graphics.FCircle;
+   import com.factorylabs.orange.core.display.graphics.FDashedLine;
+   import com.factorylabs.orange.core.display.graphics.FEllipse;
+   import com.factorylabs.orange.core.display.graphics.FPolyFromPoints;
+   import com.factorylabs.orange.core.display.graphics.FPolygon;
+   import com.factorylabs.orange.core.display.graphics.FRectCornered;
+   import com.factorylabs.orange.core.display.graphics.FRectCorneredComplex;
+   import com.factorylabs.orange.core.display.graphics.FRectRound;
+   import com.factorylabs.orange.core.display.graphics.FRectRoundComplex;
+   import com.factorylabs.orange.core.display.graphics.FRectangle;
+   import com.factorylabs.orange.core.display.graphics.FSquare;
+   import com.factorylabs.orange.core.display.graphics.FWedge;
+   import com.factorylabs.orange.core.display.fills.BitMapFill;
+   import com.factorylabs.orange.core.display.fills.GradientFill;
+   import com.factorylabs.orange.core.display.fills.GradientStroke;
+   import com.factorylabs.orange.core.display.fills.SolidFill;
+   import com.factorylabs.orange.core.display.fills.SolidStroke;
+   
+   public class GraphicsTest 
+   {
+    private var _gfx :FSprite;
+    private var _loader :Loader;
+    private var _sf  :SolidFill;
+    private var _gf  :GradientFill;
+    private var _bf  :BitMapFill;
+    private var _ss  :SolidStroke;
+    private var _gs  :GradientStroke;
+    
+    public function GraphicsTest( $container :FSprite ) 
+    {
+     _gfx = new FSprite( $container, { x: 20, y: 100 } );
+     load();
+    }
+    
+    private function load() :void
+    {
+     var url :String = 'media/images/missing.png';
+     _loader = new Loader();
+     var request :URLRequest = new URLRequest( url );
+     _loader.load( request );
+     _loader.contentLoaderInfo.addEventListener( Event.COMPLETE, draw );
+    }
+     
+    private function draw( $e :Event ) :void
+    {
+     _sf = new SolidFill( 0x666666 );
+     _gf = new GradientFill( 0, [ 0xffffff, 0x333333 ] );
+     _bf = new BitMapFill( new BitmapData( _loader.width, _loader.height, true ), _loader );
+     _ss = new SolidStroke( 0xcccccc, 1, 3, true );
+     _gs = new GradientStroke( _gf, _ss );
+     
+     drawRectangles();
+     drawCircles();
+     drawRectRound();
+     drawRectComplex();
+     drawPolys();
+     drawPolyFromPoints();
+     drawWedges();
+     drawLines(); 
+    }
+     
+    private function drawRectangles() :void
+    {
+     var r1 :FRectangle = new FRectangle( _gfx.graphics, 0, 0, 200, 100, _sf );
+     var r2 :FRectangle = new FRectangle( _gfx.graphics, 210, 0, 200, 100, _gf );
+     var r3 :FRectangle = new FRectangle( _gfx.graphics, 420, 0, 200, 100, _bf );
+        
+     var s1 :FSquare = new FSquare( _gfx.graphics, 0, 110, 200, _sf );
+     var s2 :FSquare = new FSquare( _gfx.graphics, 210, 110, 200, _gf );
+     var s3 :FSquare = new FSquare( _gfx.graphics, 420, 110, 200, _bf );
+     
+     var rs1 :FRectangle = new FRectangle( _gfx.graphics, 630, 0, 200, 100, _ss );
+     var ss1 :FSquare = new FSquare( _gfx.graphics, 630, 110, 200, _gs );
+    }
+     
+    private function drawCircles() :void
+    {
+     var e1 :FEllipse = new FEllipse( _gfx.graphics, 0, 0, 200, 100, _sf );
+     var e2 :FEllipse = new FEllipse( _gfx.graphics, 210, 0, 200, 100, _gf );
+     var e3 :FEllipse = new FEllipse( _gfx.graphics, 420, 0, 200, 100, _bf );
+     
+     var c1 :FCircle = new FCircle( _gfx.graphics, 0, 110, 200, _sf );
+     var c2 :FCircle = new FCircle( _gfx.graphics, 210, 110, 200, _gf );
+     var c3 :FCircle = new FCircle( _gfx.graphics, 420, 110, 200, _bf );
+        
+     var es1 : FEllipse = new FEllipse( _gfx.graphics, 630, 0, 200, 100, _ss );
+     var cs1 : FCircle = new FCircle( _gfx.graphics, 630, 110, 200, _gs );
+    }
+    
+    private function drawRectRound() :void
+    {   
+     var r1 :FRectRoundComplex = new FRectRoundComplex( _gfx.graphics, 0, 0, 200, 100, _sf, 10, 10, 0, 0 );
+     var r2 :FRectRoundComplex = new FRectRoundComplex( _gfx.graphics, 210, 0, 200, 100, _gf, 10, 10, 0, 0 );
+     var r3 :FRectRoundComplex = new FRectRoundComplex( _gfx.graphics, 420, 0, 200, 100, _bf, 10, 10, 0, 0 );
+     
+     var c1 :FRectRound = new FRectRound( _gfx.graphics, 0, 110, 200, 100, _sf, 10 );
+     var c2 :FRectRound = new FRectRound( _gfx.graphics, 210, 110, 200, 100, _gf, 10 );
+     var c3 :FRectRound = new FRectRound( _gfx.graphics, 420, 110, 200, 100, _bf, 10 );
+     
+     var rs1 :FRectRoundComplex = new FRectRoundComplex( _gfx.graphics, 630, 0, 200, 100, _ss, 10, 10, 0, 0 );
+     var cs1 :FRectRound = new FRectRound( _gfx.graphics, 630, 110, 200, 100, _gs, 10 );
+    }
+    
+    private function drawRectComplex() :void
+    {
+     var r1 :FRectCorneredComplex = new FRectCorneredComplex( _gfx.graphics, 0, 0, 200, 100, _sf, 10, 10, 0, 0 );
+     var r2 :FRectCorneredComplex = new FRectCorneredComplex( _gfx.graphics, 210, 0, 200, 100, _gf, 10, 10, 0, 0 );
+     var r3 :FRectCorneredComplex = new FRectCorneredComplex( _gfx.graphics, 420, 0, 200, 100, _bf, 10, 10, 0, 0 );
+     
+     var c1 :FRectCornered = new FRectCornered( _gfx.graphics, 0, 110, 200, 100, _sf, 10 );
+     var c2 :FRectCornered = new FRectCornered( _gfx.graphics, 210, 110, 200, 100, _gf, 10 );
+     var c3 :FRectCornered = new FRectCornered( _gfx.graphics, 420, 110, 200, 100, _bf, 10 );
+     
+     var rs1 :FRectCorneredComplex = new FRectCorneredComplex( _gfx.graphics, 630, 0, 200, 100, _ss, 10, 10, 0, 0 );
+     var cs1 :FRectCornered = new FRectCornered( _gfx.graphics, 630, 110, 200, 100, _gs, 10 );
+    }
+      
+    private function drawPolys() :void
+    {
+     var p1 :FPolygon = new FPolygon( _gfx.graphics, 50, 0, 5, 50, 0, _sf );
+     var p2 :FPolygon = new FPolygon( _gfx.graphics, 150, 0, 5, 50, 0, _gf );
+     var p3 :FPolygon = new FPolygon( _gfx.graphics, 250, 0, 5, 50, 0, _bf );
+     
+     var a1 :FArrow = new FArrow( _gfx.graphics, 50, 110, 50, _sf, FArrow.UP );
+     var a2 :FArrow = new FArrow( _gfx.graphics, 150, 110, 50, _gf, FArrow.DOWN );
+     var a3 :FArrow = new FArrow( _gfx.graphics, 250, 110, 50, _bf, FArrow.LEFT );
+     
+     var ps1 :FPolygon = new FPolygon( _gfx.graphics, 350, 0, 5, 50, 0, _ss );
+     var as1 :FArrow = new FArrow( _gfx.graphics, 350, 110, 50, _gs, FArrow.RIGHT );
+    }
+    
+    private function drawPolyFromPoints() :void
+    {
+     var f1 :FPolyFromPoints = new FPolyFromPoints( _gfx.graphics, [ [0, 0], [0, 100], [100, 200], [ 350, 300] ], _sf );
+     var f2 :FPolyFromPoints = new FPolyFromPoints( _gfx.graphics, [ [200, 0], [200, 100], [300, 200], [ 550, 300] ], _gf );
+     var f3 :FPolyFromPoints = new FPolyFromPoints( _gfx.graphics, [ [400, 0], [400, 100], [500, 200], [ 750, 300] ], _bf );
+     
+     var fs1 :FPolyFromPoints = new FPolyFromPoints( _gfx.graphics, [ [600, 0], [600, 100], [700, 200], [ 850, 300] ], _ss );
+     var fs2 :FPolyFromPoints = new FPolyFromPoints( _gfx.graphics, [ [800, 0], [800, 100], [900, 200], [ 950, 300] ], _gs );
+    }
+    
+    private function drawWedges() :void
+    {
+     var w1 :FWedge = new FWedge( _gfx.graphics, 200, 150, 50, 180, _sf, FWedge.CLOCKWISE, 0 );
+     var w2 :FWedge = new FWedge( _gfx.graphics, 320, 150, 50, 270, _gf, FWedge.COUNTER_CLOCKWISE, 0 );
+     var w3 :FWedge = new FWedge( _gfx.graphics, 440, 150, 50, 270, _bf, FWedge.CLOCKWISE, 0 );
+     
+     var w4 :FWedge = new FWedge( _gfx.graphics, 560, 150, 50, 210, _ss, FWedge.COUNTER_CLOCKWISE, 0 );
+    }
+    
+    private function drawLines() :void
+    {
+     var dl :FDashedLine = new FDashedLine( _gfx.graphics, 0, 0, 500, 0, 5, 5, _ss );
+     var al :FArcLine = new FArcLine( _gfx.graphics, 500, 200, 50, 100, -210, _gs );
+    }
+   }
+  }
+  </pre></div>
+    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fill">fill</a> : <a href="../fills/IFill.html">IFill</a>
+<div class="summaryTableDescription">
+   The <code>IFill</code> object used to fill the <code>IGraphic</code>.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : Number<div class="summaryTableDescription">
+   The <code>height</code> value of the <code>IGraphic</code>.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : Number<div class="summaryTableDescription">
+   The <code>width</code> value of the <code>IGraphic</code>.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#x">x</a> : Number<div class="summaryTableDescription">
+   The <code>x</code> coordinate of the <code>IGraphic</code>.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#y">y</a> : Number<div class="summaryTableDescription">
+   The <code>y</code> coordinate of the <code>IGraphic</code>.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#redraw()">redraw</a>():void</div>
+<div class="summaryTableDescription">
+   Redraws the shape if the <code>autoRedraw</code> property is set to true, a setter will automatically call this method.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="fill"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fill</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>fill:<a href="../fills/IFill.html">IFill</a></code>&nbsp;&nbsp;[read-write]<p>
+   The <code>IFill</code> object used to fill the <code>IGraphic</code>.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get fill():<a href="../fills/IFill.html">IFill</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set fill(value:<a href="../fills/IFill.html">IFill</a>):void</code>
+<br>
+</div>
+<a name="height"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>height:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The <code>height</code> value of the <code>IGraphic</code>.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get height():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set height(value:Number):void</code>
+<br>
+</div>
+<a name="width"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>width:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The <code>width</code> value of the <code>IGraphic</code>.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get width():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set width(value:Number):void</code>
+<br>
+</div>
+<a name="x"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">x</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>x:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The <code>x</code> coordinate of the <code>IGraphic</code>.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get x():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set x(value:Number):void</code>
+<br>
+</div>
+<a name="y"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">y</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>y:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The <code>y</code> coordinate of the <code>IGraphic</code>.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get y():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set y(value:Number):void</code>
+<br>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="redraw()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">redraw</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function redraw():void</code><p>
+   Redraws the shape if the <code>autoRedraw</code> property is set to true, a setter will automatically call this method.
+   </p><p>Note this will call <code>clear()</code> on the <code>shape.graphics</code> object and clear all existing grapics witihin that object.</p> 
+   
+   <br>
+<span class="label">Example</span>
+<br>The following code draws then redraws a rectangle.
+    <div class='listing'><pre>
+    var sf :SolidFill = new SolidFill( 0x666666, .8 );
+    var r1 :FRectangle = new FRectangle( _gfx.graphics, 0, 0, 200, 100, sf );
+    r1.width = 500;
+    r1.redraw();
+    </pre></div>
+   <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM</center>
+</div>
+</body>
+</html>
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM-->

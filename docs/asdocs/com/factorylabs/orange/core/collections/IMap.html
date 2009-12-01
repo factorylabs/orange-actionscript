@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print">
-<meta content="IMap,com.factorylabs.orange.core.collections.IMap,iterator,keys,length,values,add,clear,dispose,each,extend,find,get,hasKey,hasValue,remove" name="keywords">
+<meta content="IMap,com.factorylabs.orange.core.collections.IMap,iterator,keys,length,values,add,clear,dispose,each,extend,find,get,hasValue,remove" name="keywords">
 <title>com.factorylabs.orange.core.collections.IMap</title>
 </head>
 <body>
@@ -42,7 +42,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 </tr>
 </table>
 <p></p>
-  Provides the basic methods to create a Map objects.
+  Provides the basic methods to create Map objects.
     <hr />
   <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
     Permission is hereby granted, free of charge, to any person obtaining
@@ -162,14 +162,6 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#hasKey()">hasKey</a>($key:*):Boolean</div>
-<div class="summaryTableDescription">
-   Merge the current map with another overwriting any old values if they exist.</div>
-</td><td class="summaryTableOwnerCol">IMap</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
 <a class="signatureLink" href="#hasValue()">hasValue</a>($value:*):Boolean</div>
 <div class="summaryTableDescription">
    Test for a value in the map.</div>
@@ -277,6 +269,14 @@ showHideInherited();
 </tr>
 <tr>
 <td width="20px"></td><td><code><span class="label">$force</span>:*</code> (default = <code>false</code>)<code></code> &mdash; Override for creating duplicate keys.
+   </td>
+</tr>
+</table>
+<br>
+<span class="label">Throws</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code></code> &mdash; When a duplicate key is already in the Map.
    </td>
 </tr>
 </table>
@@ -392,30 +392,6 @@ showHideInherited();
 </tr>
 </table>
 </div>
-<a name="hasKey()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">hasKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function hasKey($key:*):Boolean</code><p>
-   Merge the current map with another overwriting any old values if they exist.
-   </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">$key</span>:*</code> &mdash; Dictionary or Map to be added to the map.
-   </td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Boolean</code></td>
-</tr>
-</table>
-</div>
 <a name="hasValue()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -471,8 +447,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/29/2009 11:46 PM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 11/30/2009 11:46 PM-->

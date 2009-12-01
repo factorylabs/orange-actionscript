@@ -55,7 +55,7 @@ package com.factorylabs.orange.core.display
 		protected var _offset	:Point;
 		
 		/**
-		 * @return	The <code>DisplayObject</code> instance used for decoration.
+		 * The <code>DisplayObject</code> instance used for decoration.
 		 */
 		public function get displayObject() :DisplayObject
 		{ 
@@ -63,7 +63,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	A <code>Rectangle</code> used for coordinates and sizing in place of an actual <code>DisplayObject</code>. 
+		 * A <code>Rectangle</code> used for coordinates and sizing in place of an actual <code>DisplayObject</code>. 
 		 */
 		public function get bounds() :Rectangle { return _bounds; }
 		public function set bounds( $bounds :Rectangle ) :void
@@ -72,7 +72,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return The <code>Point</code> used in creating an offset for x and y values. 
+		 * The <code>Point</code> used in creating an offset for <code>x</code> and <code>y</code> values. 
 		 */
 		public function get offset() :Point { return _offset; }
 		public function set offset( $offset :Point ) :void
@@ -81,80 +81,65 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The x coordinate based on the bounds and offset properties.
+		 * The <code>x</code> coordinate based on the bounds and offset properties.
 		 */
 		public function get x() :Number
 		{
 			return _bounds.x + _offset.x; 
 		}
 		
-		/**
-		 * @private
-		 */
 		public function set x( $x :Number ) :void
 		{
 			_bounds.x = $x; 
 		}
 
 		/**
-		 * @return	The y coordinate based on the bounds and offset properties. 
+		 * The <code>y</code> coordinate based on the bounds and offset properties. 
 		 */
 		public function get y() :Number
 		{
 			return _bounds.y + _offset.y; 
 		}
-		
-		/**
-		 * @private
-		 */
+
 		public function set y( $y :Number ) :void
 		{
 			_bounds.y = $y; 
 		}
 		
 		/**
-		 * @return	The width value contained within the bounds property.
+		 * The <code>width</code> value contained within the <code>bounds</code> property.
 		 */
 		public function get width() :Number 
 		{
 			return _bounds.width; 
 		}
 		
-		/**
-		 * @private
-		 */
 		public function set width( $width :Number ) :void
 		{
 			_bounds.width = $width;
 		}
 		
 		/**
-		 * @return	The height value contained within the bounds property. 
+		 * The <code>height</code> value contained within the <code>bounds</code> property. 
 		 */
 		public function get height() :Number 
 		{
 			return _bounds.height; 
 		}
 		
-		/**
-		 * @private
-		 */
 		public function set height( $height :Number ) :void
 		{
 			_bounds.height = $height;
 		}
 		
 		/**
-		 * @return	The x and y coordinates based on the bounds and offset properties.
+		 * The <code>x</code> and <code>y</code> coordinates based on the <code>bounds</code> and <code>offset</code> properties.
 		 */
 		public function get coordinates() :Point 
 		{
 			return new Point( x, y ); 
 		}
 		
-		/**
-		 * @private
-		 */
 		public function set coordinates( $point :Point ) :void
 		{
 			x = $point.x;
@@ -162,7 +147,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The left edge of the <code>DisplayObject</code>.
+		 * The left edge of the <code>DisplayObject</code>.
 		 */
 		public function get left() :Number 
 		{
@@ -170,7 +155,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The right edge of the <code>DisplayObject</code>. 
+		 * The right edge of the <code>DisplayObject</code>. 
 		 */
 		public function get right() :Number 
 		{
@@ -178,7 +163,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The top edge of the <code>DisplayObject</code>. 
+		 * The top edge of the <code>DisplayObject</code>. 
 		 */
 		public function get top() :Number 
 		{
@@ -186,7 +171,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The bottom edge of the <code>DisplayObject</code>. 
+		 * The bottom edge of the <code>DisplayObject</code>. 
 		 */
 		public function get bottom() :Number 
 		{
@@ -194,7 +179,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The horizontal center of the <code>DisplayObject</code>.
+		 * The horizontal center of the <code>DisplayObject</code>.
 		 */
 		public function get horizontalCenter() :Number 
 		{
@@ -202,7 +187,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The vertical center of the <code>DisplayObject</code>. 
+		 * The vertical center of the <code>DisplayObject</code>. 
 		 */
 		public function get verticalCenter() :Number 
 		{
@@ -210,7 +195,7 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The horizontal and vertical center of the <code>DisplayObject</code>. 
+		 * The horizontal and vertical center of the <code>DisplayObject</code>. 
 		 */
 		public function get center() :Point 
 		{
@@ -218,48 +203,39 @@ package com.factorylabs.orange.core.display
 		}
 		
 		/**
-		 * @return	The x coordinate of the <code>DisplayObject</code> as if it were on the document's stage.
+		 * The <code>x</code> coordinate of the <code>DisplayObject</code> as if it were on the document's stage.
 		 */
 		public function get globalX() :Number 
 		{
 			 return _displayObject.parent.globalToLocal( new Point( x, y ) ).x;
 		}
 		
-		/**
-		 * @private
-		 */
 		public function set globalX( $value :Number ) :void
 		{
 			x = _displayObject.parent.globalToLocal( new Point( $value, y ) ).x;
 		}
 		
 		/**
-		 * @return	The y coordinate of the <code>DisplayObject</code> as if it were on the document's stage. 
+		 * The <code>y</code> coordinate of the <code>DisplayObject</code> as if it were on the document's stage. 
 		 */
 		public function get globalY() :Number 
 		{
 			 return _displayObject.parent.globalToLocal( new Point( x, y ) ).y;
 		}
 		
-		/**
-		 * @private
-		 */
 		public function set globalY( $value :Number ) :void
 		{
 			x = _displayObject.parent.globalToLocal( new Point( x, $value ) ).y;
 		}
 		
 		/**
-		 * @return	The x and coordinates of the <code>DisplayObject</code> as if it were on the document's stage.
+		 * The <code>x</code> and <code>y</code> coordinates of the <code>DisplayObject</code> as if it were on the document's stage.
 		 */
 		public function get globalCoordinates() :Point
 		{
 			return _displayObject.parent.globalToLocal( new Point( x, y ) );
 		}
-		
-		/**
-		 * @private
-		 */
+
 		public function set globalCoordinates( $value :Point ) :void
 		{
 			var gp :Point = _displayObject.parent.globalToLocal( $value ); 

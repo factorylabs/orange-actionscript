@@ -32,13 +32,13 @@ package com.factorylabs.orange.core.logging
 	public interface ILogger
 	{
 		/**
-		 * @return The name of the logger dispatching events.
+		 * The name of the logger dispatching events.
 		 */
 		function get name() :String;
 		function set name( $name :String ) :void;
 		
 		/**
-		 * @return Whether this logger is suppressing it's events. 
+		 * Whether this logger is suppressing it's events. 
 		 */
 		function get isSilent() :Boolean;
 		function set isSilent( $isSilent :Boolean ) :void;
@@ -52,9 +52,9 @@ package com.factorylabs.orange.core.logging
 		 * Handles the basic necessities of logging a message, all class methods are filtered through here.
 		 * Precondition:	An optional message, optional object and optional level
 		 * Postcondition:	A dispatched log event if there are listeners and the logger isn't silenced.
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
-		 * @param $level	LogLevels constant or custom notification filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
+		 * @param $level	<code>LogLevels</code> constant or custom notification filter.
 		 * 
 		 * @example The following code logs a command with a custom level. 
 	 	 * <listing version="3.0" >
@@ -65,9 +65,9 @@ package com.factorylabs.orange.core.logging
 		function trace( $msg :String = '', $object :Object = null, $level :String = null ) :void;
 		
 		/**
-		 * Logs the message and object through trace with the LogLevels.LOG filter (level 6).
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
+		 * Logs the message and object through trace with the <code>LogLevels.LOG</code> filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * 
 		 * @example The following code logs a command with a level of LOG. 
 	 	 * <listing version="3.0" >
@@ -79,9 +79,9 @@ package com.factorylabs.orange.core.logging
 		function log( $msg :String = '', $object :Object = null ) :void;
 		
 		/**
-		 * Logs the message and object through trace with the LogLevels.DEBUG filter (level 5).
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
+		 * Logs the message and object through trace with the <code>LogLevels.DEBUG</code> filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * 
 		 * @example The following code logs a command with a level of DEBUG. 
 	 	 * <listing version="3.0" >
@@ -93,9 +93,9 @@ package com.factorylabs.orange.core.logging
 		function debug( $msg :String = '', $object :Object = null ) :void;
 		
 		/**
-		 * Logs the message and object through trace with the LogLevels.INFO filter (level 4).
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
+		 * Logs the message and object through trace with the <code>LogLevels.INFO</code> filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * 
 		 * @example The following code logs a command with a level of INFO. 
 	 	 * <listing version="3.0" >
@@ -107,9 +107,9 @@ package com.factorylabs.orange.core.logging
 		function info( $msg :String = '', $object :Object = null ) :void;
 		
 		/**
-		 * Logs the message and object through trace with the LogLevels.WARN filter (level 3).
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
+		 * Logs the message and object through trace with the <code>LogLevels.WARN</code> filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * 
 		 * @example The following code logs a command with a level of WARN. 
 	 	 * <listing version="3.0" >
@@ -121,9 +121,9 @@ package com.factorylabs.orange.core.logging
 		function warn( $msg :String = '', $object :Object = null ) :void;
 		
 		/**
-		 * Logs the message and object through trace with the LogLevels.ERROR filter (level 2).
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
+		 * Logs the message and object through trace with the <code>LogLevels.ERROR</code> filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * 
 		 * @example The following code logs a command with a level of ERROR. 
 	 	 * <listing version="3.0" >
@@ -135,9 +135,9 @@ package com.factorylabs.orange.core.logging
 		function error( $msg :String = '', $object :Object = null ) :void;
 		
 		/**
-		 * Logs the message and object through trace with the LogLevels.FATAL filter (level 1).
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
+		 * Logs the message and object through trace with the <code>LogLevels.FATAL</code> filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * 
 		 * @example The following code logs a command with a level of FATAL. 
 	 	 * <listing version="3.0" >
@@ -149,9 +149,9 @@ package com.factorylabs.orange.core.logging
 		function fatal( $msg :String = '', $object :Object = null ) :void;
 		
 		/**
-		 * Logs the message and object through Log.trace with the LogLevels.CORE filter (level 0).
-		 * @param $msg		String message to trace out.
-		 * @param $object	Object to be inspected via the debugger.
+		 * Logs the message and object through trace with the <code>LogLevels.CORE</code> filter.
+		 * @param $msg		<code>String</code> message to trace out.
+		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * 
 		 * @example The following code logs a command with a level of CORE. 
 	 	 * <listing version="3.0" >

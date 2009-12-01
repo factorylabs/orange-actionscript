@@ -5,7 +5,7 @@ package com.factorylabs.orange.core.gc
 	import flash.utils.Dictionary;
 
 	/**
-	 * The Janitor is used for garbage collection dealing with SoundChannel objects.
+	 * The JanitorSoundChannel is used for garbage collection dealing with <code>SoundChannel</code> objects.
 	 * 
 	 * <p>The following people are credited with originating all or parts of this code:<br />
 	 * Grant Skinner :: www.gskinner.com</p>
@@ -38,20 +38,17 @@ package com.factorylabs.orange.core.gc
 	public class JanitorSoundChannel
 		implements IJanitor
 	{		
-		/**
-		 * The object that instantiated this Janitor instance.
-		 */
 		private var _target				:Object;
 		private var _soundChannels		:Dictionary;
 		
 		/**
-		 * @return	Dictionary for storing sound channels.
+		 * The <code>Dictionary</code> for storing <code>SoundChannels</code>.
 		 */
 		public function get soundChannels() :Dictionary { return _soundChannels; }
 	
 		/**
-		 * Create an instance of a Janitor and add it to the JanitorManager for cleanup.
-		 * @param $target	who needs cleaning.
+		 * Create an instance of a <code>JanitorSoundChannel</code>.
+		 * @param $target	Target object hosting a <code>SoundChannel</code>.
 		 */
 		public function JanitorSoundChannel( $target :Object )
 		{
@@ -59,7 +56,7 @@ package com.factorylabs.orange.core.gc
 		}
 
 		/**
-		 * @return	string equivalent of this class.
+		 * @return	The string equivalent of this class.
 		 */
 		public function toString() :String 
 		{
@@ -75,7 +72,7 @@ package com.factorylabs.orange.core.gc
 		}
 		
 		/**
-		 * Adds a SoundChannel to it's Dictionary.
+		 * Adds a <code>SoundChannel</code> to it's <code>Dictionary</code>.
 		 * @param $soundChannel	the channel to add.
 		 */
 		public function addSoundChannel( $soundChannel :SoundChannel ) :void 
@@ -85,7 +82,7 @@ package com.factorylabs.orange.core.gc
 		}
 		
 		/**
-		 * Removes a SoundChannel from it's Dictionary.
+		 * Removes a <code>SoundChannel</code> from it's <code>Dictionary</code>.
 		 * @param $soundChannel	the channel to remove.
 		 */
 		public function removeSoundChannel( $soundChannel :SoundChannel ) :void 
@@ -95,7 +92,7 @@ package com.factorylabs.orange.core.gc
 		}
 		
 		/**
-		 * Cleans up all SoundChannels in it's Dictionary by calling stop and removing them.
+		 * Cleans up all <code>SoundChannel</code>s in it's <code>Dictionary</code> by calling stop and removing them.
 		 */
 		public function cleanUpSoundChannels() :void 
 		{

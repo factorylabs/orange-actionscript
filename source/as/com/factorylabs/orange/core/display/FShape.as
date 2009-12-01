@@ -7,9 +7,9 @@ package com.factorylabs.orange.core.display
 	import flash.display.Shape;
 
 	/**
-	 * FShape is the base class for all Shape objects.
+	 * FShape is the base class for all <code>Shape</code> objects.
 	 * 
-	 * <p>Utilize this class to inline and automate basic needs of a visual Shape.</p>
+	 * <p>Utilize this class to inline and automate basic needs of a visual <code>Shape</code>.</p>
 	 *
 	 * <hr />
 	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
@@ -46,11 +46,11 @@ package com.factorylabs.orange.core.display
 		protected var _container	:DisplayObjectContainer;
 		
 		/**
-		* FShape is the basic building block for display objects that normally utilize the Shape class.
+		* FShape is the basic building block for display objects that normally utilize the <code>Shape</code> class.
 		*
 		* <p>Meant to be used in place of the native flash <code>Shape</code> class.</p>
 		* 
-		* @param $container The <code>DisplayObject</code> to add this <code>FShape</code> to. If null this 
+		* @param $container The <code>DisplayObject</code> to add this <code>FShape</code> to. If <code>null</code> this 
 		* <code>FShape</code> will not automatically be added to the display tree of another <code>DisplayObject</code>.
 		* @param $init Object containting all parameters to automatically asign upon instantiation.
 		* @example The following code is the simplest example of how to use <code>FShape</code>. 
