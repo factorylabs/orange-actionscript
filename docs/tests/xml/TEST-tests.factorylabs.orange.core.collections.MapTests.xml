@@ -2,22 +2,22 @@
 
 <testsuite name="tests.factorylabs.orange.core.collections.MapTests" tests="15" failures="0" errors="0" skipped="2" time="0.0">
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="values" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="dispose" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="get" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clear" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="add" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clone" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="find" time="0.000" status="ignore">
     <skipped/>
   </testcase>
+  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="dispose" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="get" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="remove" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clear" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="add" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="each" time="0.000" status="ignore">
     <skipped/>
   </testcase>
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="iterator" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="remove" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="keys" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasKey" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasValue" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="keys" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clone" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="extend" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="length" time="0.000" status="success"/>
 </testsuite>

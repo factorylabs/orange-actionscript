@@ -33,6 +33,6 @@ package tests.factorylabs.orange.core.errors
 	[RunWith('org.flexunit.runners.Suite')]
 	public class ErrorsTestSuite 
 	{
-		public var theIllegalSetDisplayObjectPropertiesErrorTests	:IllegalSetDisplayObjectPropertiesErrorTests;		
+		public var theIllegalSetPropertiesErrorTests	:IllegalSetPropertiesErrorTests;		
 	}
 }

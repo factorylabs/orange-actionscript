@@ -37,9 +37,9 @@ package com.factorylabs.orange.core.display
 		 * Maps all the object's properties to the <code>DisplayObject</code>.
 		 * If there are properties that do not exist, an error is thrown. 
 		 * @param $object	Object to map properties from.
-		 * @throws	com.factorylabs.orange.core.errors.IllegalSetDisplayObjectPropertiesError When an invalid property assignment was attempted.
+		 * @throws	com.factorylabs.orange.core.errors.IllegalSetPropertiesError When an invalid property assignment was attempted.
 		 */
-		function setDisplayObjectProperties( $object :Object ) :void;
+		function setProperties( $object :Object ) :void;
 		
 		/**
 		 * Removes the display object from its parent container.

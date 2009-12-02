@@ -1,7 +1,7 @@
 
 package com.factorylabs.orange.core.display 
 {	
-	import com.factorylabs.orange.core.errors.IllegalSetDisplayObjectPropertiesError;
+	import com.factorylabs.orange.core.errors.IllegalSetPropertiesError;
 
 	import flash.display.DisplayObjectContainer;
 	import flash.display.Shape;
@@ -69,7 +69,7 @@ package com.factorylabs.orange.core.display
 				_container.addChild( this );
 			
 			if( $init ) 
-				setDisplayObjectProperties( $init );
+				setProperties( $init );
 		}
 		
 		/**
@@ -83,14 +83,14 @@ package com.factorylabs.orange.core.display
 		/**
 		 * @inheritDoc
 		 */
-		public function setDisplayObjectProperties( $object :Object ) :void
+		public function setProperties( $object :Object ) :void
 		{
 			for( var it :String in $object )
 			{
 				if( this.hasOwnProperty( it ) ) 
 					this[ it ] = $object[ it ];
 				else
-					throw new IllegalSetDisplayObjectPropertiesError( 'An invalid property assignment was attempted on ' + this.toString() + ' for the property ' + it );
+					throw new IllegalSetPropertiesError( 'An invalid property assignment was attempted on ' + this.toString() + ' for the property ' + it );
 			}
 		}
 		
