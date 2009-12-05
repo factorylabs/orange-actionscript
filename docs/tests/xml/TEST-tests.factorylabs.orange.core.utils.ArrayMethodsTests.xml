@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.utils.ArrayMethodsTests" tests="7" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="search" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="remove" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="loop" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="random" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="shuffle" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="clone" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="remove" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="contains" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="shuffle" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="loop" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="search" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="clone" time="0.000" status="success"/>
 </testsuite>

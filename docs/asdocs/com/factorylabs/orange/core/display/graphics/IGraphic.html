@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print">
-<meta content="IGraphic,com.factorylabs.orange.core.display.graphics.IGraphic,fill,height,width,x,y,redraw" name="keywords">
+<meta content="IGraphic,com.factorylabs.orange.core.display.graphics.IGraphic,autoRedraw,center,fill,gfx,height,width,x,y,redraw" name="keywords">
 <title>com.factorylabs.orange.core.display.graphics.IGraphic</title>
 </head>
 <body>
@@ -37,9 +37,14 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <tr>
 <td class="classHeaderTableLabel">Interface</td><td class="classSignature">public interface IGraphic</td>
 </tr>
+<tr>
+<td class="classHeaderTableLabel">Implementors</td><td><a href="../graphics/Graphic.html">Graphic</a></td>
+</tr>
 </table>
 <p></p>
   IGraphic is the interface used for drawing graphic shapes.
+  
+  <p>We've run performance tests against the native <code>GraphicsSolidFill</code> through the <code>drawGraphicsData</code> and this runs about 96% faster.
     <hr />
   <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
     Permission is hereby granted, free of charge, to any person obtaining
@@ -243,9 +248,24 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
 </tr>
 <tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#autoRedraw">autoRedraw</a> : Boolean<div class="summaryTableDescription">
+   Whether the <code>IGraphic</code> automatically redraws on a property setter.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#center">center</a> : Boolean<div class="summaryTableDescription">
+   Whether the <code>IGraphic</code> draws from it's center registration mark.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+<tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fill">fill</a> : <a href="../fills/IFill.html">IFill</a>
 <div class="summaryTableDescription">
-   The <code>IFill</code> object used to fill the <code>IGraphic</code>.</div>
+   The <code>IFill</code> object used to fill or stroke the <code>IGraphic</code>.</div>
+</td><td class="summaryTableOwnerCol">IGraphic</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#gfx">gfx</a> : Graphics<div class="summaryTableDescription">
+   The <code>shape.graphics</code> object used for drawing the shape.</div>
 </td><td class="summaryTableOwnerCol">IGraphic</td>
 </tr>
 <tr class="">
@@ -282,7 +302,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <div class="summarySignature">
 <a class="signatureLink" href="#redraw()">redraw</a>():void</div>
 <div class="summaryTableDescription">
-   Redraws the shape if the <code>autoRedraw</code> property is set to true, a setter will automatically call this method.</div>
+   Redraws the shape.</div>
 </td><td class="summaryTableOwnerCol">IGraphic</td>
 </tr>
 </table>
@@ -294,20 +314,71 @@ showHideInherited();
 <div class="MainContent">
 <a name="propertyDetail"></a>
 <div class="detailSectionHeader">Property detail</div>
+<a name="autoRedraw"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">autoRedraw</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>autoRedraw:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Whether the <code>IGraphic</code> automatically redraws on a property setter. 
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get autoRedraw():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set autoRedraw(value:Boolean):void</code>
+<br>
+</div>
+<a name="center"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">center</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>center:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Whether the <code>IGraphic</code> draws from it's center registration mark.
+   </p><p>If <code>autoRedraw</code> is set to true, the <code>IGraphic</code> will redraw itself.
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get center():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set center(value:Boolean):void</code>
+<br>
+</div>
 <a name="fill"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">fill</td><td class="detailHeaderType">property</td>
+<td class="detailHeaderName">fill</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
 </tr>
 </table>
 <div class="detailBody">
 <code>fill:<a href="../fills/IFill.html">IFill</a></code>&nbsp;&nbsp;[read-write]<p>
-   The <code>IFill</code> object used to fill the <code>IGraphic</code>.
-   </p><span class="label">Implementation</span>
+   The <code>IFill</code> object used to fill or stroke the <code>IGraphic</code>.
+   </p><p>If <code>autoRedraw</code> is set to true, the <code>IGraphic</code> will redraw itself.
+   <span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get fill():<a href="../fills/IFill.html">IFill</a></code>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function set fill(value:<a href="../fills/IFill.html">IFill</a>):void</code>
+<br>
+</div>
+<a name="gfx"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">gfx</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>gfx:Graphics</code>&nbsp;&nbsp;[read-write]<p>
+   The <code>shape.graphics</code> object used for drawing the shape.
+   </p><p>If <code>autoRedraw</code> is set to true, the <code>IGraphic</code> will redraw itself.
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get gfx():Graphics</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set gfx(value:Graphics):void</code>
 <br>
 </div>
 <a name="height"></a>
@@ -319,7 +390,8 @@ showHideInherited();
 <div class="detailBody">
 <code>height:Number</code>&nbsp;&nbsp;[read-write]<p>
    The <code>height</code> value of the <code>IGraphic</code>.
-   </p><span class="label">Implementation</span>
+   </p><p>If <code>autoRedraw</code> is set to true, the <code>IGraphic</code> will redraw itself.
+   <span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get height():Number</code>
 <br>
@@ -335,7 +407,8 @@ showHideInherited();
 <div class="detailBody">
 <code>width:Number</code>&nbsp;&nbsp;[read-write]<p>
    The <code>width</code> value of the <code>IGraphic</code>.
-   </p><span class="label">Implementation</span>
+   </p><p>If <code>autoRedraw</code> is set to true, the <code>IGraphic</code> will redraw itself.
+   <span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get width():Number</code>
 <br>
@@ -351,7 +424,8 @@ showHideInherited();
 <div class="detailBody">
 <code>x:Number</code>&nbsp;&nbsp;[read-write]<p>
    The <code>x</code> coordinate of the <code>IGraphic</code>.
-   </p><span class="label">Implementation</span>
+   </p><p>If <code>autoRedraw</code> is set to true, the <code>IGraphic</code> will redraw itself.
+   <span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get x():Number</code>
 <br>
@@ -367,7 +441,8 @@ showHideInherited();
 <div class="detailBody">
 <code>y:Number</code>&nbsp;&nbsp;[read-write]<p>
    The <code>y</code> coordinate of the <code>IGraphic</code>.
-   </p><span class="label">Implementation</span>
+   </p><p>If <code>autoRedraw</code> is set to true, the <code>IGraphic</code> will redraw itself.
+   <span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get y():Number</code>
 <br>
@@ -384,8 +459,9 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function redraw():void</code><p>
-   Redraws the shape if the <code>autoRedraw</code> property is set to true, a setter will automatically call this method.
-   </p><p>Note this will call <code>clear()</code> on the <code>shape.graphics</code> object and clear all existing grapics witihin that object.</p> 
+   Redraws the shape. 
+   </p><p>If the <code>autoRedraw</code> property is set to true, a setter will automatically call this method.</p>
+   <p><em>Note:</em> This will call <code>clear()</code> on the <code>shape.graphics</code> object and clear all existing grapics witihin that object.</p> 
    
    <br>
 <span class="label">Example</span>
@@ -403,8 +479,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/02/2009 04:21 PM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/05/2009 01:53 AM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/02/2009 04:21 PM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/05/2009 01:53 AM-->

@@ -154,27 +154,29 @@
     <target name='fdtTest' description='Runs the FlexUnit 4 Unit Tests with the FDT debugger enabled' depends='-fdtStartDebugger, test'>     
     </target>
 	
-	<!-- 
-	public          
-	<target name='fdtDebugCoreTests' depends='-fdtStartDebugger, -fdtCompileCoreTests' 
+	<!--
+	public -->           
+	<target name='fdtDebugBarebones' depends='-fdtStartDebugger, -fdtCompileBarebones' 
 			description='launches and debugs the unit tests gui through the default browser using the mxml launcher.'>
-		<fdt.browse location='${tests.core.url}'/>
+		<fdt.browse location='${bb.url}'/>
 	</target>
-	-->
 	
-	<!-- 
- 	private: build using the FDT launch method for the Testing framework. 
-    <target name='-fdtCompileCoreTests' >
+	
+	<!--  
+ 	private: build using the FDT launch method for the Testing framework. --> 
+    <target name='-fdtCompileBarebones' >
+        <echo>[-fdtCompileBarebones] FDT Compile Barebones</echo>
     	<fdt.launch.application 
     		projectname="${ant.project.name}" 
-    		mainclass="${tests.core}"
+    		mainclass="${bb.main}"
     		debug="${isDebug}"
-    		target="${tests.core.swf}" 
+    		target="${bb.swf}" 
     		startswf="${autostart}"
     		compilerarguments="-default-size ${width} ${height} -default-frame-rate ${framerate} -default-background-color ${background} -as3=${as3} -optimize=${optimize} -show-actionscript-warnings=${showWarn}"
     	/>
+        <echo>[-fdtCompileBarebones] FDT Barebones Compiled</echo>
 	</target>
-	-->
+	
 	
 <!-- 
 	FDT DEBUGGING METHODS 
@@ -182,9 +184,11 @@
     <!--
 	private: kick start the FDT bugger and allow the .swf to be compiled in debug mode. **This one still requires FDT for having debugging in the console.** -->
     <target name='-fdtStartDebugger' >
+        <echo>[-fdtStartDebugger] FDT Staring Debugger</echo>
     	<property name='isDebug' value='true'/>
 		<property name='useNetwork' value='true'/>
     	<fdt.startDebugger projectname="${ant.project.name}" savelocation="build"/>
+        <echo>[-fdtStartDebugger] FDT Debugger Started</echo>
     </target>
 	
     <!--

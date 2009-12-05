@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print">
-<meta content="IFill,com.factorylabs.orange.core.display.fills.IFill,beginFill,endFill" name="keywords">
+<meta content="IFill,com.factorylabs.orange.core.display.fills.IFill,begin,end" name="keywords">
 <title>com.factorylabs.orange.core.display.fills.IFill</title>
 </head>
 <body>
@@ -37,9 +37,14 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <tr>
 <td class="classHeaderTableLabel">Interface</td><td class="classSignature">public interface IFill</td>
 </tr>
+<tr>
+<td class="classHeaderTableLabel">Implementors</td><td><a href="../fills/SolidFill.html">SolidFill</a></td>
+</tr>
 </table>
 <p></p>
   IFill is an interface for <code>IGraphic</code> shapes with either a fill or a stroke.
+  
+  <p>We've run performance tests against the native <code>GraphicsSolidFill</code> through the <code>drawGraphicsData</code> and this runs about 96% faster.
     <hr />
   <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
     Permission is hereby granted, free of charge, to any person obtaining
@@ -78,7 +83,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#beginFill()">beginFill</a>($gfx:Graphics, $igfx:<a href="../graphics/IGraphic.html">IGraphic</a>):void</div>
+<a class="signatureLink" href="#begin()">begin</a>($gfx:Graphics, $igfx:<a href="../graphics/IGraphic.html">IGraphic</a>):void</div>
 <div class="summaryTableDescription">
    Fills or strokes a subclass of <code>Graphic</code>, generally called only internally by an instance of <code>IGraphic</code>.</div>
 </td><td class="summaryTableOwnerCol">IFill</td>
@@ -86,7 +91,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#endFill()">endFill</a>($gfx:Graphics):void</div>
+<a class="signatureLink" href="#end()">end</a>($gfx:Graphics):void</div>
 <div class="summaryTableDescription">
    Closes a fill or stroke on a <code>Graphic</code>, generally called only internally by an instance of <code>IGraphic</code>.</div>
 </td><td class="summaryTableOwnerCol">IFill</td>
@@ -100,14 +105,14 @@ showHideInherited();
 <div class="MainContent">
 <a name="methodDetail"></a>
 <div class="detailSectionHeader">Method detail</div>
-<a name="beginFill()"></a>
+<a name="begin()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">beginFill</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+<td class="detailHeaderName">begin</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>public function beginFill($gfx:Graphics, $igfx:<a href="../graphics/IGraphic.html">IGraphic</a>):void</code><p>
+<code>public function begin($gfx:Graphics, $igfx:<a href="../graphics/IGraphic.html">IGraphic</a>):void</code><p>
    Fills or strokes a subclass of <code>Graphic</code>, generally called only internally by an instance of <code>IGraphic</code>.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
@@ -125,16 +130,18 @@ showHideInherited();
 <p>
 <span class="label">See also</span>
 </p>
-<div class="seeAlso">com.factorylabs.orange.core.display.graphics.IGraphic.</div>
+<div class="seeAlso">
+<a href="../graphics/IGraphic.html" target="">only used for Bitmap fills and Gradient stroke/fills.</a>
 </div>
-<a name="endFill()"></a>
+</div>
+<a name="end()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">endFill</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+<td class="detailHeaderName">end</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>public function endFill($gfx:Graphics):void</code><p>
+<code>public function end($gfx:Graphics):void</code><p>
    Closes a fill or stroke on a <code>Graphic</code>, generally called only internally by an instance of <code>IGraphic</code>.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
@@ -149,8 +156,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/02/2009 04:21 PM</center>
+<center class="copyright">Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/05/2009 01:53 AM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/02/2009 04:21 PM-->
+<!--Factory Design Labs - http://www.factorylabs.com/ - Documentation generated at: 12/05/2009 01:53 AM-->
