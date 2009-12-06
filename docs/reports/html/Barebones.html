@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Project dependency analysis</title>
+<style>
+		
+		body {
+			font-family: sans-serif;
+		}
+		
+		#link-report {
+			width: 100%;
+		}
+		
+		td {
+			vertical-align: top;
+		}
+		
+		th {
+			text-align: left;
+		}
+		
+		tfoot {
+			border-top: 1px solid black;
+		}
+		
+		.prequisites, .dependencies {
+			display: none;
+			
+			margin-top: 0.5em;
+			padding-top: 0.5em;
+			border-top: 1px solid black;
+		}
+		
+		.hierarchy:hover .prequisites,
+		.hierarchy:hover .dependencies {
+			display: block;
+		}
+		
+		.class-name {
+			width: 20em;
+			overflow: hidden;
+		}
+		
+		.hierarchy {
+			width: 20em;
+			overflow: hidden;
+		}
+		
+		.size {
+			width: 10em;
+			text-align: right;
+		}
+		
+		.external {
+			color: #999999;
+		}
+		
+		</style>
+</head>
+<body>
+<table id="link-report">
+<thead>
+<tr>
+<th>Class name</th>
+<th>References</th>
+<th>Qualified name</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="class-name" title="Graphic">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as">Graphic</a>
+</div>
+</td>
+<td>1</td>
+<td>
+<div class="hierarchy">
+<div title="com.factorylabs.orange.core.display.graphics:Graphic">com.factorylabs.orange.core.display.graphics:Graphic</div>
+<ul class="prequisites">
+<li class="prequisite external">Object</li>
+<li class="prequisite ">com.factorylabs.orange.core.display.graphics:IGraphic</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency ">com.factorylabs.orange.core.display.fills:IFill</li>
+<li class="dependency external">flash.errors:IllegalOperationError</li>
+<li class="dependency external">flash.display:Graphics</li>
+<li class="dependency external">AS3</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">1.5 KB</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="class-name" title="Main">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as">Main</a>
+</div>
+</td>
+<td>0</td>
+<td>
+<div class="hierarchy">
+<div title="com.factorylabs.barebones:Main">com.factorylabs.barebones:Main</div>
+<ul class="prequisites">
+<li class="prequisite external">flash.display:MovieClip</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency external">flash.text:TextFieldAutoSize</li>
+<li class="dependency ">com.factorylabs.orange.core.display.fills:SolidFill</li>
+<li class="dependency external">flash.utils:getTimer</li>
+<li class="dependency external">flash.text:TextField</li>
+<li class="dependency external">flash.display:StageScaleMode</li>
+<li class="dependency external">trace</li>
+<li class="dependency external">AS3</li>
+<li class="dependency ">com.factorylabs.orange.core.display.graphics:FRectangle</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">1.2 KB</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="class-name" title="SolidFill">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidFill.as">SolidFill</a>
+</div>
+</td>
+<td>1</td>
+<td>
+<div class="hierarchy">
+<div title="com.factorylabs.orange.core.display.fills:SolidFill">com.factorylabs.orange.core.display.fills:SolidFill</div>
+<ul class="prequisites">
+<li class="prequisite ">com.factorylabs.orange.core.display.fills:IFill</li>
+<li class="prequisite external">Object</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency external">flash.display:Graphics</li>
+<li class="dependency external">AS3</li>
+<li class="dependency ">com.factorylabs.orange.core.display.graphics:IGraphic</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">0.7 KB</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="class-name" title="FRectangle">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectangle.as">FRectangle</a>
+</div>
+</td>
+<td>1</td>
+<td>
+<div class="hierarchy">
+<div title="com.factorylabs.orange.core.display.graphics:FRectangle">com.factorylabs.orange.core.display.graphics:FRectangle</div>
+<ul class="prequisites">
+<li class="prequisite ">com.factorylabs.orange.core.display.graphics:Graphic</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency ">com.factorylabs.orange.core.display.fills:IFill</li>
+<li class="dependency external">flash.display:Graphics</li>
+<li class="dependency external">AS3</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">0.7 KB</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="class-name" title="IGraphic">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as">IGraphic</a>
+</div>
+</td>
+<td>3</td>
+<td>
+<div class="hierarchy">
+<div title="com.factorylabs.orange.core.display.graphics:IGraphic">com.factorylabs.orange.core.display.graphics:IGraphic</div>
+<ul class="prequisites">
+<li class="prequisite external">Object</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency ">com.factorylabs.orange.core.display.fills:IFill</li>
+<li class="dependency external">flash.display:Graphics</li>
+<li class="dependency external">AS3</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">0.5 KB</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="class-name" title="IFill">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/IFill.as">IFill</a>
+</div>
+</td>
+<td>4</td>
+<td>
+<div class="hierarchy">
+<div title="com.factorylabs.orange.core.display.fills:IFill">com.factorylabs.orange.core.display.fills:IFill</div>
+<ul class="prequisites">
+<li class="prequisite external">Object</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency external">flash.display:Graphics</li>
+<li class="dependency external">AS3</li>
+<li class="dependency ">com.factorylabs.orange.core.display.graphics:IGraphic</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">0.3 KB</div>
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td/>
+<td/>
+<td/>
+<td>
+<div class="size">4.8 KB</div>
+</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>
