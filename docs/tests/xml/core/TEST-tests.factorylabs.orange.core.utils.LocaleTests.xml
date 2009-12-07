@@ -2,7 +2,7 @@
 
 <testsuite name="tests.factorylabs.orange.core.utils.LocaleTests" tests="4" failures="0" errors="0" skipped="0" time="0.0">
   <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="languageVariant" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="variant" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="reset" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="language" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="variant" time="0.000" status="success"/>
 </testsuite>

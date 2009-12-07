@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.gc.JanitorTests" tests="17" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addEventListener" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpEventListeners" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeConnection" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpDisposables" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpConnections" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addDisposables" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeEventListener" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="recurseCleanChildren" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addTimer" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeDisposable" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addDisposable" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeConnection" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeTimer" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addTimer" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpDisposables" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="recurseCleanChildren" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeDisposable" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpConnections" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpEventListeners" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addConnection" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpTimer" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addEventListener" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeEventListener" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpChildren" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpTimers" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpDisposable" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="cleanUpTimer" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="removeTimer" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.gc::JanitorTests" name="addDisposables" time="0.000" status="success"/>
 </testsuite>

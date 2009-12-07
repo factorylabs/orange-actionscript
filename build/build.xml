@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-	* Build items for the orange-actionscript project.
-	* Matthew Kitt
-	* Ryan Boyajian
-	* Sean Dougherty
-	*
-	* ant howto: http://ant.apache.org/manual/running.html
--->
 
+<!--
+	Build items for the orange-actionscript project.
+	@author Matthew Kitt
+	@author Ryan Boyajian
+	@author Sean Dougherty
+	
+	ant howto: http://ant.apache.org/manual/running.html
+	
+	TODO: add the compc compiler for generating .swc files
+	TODO: refactor the test-unit-core task so it's more abstracted. tackle this when we dip into the next test package
+-->
 <project name="orange-actionscript" basedir="../" default="usage">
 
 <!-- PROPERTY ASSIGNMENT & INITIALIZATION ========================================================================== -->	
@@ -27,6 +30,7 @@
     public -->
     <target name="usage" description="So here is how you use this thing.">
         <echo message="Factory Design Labs: ${project.version} ant tasks"/>
+        <echo message="Note: FDT tasks may only be available within the FDT Eclipse plugin or FDT Stand Alone IDE"/>
         <echo message="----------------------------------------------------------------------------------------------"/>
         <echo message="[asdoc] => Generates the ASDocumentation for all orange packages"/>
         <echo message="[debug-barebones] => Compiles the barebones app with debug mode set to true"/>
@@ -142,7 +146,7 @@
     <!-- 
     	protected: This is hidden and used internally, but available from the command line.
     	Cleans out the directories within html and xml for the JUnit reports.
-    	* @param param.package	The directory name to remove. 
+    	@param param.package	The directory name to remove. 
     -->
     <target name="clean-test-docs">
         <echo>[clean-test-docs] Removing ${param.package} directories</echo>
@@ -160,7 +164,7 @@
     <!-- 
     	protected: This is hidden and used internally, but available from the command line.
     	Creates the directories within html and xml for the JUnit reports.
-    	* @param param.package	The directory name to create. 
+    	@param param.package	The directory name to create. 
     -->
     <target name="init-test-docs">
         <antcall target="clean-test-docs">
@@ -200,7 +204,7 @@
     
     <!--  
 	 	private: Setup and compile the barebones app using the mxmlc compiler.
-	 	* @param param.isDebug		Whether to compile in debug mode, benchmark and verbose stack traces. 
+	 	@param param.isDebug	Whether to compile in debug mode, benchmark and verbose stack traces. 
 	-->
     <target name="-compile-barebones"> 
         <echo>[-compile-barebones] Setup and compiling Barebones with debug mode set to ${param.isDebug}</echo>
@@ -224,14 +228,14 @@
     
     <!--  
 	 	private: Compiles a swf file using the mxmlc compiler.
-	 	* @param param.mainclass	The Main class used to generate the swf.
-	 	* @param param.swf			The output file created by the mxmlc compiler.
-	 	* @param param.width		The width value of the swf.
-	 	* @param param.height		The height value of the swf.
-	 	* @param param.color		The background color of the swf.
-	 	* @param param.isHeadless	Whether this swf is compiled as headless.
-	 	* @param param.isDebug		Whether to compile in debug mode, benchmark and verbose stack traces.
-	 	* @param param.reportname	The name given to the link report file. 
+	 	@param param.mainclass	The Main class used to generate the swf.
+	 	@param param.swf		The output file created by the mxmlc compiler.
+	 	@param param.width		The width value of the swf.
+	 	@param param.height		The height value of the swf.
+	 	@param param.color		The background color of the swf.
+	 	@param param.isHeadless	Whether this swf is compiled as headless.
+	 	@param param.isDebug	Whether to compile in debug mode, benchmark and verbose stack traces.
+	 	@param param.reportname	The name given to the link report file. 
 	-->
 	<target name="-compile-mxmlc">
 	    <echo>[-compile-mxmlc] Compiling MXMLC</echo>
@@ -260,8 +264,8 @@
     
     <!--  
 	 	private: Runs the FlexUnit 4 test on the specified swf.
-	 	* @param param.swf		The file to run the FlexUnit tests on.
-	 	* @param param.package	The directory to output the xml results of the tests.
+	 	@param param.swf		The file to run the FlexUnit tests on.
+	 	@param param.package	The directory to output the xml results of the tests.
  	-->
     <target name="-run-flexunit">
         <echo>[-run-flexunit] Running FlexUnit tests</echo>
@@ -271,14 +275,14 @@
             haltonfailure="true" 
             verbose="true" 
             localTrusted="true"/>
-        <echo>[-run-flexunit] FlexUnit tests complete</echo>
+        <echo>[-run-flexunit] FlexUnit tests complete :: ALL TESTS PASSED</echo>
     </target>
 
 <!-- PRIVATE REPORTING ============================================================================================= -->    
     
     <!--  
 	 	private: Publishes the results of the FlexUnit test to a JUnit style report.
-	 	* @param param.package	The directory to generate a report from the xml results of the tests.
+	 	@param param.package	The directory to generate a report from the xml results of the tests.
  	-->
     <target name="-publish-junit-report">
         <echo>[-publish-junit-report] Publishing JUnit report</echo>
@@ -293,7 +297,7 @@
     
     <!--  
 	 	private: Performs an XSLT transform on the generated link report xml file.
-	 	* @param param.reportname	The name of the report, appropriate file extensions will be appended. 
+	 	@param param.reportname	The name of the report, appropriate file extensions will be appended. 
  	-->
     <target name="-publish-link-report">
         <echo>[-publish-link-report] Publishing ${param.reportname} link report</echo>

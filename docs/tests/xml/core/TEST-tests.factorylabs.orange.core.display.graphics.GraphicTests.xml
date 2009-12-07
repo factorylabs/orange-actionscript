@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<testsuite name="tests.factorylabs.orange.core.display.graphics.GraphicTests" tests="8" failures="0" errors="0" skipped="0" time="0.0">
+<testsuite name="tests.factorylabs.orange.core.display.graphics.GraphicTests" tests="9" failures="0" errors="0" skipped="0" time="0.0">
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="redraw" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="width" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="gfx" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="autoRedraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="fill" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="height" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="y" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="x" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="autoRedraw" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="height" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="center" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="fill" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::GraphicTests" name="gfx" time="0.000" status="success"/>
 </testsuite>

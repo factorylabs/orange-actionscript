@@ -40,6 +40,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr>
 <td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FRectangle <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../../images/inherit-arrow.gif"> <a href="Graphic.html">Graphic</a></td>
 </tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../graphics/FSquare.html">FSquare</a></td>
+</tr>
 </table>
 <p></p>
   Draws a rectangle shape.
@@ -149,7 +152,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#FRectangle()">FRectangle</a>($gfx:Graphics, $x:Number = 0, $y:Number = 0, $width:Number = 10, $height:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</div>
+<a class="signatureLink" href="#FRectangle()">FRectangle</a>($gfx:Graphics = null, $x:Number = 0, $y:Number = 0, $width:Number = 10, $height:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</div>
 <div class="summaryTableDescription">
    Constructs and draws a rectangle shape.</div>
 </td><td class="summaryTableOwnerCol">FRectangle</td>
@@ -228,12 +231,12 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function FRectangle($gfx:Graphics, $x:Number = 0, $y:Number = 0, $width:Number = 10, $height:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</code><p>
+<code>public function FRectangle($gfx:Graphics = null, $x:Number = 0, $y:Number = 0, $width:Number = 10, $height:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</code><p>
    Constructs and draws a rectangle shape.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">$gfx</span>:Graphics</code> &mdash;   Reference to the <code>shape.graphics</code> where the shape will be drawn into.
+<td width="20px"></td><td><code><span class="label">$gfx</span>:Graphics</code> (default = <code>null</code>)<code></code> &mdash;   Reference to the <code>shape.graphics</code> where the shape will be drawn into.
    </td>
 </tr>
 <tr>
@@ -275,7 +278,7 @@ showHideInherited();
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$center</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  Whether to draw the shape from a center registration
+<td width="20px"></td><td><code><span class="label">$center</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  Whether to draw the shape from a center registration.
    </td>
 </tr>
 <tr>
@@ -336,8 +339,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - www.factorylabs.com - Generated at: 12/06/2009 04:39 PM</center>
+<center class="copyright">Factory Design Labs - www.factorylabs.com - Generated at: 12/07/2009 12:59 AM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - www.factorylabs.com - Generated at: 12/06/2009 04:39 PM-->
+<!--Factory Design Labs - www.factorylabs.com - Generated at: 12/07/2009 12:59 AM-->

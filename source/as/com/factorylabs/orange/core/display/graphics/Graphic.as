@@ -199,7 +199,7 @@ package com.factorylabs.orange.core.display.graphics
 		 * @param $width		The <code>width</code> of the shape.
 		 * @param $height		The <code>height</code> of the shape.
 		 * @param $fill			Fill or line style to apply to the shape.
-		 * @param $center		Whether to draw the shape from a center registration
+		 * @param $center		Whether to draw the shape from a center registration.
 		 * @param $autoRedraw	Determines if the graphic should auto redraw when a setter is called.
 		 */		public function Graphic( $gfx :Graphics = null, $x :Number = 0, $y :Number = 0, $width :Number = 10, $height :Number = 10, $fill :IFill = null, $center :Boolean = false, $autoRedraw :Boolean = true ) 
 		{
@@ -267,4 +267,4 @@ package com.factorylabs.orange.core.display.graphics
 			_x = _width * .5;
 			_y = _height * .5;
 		}
-	}}
+	}}
