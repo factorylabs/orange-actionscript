@@ -16,16 +16,9 @@
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectangle.as" mod="1260165253000" size="1336" optimizedsize="660">
-      <def id="com.factorylabs.orange.core.display.graphics:FRectangle" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectRoundComplex.as" mod="1261009518000" size="2832" optimizedsize="1116">
+      <def id="com.factorylabs.orange.core.display.graphics:FRectRoundComplex" />
       <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
-      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
-      <dep id="flash.display:Graphics" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as" mod="1259946593000" size="3170" optimizedsize="524">
-      <def id="com.factorylabs.orange.core.display.graphics:IGraphic" />
-      <pre id="Object" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
@@ -38,10 +31,18 @@
       <dep id="AS3" />
       <dep id="com.factorylabs.orange.core.display.graphics:IGraphic" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1260167674000" size="2666" optimizedsize="1594">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as" mod="1259946593000" size="3170" optimizedsize="524">
+      <def id="com.factorylabs.orange.core.display.graphics:IGraphic" />
+      <pre id="Object" />
+      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1261010567000" size="2694" optimizedsize="1615">
       <def id="com.factorylabs.barebones:Main" />
       <pre id="flash.display:MovieClip" />
       <pre id="com.factorylabs.orange.core:IDisposable" />
+      <dep id="com.factorylabs.orange.core.display.graphics:FRectRoundComplex" />
       <dep id="flash.text:TextFieldAutoSize" />
       <dep id="com.factorylabs.orange.core.display.fills:SolidFill" />
       <dep id="flash.text:TextField" />
@@ -49,16 +50,8 @@
       <dep id="flash.display:Stage" />
       <dep id="flash.events:Event" />
       <dep id="trace" />
-      <dep id="com.factorylabs.orange.core.display.graphics:FSquare" />
       <dep id="AS3" />
       <dep id="flash.display:StageAlign" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FSquare.as" mod="1260166409000" size="1703" optimizedsize="773">
-      <def id="com.factorylabs.orange.core.display.graphics:FSquare" />
-      <pre id="com.factorylabs.orange.core.display.graphics:FRectangle" />
-      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
-      <dep id="flash.display:Graphics" />
-      <dep id="AS3" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1259182770000" size="599" optimizedsize="186">
       <def id="com.factorylabs.orange.core:IDisposable" />
