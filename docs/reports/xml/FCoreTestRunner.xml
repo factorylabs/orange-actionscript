@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1261010599477" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1261179020557" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -761,14 +761,6 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="_ContainerStyle.as" mod="9223372036854775807" size="687" optimizedsize="509">
-      <def id="_ContainerStyle" />
-      <pre id="Object" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.styles:StyleManager" />
-      <dep id="AS3" />
-      <dep id="mx.styles:CSSStyleDeclaration" />
-    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/internals/AssumptionViolatedException)" mod="1249565342000" size="1257" optimizedsize="643">
       <def id="org.flexunit.internals:AssumptionViolatedException" />
       <pre id="org.hamcrest:SelfDescribing" />
@@ -777,6 +769,14 @@
       <dep id="AS3" />
       <dep id="org.hamcrest:Matcher" />
       <dep id="org.hamcrest:StringDescription" />
+    </script>
+    <script name="_ContainerStyle.as" mod="9223372036854775807" size="687" optimizedsize="509">
+      <def id="_ContainerStyle" />
+      <pre id="Object" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="mx.styles:StyleManager" />
+      <dep id="AS3" />
+      <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/effects/effectClasses/HideShowEffectTargetFilter)" mod="1247688604802" size="1278" optimizedsize="659">
       <def id="mx.effects.effectClasses:HideShowEffectTargetFilter" />
@@ -2187,13 +2187,14 @@
       <pre id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1261010460000" size="1523" optimizedsize="929">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1261178335000" size="1602" optimizedsize="995">
       <def id="tests.factorylabs.orange.core.display:DisplayTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FSquareTests" />
       <dep id="tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests" />
       <dep id="tests.factorylabs.orange.core.display:FBitmapTests" />
       <dep id="tests.factorylabs.orange.core.display:FShapeTests" />
+      <dep id="tests.factorylabs.orange.core.display.graphics:FRectCorneredComplexTests" />
       <dep id="tests.factorylabs.orange.core.display.fills:SolidFillTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectangleTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:GraphicTests" />
@@ -2592,7 +2593,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1261010599475" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1261179020555" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -3513,6 +3514,14 @@
       <dep id="AS3" />
       <dep id="mx.modules:IModuleInfo" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectCorneredComplex.as" mod="1261179006000" size="1991" optimizedsize="1061">
+      <def id="com.factorylabs.orange.core.display.graphics:FRectCorneredComplex" />
+      <pre id="com.factorylabs.orange.core.display.graphics:FRectRoundComplex" />
+      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/errors/ErrorsTestSuite.as" mod="1259796015000" size="729" optimizedsize="298">
       <def id="tests.factorylabs.orange.core.errors:ErrorsTestSuite" />
       <pre id="Object" />
@@ -3659,6 +3668,17 @@
       <def id="en_US$effects_properties" />
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectCorneredComplexTests.as" mod="1261178351000" size="4443" optimizedsize="1889">
+      <def id="tests.factorylabs.orange.core.display.graphics:FRectCorneredComplexTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="com.factorylabs.orange.core.display.fills:SolidFill" />
+      <dep id="com.factorylabs.orange.core.display.graphics:FRectCorneredComplex" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="AS3" />
+      <dep id="tests.factorylabs.orange.helpers:MockCanvas" />
+      <dep id="flash.display:Shape" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/skins/halo/HaloFocusRect)" mod="1247688618316" size="4391" optimizedsize="2469">
       <def id="mx.skins.halo:HaloFocusRect" />
