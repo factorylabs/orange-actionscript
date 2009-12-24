@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.utils.ColorMethodsTests" tests="6" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToARGB" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToRGB" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="flashColorNumberToHexString" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="rgbToHex" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToFlashColorNumber" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="argbToHex" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToARGB" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="hexToRGB" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::ColorMethodsTests" name="flashColorNumberToHexString" time="0.000" status="success"/>
 </testsuite>
