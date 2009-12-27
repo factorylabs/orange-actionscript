@@ -18,13 +18,24 @@
     <!-- Setup the prefix for all environment variables -->
     <property environment="env."/>
     
+    <!-- 
+    	System environment must contain FLEX_HOME variable that points to Flex SDK.
+    	Set the following path to the Flex SDK in: "~/.bash_profile" as: export FLEX_HOME="/Developer/SDKs/flex_sdk_3.4"
+    	Alternatively hardcode a location as: <property name="FLEX_HOME" location="/Developer/SDKs/flex_sdk_3.4"/>
+    -->
+    <property name="FLEX_HOME" location="${env.FLEX_HOME}"/>
+    
 	<!-- Include the properties for running builds -->
 	<property file="./build/build.properties"/>
     
     <!-- Setup FlexUnit Ant tasks -->
     <taskdef resource="flexUnitTasks.tasks" classpath="${build.tasks}/flexUnitTasks.jar"/>
 
-<!-- MELT FACES PUBLICLY =========================================================================================== -->    
+<!-- MELT FACES PUBLICLY =========================================================================================== -->
+    
+    <target name="print" description="echo some variable">
+        <echo>${FLEX_HOME}</echo>
+    </target>
     
     <!-- 
     public -->
