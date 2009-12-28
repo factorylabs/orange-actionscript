@@ -18,11 +18,7 @@
     <!-- Setup the prefix for all environment variables -->
     <property environment="env."/>
     
-    <!-- 
-    	System environment must contain FLEX_HOME variable that points to Flex SDK.
-    	Set the following path to the Flex SDK in: "~/.bash_profile" as: export FLEX_HOME="/Developer/SDKs/flex_sdk_3.4"
-    	Alternatively hardcode a location as: <property name="FLEX_HOME" location="/Developer/SDKs/flex_sdk_3.4"/>
-    -->
+    <!-- System environment must contain FLEX_HOME variable that points to Flex SDK. -->
     <property name="FLEX_HOME" location="${env.FLEX_HOME}"/>
     
 	<!-- Include the properties for running builds -->
@@ -33,7 +29,7 @@
 
 <!-- MELT FACES PUBLICLY =========================================================================================== -->
     
-    <target name="print" description="echo some variable">
+    <target name="print" description="print a property for debug">
         <echo>${FLEX_HOME}</echo>
     </target>
     

@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1261683511043" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1261988342558" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -1201,6 +1201,17 @@
       <dep id="AS3" />
       <dep id="mx.collections:CursorBookmark" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectCorneredTests.as" mod="1261984099000" size="4530" optimizedsize="2002">
+      <def id="tests.factorylabs.orange.core.display.graphics:FRectCorneredTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="com.factorylabs.orange.core.display.fills:SolidFill" />
+      <dep id="com.factorylabs.orange.core.display.graphics:FRectCornered" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="AS3" />
+      <dep id="tests.factorylabs.orange.helpers:MockCanvas" />
+      <dep id="flash.display:Shape" />
+    </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/events/ToolTipEvent)" mod="1247688664850" size="1175" optimizedsize="673">
       <def id="mx.events:ToolTipEvent" />
       <pre id="flash.events:Event" />
@@ -1560,6 +1571,13 @@
       <dep id="flash.events:TimerEvent" />
       <dep id="flash.utils:Timer" />
       <dep id="org.fluint.sequence:SequenceRunner" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FCircle.as" mod="1261987997000" size="1701" optimizedsize="771">
+      <def id="com.factorylabs.orange.core.display.graphics:FCircle" />
+      <pre id="com.factorylabs.orange.core.display.graphics:FEllipse" />
+      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.display:Graphics" />
       <dep id="AS3" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/LocaleTests.as" mod="1259215818000" size="2084" optimizedsize="948">
@@ -2187,23 +2205,26 @@
       <pre id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1261178335000" size="1602" optimizedsize="995">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1261988193000" size="1775" optimizedsize="1129">
       <def id="tests.factorylabs.orange.core.display:DisplayTestSuite" />
       <pre id="Object" />
+      <dep id="tests.factorylabs.orange.core.display:FBitmapTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FSquareTests" />
       <dep id="tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests" />
-      <dep id="tests.factorylabs.orange.core.display:FBitmapTests" />
       <dep id="tests.factorylabs.orange.core.display:FShapeTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectCorneredComplexTests" />
       <dep id="tests.factorylabs.orange.core.display.fills:SolidFillTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectangleTests" />
+      <dep id="tests.factorylabs.orange.core.display:FTextFieldTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:GraphicTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectRoundTests" />
-      <dep id="tests.factorylabs.orange.core.display:FTextFieldTests" />
+      <dep id="tests.factorylabs.orange.core.display.graphics:FRectCorneredTests" />
       <dep id="AS3" />
       <dep id="tests.factorylabs.orange.core.display:FSpriteTests" />
       <dep id="tests.factorylabs.orange.core.display:FBitmapTextTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectRoundComplexTests" />
+      <dep id="tests.factorylabs.orange.core.display.graphics:FEllipseTests" />
+      <dep id="tests.factorylabs.orange.core.display.graphics:FCircleTests" />
       <dep id="tests.factorylabs.orange.core.display:FMovieClipTests" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/runner/IRequest)" mod="1249565342000" size="898" optimizedsize="283">
@@ -2214,12 +2235,6 @@
       <dep id="org.flexunit.runner:Request" />
       <dep id="org.flexunit.runner.manipulation:ISort" />
     </script>
-    <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/core/ContainerLayout)" mod="1247688624683" size="696" optimizedsize="356">
-      <def id="mx.core:ContainerLayout" />
-      <pre id="Object" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="AS3" />
-    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/runner/manipulation/MetadataSorter)" mod="1249565342000" size="1672" optimizedsize="836">
       <def id="org.flexunit.runner.manipulation:MetadataSorter" />
       <pre id="Object" />
@@ -2229,6 +2244,12 @@
       <dep id="XMLList" />
       <dep id="AS3" />
       <dep id="org.flexunit.runner.manipulation:Sorter" />
+    </script>
+    <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/core/ContainerLayout)" mod="1247688624683" size="696" optimizedsize="356">
+      <def id="mx.core:ContainerLayout" />
+      <pre id="Object" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="AS3" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/core/ContainerRawChildrenList)" mod="1247688625400" size="2408" optimizedsize="1168">
       <def id="mx.core:ContainerRawChildrenList" />
@@ -2593,7 +2614,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1261683511041" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1261988342556" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -2999,7 +3020,7 @@
       <dep id="flexunit.framework:TestCase" />
       <dep id="org.flexunit.internals.runners:FlexUnit1ClassRunner" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FSquare.as" mod="1260166409000" size="1703" optimizedsize="773">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FSquare.as" mod="1261987938000" size="1703" optimizedsize="773">
       <def id="com.factorylabs.orange.core.display.graphics:FSquare" />
       <pre id="com.factorylabs.orange.core.display.graphics:FRectangle" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
@@ -3476,6 +3497,17 @@
       <pre id="flash.events:Event" />
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FEllipseTests.as" mod="1261986803000" size="3439" optimizedsize="1558">
+      <def id="tests.factorylabs.orange.core.display.graphics:FEllipseTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="com.factorylabs.orange.core.display.fills:SolidFill" />
+      <dep id="com.factorylabs.orange.core.display.graphics:FEllipse" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="AS3" />
+      <dep id="tests.factorylabs.orange.helpers:MockCanvas" />
+      <dep id="flash.display:Shape" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4CIListener.swc(org/flexunit/runner/notification/IRunListener)" mod="1250985703252" size="1707" optimizedsize="429">
       <def id="org.flexunit.runner.notification:IRunListener" />
@@ -4562,6 +4594,13 @@
       <dep id="Error" />
       <dep id="XML" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectCornered.as" mod="1261976728000" size="2278" optimizedsize="1020">
+      <def id="com.factorylabs.orange.core.display.graphics:FRectCornered" />
+      <pre id="com.factorylabs.orange.core.display.graphics:FRectCorneredComplex" />
+      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(flexunit/framework/TestSuiteTestListener)" mod="1241553582000" size="2082" optimizedsize="1063">
       <def id="flexunit.framework:TestSuiteTestListener" />
       <pre id="Object" />
@@ -4824,6 +4863,17 @@
       <dep id="org.hamcrest.object:equalTo" />
       <dep id="AS3" />
       <dep id="com.factorylabs.orange.core.utils:StringMethods" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FCircleTests.as" mod="1261988318000" size="3694" optimizedsize="1711">
+      <def id="tests.factorylabs.orange.core.display.graphics:FCircleTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="com.factorylabs.orange.core.display.graphics:FCircle" />
+      <dep id="com.factorylabs.orange.core.display.fills:SolidFill" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="AS3" />
+      <dep id="tests.factorylabs.orange.helpers:MockCanvas" />
+      <dep id="flash.display:Shape" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4CIListener.swc(org/flexunit/internals/namespaces/classInternal)" mod="1250962806452" size="298" optimizedsize="143">
       <def id="org.flexunit.internals.namespaces:classInternal" />
@@ -5760,6 +5810,13 @@
       <dep id="flexunit.framework:AssertionFailedError" />
       <dep id="flexunit.utils:Iterator" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FEllipse.as" mod="1261986413000" size="1321" optimizedsize="657">
+      <def id="com.factorylabs.orange.core.display.graphics:FEllipse" />
+      <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
+      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/internals/builders/SuiteMethodBuilder)" mod="1249565342000" size="1105" optimizedsize="537">
       <def id="org.flexunit.internals.builders:SuiteMethodBuilder" />
       <pre id="org.flexunit.runners.model:RunnerBuilderBase" />
@@ -5768,7 +5825,7 @@
       <dep id="org.flexunit.internals.runners:SuiteMethod" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectangle.as" mod="1261007467000" size="1336" optimizedsize="660">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectangle.as" mod="1261986425000" size="1336" optimizedsize="660">
       <def id="com.factorylabs.orange.core.display.graphics:FRectangle" />
       <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
