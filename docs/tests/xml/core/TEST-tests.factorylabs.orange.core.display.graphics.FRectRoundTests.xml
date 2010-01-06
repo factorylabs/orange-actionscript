@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.graphics.FRectRoundTests" tests="11" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="x" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="fill" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="cornerHeight" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="cornerWidth" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="y" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="height" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="gfx" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="autoRedraw" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="redraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="cornerWidth" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="fill" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="gfx" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="cornerHeight" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="center" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="x" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="autoRedraw" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectRoundTests" name="width" time="0.000" status="success"/>
 </testsuite>

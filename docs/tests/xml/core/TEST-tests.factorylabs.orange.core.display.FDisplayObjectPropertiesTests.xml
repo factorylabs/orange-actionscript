@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.FDisplayObjectPropertiesTests" tests="18" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="bounds" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="center" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="right" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="left" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalX" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="offset" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="bottom" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="top" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalY" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="x" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="right" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="constructor" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="y" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="x" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="left" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="bounds" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="coordinates" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalCoordinates" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="verticalCenter" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="horizontalCenter" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="displayObject" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="verticalCenter" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalY" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalCoordinates" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="center" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="width" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalX" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="horizontalCenter" time="0.000" status="success"/>
 </testsuite>
