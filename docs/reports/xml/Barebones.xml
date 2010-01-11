@@ -7,11 +7,6 @@
       <dep id="AS3" />
       <dep id="com.factorylabs.orange.core.display.graphics:IGraphic" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/errors/IllegalSetPropertiesError.as" mod="1262726793000" size="868" optimizedsize="360">
-      <def id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
-      <pre id="Error" />
-      <dep id="AS3" />
-    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as" mod="1260166403000" size="4067" optimizedsize="1537">
       <def id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <pre id="Object" />
@@ -21,14 +16,12 @@
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FPolyFromPoints.as" mod="1262727956000" size="3092" optimizedsize="1536">
-      <def id="com.factorylabs.orange.core.display.graphics:FPolyFromPoints" />
-      <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as" mod="1259946593000" size="3170" optimizedsize="524">
+      <def id="com.factorylabs.orange.core.display.graphics:IGraphic" />
+      <pre id="Object" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
-      <dep id="Math" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidFill.as" mod="1259903490000" size="1720" optimizedsize="699">
       <def id="com.factorylabs.orange.core.display.fills:SolidFill" />
@@ -38,18 +31,10 @@
       <dep id="AS3" />
       <dep id="com.factorylabs.orange.core.display.graphics:IGraphic" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as" mod="1259946593000" size="3170" optimizedsize="524">
-      <def id="com.factorylabs.orange.core.display.graphics:IGraphic" />
-      <pre id="Object" />
-      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
-      <dep id="flash.display:Graphics" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1262735971000" size="2667" optimizedsize="1597">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1263027669000" size="2614" optimizedsize="1544">
       <def id="com.factorylabs.barebones:Main" />
       <pre id="flash.display:MovieClip" />
       <pre id="com.factorylabs.orange.core:IDisposable" />
-      <dep id="com.factorylabs.orange.core.display.graphics:FPolyFromPoints" />
       <dep id="flash.text:TextFieldAutoSize" />
       <dep id="com.factorylabs.orange.core.display.fills:SolidFill" />
       <dep id="flash.text:TextField" />
@@ -59,6 +44,15 @@
       <dep id="trace" />
       <dep id="AS3" />
       <dep id="flash.display:StageAlign" />
+      <dep id="com.factorylabs.orange.core.display.graphics:FPolygon" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FPolygon.as" mod="1263026988000" size="2783" optimizedsize="1193">
+      <def id="com.factorylabs.orange.core.display.graphics:FPolygon" />
+      <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
+      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+      <dep id="Math" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1259182770000" size="599" optimizedsize="186">
       <def id="com.factorylabs.orange.core:IDisposable" />
@@ -72,7 +66,6 @@
     <ext id="flash.display:StageAlign" />
     <ext id="flash.errors:IllegalOperationError" />
     <ext id="flash.display:Stage" />
-    <ext id="Error" />
     <ext id="flash.display:StageScaleMode" />
     <ext id="AS3" />
     <ext id="Math" />

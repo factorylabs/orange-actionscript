@@ -4,22 +4,22 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print">
-<meta content="FCircle,com.factorylabs.orange.core.display.graphics.FCircle,size,height,width,toString" name="keywords">
-<title>com.factorylabs.orange.core.display.graphics.FCircle</title>
+<meta content="FPolygon,com.factorylabs.orange.core.display.graphics.FPolygon,angle,radius,sides,height,width,drawGraphic,toString" name="keywords">
+<title>com.factorylabs.orange.core.display.graphics.FPolygon</title>
 </head>
 <body>
 <script type="text/javascript" language="javascript" src="../../../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../../../cookies.js"></script><script type="text/javascript" language="javascript">
 <!--
-				asdocTitle = 'FCircle - Factory Design Labs orange-actionscript-v1.0RC0';
+				asdocTitle = 'FPolygon - Factory Design Labs orange-actionscript-v1.0RC0';
 				var baseRef = '../../../../../../';
 				window.onload = configPage;
 			--></script>
 <table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
 <tr>
-<td align="left" class="titleTableTitle">Factory Design Labs orange-actionscript-v1.0RC0</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../index-list.html')" href="../../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../../index.html?com/factorylabs/orange/core/display/graphics/FCircle.html&amp;com/factorylabs/orange/core/display/graphics/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../../images/logo.jpg"></td>
+<td align="left" class="titleTableTitle">Factory Design Labs orange-actionscript-v1.0RC0</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../index-list.html')" href="../../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../../index.html?com/factorylabs/orange/core/display/graphics/FPolygon.html&amp;com/factorylabs/orange/core/display/graphics/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../../images/logo.jpg"></td>
 </tr>
 <tr class="titleTableRow2">
-<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;FCircle</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;FPolygon</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
 </tr>
 <tr class="titleTableRow3">
 <td colspan="2">&nbsp;</td>
@@ -27,7 +27,7 @@
 </table>
 <script type="text/javascript" language="javascript">
 <!--
-if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class FCircle"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class FPolygon"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
 --></script>
 <div class="MainContent">
 <table cellspacing="0" cellpadding="0" class="classHeaderTable">
@@ -35,14 +35,16 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.factorylabs.orange.core.display.graphics</a></td>
 </tr>
 <tr>
-<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class FCircle</td>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class FPolygon</td>
 </tr>
 <tr>
-<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FCircle <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../../images/inherit-arrow.gif"> <a href="FEllipse.html">FEllipse</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../../images/inherit-arrow.gif"> <a href="Graphic.html">Graphic</a></td>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FPolygon <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../../images/inherit-arrow.gif"> <a href="Graphic.html">Graphic</a></td>
 </tr>
 </table>
 <p></p>
-  Draws a Circle.
+  Draws a polygon shape with a minimum of 3 sides.
+  
+  <p>Based on the drawing routines from <a href="http://www.formequalsfunction.com/downloads/drawmethods.html">form = function</a>.</p>
     <hr />
   <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
     Permission is hereby granted, free of charge, to any person obtaining
@@ -80,6 +82,11 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr>
 <th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
 </tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#angle">angle</a> : Number<div class="summaryTableDescription">
+   The rotation angle of the shape.</div>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
+</tr>
 <tr class="hideInheritedProperty">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#autoRedraw">autoRedraw</a> : Boolean<div class="summaryTableDescription">
    
@@ -107,18 +114,23 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : Number<div class="summaryTableDescription">[write-only]
-   Calls <code>set size</code> to keep the <code>width</code> and <code>height</code> equal.</div>
-</td><td class="summaryTableOwnerCol">FCircle</td>
+   Calls <code>set radius</code> to keep the <code>width</code> and <code>height</code> equal.</div>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#size">size</a> : Number<div class="summaryTableDescription">
-   Sets both the <code>width</code> and <code>height</code> equal.</div>
-</td><td class="summaryTableOwnerCol">FCircle</td>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#radius">radius</a> : Number<div class="summaryTableDescription">
+   The radius of the polygon.</div>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#sides">sides</a> : uint<div class="summaryTableDescription">
+   The number of sides used by the polygon.</div>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : Number<div class="summaryTableDescription">[write-only]
-   Calls <code>set size</code> to keep the <code>width</code> and <code>height</code> equal.</div>
-</td><td class="summaryTableOwnerCol">FCircle</td>
+   Calls <code>set radius</code> to keep the <code>width</code> and <code>height</code> equal.</div>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
 </tr>
 <tr class="hideInheritedProperty">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#x">x</a> : Number<div class="summaryTableDescription">
@@ -152,10 +164,10 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#FCircle()">FCircle</a>($gfx:Graphics = null, $x:Number = 0, $y:Number = 0, $size:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</div>
+<a class="signatureLink" href="#FPolygon()">FPolygon</a>($gfx:Graphics, $x:Number = 0, $y:Number = 0, $sides:uint = 3, $radius:Number = 5, $angle:Number = 0, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</div>
 <div class="summaryTableDescription">
-   Constructs and draws a new Circle shape.</div>
-</td><td class="summaryTableOwnerCol">FCircle</td>
+   Constructs and draws a new polygon with a minimum of 3 sides.</div>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
 </tr>
 <tr class="hideInheritedMethod">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
@@ -172,7 +184,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <a class="signatureLink" href="#toString()">toString</a>():String</div>
 <div class="summaryTableDescription">
    </div>
-</td><td class="summaryTableOwnerCol">FCircle</td>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
 </tr>
 </table>
 </div>
@@ -187,7 +199,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <a onclick="javascript:setInheritedVisible(true,'ProtectedMethod');" href="#protectedMethodSummary" class="showHideLink"><img src="../../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Protected Methods</a>
 </div>
 </div>
-<table id="summaryTableProtectedMethod" class="summaryTable hideInheritedProtectedMethod" cellpadding="3" cellspacing="0">
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
 <tr>
 <th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
 </tr>
@@ -199,13 +211,13 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
    Calls subroutines for starting a fill/stroke, drawing the shape, and closing the fill/stroke.</div>
 </td><td class="summaryTableOwnerCol"><a href="Graphic.html">Graphic</a></td>
 </tr>
-<tr class="hideInheritedProtectedMethod">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="FEllipse.html#drawGraphic()">drawGraphic</a>():void</div>
+<a class="signatureLink" href="#drawGraphic()">drawGraphic</a>():void</div>
 <div class="summaryTableDescription">
-   Draws the ellipse.</div>
-</td><td class="summaryTableOwnerCol"><a href="FEllipse.html">FEllipse</a></td>
+   Procedure for drawing a polygon.</div>
+</td><td class="summaryTableOwnerCol">FPolygon</td>
 </tr>
 <tr class="hideInheritedProtectedMethod">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
@@ -224,34 +236,66 @@ showHideInherited();
 <div class="MainContent">
 <a name="propertyDetail"></a>
 <div class="detailSectionHeader">Property detail</div>
+<a name="angle"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angle</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>angle:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The rotation angle of the shape.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get angle():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set angle(value:Number):void</code>
+<br>
+</div>
 <a name="height"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
 </tr>
 </table>
 <div class="detailBody">
 <code>height:Number</code>&nbsp;&nbsp;[write-only]<p>
-   Calls <code>set size</code> to keep the <code>width</code> and <code>height</code> equal.
+   Calls <code>set radius</code> to keep the <code>width</code> and <code>height</code> equal.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function set height(value:Number):void</code>
 <br>
 </div>
-<a name="size"></a>
+<a name="radius"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">size</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+<td class="detailHeaderName">radius</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>size:Number</code>&nbsp;&nbsp;[read-write]<p>
-   Sets both the <code>width</code> and <code>height</code> equal. 
+<code>radius:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The radius of the polygon.
    </p><span class="label">Implementation</span>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get size():Number</code>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get radius():Number</code>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set size(value:Number):void</code>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set radius(value:Number):void</code>
+<br>
+</div>
+<a name="sides"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sides</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>sides:uint</code>&nbsp;&nbsp;[read-write]<p>
+   The number of sides used by the polygon.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get sides():uint</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set sides(value:uint):void</code>
 <br>
 </div>
 <a name="width"></a>
@@ -262,7 +306,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>width:Number</code>&nbsp;&nbsp;[write-only]<p>
-   Calls <code>set size</code> to keep the <code>width</code> and <code>height</code> equal.
+   Calls <code>set radius</code> to keep the <code>width</code> and <code>height</code> equal.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function set width(value:Number):void</code>
@@ -270,19 +314,19 @@ showHideInherited();
 </div>
 <a name="constructorDetail"></a>
 <div class="detailSectionHeader">Constructor detail</div>
-<a name="FCircle()"></a>
+<a name="FPolygon()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">FCircle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+<td class="detailHeaderName">FPolygon</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>public function FCircle($gfx:Graphics = null, $x:Number = 0, $y:Number = 0, $size:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</code><p>
-   Constructs and draws a new Circle shape.
+<code>public function FPolygon($gfx:Graphics, $x:Number = 0, $y:Number = 0, $sides:uint = 3, $radius:Number = 5, $angle:Number = 0, $fill:<a href="../fills/IFill.html">IFill</a> = null, $center:Boolean = false, $autoRedraw:Boolean = true)</code><p>
+   Constructs and draws a new polygon with a minimum of 3 sides.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20px"></td><td><code><span class="label">$gfx</span>:Graphics</code> (default = <code>null</code>)<code></code> &mdash;   Reference to the <code>shape.graphics</code> where the shape will be drawn into.
+<td width="20px"></td><td><code><span class="label">$gfx</span>:Graphics</code> &mdash;   Reference to the <code>shape.graphics</code> where the shape will be drawn into.
    </td>
 </tr>
 <tr>
@@ -303,14 +347,28 @@ showHideInherited();
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$size</span>:Number</code> (default = <code>10</code>)<code></code> &mdash;   The <code>width</code> and <code>height</code> of the shape.
+<td width="20px"></td><td><code><span class="label">$sides</span>:uint</code> (default = <code>3</code>)<code></code> &mdash;  The number of sides for the polygon.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$fill</span>:<a href="../fills/IFill.html">IFill</a></code> (default = <code>null</code>)<code></code> &mdash;   Fill or line style to apply the shape.
+<td width="20px"></td><td><code><span class="label">$radius</span>:Number</code> (default = <code>5</code>)<code></code> &mdash;  The of the polygon to draw.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$angle</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;  Rotation angle of the polygon. Valid values are between 0 and 360.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$fill</span>:<a href="../fills/IFill.html">IFill</a></code> (default = <code>null</code>)<code></code> &mdash;   Fill or line style to apply to the shape.
    </td>
 </tr>
 <tr>
@@ -331,19 +389,29 @@ showHideInherited();
 </table>
 <br>
 <span class="label">Example</span>
-<br>The following code creates a circle. 
+<br>The following code creates a 5 sided polygon.
     <div class='listing'><pre>
     var sf :SolidFill = new SolidFill( 0x666666, .8 );
-    var c1 :FCircle = new FCircle( _gfx.graphics, 0, 110, 200, sf );
+    var p1 :FPolygon = new FPolygon( _gfx.graphics, 50, 0, 5, 50, 0, sf );
     </pre></div>
    <p></p>
 </div>
 <a name="methodDetail"></a>
 <div class="detailSectionHeader">Method detail</div>
+<a name="drawGraphic()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">drawGraphic</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected override function drawGraphic():void</code><p>
+   Procedure for drawing a polygon.
+   </p></div>
 <a name="toString()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
 </tr>
 </table>
 <div class="detailBody">
