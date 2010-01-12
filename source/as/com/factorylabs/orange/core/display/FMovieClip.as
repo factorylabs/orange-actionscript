@@ -1,8 +1,6 @@
 ﻿
 package com.factorylabs.orange.core.display
 {	
-	import com.factorylabs.orange.core.errors.IllegalSetPropertiesError;
-
 	import flash.display.DisplayObjectContainer;
 	import flash.display.MovieClip;
 
@@ -91,7 +89,7 @@ package com.factorylabs.orange.core.display
 			{
 				if( this.hasOwnProperty( it ) ) this[ it ] = $object[ it ];
 				else
-					throw new IllegalSetPropertiesError( 'An invalid property assignment was attempted on ' + this.toString() + ' for the property ' + it );
+					throw new ArgumentError( 'An invalid property assignment was attempted on ' + this.toString() + ' for the property ' + it );
 			}
 		}
 		

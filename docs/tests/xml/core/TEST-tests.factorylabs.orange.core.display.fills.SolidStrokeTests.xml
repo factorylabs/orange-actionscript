@@ -6,8 +6,8 @@
   <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="miterLimit" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="color" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="caps" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="constructor" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="joints" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="scaleMode" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="constructor" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.fills::SolidStrokeTests" name="thickness" time="0.000" status="success"/>
 </testsuite>

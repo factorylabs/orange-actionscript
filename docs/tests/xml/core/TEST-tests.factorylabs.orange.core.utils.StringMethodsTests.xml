@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.utils.StringMethodsTests" tests="32" failures="0" errors="0" skipped="3" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="endsWith" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeFirst" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trimRight" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeLast" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="contains" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="stripTags" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="reverse" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trimLeft" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="swapCase" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeLast" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="truncate" time="0.000" status="ignore">
-    <skipped/>
-  </testcase>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="quote" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trim" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="similarity" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="capitalize" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="removeExtraWhitespace" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="remove" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="padLeft" time="0.000" status="ignore">
     <skipped/>
   </testcase>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="truncate" time="0.000" status="ignore">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="removeExtraWhitespace" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="block" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trimRight" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isEmpty" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="quote" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beginsWith" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterLast" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isEmpty" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="properCase" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="countOf" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="between" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="properCase" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterFirst" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeFirst" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="editDistance" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="remove" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="reverseWords" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="wordCount" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="padRight" time="0.000" status="ignore">
     <skipped/>
   </testcase>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="reverseWords" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="wordCount" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterLast" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isNumeric" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="formatNumber" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trim" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="hasText" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterFirst" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="similarity" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="endsWith" time="0.000" status="success"/>
 </testsuite>

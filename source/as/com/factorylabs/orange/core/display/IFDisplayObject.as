@@ -37,7 +37,7 @@ package com.factorylabs.orange.core.display
 		 * Maps all the object's properties to the <code>DisplayObject</code>.
 		 * If there are properties that do not exist, an error is thrown. 
 		 * @param $object	Object to map properties from.
-		 * @throws	com.factorylabs.orange.core.errors.IllegalSetPropertiesError When an invalid property assignment was attempted.
+		 * @throws	ArgumentError <code>ArgumentError</code> When an invalid property assignment was attempted.
 		 */
 		function setProperties( $object :Object ) :void;
 		

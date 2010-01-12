@@ -92,7 +92,7 @@ package tests.factorylabs.orange.core.display.graphics
 			assertThat( _fpoly.x, equalTo( 0 ) );
 		}
 		
-		[Test(expects='com.factorylabs.orange.core.errors.IllegalSetPropertiesError')]
+		[Test(expects='ArgumentError')]
 		public function setX() :void
 		{
 			_fpoly.x = 100;
@@ -104,7 +104,7 @@ package tests.factorylabs.orange.core.display.graphics
 			assertThat( _fpoly.y, equalTo( 0 ) );
 		}
 		
-		[Test(expects='com.factorylabs.orange.core.errors.IllegalSetPropertiesError')]
+		[Test(expects='ArgumentError')]
 		public function setY() :void
 		{
 			_fpoly.y = 100;
@@ -116,7 +116,7 @@ package tests.factorylabs.orange.core.display.graphics
 			assertThat( _fpoly.width, equalTo( 350 ) );
 		}
 		
-		[Test(expects='com.factorylabs.orange.core.errors.IllegalSetPropertiesError')]
+		[Test(expects='ArgumentError')]
 		public function setWidth() :void
 		{
 			_fpoly.width = 100;
@@ -128,7 +128,7 @@ package tests.factorylabs.orange.core.display.graphics
 			assertThat( _fpoly.height, equalTo( 300 ) );
 		}
 		
-		[Test(expects='com.factorylabs.orange.core.errors.IllegalSetPropertiesError')]
+		[Test(expects='ArgumentError')]
 		public function setHeight() :void
 		{
 			_fpoly.height = 100;

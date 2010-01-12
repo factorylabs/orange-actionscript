@@ -266,7 +266,7 @@
       <dep id="AS3" />
       <dep id="Math" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FTextFieldTests.as" mod="1263266256000" size="2629" optimizedsize="1213">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FTextFieldTests.as" mod="1263267625000" size="2582" optimizedsize="1213">
       <def id="tests.factorylabs.orange.core.display:FTextFieldTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263266475850" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263267793432" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -610,13 +610,13 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FSprite.as" mod="1263265917000" size="1772" optimizedsize="1097">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FSprite.as" mod="1263267377000" size="1723" optimizedsize="1048">
       <def id="com.factorylabs.orange.core.display:FSprite" />
       <pre id="flash.display:Sprite" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="ArgumentError" />
       <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/flex.swc(mx/resources/ResourceManager)" mod="1247688681142" size="951" optimizedsize="517">
       <def id="mx.resources:ResourceManager" />
@@ -1156,7 +1156,7 @@
       <dep id="AS3" />
       <dep id="mx.core:ISWFBridgeProvider" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTests.as" mod="1263266227000" size="2333" optimizedsize="1053">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTests.as" mod="1263267574000" size="2286" optimizedsize="1053">
       <def id="tests.factorylabs.orange.core.display:FBitmapTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -1165,7 +1165,7 @@
       <dep id="flash.display:Sprite" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FShapeTests.as" mod="1263266246000" size="2314" optimizedsize="1047">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FShapeTests.as" mod="1263267605000" size="2267" optimizedsize="1047">
       <def id="tests.factorylabs.orange.core.display:FShapeTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -1284,7 +1284,7 @@
       <dep id="ArgumentError" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1263266410000" size="1258" optimizedsize="774">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1263267780000" size="1169" optimizedsize="698">
       <def id="tests.factorylabs.orange.core:FCoreTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
@@ -1292,7 +1292,6 @@
       <dep id="tests.factorylabs.orange.core.utils:UtilsTestSuite" />
       <dep id="tests.factorylabs.orange.core.logging:LoggingTestSuite" />
       <dep id="AS3" />
-      <dep id="tests.factorylabs.orange.core.errors:ErrorsTestSuite" />
       <dep id="tests.factorylabs.orange.core.display:DisplayTestSuite" />
       <dep id="tests.factorylabs.orange.core.gc:GCTestSuite" />
     </script>
@@ -2376,13 +2375,13 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FShape.as" mod="1263265911000" size="1630" optimizedsize="969">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FShape.as" mod="1263267352000" size="1581" optimizedsize="920">
       <def id="com.factorylabs.orange.core.display:FShape" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <pre id="flash.display:Shape" />
       <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="ArgumentError" />
       <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/skins/halo/ScrollThumbSkin)" mod="1247688618207" size="5300" optimizedsize="3679">
       <def id="mx.skins.halo:ScrollThumbSkin" />
@@ -2415,13 +2414,13 @@
       <dep id="AS3" />
       <dep id="mx.core:ISWFBridgeProvider" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FMovieClip.as" mod="1263265906000" size="1849" optimizedsize="1150">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FMovieClip.as" mod="1263267339000" size="1800" optimizedsize="1101">
       <def id="com.factorylabs.orange.core.display:FMovieClip" />
       <pre id="flash.display:MovieClip" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="ArgumentError" />
       <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(flex/lang/reflect/Field)" mod="1249565343000" size="2229" optimizedsize="1180">
       <def id="flex.lang.reflect:Field" />
@@ -2537,13 +2536,13 @@
       <dep id="org.fluint.uiImpersonation:TestEnvironment" />
       <dep id="flash.utils:getDefinitionByName" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FTextField.as" mod="1263265922000" size="1975" optimizedsize="1178">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FTextField.as" mod="1263267392000" size="1926" optimizedsize="1129">
       <def id="com.factorylabs.orange.core.display:FTextField" />
       <pre id="flash.text:TextField" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="ArgumentError" />
       <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/effects/EffectInstance)" mod="1247688607533" size="7866" optimizedsize="3603">
       <def id="mx.effects:EffectInstance" />
@@ -2606,7 +2605,7 @@
       <dep id="RegExp" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FMovieClipTests.as" mod="1263266241000" size="2405" optimizedsize="1086">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FMovieClipTests.as" mod="1263267596000" size="2358" optimizedsize="1086">
       <def id="tests.factorylabs.orange.core.display:FMovieClipTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -2658,7 +2657,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263266475843" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263267793430" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -2890,11 +2889,6 @@
       <dep id="mx.styles:StyleManager" />
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/errors/IllegalSetPropertiesError.as" mod="1263265939000" size="868" optimizedsize="360">
-      <def id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
-      <pre id="Error" />
-      <dep id="AS3" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/managers/ILayoutManagerClient)" mod="1247688631611" size="1850" optimizedsize="452">
       <def id="mx.managers:ILayoutManagerClient" />
@@ -3388,14 +3382,14 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FBitmap.as" mod="1263265888000" size="1674" optimizedsize="992">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FBitmap.as" mod="1263267326000" size="1625" optimizedsize="943">
       <def id="com.factorylabs.orange.core.display:FBitmap" />
       <pre id="flash.display:Bitmap" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <dep id="flash.display:BitmapData" />
       <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="ArgumentError" />
       <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/utils/SecurityUtil)" mod="1247688634966" size="822" optimizedsize="453">
       <def id="mx.utils:SecurityUtil" />
@@ -3593,7 +3587,7 @@
       <dep id="Math" />
       <dep id="mx.skins.halo:HaloColors" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FPolyFromPointsTests.as" mod="1262735651000" size="4760" optimizedsize="1720">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FPolyFromPointsTests.as" mod="1263267514000" size="4713" optimizedsize="1720">
       <def id="tests.factorylabs.orange.core.display.graphics:FPolyFromPointsTests" />
       <pre id="Object" />
       <dep id="com.factorylabs.orange.core.display.graphics:FPolyFromPoints" />
@@ -3627,12 +3621,6 @@
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
       <dep id="Math" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/errors/ErrorsTestSuite.as" mod="1263266273000" size="729" optimizedsize="298">
-      <def id="tests.factorylabs.orange.core.errors:ErrorsTestSuite" />
-      <pre id="Object" />
-      <dep id="tests.factorylabs.orange.core.errors:IllegalSetPropertiesErrorTests" />
-      <dep id="AS3" />
     </script>
     <script name="_opaquePanelStyle.as" mod="9223372036854775807" size="807" optimizedsize="619">
       <def id="_opaquePanelStyle" />
@@ -4436,12 +4424,6 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/errors/IllegalSetPropertiesErrorTests.as" mod="1263266279000" size="1639" optimizedsize="603">
-      <def id="tests.factorylabs.orange.core.errors:IllegalSetPropertiesErrorTests" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
-    </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/managers/SystemRawChildrenList)" mod="1247688631830" size="2561" optimizedsize="1308">
       <def id="mx.managers:SystemRawChildrenList" />
       <pre id="mx.core:IChildList" />
@@ -4560,7 +4542,7 @@
       <dep id="com.factorylabs.orange.core.logging:LoggerEvent" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FSpriteTests.as" mod="1263266251000" size="2364" optimizedsize="1081">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FSpriteTests.as" mod="1263267615000" size="2317" optimizedsize="1081">
       <def id="tests.factorylabs.orange.core.display:FSpriteTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4890,14 +4872,14 @@
       <dep id="AS3" />
       <dep id="mx.events:CollectionEvent" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FPolyFromPoints.as" mod="1262990133000" size="3093" optimizedsize="1536">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FPolyFromPoints.as" mod="1263267260000" size="3044" optimizedsize="1487">
       <def id="com.factorylabs.orange.core.display.graphics:FPolyFromPoints" />
       <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
       <dep id="flash.display:Graphics" />
+      <dep id="ArgumentError" />
       <dep id="AS3" />
       <dep id="Math" />
-      <dep id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/containers/BoxDirection)" mod="1247688668080" size="657" optimizedsize="329">
       <def id="mx.containers:BoxDirection" />
@@ -5458,7 +5440,7 @@
       <dep id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/IFDisplayObject.as" mod="1263265929000" size="866" optimizedsize="250">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/IFDisplayObject.as" mod="1263267410000" size="866" optimizedsize="250">
       <def id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <pre id="Object" />
       <dep id="AS3" />
