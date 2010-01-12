@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.graphics.FRectCorneredTests" tests="14" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="bottomLeft" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="topLeft" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="x" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="fill" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="y" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="redraw" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="autoRedraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="topRight" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="x" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="corner" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="gfx" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="redraw" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="topRight" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="bottomLeft" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="center" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="bottomRight" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="y" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="width" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="height" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FRectCorneredTests" name="bottomRight" time="0.000" status="success"/>
 </testsuite>

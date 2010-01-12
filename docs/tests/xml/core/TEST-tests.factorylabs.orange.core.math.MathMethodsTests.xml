@@ -2,14 +2,14 @@
 
 <testsuite name="tests.factorylabs.orange.core.math.MathMethodsTests" tests="11" failures="0" errors="0" skipped="0" time="0.0">
   <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="randRangeDecimal" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="getPercentWithinRange" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="randRange" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="radiansToDegress" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="degreesToRadians" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="getPercentWithinRange" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="average" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="radiansToDegress" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="remap" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="interp" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="average" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="degreesToPercent" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="randRange" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="percentToDegrees" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.math::MathMethodsTests" name="sums" time="0.000" status="success"/>
 </testsuite>

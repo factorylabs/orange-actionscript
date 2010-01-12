@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.FShapeTests" tests="4" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="remove" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="setPropertiesExpectsError" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="remove" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="setProperties" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="constructor" time="0.000" status="success"/>
 </testsuite>
