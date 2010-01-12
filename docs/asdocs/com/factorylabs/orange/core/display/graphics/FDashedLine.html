@@ -4,22 +4,22 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print">
-<meta content="FRectRound,com.factorylabs.orange.core.display.graphics.FRectRound,cornerHeight,cornerWidth,drawGraphic,toString" name="keywords">
-<title>com.factorylabs.orange.core.display.graphics.FRectRound</title>
+<meta content="FDashedLine,com.factorylabs.orange.core.display.graphics.FDashedLine,dashLength,endX,endY,gapLength,center,height,width,drawGraphic,toString" name="keywords">
+<title>com.factorylabs.orange.core.display.graphics.FDashedLine</title>
 </head>
 <body>
 <script type="text/javascript" language="javascript" src="../../../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../../../cookies.js"></script><script type="text/javascript" language="javascript">
 <!--
-				asdocTitle = 'FRectRound - Factory Design Labs orange-actionscript-v1.0RC0';
+				asdocTitle = 'FDashedLine - Factory Design Labs orange-actionscript-v1.0RC0';
 				var baseRef = '../../../../../../';
 				window.onload = configPage;
 			--></script>
 <table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
 <tr>
-<td align="left" class="titleTableTitle">Factory Design Labs orange-actionscript-v1.0RC0</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../index-list.html')" href="../../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../../index.html?com/factorylabs/orange/core/display/graphics/FRectRound.html&amp;com/factorylabs/orange/core/display/graphics/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../../images/logo.jpg"></td>
+<td align="left" class="titleTableTitle">Factory Design Labs orange-actionscript-v1.0RC0</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../index-list.html')" href="../../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../../index.html?com/factorylabs/orange/core/display/graphics/FDashedLine.html&amp;com/factorylabs/orange/core/display/graphics/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../../images/logo.jpg"></td>
 </tr>
 <tr class="titleTableRow2">
-<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;FRectRound</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;FDashedLine</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
 </tr>
 <tr class="titleTableRow3">
 <td colspan="2">&nbsp;</td>
@@ -27,7 +27,7 @@
 </table>
 <script type="text/javascript" language="javascript">
 <!--
-if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class FRectRound"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class FDashedLine"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
 --></script>
 <div class="MainContent">
 <table cellspacing="0" cellpadding="0" class="classHeaderTable">
@@ -35,16 +35,18 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.factorylabs.orange.core.display.graphics</a></td>
 </tr>
 <tr>
-<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class FRectRound</td>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class FDashedLine</td>
 </tr>
 <tr>
-<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FRectRound <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../../images/inherit-arrow.gif"> <a href="Graphic.html">Graphic</a></td>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FDashedLine <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../../images/inherit-arrow.gif"> <a href="Graphic.html">Graphic</a></td>
 </tr>
 </table>
 <p></p>
-  Draws a rounded rectangle shape with all values for individual corners equal.
+  Draws a dashed line (only supports line styles and not fills).
+  
+  <p>Based on the drawing routines from <a href="http://www.formequalsfunction.com/downloads/drawmethods.html">form = function</a>.</p>
     <hr />
-  <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+  <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
     Permission is hereby granted, free of charge, to any person obtaining
   a copy of this software and associated documentation files (the
   "Software"), to deal in the Software without restriction, including
@@ -86,21 +88,25 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
    Whether the <code>IGraphic</code> automatically redraws on a property setter.</div>
 </td><td class="summaryTableOwnerCol"><a href="Graphic.html">Graphic</a></td>
 </tr>
-<tr class="hideInheritedProperty">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#center">center</a> : Boolean<div class="summaryTableDescription">
-   
-   Whether the <code>IGraphic</code> draws from it's center registration mark.</div>
-</td><td class="summaryTableOwnerCol"><a href="Graphic.html">Graphic</a></td>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#center">center</a> : Boolean<div class="summaryTableDescription">[write-only]
+   Not allowed since this is a drawing a distinct line.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#cornerHeight">cornerHeight</a> : Number<div class="summaryTableDescription">
-   Ellipse height for drawing a corner radius.</div>
-</td><td class="summaryTableOwnerCol">FRectRound</td>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#dashLength">dashLength</a> : Number<div class="summaryTableDescription">
+   The length of each dash segment.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#cornerWidth">cornerWidth</a> : Number<div class="summaryTableDescription">
-   Ellipse width for drawing a corner radius.</div>
-</td><td class="summaryTableOwnerCol">FRectRound</td>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#endX">endX</a> : Number<div class="summaryTableDescription">
+   The final <code>x</code> position for the line.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#endY">endY</a> : Number<div class="summaryTableDescription">
+   The final <code>y</code> position for the line.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
 <tr class="hideInheritedProperty">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#fill">fill</a> : <a href="../fills/IFill.html">IFill</a>
@@ -109,23 +115,26 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
    The <code>IFill</code> object used to fill or stroke the <code>IGraphic</code>.</div>
 </td><td class="summaryTableOwnerCol"><a href="Graphic.html">Graphic</a></td>
 </tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#gapLength">gapLength</a> : Number<div class="summaryTableDescription">
+   The length of space between each segment.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
+</tr>
 <tr class="hideInheritedProperty">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#gfx">gfx</a> : Graphics<div class="summaryTableDescription">
    
    The <code>shape.graphics</code> object used for drawing the shape.</div>
 </td><td class="summaryTableOwnerCol"><a href="Graphic.html">Graphic</a></td>
 </tr>
-<tr class="hideInheritedProperty">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#height">height</a> : Number<div class="summaryTableDescription">
-   
-   The <code>height</code> value of the <code>IGraphic</code>.</div>
-</td><td class="summaryTableOwnerCol"><a href="Graphic.html">Graphic</a></td>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : Number<div class="summaryTableDescription">[write-only]
+   Not allowed since this is a drawing a distinct line.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
-<tr class="hideInheritedProperty">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#width">width</a> : Number<div class="summaryTableDescription">
-   
-   The <code>width</code> value of the <code>IGraphic</code>.</div>
-</td><td class="summaryTableOwnerCol"><a href="Graphic.html">Graphic</a></td>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : Number<div class="summaryTableDescription">[write-only]
+   Not allowed since this is a drawing a distinct line.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
 <tr class="hideInheritedProperty">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Graphic.html#x">x</a> : Number<div class="summaryTableDescription">
@@ -159,10 +168,10 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#FRectRound()">FRectRound</a>($gfx:Graphics, $x:Number = 0, $y:Number = 0, $width:Number = 10, $height:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $cornerWidth:Number = 0, $cornerHeight:Number, $center:Boolean = false, $autoRedraw:Boolean = true)</div>
+<a class="signatureLink" href="#FDashedLine()">FDashedLine</a>($gfx:Graphics, $x:Number = 0, $y:Number = 0, $endX:Number = 10, $endY:Number = 0, $dashLength:Number = 1, $gapLength:Number = 1, $fill:<a href="../fills/IFill.html">IFill</a> = null, $autoRedraw:Boolean = true)</div>
 <div class="summaryTableDescription">
-   Constructs and draws a rounded rectangle shape with equal values for all individual corners.</div>
-</td><td class="summaryTableOwnerCol">FRectRound</td>
+   Constructs and draws a new dashed line.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
 <tr class="hideInheritedMethod">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
@@ -179,7 +188,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <a class="signatureLink" href="#toString()">toString</a>():String</div>
 <div class="summaryTableDescription">
    </div>
-</td><td class="summaryTableOwnerCol">FRectRound</td>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
 </table>
 </div>
@@ -211,8 +220,8 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#drawGraphic()">drawGraphic</a>():void</div>
 <div class="summaryTableDescription">
-   Draws the rounded rectangle.</div>
-</td><td class="summaryTableOwnerCol">FRectRound</td>
+   Procedure for drawing a dashed line.</div>
+</td><td class="summaryTableOwnerCol">FDashedLine</td>
 </tr>
 <tr class="hideInheritedProtectedMethod">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
@@ -231,49 +240,150 @@ showHideInherited();
 <div class="MainContent">
 <a name="propertyDetail"></a>
 <div class="detailSectionHeader">Property detail</div>
-<a name="cornerHeight"></a>
+<a name="center"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">cornerHeight</td><td class="detailHeaderType">property</td>
+<td class="detailHeaderName">center</td><td class="detailHeaderType">property</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>cornerHeight:Number</code>&nbsp;&nbsp;[read-write]<p>
-   Ellipse height for drawing a corner radius.
+<code>center:Boolean</code>&nbsp;&nbsp;[write-only]<p>
+   Not allowed since this is a drawing a distinct line.
    </p><span class="label">Implementation</span>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get cornerHeight():Number</code>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set center(value:Boolean):void</code>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set cornerHeight(value:Number):void</code>
+<br>
+<span class="label">Throws</span>
+<br>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code></code> &mdash; when trying to call the setter.
+   </td>
+</tr>
+</table>
+</div>
+<a name="dashLength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dashLength</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>dashLength:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The length of each dash segment.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dashLength():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set dashLength(value:Number):void</code>
 <br>
 </div>
-<a name="cornerWidth"></a>
+<a name="endX"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">cornerWidth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+<td class="detailHeaderName">endX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>cornerWidth:Number</code>&nbsp;&nbsp;[read-write]<p>
-   Ellipse width for drawing a corner radius.
+<code>endX:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The final <code>x</code> position for the line.
    </p><span class="label">Implementation</span>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get cornerWidth():Number</code>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get endX():Number</code>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set cornerWidth(value:Number):void</code>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set endX(value:Number):void</code>
 <br>
+</div>
+<a name="endY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">endY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>endY:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The final <code>y</code> position for the line.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get endY():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set endY(value:Number):void</code>
+<br>
+</div>
+<a name="gapLength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">gapLength</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>gapLength:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The length of space between each segment.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get gapLength():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set gapLength(value:Number):void</code>
+<br>
+</div>
+<a name="height"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>height:Number</code>&nbsp;&nbsp;[write-only]<p>
+   Not allowed since this is a drawing a distinct line.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set height(value:Number):void</code>
+<br>
+<br>
+<span class="label">Throws</span>
+<br>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code></code> &mdash; when trying to call the setter.
+   </td>
+</tr>
+</table>
+</div>
+<a name="width"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>width:Number</code>&nbsp;&nbsp;[write-only]<p>
+   Not allowed since this is a drawing a distinct line.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set width(value:Number):void</code>
+<br>
+<br>
+<span class="label">Throws</span>
+<br>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code></code> &mdash; when trying to call the setter.
+   </td>
+</tr>
+</table>
 </div>
 <a name="constructorDetail"></a>
 <div class="detailSectionHeader">Constructor detail</div>
-<a name="FRectRound()"></a>
+<a name="FDashedLine()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">FRectRound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+<td class="detailHeaderName">FDashedLine</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>public function FRectRound($gfx:Graphics, $x:Number = 0, $y:Number = 0, $width:Number = 10, $height:Number = 10, $fill:<a href="../fills/IFill.html">IFill</a> = null, $cornerWidth:Number = 0, $cornerHeight:Number, $center:Boolean = false, $autoRedraw:Boolean = true)</code><p>
-   Constructs and draws a rounded rectangle shape with equal values for all individual corners.
+<code>public function FDashedLine($gfx:Graphics, $x:Number = 0, $y:Number = 0, $endX:Number = 10, $endY:Number = 0, $dashLength:Number = 1, $gapLength:Number = 1, $fill:<a href="../fills/IFill.html">IFill</a> = null, $autoRedraw:Boolean = true)</code><p>
+   Constructs and draws a new dashed line.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
@@ -284,28 +394,42 @@ showHideInherited();
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$x</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;   A number indicating the horizontal position relative to the registration point of the parent display object.
+<td width="20px"></td><td><code><span class="label">$x</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;   Start <code>x</code> coordinate value to draw the shape.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$y</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;   A number indicating the vertical position relative to the registration point of the parent display object.
+<td width="20px"></td><td><code><span class="label">$y</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;   Start <code>y</code> coordinate value to draw the shape.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$width</span>:Number</code> (default = <code>10</code>)<code></code> &mdash;  The <code>width</code> of the shape.
+<td width="20px"></td><td><code><span class="label">$endX</span>:Number</code> (default = <code>10</code>)<code></code> &mdash;   End <code>x</code> coordinate value to draw the shape.
    </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$height</span>:Number</code> (default = <code>10</code>)<code></code> &mdash;  The <code>height</code> of the shape.
+<td width="20px"></td><td><code><span class="label">$endY</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;   End <code>y</code> coordinate value to draw the shape.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$dashLength</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Length of each dash segment.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$gapLength</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Length of space between each dash segment.
    </td>
 </tr>
 <tr>
@@ -319,27 +443,6 @@ showHideInherited();
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
-<td width="20px"></td><td><code><span class="label">$cornerWidth</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; The <code>width</code> of the ellipse used to draw the rounded corners.
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">$cornerHeight</span>:Number</code> &mdash; The <code>height</code> of the ellipse used to draw the rounded corners (in pixels). If no value is specified, the default value matches that provided for the <code>ellipseWidth</code> parameter.
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">$center</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  Whether to draw the shape from a center registration.
-   </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
 <td width="20px"></td><td><code><span class="label">$autoRedraw</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; Determines if the graphic should auto redraw when a setter is called.
    
    </td>
@@ -347,10 +450,10 @@ showHideInherited();
 </table>
 <br>
 <span class="label">Example</span>
-<br>The following code creates a rounded rectangle.
+<br>The following code creates a dashed line.
     <div class='listing'><pre>
-    var sf :SolidFill = new SolidFill( 0x666666, .8 );
-    var c1 :FRectRound = new FRectRound( _gfx.graphics, 0, 110, 200, 100, sf, 10 );
+    var ss :SolidStroke = new SolidStroke( 0xcccccc, 1, 3 );
+    var dl :FDashedLine = new FDashedLine( _gfx.graphics, 0, 0, 500, 0, 5, 5, ss );
     </pre></div>
    <p></p>
 </div>
@@ -364,14 +467,8 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>protected override function drawGraphic():void</code><p>
-   Draws the rounded rectangle.
-   </p><p>
-<span class="label">See also</span>
-</p>
-<div class="seeAlso">
-<a href="http://help.adobe.com/en_US/AS3LCR/Flash_10.0/index.html" target="mm_external">drawRoundRect()</a>
-</div>
-</div>
+   Procedure for drawing a dashed line.
+   </p></div>
 <a name="toString()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>

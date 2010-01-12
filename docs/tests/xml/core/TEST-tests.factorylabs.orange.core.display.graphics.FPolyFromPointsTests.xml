@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.graphics.FPolyFromPointsTests" tests="13" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="y" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="x" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="setY" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="width" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="fill" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="setWidth" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="x" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="autoRedraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="y" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="setHeight" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="gfx" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="redraw" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="points" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="setWidth" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="setX" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="height" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="autoRedraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolyFromPointsTests" name="redraw" time="0.000" status="success"/>
 </testsuite>

@@ -3290,7 +3290,7 @@
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as">Graphic</a>
 </div>
 </td>
-<td>7</td>
+<td>8</td>
 <td>
 <div class="hierarchy">
 <div title="com.factorylabs.orange.core.display.graphics:Graphic">com.factorylabs.orange.core.display.graphics:Graphic</div>
@@ -3566,6 +3566,32 @@
 </tr>
 <tr>
 <td>
+<div class="class-name" title="FDashedLine">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FDashedLine.as">FDashedLine</a>
+</div>
+</td>
+<td>1</td>
+<td>
+<div class="hierarchy">
+<div title="com.factorylabs.orange.core.display.graphics:FDashedLine">com.factorylabs.orange.core.display.graphics:FDashedLine</div>
+<ul class="prequisites">
+<li class="prequisite ">com.factorylabs.orange.core.display.graphics:Graphic</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency ">com.factorylabs.orange.core.display.fills:IFill</li>
+<li class="dependency external">flash.display:Graphics</li>
+<li class="dependency external">ArgumentError</li>
+<li class="dependency external">AS3</li>
+<li class="dependency external">Math</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">3.9 KB</div>
+</td>
+</tr>
+<tr>
+<td>
 <div class="class-name" title="TestMethodResult">
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc">TestMethodResult</a>
 </div>
@@ -3645,6 +3671,37 @@
 </td>
 <td class="number">
 <div class="size">3.8 KB</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="class-name" title="FDashedLineTests">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FDashedLineTests.as">FDashedLineTests</a>
+</div>
+</td>
+<td>1</td>
+<td>
+<div class="hierarchy">
+<div title="tests.factorylabs.orange.core.display.graphics:FDashedLineTests">tests.factorylabs.orange.core.display.graphics:FDashedLineTests</div>
+<ul class="prequisites">
+<li class="prequisite external">Object</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency ">org.hamcrest:assertThat</li>
+<li class="dependency external">flash.display:LineScaleMode</li>
+<li class="dependency external">flash.display:CapsStyle</li>
+<li class="dependency ">com.factorylabs.orange.core.display.fills:SolidStroke</li>
+<li class="dependency ">org.hamcrest.object:equalTo</li>
+<li class="dependency external">flash.display:JointStyle</li>
+<li class="dependency ">com.factorylabs.orange.core.display.graphics:FDashedLine</li>
+<li class="dependency external">AS3</li>
+<li class="dependency ">tests.factorylabs.orange.helpers:MockCanvas</li>
+<li class="dependency external">flash.display:Shape</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">3.7 KB</div>
 </td>
 </tr>
 <tr>
@@ -3997,7 +4054,7 @@
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidStroke.as">SolidStroke</a>
 </div>
 </td>
-<td>1</td>
+<td>2</td>
 <td>
 <div class="hierarchy">
 <div title="com.factorylabs.orange.core.display.fills:SolidStroke">com.factorylabs.orange.core.display.fills:SolidStroke</div>
@@ -6936,6 +6993,50 @@
 </tr>
 <tr>
 <td>
+<div class="class-name" title="DisplayTestSuite">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as">DisplayTestSuite</a>
+</div>
+</td>
+<td>1</td>
+<td>
+<div class="hierarchy">
+<div title="tests.factorylabs.orange.core.display:DisplayTestSuite">tests.factorylabs.orange.core.display:DisplayTestSuite</div>
+<ul class="prequisites">
+<li class="prequisite external">Object</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency ">tests.factorylabs.orange.core.display:FBitmapTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FSquareTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.fills:SolidStrokeTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display:FShapeTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectCorneredComplexTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FWedgeTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.fills:SolidFillTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectangleTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display:FTextFieldTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:GraphicTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectRoundTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FPolyFromPointsTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FDashedLineTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectCorneredTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FPolygonTests</li>
+<li class="dependency external">AS3</li>
+<li class="dependency ">tests.factorylabs.orange.core.display:FSpriteTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display:FBitmapTextTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FEllipseTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectRoundComplexTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FCircleTests</li>
+<li class="dependency ">tests.factorylabs.orange.core.display:FMovieClipTests</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">2 KB</div>
+</td>
+</tr>
+<tr>
+<td>
 <div class="class-name" title="ArrayMethods">
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ArrayMethods.as">ArrayMethods</a>
 </div>
@@ -7103,49 +7204,6 @@
 <li class="dependency ">mx.logging:ILogger</li>
 <li class="dependency external">Date</li>
 <li class="dependency external">AS3</li>
-</ul>
-</div>
-</td>
-<td class="number">
-<div class="size">2 KB</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class="class-name" title="DisplayTestSuite">
-<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as">DisplayTestSuite</a>
-</div>
-</td>
-<td>1</td>
-<td>
-<div class="hierarchy">
-<div title="tests.factorylabs.orange.core.display:DisplayTestSuite">tests.factorylabs.orange.core.display:DisplayTestSuite</div>
-<ul class="prequisites">
-<li class="prequisite external">Object</li>
-</ul>
-<ul class="dependencies">
-<li class="dependency ">tests.factorylabs.orange.core.display:FBitmapTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FSquareTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.fills:SolidStrokeTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display:FShapeTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectCorneredComplexTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FWedgeTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.fills:SolidFillTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectangleTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display:FTextFieldTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:GraphicTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectRoundTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FPolyFromPointsTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectCorneredTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FPolygonTests</li>
-<li class="dependency external">AS3</li>
-<li class="dependency ">tests.factorylabs.orange.core.display:FSpriteTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display:FBitmapTextTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FEllipseTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FRectRoundComplexTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display.graphics:FCircleTests</li>
-<li class="dependency ">tests.factorylabs.orange.core.display:FMovieClipTests</li>
 </ul>
 </div>
 </td>
@@ -10388,7 +10446,7 @@
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/MockCanvas.as">MockCanvas</a>
 </div>
 </td>
-<td>12</td>
+<td>13</td>
 <td>
 <div class="hierarchy">
 <div title="tests.factorylabs.orange.helpers:MockCanvas">tests.factorylabs.orange.helpers:MockCanvas</div>
@@ -12138,7 +12196,7 @@
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/IFill.as">IFill</a>
 </div>
 </td>
-<td>15</td>
+<td>16</td>
 <td>
 <div class="hierarchy">
 <div title="com.factorylabs.orange.core.display.fills:IFill">com.factorylabs.orange.core.display.fills:IFill</div>
@@ -12656,7 +12714,7 @@
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc">assertThat</a>
 </div>
 </td>
-<td>36</td>
+<td>37</td>
 <td>
 <div class="hierarchy">
 <div title="org.hamcrest:assertThat">org.hamcrest:assertThat</div>
@@ -15680,7 +15738,7 @@
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc">equalTo</a>
 </div>
 </td>
-<td>36</td>
+<td>37</td>
 <td>
 <div class="hierarchy">
 <div title="org.hamcrest.object:equalTo">org.hamcrest.object:equalTo</div>
@@ -16118,7 +16176,7 @@
 <td/>
 <td/>
 <td>
-<div class="size">1581.1 KB</div>
+<div class="size">1588.7 KB</div>
 </td>
 </tr>
 </tfoot>

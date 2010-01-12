@@ -208,7 +208,7 @@ package com.factorylabs.orange.core.display.graphics
 			_y = $y;
 			_width = $width;
 			_height = $height;
-			_fill = $fill;		// ( $fill != null ) ? $fill : new SolidFill();
+			_fill = $fill;
 			_center = $center;
 			_autoRedraw = $autoRedraw;
 		}

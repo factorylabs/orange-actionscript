@@ -292,7 +292,7 @@
       <dep id="org.flexunit.utils:ClassNameUtil" />
       <dep id="org.flexunit.experimental.runners.statements:TheoryBlockRunner" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as" mod="1260166403000" size="4067" optimizedsize="1537">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as" mod="1263255792000" size="4067" optimizedsize="1537">
       <def id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <pre id="Object" />
       <pre id="com.factorylabs.orange.core.display.graphics:IGraphic" />
@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263254812388" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263264630922" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -1052,6 +1052,20 @@
       <dep id="mx.styles:StyleManager" />
       <dep id="flash.display:GradientType" />
       <dep id="flash.display:Graphics" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FDashedLineTests.as" mod="1263264351000" size="3804" optimizedsize="1662">
+      <def id="tests.factorylabs.orange.core.display.graphics:FDashedLineTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="flash.display:LineScaleMode" />
+      <dep id="flash.display:CapsStyle" />
+      <dep id="com.factorylabs.orange.core.display.fills:SolidStroke" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="flash.display:JointStyle" />
+      <dep id="com.factorylabs.orange.core.display.graphics:FDashedLine" />
+      <dep id="AS3" />
+      <dep id="tests.factorylabs.orange.helpers:MockCanvas" />
+      <dep id="flash.display:Shape" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/fluint/sequence/ISequenceAction)" mod="1249565341000" size="584" optimizedsize="201">
       <def id="org.fluint.sequence:ISequenceAction" />
@@ -1630,6 +1644,15 @@
       <dep id="Error" />
       <dep id="mx.resources:ResourceManager" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FDashedLine.as" mod="1263263251000" size="3949" optimizedsize="1884">
+      <def id="com.factorylabs.orange.core.display.graphics:FDashedLine" />
+      <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
+      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.display:Graphics" />
+      <dep id="ArgumentError" />
+      <dep id="AS3" />
+      <dep id="Math" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/managers/LayoutManager)" mod="1247688631424" size="6332" optimizedsize="3756">
       <def id="mx.managers:LayoutManager" />
@@ -2213,7 +2236,7 @@
       <pre id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1263254357000" size="2011" optimizedsize="1313">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1263263491000" size="2072" optimizedsize="1361">
       <def id="tests.factorylabs.orange.core.display:DisplayTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.display:FBitmapTests" />
@@ -2229,6 +2252,7 @@
       <dep id="tests.factorylabs.orange.core.display.graphics:GraphicTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectRoundTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FPolyFromPointsTests" />
+      <dep id="tests.factorylabs.orange.core.display.graphics:FDashedLineTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectCorneredTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FPolygonTests" />
       <dep id="AS3" />
@@ -2634,7 +2658,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263254812386" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263264630920" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
