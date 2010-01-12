@@ -1,6 +1,6 @@
 <report>
   <scripts>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/Locale.as" mod="1259649524000" size="3209" optimizedsize="1360">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/Locale.as" mod="1263266061000" size="3209" optimizedsize="1360">
       <def id="com.factorylabs.orange.core.utils:Locale" />
       <pre id="Object" />
       <dep id="Date" />
@@ -73,7 +73,7 @@
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/IMap.as" mod="1259646944000" size="2415" optimizedsize="507">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/IMap.as" mod="1263265696000" size="2415" optimizedsize="507">
       <def id="com.factorylabs.orange.core.collections:IMap" />
       <pre id="Object" />
       <dep id="flash.utils:Dictionary" />
@@ -103,7 +103,7 @@
       <dep id="Math" />
       <dep id="mx.binding:IBindingClient" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/IJanitor.as" mod="1259647059000" size="601" optimizedsize="191">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/IJanitor.as" mod="1263265948000" size="601" optimizedsize="191">
       <def id="com.factorylabs.orange.core.gc:IJanitor" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -114,7 +114,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectRoundTests.as" mod="1261008063000" size="3849" optimizedsize="1715">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectRoundTests.as" mod="1263266198000" size="3849" optimizedsize="1715">
       <def id="tests.factorylabs.orange.core.display.graphics:FRectRoundTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -181,7 +181,7 @@
       <dep id="flash.events:IEventDispatcher" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/CollectionsTestSuite.as" mod="1261679122000" size="740" optimizedsize="274">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/CollectionsTestSuite.as" mod="1263266112000" size="740" optimizedsize="274">
       <def id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.collections:MapTests" />
@@ -260,13 +260,13 @@
       <dep id="AS3" />
       <dep id="mx.collections:CursorBookmark" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/math/MathMethods.as" mod="1259649100000" size="2558" optimizedsize="990">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/math/MathMethods.as" mod="1263266024000" size="2558" optimizedsize="990">
       <def id="com.factorylabs.orange.core.math:MathMethods" />
       <pre id="Object" />
       <dep id="AS3" />
       <dep id="Math" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FTextFieldTests.as" mod="1259795979000" size="2629" optimizedsize="1213">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FTextFieldTests.as" mod="1263266256000" size="2629" optimizedsize="1213">
       <def id="tests.factorylabs.orange.core.display:FTextFieldTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -292,7 +292,7 @@
       <dep id="org.flexunit.utils:ClassNameUtil" />
       <dep id="org.flexunit.experimental.runners.statements:TheoryBlockRunner" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as" mod="1263255792000" size="4067" optimizedsize="1537">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as" mod="1263265868000" size="4067" optimizedsize="1537">
       <def id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <pre id="Object" />
       <pre id="com.factorylabs.orange.core.display.graphics:IGraphic" />
@@ -343,7 +343,7 @@
       <dep id="mx.utils:ColorUtil" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/Convert.as" mod="1259649471000" size="1412" optimizedsize="698">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/Convert.as" mod="1263266053000" size="1412" optimizedsize="698">
       <def id="com.factorylabs.orange.core.utils:Convert" />
       <pre id="Error" />
       <pre id="Object" />
@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263264630922" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263266475850" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -605,12 +605,12 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/LogLevels.as" mod="1259648859000" size="1016" optimizedsize="456">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/LogLevels.as" mod="1263266015000" size="1016" optimizedsize="456">
       <def id="com.factorylabs.orange.core.logging:LogLevels" />
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FSprite.as" mod="1259795734000" size="1772" optimizedsize="1097">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FSprite.as" mod="1263265917000" size="1772" optimizedsize="1097">
       <def id="com.factorylabs.orange.core.display:FSprite" />
       <pre id="flash.display:Sprite" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
@@ -1129,7 +1129,7 @@
       <dep id="mx.events:SandboxMouseEvent" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as" mod="1259946593000" size="3170" optimizedsize="524">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as" mod="1263265878000" size="3170" optimizedsize="524">
       <def id="com.factorylabs.orange.core.display.graphics:IGraphic" />
       <pre id="Object" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
@@ -1156,7 +1156,7 @@
       <dep id="AS3" />
       <dep id="mx.core:ISWFBridgeProvider" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTests.as" mod="1259795853000" size="2333" optimizedsize="1053">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTests.as" mod="1263266227000" size="2333" optimizedsize="1053">
       <def id="tests.factorylabs.orange.core.display:FBitmapTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -1165,7 +1165,7 @@
       <dep id="flash.display:Sprite" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FShapeTests.as" mod="1259795937000" size="2314" optimizedsize="1047">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FShapeTests.as" mod="1263266246000" size="2314" optimizedsize="1047">
       <def id="tests.factorylabs.orange.core.display:FShapeTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -1223,7 +1223,7 @@
       <dep id="AS3" />
       <dep id="mx.collections:CursorBookmark" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectCorneredTests.as" mod="1261984099000" size="4530" optimizedsize="2002">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectCorneredTests.as" mod="1263266188000" size="4530" optimizedsize="2002">
       <def id="tests.factorylabs.orange.core.display.graphics:FRectCorneredTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -1259,7 +1259,7 @@
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTextTests.as" mod="1259651097000" size="1910" optimizedsize="873">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FBitmapTextTests.as" mod="1263266231000" size="1910" optimizedsize="873">
       <def id="tests.factorylabs.orange.core.display:FBitmapTextTests" />
       <pre id="Object" />
       <dep id="com.factorylabs.orange.core.display:FBitmapText" />
@@ -1284,7 +1284,7 @@
       <dep id="ArgumentError" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1259383744000" size="1258" optimizedsize="774">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1263266410000" size="1258" optimizedsize="774">
       <def id="tests.factorylabs.orange.core:FCoreTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
@@ -1400,7 +1400,7 @@
       <pre id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/math/PhysicsMethods.as" mod="1259649183000" size="1143" optimizedsize="452">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/math/PhysicsMethods.as" mod="1263266029000" size="1143" optimizedsize="452">
       <def id="com.factorylabs.orange.core.math:PhysicsMethods" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -1513,7 +1513,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/JanitorManager.as" mod="1259647814000" size="1709" optimizedsize="826">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/JanitorManager.as" mod="1263265969000" size="1709" optimizedsize="826">
       <def id="com.factorylabs.orange.core.gc:JanitorManager" />
       <pre id="com.factorylabs.orange.core.gc:IJanitorManager" />
       <pre id="Object" />
@@ -1602,7 +1602,7 @@
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/LocaleTests.as" mod="1259215818000" size="2084" optimizedsize="948">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/LocaleTests.as" mod="1263266385000" size="2084" optimizedsize="948">
       <def id="tests.factorylabs.orange.core.utils:LocaleTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -1645,7 +1645,7 @@
       <dep id="mx.resources:ResourceManager" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FDashedLine.as" mod="1263263251000" size="3949" optimizedsize="1884">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FDashedLine.as" mod="1263265198000" size="3949" optimizedsize="1884">
       <def id="com.factorylabs.orange.core.display.graphics:FDashedLine" />
       <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
@@ -1781,7 +1781,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1259182770000" size="604" optimizedsize="191">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1263266092000" size="604" optimizedsize="191">
       <def id="com.factorylabs.orange.core:IDisposable" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -2127,7 +2127,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/WeakReferenceTests.as" mod="1259187185000" size="1531" optimizedsize="648">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/WeakReferenceTests.as" mod="1263266310000" size="1531" optimizedsize="648">
       <def id="tests.factorylabs.orange.core.gc:WeakReferenceTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -2209,7 +2209,7 @@
       <dep id="mx.core:ApplicationGlobals" />
       <dep id="mx.effects:Effect" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/UtilsTestSuite.as" mod="1259704468000" size="993" optimizedsize="504">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/UtilsTestSuite.as" mod="1263266398000" size="993" optimizedsize="504">
       <def id="tests.factorylabs.orange.core.utils:UtilsTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.utils:ArrayMethodsTests" />
@@ -2236,7 +2236,7 @@
       <pre id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1263263491000" size="2072" optimizedsize="1361">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1263266221000" size="2072" optimizedsize="1361">
       <def id="tests.factorylabs.orange.core.display:DisplayTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.display:FBitmapTests" />
@@ -2376,7 +2376,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FShape.as" mod="1259795717000" size="1630" optimizedsize="969">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FShape.as" mod="1263265911000" size="1630" optimizedsize="969">
       <def id="com.factorylabs.orange.core.display:FShape" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <pre id="flash.display:Shape" />
@@ -2415,7 +2415,7 @@
       <dep id="AS3" />
       <dep id="mx.core:ISWFBridgeProvider" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FMovieClip.as" mod="1259795709000" size="1849" optimizedsize="1150">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FMovieClip.as" mod="1263265906000" size="1849" optimizedsize="1150">
       <def id="com.factorylabs.orange.core.display:FMovieClip" />
       <pre id="flash.display:MovieClip" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
@@ -2537,7 +2537,7 @@
       <dep id="org.fluint.uiImpersonation:TestEnvironment" />
       <dep id="flash.utils:getDefinitionByName" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FTextField.as" mod="1259795748000" size="1975" optimizedsize="1178">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FTextField.as" mod="1263265922000" size="1975" optimizedsize="1178">
       <def id="com.factorylabs.orange.core.display:FTextField" />
       <pre id="flash.text:TextField" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
@@ -2600,13 +2600,13 @@
       <dep id="flash.utils:getQualifiedClassName" />
       <dep id="flash.utils:getDefinitionByName" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ValidateMethods.as" mod="1259649917000" size="1725" optimizedsize="750">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ValidateMethods.as" mod="1263266078000" size="1725" optimizedsize="750">
       <def id="com.factorylabs.orange.core.utils:ValidateMethods" />
       <pre id="Object" />
       <dep id="RegExp" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FMovieClipTests.as" mod="1259795874000" size="2405" optimizedsize="1086">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FMovieClipTests.as" mod="1263266241000" size="2405" optimizedsize="1086">
       <def id="tests.factorylabs.orange.core.display:FMovieClipTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -2636,7 +2636,7 @@
       <dep id="flash.system:SecurityDomain" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectangleTests.as" mod="1260164084000" size="3476" optimizedsize="1561">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectangleTests.as" mod="1263266178000" size="3476" optimizedsize="1561">
       <def id="tests.factorylabs.orange.core.display.graphics:FRectangleTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -2658,7 +2658,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263264630920" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263266475843" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -2673,7 +2673,7 @@
       <dep id="AS3" />
       <dep id="mx.utils:ObjectProxy" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ConvertTests.as" mod="1259214070000" size="1815" optimizedsize="761">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ConvertTests.as" mod="1263266380000" size="1815" optimizedsize="761">
       <def id="tests.factorylabs.orange.core.utils:ConvertTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -2891,7 +2891,7 @@
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/errors/IllegalSetPropertiesError.as" mod="1262726793000" size="863" optimizedsize="355">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/errors/IllegalSetPropertiesError.as" mod="1263265939000" size="868" optimizedsize="360">
       <def id="com.factorylabs.orange.core.errors:IllegalSetPropertiesError" />
       <pre id="Error" />
       <dep id="AS3" />
@@ -2970,7 +2970,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidFill.as" mod="1263254044000" size="1720" optimizedsize="697">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidFill.as" mod="1263265797000" size="1720" optimizedsize="697">
       <def id="com.factorylabs.orange.core.display.fills:SolidFill" />
       <pre id="com.factorylabs.orange.core.display.fills:IFill" />
       <pre id="Object" />
@@ -3044,7 +3044,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectRoundComplexTests.as" mod="1261010329000" size="4371" optimizedsize="1880">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectRoundComplexTests.as" mod="1263266193000" size="4371" optimizedsize="1880">
       <def id="tests.factorylabs.orange.core.display.graphics:FRectRoundComplexTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -3083,7 +3083,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectRound.as" mod="1261009718000" size="2047" optimizedsize="906">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectRound.as" mod="1263265848000" size="2047" optimizedsize="906">
       <def id="com.factorylabs.orange.core.display.graphics:FRectRound" />
       <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
@@ -3368,7 +3368,7 @@
       <dep id="mx.events:ScrollEvent" />
       <dep id="flash.ui:Keyboard" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggingTestSuite.as" mod="1259185505000" size="763" optimizedsize="312">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggingTestSuite.as" mod="1263266345000" size="763" optimizedsize="312">
       <def id="tests.factorylabs.orange.core.logging:LoggingTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.logging:LoggerEventTests" />
@@ -3388,7 +3388,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FBitmap.as" mod="1259795702000" size="1674" optimizedsize="992">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FBitmap.as" mod="1263265888000" size="1674" optimizedsize="992">
       <def id="com.factorylabs.orange.core.display:FBitmap" />
       <pre id="flash.display:Bitmap" />
       <pre id="com.factorylabs.orange.core.display:IFDisplayObject" />
@@ -3424,7 +3424,7 @@
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FBitmapText.as" mod="1259646172000" size="1612" optimizedsize="796">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FBitmapText.as" mod="1263265896000" size="1612" optimizedsize="796">
       <def id="com.factorylabs.orange.core.display:FBitmapText" />
       <pre id="com.factorylabs.orange.core.display:FSprite" />
       <dep id="com.factorylabs.orange.core.display:FBitmap" />
@@ -3561,7 +3561,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FEllipseTests.as" mod="1262991353000" size="3439" optimizedsize="1558">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FEllipseTests.as" mod="1263266163000" size="3439" optimizedsize="1558">
       <def id="tests.factorylabs.orange.core.display.graphics:FEllipseTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -3620,7 +3620,7 @@
       <dep id="AS3" />
       <dep id="mx.modules:IModuleInfo" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectCorneredComplex.as" mod="1261179006000" size="1991" optimizedsize="1061">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectCorneredComplex.as" mod="1263265843000" size="1991" optimizedsize="1061">
       <def id="com.factorylabs.orange.core.display.graphics:FRectCorneredComplex" />
       <pre id="com.factorylabs.orange.core.display.graphics:FRectRoundComplex" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
@@ -3628,7 +3628,7 @@
       <dep id="AS3" />
       <dep id="Math" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/errors/ErrorsTestSuite.as" mod="1259796015000" size="729" optimizedsize="298">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/errors/ErrorsTestSuite.as" mod="1263266273000" size="729" optimizedsize="298">
       <def id="tests.factorylabs.orange.core.errors:ErrorsTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.errors:IllegalSetPropertiesErrorTests" />
@@ -3642,7 +3642,7 @@
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorTests.as" mod="1259194841000" size="7680" optimizedsize="3875">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorTests.as" mod="1263266304000" size="7680" optimizedsize="3875">
       <def id="tests.factorylabs.orange.core.gc:JanitorTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -3682,7 +3682,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/fills/SolidFillTests.as" mod="1259903855000" size="1898" optimizedsize="725">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/fills/SolidFillTests.as" mod="1263266136000" size="1898" optimizedsize="725">
       <def id="tests.factorylabs.orange.core.display.fills:SolidFillTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -3775,7 +3775,7 @@
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectCorneredComplexTests.as" mod="1261178351000" size="4443" optimizedsize="1889">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FRectCorneredComplexTests.as" mod="1263266183000" size="4443" optimizedsize="1889">
       <def id="tests.factorylabs.orange.core.display.graphics:FRectCorneredComplexTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -3816,7 +3816,7 @@
       <dep id="org.flexunit.token:AsyncTestToken" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FSquareTests.as" mod="1260167309000" size="3694" optimizedsize="1711">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FSquareTests.as" mod="1263266203000" size="3694" optimizedsize="1711">
       <def id="tests.factorylabs.orange.core.display.graphics:FSquareTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -3865,7 +3865,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/PhysicsMethodsTests.as" mod="1259229719000" size="1828" optimizedsize="739">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/PhysicsMethodsTests.as" mod="1263266363000" size="1828" optimizedsize="739">
       <def id="tests.factorylabs.orange.core.math:PhysicsMethodsTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -3888,7 +3888,7 @@
       <dep id="AS3" />
       <dep id="Math" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/Janitor.as" mod="1259647926000" size="6493" optimizedsize="3351">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/Janitor.as" mod="1263265963000" size="6493" optimizedsize="3351">
       <def id="com.factorylabs.orange.core.gc:Janitor" />
       <pre id="com.factorylabs.orange.core.gc:IJanitor" />
       <pre id="Object" />
@@ -3982,7 +3982,7 @@
       <dep id="flash.utils:Dictionary" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/IFill.as" mod="1259903480000" size="882" optimizedsize="310">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/IFill.as" mod="1263265791000" size="882" optimizedsize="310">
       <def id="com.factorylabs.orange.core.display.fills:IFill" />
       <pre id="Object" />
       <dep id="flash.display:Graphics" />
@@ -4046,7 +4046,7 @@
       <dep id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectRoundComplex.as" mod="1261009518000" size="2832" optimizedsize="1116">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectRoundComplex.as" mod="1263265853000" size="2832" optimizedsize="1116">
       <def id="com.factorylabs.orange.core.display.graphics:FRectRoundComplex" />
       <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
       <dep id="com.factorylabs.orange.core.display.fills:IFill" />
@@ -4182,7 +4182,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FDisplayObjectProperties.as" mod="1259645147000" size="4975" optimizedsize="1624">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/FDisplayObjectProperties.as" mod="1263265901000" size="4975" optimizedsize="1624">
       <def id="com.factorylabs.orange.core.display:FDisplayObjectProperties" />
       <pre id="Object" />
       <dep id="flash.geom:Rectangle" />
@@ -4217,7 +4217,7 @@
       <dep id="flash.utils:getQualifiedClassName" />
       <dep id="mx.effects.effectClasses:PropertyChanges" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/MapTests.as" mod="1261677797000" size="4611" optimizedsize="2280">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/MapTests.as" mod="1263266120000" size="4611" optimizedsize="2280">
       <def id="tests.factorylabs.orange.core.collections:MapTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4275,7 +4275,7 @@
       <dep id="Math" />
       <dep id="mx.effects.effectClasses:PropertyChanges" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/MockCanvas.as" mod="1260000707000" size="1133" optimizedsize="603">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/MockCanvas.as" mod="1263266431000" size="1133" optimizedsize="603">
       <def id="tests.factorylabs.orange.helpers:MockCanvas" />
       <pre id="mx.containers:Canvas" />
       <dep id="flash.display:DisplayObject" />
@@ -4293,7 +4293,7 @@
       <dep id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ColorMethodsTests.as" mod="1259211680000" size="2676" optimizedsize="1223">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ColorMethodsTests.as" mod="1263266376000" size="2676" optimizedsize="1223">
       <def id="tests.factorylabs.orange.core.utils:ColorMethodsTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4436,7 +4436,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/errors/IllegalSetPropertiesErrorTests.as" mod="1259796000000" size="1639" optimizedsize="603">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/errors/IllegalSetPropertiesErrorTests.as" mod="1263266279000" size="1639" optimizedsize="603">
       <def id="tests.factorylabs.orange.core.errors:IllegalSetPropertiesErrorTests" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -4560,7 +4560,7 @@
       <dep id="com.factorylabs.orange.core.logging:LoggerEvent" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FSpriteTests.as" mod="1259795962000" size="2364" optimizedsize="1081">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FSpriteTests.as" mod="1263266251000" size="2364" optimizedsize="1081">
       <def id="tests.factorylabs.orange.core.display:FSpriteTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4629,7 +4629,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/MathTestSuite.as" mod="1259232537000" size="746" optimizedsize="316">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/MathTestSuite.as" mod="1263266359000" size="746" optimizedsize="316">
       <def id="tests.factorylabs.orange.core.math:MathTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.math:PhysicsMethodsTests" />
@@ -4642,13 +4642,13 @@
       <dep id="flash.events:IEventDispatcher" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/MockDisposableClass.as" mod="1259196085000" size="1248" optimizedsize="505">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/MockDisposableClass.as" mod="1263266436000" size="1248" optimizedsize="505">
       <def id="tests.factorylabs.orange.helpers:MockDisposableClass" />
       <pre id="com.factorylabs.orange.core:IDisposable" />
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ValidateMethodsTests.as" mod="1259226277000" size="2827" optimizedsize="1203">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ValidateMethodsTests.as" mod="1263266403000" size="2827" optimizedsize="1203">
       <def id="tests.factorylabs.orange.core.utils:ValidateMethodsTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4708,7 +4708,7 @@
       <dep id="mx.collections:XMLListAdapter" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/MockBaseClass.as" mod="1259196096000" size="2021" optimizedsize="795">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/MockBaseClass.as" mod="1263266426000" size="2021" optimizedsize="795">
       <def id="tests.factorylabs.orange.helpers:MockBaseClass" />
       <pre id="tests.factorylabs.orange.helpers:IMockInterface" />
       <pre id="Object" />
@@ -4734,7 +4734,7 @@
       <dep id="mx.collections:ArrayCollection" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/IJanitorManager.as" mod="1259647164000" size="1298" optimizedsize="358">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/IJanitorManager.as" mod="1263265955000" size="1298" optimizedsize="358">
       <def id="com.factorylabs.orange.core.gc:IJanitorManager" />
       <pre id="Object" />
       <dep id="com.factorylabs.orange.core.gc:IJanitor" />
@@ -4773,11 +4773,11 @@
       <dep id="Math" />
       <dep id="mx.core:Singleton" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorManagerTests.as" mod="1259186781000" size="2800" optimizedsize="1480">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorManagerTests.as" mod="1263266294000" size="2800" optimizedsize="1480">
       <def id="tests.factorylabs.orange.core.gc:JanitorManagerTests" />
       <pre id="Object" />
-      <dep id="com.factorylabs.orange.core.gc:JanitorManager" />
       <dep id="org.hamcrest:assertThat" />
+      <dep id="com.factorylabs.orange.core.gc:JanitorManager" />
       <dep id="org.hamcrest.object:notNullValue" />
       <dep id="flash.media:SoundChannel" />
       <dep id="flash.display:Sprite" />
@@ -4933,7 +4933,7 @@
       <dep id="Math" />
       <dep id="mx.containers.utilityClasses:FlexChildInfo" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/WeakReference.as" mod="1259648113000" size="1014" optimizedsize="472">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/WeakReference.as" mod="1263265982000" size="1014" optimizedsize="472">
       <def id="com.factorylabs.orange.core.gc:WeakReference" />
       <pre id="Object" />
       <dep id="flash.utils:Dictionary" />
@@ -4961,7 +4961,7 @@
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/StringMethodsTests.as" mod="1259224275000" size="7650" optimizedsize="3372">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/StringMethodsTests.as" mod="1263266392000" size="7650" optimizedsize="3372">
       <def id="tests.factorylabs.orange.core.utils:StringMethodsTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4969,7 +4969,7 @@
       <dep id="AS3" />
       <dep id="com.factorylabs.orange.core.utils:StringMethods" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FCircleTests.as" mod="1261988318000" size="3694" optimizedsize="1711">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/FCircleTests.as" mod="1263266151000" size="3694" optimizedsize="1711">
       <def id="tests.factorylabs.orange.core.display.graphics:FCircleTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4996,7 +4996,7 @@
       <dep id="mx.core:IContainer" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ColorMethods.as" mod="1259649386000" size="1670" optimizedsize="662">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ColorMethods.as" mod="1263266045000" size="1670" optimizedsize="662">
       <def id="com.factorylabs.orange.core.utils:ColorMethods" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -5138,7 +5138,7 @@
       <dep id="AS3" />
       <dep id="org.flexunit.runner.manipulation:ISortable" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ArrayMethodsTests.as" mod="1259210319000" size="3025" optimizedsize="1459">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ArrayMethodsTests.as" mod="1263266371000" size="3025" optimizedsize="1459">
       <def id="tests.factorylabs.orange.core.utils:ArrayMethodsTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -5170,7 +5170,7 @@
       <dep id="AS3" />
       <dep id="mx.containers.utilityClasses:CanvasLayout" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/GraphicTests.as" mod="1260162804000" size="3423" optimizedsize="1555">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/graphics/GraphicTests.as" mod="1263266212000" size="3423" optimizedsize="1555">
       <def id="tests.factorylabs.orange.core.display.graphics:GraphicTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -5218,7 +5218,7 @@
       <dep id="QName" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/GCTestSuite.as" mod="1259192786000" size="858" optimizedsize="416">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/GCTestSuite.as" mod="1263266287000" size="858" optimizedsize="416">
       <def id="tests.factorylabs.orange.core.gc:GCTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.gc:JanitorTests" />
@@ -5272,7 +5272,7 @@
       <dep id="flexunit.utils:CollectionIterator" />
       <dep id="flexunit.utils:Iterator" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/MathMethodsTests.as" mod="1259697178000" size="3324" optimizedsize="1447">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/MathMethodsTests.as" mod="1263266353000" size="3324" optimizedsize="1447">
       <def id="tests.factorylabs.orange.core.math:MathMethodsTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -5299,7 +5299,7 @@
       <dep id="mx.events:PropertyChangeEvent" />
       <dep id="mx.events:CollectionEvent" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ArrayMethods.as" mod="1259649265000" size="2058" optimizedsize="947">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ArrayMethods.as" mod="1263266040000" size="2058" optimizedsize="947">
       <def id="com.factorylabs.orange.core.utils:ArrayMethods" />
       <pre id="Object" />
       <dep id="flash.utils:ByteArray" />
@@ -5458,7 +5458,7 @@
       <dep id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/IFDisplayObject.as" mod="1259795677000" size="866" optimizedsize="250">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/IFDisplayObject.as" mod="1263265929000" size="866" optimizedsize="250">
       <def id="com.factorylabs.orange.core.display:IFDisplayObject" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -5506,7 +5506,7 @@
       <dep id="Error" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/JanitorSoundChannel.as" mod="1259648051000" size="1816" optimizedsize="794">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/gc/JanitorSoundChannel.as" mod="1263265975000" size="1816" optimizedsize="794">
       <def id="com.factorylabs.orange.core.gc:JanitorSoundChannel" />
       <pre id="com.factorylabs.orange.core.gc:IJanitor" />
       <pre id="Object" />
@@ -5555,7 +5555,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/StringMethods.as" mod="1259651142000" size="8838" optimizedsize="3801">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/StringMethods.as" mod="1263266070000" size="8838" optimizedsize="3801">
       <def id="com.factorylabs.orange.core.utils:StringMethods" />
       <pre id="Object" />
       <dep id="RegExp" />
@@ -5584,7 +5584,7 @@
       <dep id="ArgumentError" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/IMockInterface.as" mod="1259196121000" size="751" optimizedsize="269">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/helpers/IMockInterface.as" mod="1263266421000" size="751" optimizedsize="269">
       <def id="tests.factorylabs.orange.helpers:IMockInterface" />
       <pre id="Object" />
       <dep id="flash.display:Sprite" />
@@ -5635,7 +5635,7 @@
       <pre id="mx.core:Container" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/Map.as" mod="1259190888000" size="3662" optimizedsize="1726">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/Map.as" mod="1263265777000" size="3662" optimizedsize="1726">
       <def id="com.factorylabs.orange.core.collections:Map" />
       <pre id="com.factorylabs.orange.core.collections:IMap" />
       <pre id="com.factorylabs.orange.core:ICloneable" />
@@ -5645,7 +5645,7 @@
       <dep id="flash.utils:Dictionary" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorSoundChannelTests.as" mod="1259186911000" size="2267" optimizedsize="1029">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorSoundChannelTests.as" mod="1263266299000" size="2267" optimizedsize="1029">
       <def id="tests.factorylabs.orange.core.gc:JanitorSoundChannelTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -5693,7 +5693,7 @@
       <dep id="org.flexunit.async:AsyncLocator" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggerTests.as" mod="1259186508000" size="4171" optimizedsize="2017">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggerTests.as" mod="1263266336000" size="4171" optimizedsize="2017">
       <def id="tests.factorylabs.orange.core.logging:LoggerTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -5738,7 +5738,7 @@
       <dep id="AS3" />
       <dep id="flexunit.framework:TestCase" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/ICloneable.as" mod="1259182692000" size="582" optimizedsize="176">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/ICloneable.as" mod="1263266087000" size="582" optimizedsize="176">
       <def id="com.factorylabs.orange.core:ICloneable" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -5752,7 +5752,7 @@
       <dep id="AS3" />
       <dep id="flash.net:URLRequest" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggerEventTests.as" mod="1259186286000" size="2232" optimizedsize="951">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggerEventTests.as" mod="1263266330000" size="2232" optimizedsize="951">
       <def id="tests.factorylabs.orange.core.logging:LoggerEventTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -5760,7 +5760,7 @@
       <dep id="com.factorylabs.orange.core.logging:LoggerEvent" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FDisplayObjectPropertiesTests.as" mod="1259561418000" size="5719" optimizedsize="2545">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/FDisplayObjectPropertiesTests.as" mod="1263266236000" size="5719" optimizedsize="2545">
       <def id="tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -5813,7 +5813,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/LoggerEvent.as" mod="1259648671000" size="1680" optimizedsize="694">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/LoggerEvent.as" mod="1263266009000" size="1680" optimizedsize="694">
       <def id="com.factorylabs.orange.core.logging:LoggerEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />

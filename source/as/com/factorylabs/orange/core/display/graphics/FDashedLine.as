@@ -103,7 +103,7 @@ package com.factorylabs.orange.core.display.graphics
 		
 		/**
 		 * Not allowed since this is a drawing a distinct line.
-		 * @throws ArgumentError when trying to call the setter.
+		 * @throws ArgumentError <code>ArgumentError</code> when trying to call the setter.
 		 */
 		override public function set width( $width :Number ) :void
 		{
@@ -112,7 +112,7 @@ package com.factorylabs.orange.core.display.graphics
 		
 		/**
 		 * Not allowed since this is a drawing a distinct line.
-		 * @throws ArgumentError when trying to call the setter.
+		 * @throws ArgumentError <code>ArgumentError</code> when trying to call the setter.
 		 */
 		override public function set height( $height :Number ) :void
 		{
@@ -121,7 +121,7 @@ package com.factorylabs.orange.core.display.graphics
 		
 		/**
 		 * Not allowed since this is a drawing a distinct line.
-		 * @throws ArgumentError when trying to call the setter.
+		 * @throws ArgumentError <code>ArgumentError</code> when trying to call the setter.
 		 */
 		override public function set center( $center :Boolean ) :void
 		{

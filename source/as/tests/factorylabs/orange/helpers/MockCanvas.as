@@ -12,7 +12,7 @@ package tests.factorylabs.orange.helpers
 	 *<p>This is a workaround for the error that is thrown when a native <code>DisplayObject</code> is added through FlexUnit's <code>UIImpersonator</code>.
 	 *
 	 * <hr />
-	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+	 * <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
 	 *
 	 * Permission is hereby granted, free of charge, to any person obtaining
 	 * a copy of this software and associated documentation files (the

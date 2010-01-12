@@ -8,7 +8,7 @@ package com.factorylabs.orange.core
 	 * <code>dispose()</code> method which is called when preparing an object for garbage collection.</p>
 	 *
 	 * <hr />
-	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+	 * <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
 	 *
 	 * Permission is hereby granted, free of charge, to any person obtaining
 	 * a copy of this software and associated documentation files (the

@@ -282,7 +282,7 @@
             haltonfailure="true" 
             verbose="true" 
             localTrusted="true"/>
-        <echo>[-run-flexunit] FlexUnit tests complete :: ALL TESTS PASSED</echo>
+        <echo>[-run-flexunit] FlexUnit tests complete :: All Tests Passed</echo>
     </target>
 
 <!-- PRIVATE REPORTING ============================================================================================= -->    

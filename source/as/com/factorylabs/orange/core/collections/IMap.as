@@ -7,7 +7,7 @@ package com.factorylabs.orange.core.collections
 	 * Provides the basic methods to create Map objects.
 	 *
 	 * <hr />
-	 * <p>Copyright 2004-2009 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
+	 * <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
 	 *
 	 * Permission is hereby granted, free of charge, to any person obtaining
 	 * a copy of this software and associated documentation files (the
