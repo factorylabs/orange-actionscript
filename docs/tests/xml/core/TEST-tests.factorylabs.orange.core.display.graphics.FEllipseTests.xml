@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.graphics.FEllipseTests" tests="9" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="x" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="fill" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="height" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="y" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="width" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="autoRedraw" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="gfx" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="center" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="fill" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="y" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="x" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="height" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="redraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="autoRedraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="center" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FEllipseTests" name="width" time="0.000" status="success"/>
 </testsuite>

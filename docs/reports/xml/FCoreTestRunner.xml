@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263170611118" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263254812388" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -2213,12 +2213,13 @@
       <pre id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1262990529000" size="1950" optimizedsize="1265">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1263254357000" size="2011" optimizedsize="1313">
       <def id="tests.factorylabs.orange.core.display:DisplayTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.display:FBitmapTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FSquareTests" />
       <dep id="tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests" />
+      <dep id="tests.factorylabs.orange.core.display.fills:SolidStrokeTests" />
       <dep id="tests.factorylabs.orange.core.display:FShapeTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectCorneredComplexTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FWedgeTests" />
@@ -2633,7 +2634,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263170611116" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263254812386" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -2945,7 +2946,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidFill.as" mod="1259903490000" size="1720" optimizedsize="699">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidFill.as" mod="1263254044000" size="1720" optimizedsize="697">
       <def id="com.factorylabs.orange.core.display.fills:SolidFill" />
       <pre id="com.factorylabs.orange.core.display.fills:IFill" />
       <pre id="Object" />
@@ -3437,6 +3438,17 @@
       <dep id="flash.display:GradientType" />
       <dep id="AS3" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/fills/SolidStrokeTests.as" mod="1263254804000" size="3024" optimizedsize="1232">
+      <def id="tests.factorylabs.orange.core.display.fills:SolidStrokeTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="flash.display:LineScaleMode" />
+      <dep id="flash.display:CapsStyle" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="com.factorylabs.orange.core.display.fills:SolidStroke" />
+      <dep id="flash.display:JointStyle" />
+      <dep id="AS3" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/runner/Request)" mod="1249565342000" size="2909" optimizedsize="1513">
       <def id="org.flexunit.runner:Request" />
       <pre id="org.flexunit.runner:IRequest" />
@@ -3503,6 +3515,14 @@
       <dep id="flash.utils:Dictionary" />
       <dep id="org.flexunit.runner:IRunner" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidStroke.as" mod="1263253951000" size="3612" optimizedsize="1260">
+      <def id="com.factorylabs.orange.core.display.fills:SolidStroke" />
+      <pre id="com.factorylabs.orange.core.display.fills:IFill" />
+      <pre id="Object" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+      <dep id="com.factorylabs.orange.core.display.graphics:IGraphic" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4CIListener.swc(org/flexunit/token/ChildResult)" mod="1250962803026" size="663" optimizedsize="246">
       <def id="org.flexunit.token:ChildResult" />
@@ -5977,6 +5997,7 @@
     <ext id="flash.net:URLRequest" />
     <ext id="flash.utils:IDataInput" />
     <ext id="flash.events:ProgressEvent" />
+    <ext id="flash.display:JointStyle" />
     <ext id="flash.net:registerClassAlias" />
     <ext id="flash.text:StyleSheet" />
     <ext id="flash.events:IOErrorEvent" />
@@ -5985,6 +6006,7 @@
     <ext id="RangeError" />
     <ext id="Error" />
     <ext id="flash.display:GradientType" />
+    <ext id="flash.display:LineScaleMode" />
     <ext id="flash.display:StageScaleMode" />
     <ext id="flash.text:TextSnapshot" />
     <ext id="flash.display:Loader" />
@@ -5998,6 +6020,7 @@
     <ext id="flash.text:Font" />
     <ext id="flash.utils:getQualifiedClassName" />
     <ext id="flash.display:IBitmapDrawable" />
+    <ext id="flash.display:CapsStyle" />
     <ext id="flash.system:LoaderContext" />
     <ext id="uint" />
     <ext id="flash.display:InteractiveObject" />

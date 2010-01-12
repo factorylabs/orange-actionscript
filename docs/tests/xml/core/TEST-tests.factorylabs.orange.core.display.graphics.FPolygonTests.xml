@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.graphics.FPolygonTests" tests="12" failures="0" errors="0" skipped="0" time="0.0">
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="angle" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="fill" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="autoRedraw" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="width" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="y" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="x" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="height" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="sides" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="center" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="gfx" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="width" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="fill" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="sides" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="x" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="y" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="radius" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="redraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="center" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="height" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="angle" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="autoRedraw" time="0.000" status="success"/>
 </testsuite>

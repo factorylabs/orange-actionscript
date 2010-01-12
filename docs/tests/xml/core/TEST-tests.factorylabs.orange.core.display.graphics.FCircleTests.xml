@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <testsuite name="tests.factorylabs.orange.core.display.graphics.FCircleTests" tests="10" failures="0" errors="0" skipped="0" time="0.0">
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="gfx" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="fill" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="height" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="width" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="y" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="x" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="autoRedraw" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="fill" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="center" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="gfx" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="size" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="width" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="redraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="autoRedraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="center" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FCircleTests" name="size" time="0.000" status="success"/>
 </testsuite>
