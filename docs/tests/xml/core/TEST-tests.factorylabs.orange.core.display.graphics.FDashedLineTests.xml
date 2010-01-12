@@ -2,14 +2,14 @@
 
 <testsuite name="tests.factorylabs.orange.core.display.graphics.FDashedLineTests" tests="11" failures="0" errors="0" skipped="0" time="0.0">
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="y" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="setWidth" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="redraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="endX" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="endY" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="autoRedraw" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="fill" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="gfx" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="endX" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="x" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="setHeight" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="setCenter" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="endY" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="setHeight" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="redraw" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.graphics::FDashedLineTests" name="setWidth" time="0.000" status="success"/>
 </testsuite>

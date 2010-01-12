@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263276183817" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263282402819" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -1736,6 +1736,19 @@
       <dep id="org.flexunit.experimental.runners.statements:TheoryAnchor" />
       <dep id="AS3" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/fills/BitmapFillTests.as" mod="1263282396000" size="3306" optimizedsize="1449">
+      <def id="tests.factorylabs.orange.core.display.fills:BitmapFillTests" />
+      <pre id="Object" />
+      <dep id="org.hamcrest:assertThat" />
+      <dep id="flash.geom:Rectangle" />
+      <dep id="flash.display:BlendMode" />
+      <dep id="org.hamcrest.object:equalTo" />
+      <dep id="flash.display:BitmapData" />
+      <dep id="AS3" />
+      <dep id="tests.factorylabs.orange.helpers:MockCanvas" />
+      <dep id="com.factorylabs.orange.core.display.fills:BitmapFill" />
+      <dep id="flash.display:Shape" />
+    </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/logging/targets/TraceTarget)" mod="1247688611715" size="788" optimizedsize="387">
       <def id="mx.logging.targets:TraceTarget" />
       <pre id="mx.logging.targets:LineFormattedTarget" />
@@ -1839,6 +1852,14 @@
       <dep id="mx.utils:IXMLNotifiable" />
       <dep id="AS3" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/internals/runners/statements/AsyncStatementBase)" mod="1249565342000" size="1226" optimizedsize="584">
+      <def id="org.flexunit.internals.runners.statements:AsyncStatementBase" />
+      <pre id="Object" />
+      <dep id="Error" />
+      <dep id="org.flexunit.token:AsyncTestToken" />
+      <dep id="trace" />
+      <dep id="AS3" />
+    </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/containers/utilityClasses/CanvasLayout)" mod="1247688667128" size="21115" optimizedsize="12471">
       <def id="mx.containers.utilityClasses:CanvasLayout" />
       <pre id="Object" />
@@ -1861,14 +1882,6 @@
       <dep id="mx.core:IConstraintClient" />
       <dep id="mx.events:MoveEvent" />
       <dep id="mx.containers.utilityClasses:IConstraintLayout" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(org/flexunit/internals/runners/statements/AsyncStatementBase)" mod="1249565342000" size="1226" optimizedsize="584">
-      <def id="org.flexunit.internals.runners.statements:AsyncStatementBase" />
-      <pre id="Object" />
-      <dep id="Error" />
-      <dep id="org.flexunit.token:AsyncTestToken" />
-      <dep id="trace" />
-      <dep id="AS3" />
     </script>
     <script name="/Developer/SDKs/flex_sdk_3.4/frameworks/libs/framework.swc(mx/core/EmbeddedFontRegistry)" mod="1247688625572" size="3623" optimizedsize="1888">
       <def id="mx.core:EmbeddedFontRegistry" />
@@ -2247,7 +2260,7 @@
       <pre id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1263274787000" size="2202" optimizedsize="1465">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/display/DisplayTestSuite.as" mod="1263281786000" size="2261" optimizedsize="1511">
       <def id="tests.factorylabs.orange.core.display:DisplayTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.display:FBitmapTests" />
@@ -2259,15 +2272,16 @@
       <dep id="tests.factorylabs.orange.core.display.graphics:FPolygonTests" />
       <dep id="tests.factorylabs.orange.core.display.fills:GradientFillTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectRoundComplexTests" />
-      <dep id="tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests" />
+      <dep id="tests.factorylabs.orange.core.display.fills:BitmapFillTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FSquareTests" />
+      <dep id="tests.factorylabs.orange.core.display:FDisplayObjectPropertiesTests" />
       <dep id="tests.factorylabs.orange.core.display.fills:SolidStrokeTests" />
       <dep id="tests.factorylabs.orange.core.display:FShapeTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FRectRoundTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:GraphicTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FPolyFromPointsTests" />
-      <dep id="tests.factorylabs.orange.core.display.graphics:FRectCorneredTests" />
       <dep id="tests.factorylabs.orange.core.display.graphics:FDashedLineTests" />
+      <dep id="tests.factorylabs.orange.core.display.graphics:FRectCorneredTests" />
       <dep id="AS3" />
       <dep id="tests.factorylabs.orange.core.display:FSpriteTests" />
       <dep id="tests.factorylabs.orange.core.display:FBitmapTextTests" />
@@ -2671,7 +2685,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263276183816" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263282402817" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -3390,6 +3404,20 @@
       <dep id="mx.managers:ILayoutManagerClient" />
       <dep id="mx.core:mx_internal" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/BitmapFill.as" mod="1263278723000" size="4045" optimizedsize="1542">
+      <def id="com.factorylabs.orange.core.display.fills:BitmapFill" />
+      <pre id="com.factorylabs.orange.core.display.fills:IFill" />
+      <pre id="Object" />
+      <dep id="flash.geom:Rectangle" />
+      <dep id="flash.geom:Matrix" />
+      <dep id="flash.display:BitmapData" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+      <dep id="Math" />
+      <dep id="com.factorylabs.orange.core.display.graphics:IGraphic" />
+      <dep id="flash.geom:ColorTransform" />
+      <dep id="flash.display:IBitmapDrawable" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/FlexUnit4.swc(flexunit/utils/Iterator)" mod="1241553580000" size="616" optimizedsize="188">
       <def id="flexunit.utils:Iterator" />
@@ -4403,7 +4431,7 @@
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/GradientFill.as" mod="1263272576000" size="4461" optimizedsize="1764">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/GradientFill.as" mod="1263279243000" size="4462" optimizedsize="1764">
       <def id="com.factorylabs.orange.core.display.fills:GradientFill" />
       <pre id="com.factorylabs.orange.core.display.fills:IFill" />
       <pre id="Object" />
@@ -6011,6 +6039,7 @@
     <ext id="flash.net:navigateToURL" />
     <ext id="flash.geom:Matrix" />
     <ext id="flash.events:FocusEvent" />
+    <ext id="flash.display:BlendMode" />
     <ext id="flash.geom:Rectangle" />
     <ext id="flash.system:Capabilities" />
     <ext id="flash.system:ApplicationDomain" />
@@ -6085,6 +6114,7 @@
     <ext id="flash.display:LoaderInfo" />
     <ext id="Boolean" />
     <ext id="flash.display:DisplayObject" />
+    <ext id="flash.geom:ColorTransform" />
     <ext id="flash.events:Event" />
     <ext id="flash.display:DisplayObjectContainer" />
     <ext id="trace" />
