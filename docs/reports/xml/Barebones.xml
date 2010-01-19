@@ -1,57 +1,37 @@
 <report>
   <scripts>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/IFill.as" mod="1263265791000" size="882" optimizedsize="310">
-      <def id="com.factorylabs.orange.core.display.fills:IFill" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/as3-signals.swc(org/osflash/signals/Signal)" mod="1263872227000" size="3046" optimizedsize="1918">
+      <def id="org.osflash.signals:Signal" />
+      <pre id="org.osflash.signals:ISignal" />
+      <pre id="org.osflash.signals:IDispatcher" />
       <pre id="Object" />
-      <dep id="flash.display:Graphics" />
-      <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.display.graphics:IGraphic" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/Graphic.as" mod="1263265868000" size="4067" optimizedsize="1537">
-      <def id="com.factorylabs.orange.core.display.graphics:Graphic" />
-      <pre id="Object" />
-      <pre id="com.factorylabs.orange.core.display.graphics:IGraphic" />
-      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
+      <dep id="flash.utils:Dictionary" />
       <dep id="flash.errors:IllegalOperationError" />
-      <dep id="flash.display:Graphics" />
+      <dep id="ArgumentError" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/FRectangle.as" mod="1261986425000" size="1336" optimizedsize="660">
-      <def id="com.factorylabs.orange.core.display.graphics:FRectangle" />
-      <pre id="com.factorylabs.orange.core.display.graphics:Graphic" />
-      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
-      <dep id="flash.display:Graphics" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/graphics/IGraphic.as" mod="1263265878000" size="3170" optimizedsize="524">
-      <def id="com.factorylabs.orange.core.display.graphics:IGraphic" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/as3-signals.swc(org/osflash/signals/ISignal)" mod="1263872227000" size="1029" optimizedsize="301">
+      <def id="org.osflash.signals:ISignal" />
       <pre id="Object" />
-      <dep id="com.factorylabs.orange.core.display.fills:IFill" />
-      <dep id="flash.display:Graphics" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/display/fills/SolidFill.as" mod="1263270339000" size="1720" optimizedsize="697">
-      <def id="com.factorylabs.orange.core.display.fills:SolidFill" />
-      <pre id="com.factorylabs.orange.core.display.fills:IFill" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/as3-signals.swc(org/osflash/signals/IDispatcher)" mod="1263872227000" size="532" optimizedsize="176">
+      <def id="org.osflash.signals:IDispatcher" />
       <pre id="Object" />
-      <dep id="flash.display:Graphics" />
       <dep id="AS3" />
-      <dep id="com.factorylabs.orange.core.display.graphics:IGraphic" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1263281939000" size="2596" optimizedsize="1527">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1263945141000" size="2364" optimizedsize="1314">
       <def id="com.factorylabs.barebones:Main" />
       <pre id="flash.display:MovieClip" />
       <pre id="com.factorylabs.orange.core:IDisposable" />
-      <dep id="flash.text:TextFieldAutoSize" />
-      <dep id="com.factorylabs.orange.core.display.fills:SolidFill" />
       <dep id="flash.text:TextField" />
       <dep id="flash.display:StageScaleMode" />
       <dep id="flash.display:Stage" />
       <dep id="flash.events:Event" />
       <dep id="trace" />
       <dep id="AS3" />
+      <dep id="org.osflash.signals:Signal" />
       <dep id="flash.display:StageAlign" />
-      <dep id="com.factorylabs.orange.core.display.graphics:FRectangle" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1263266092000" size="599" optimizedsize="186">
       <def id="com.factorylabs.orange.core:IDisposable" />
@@ -60,10 +40,10 @@
     </script>
   </scripts>
   <external-defs>
-    <ext id="flash.text:TextFieldAutoSize" />
-    <ext id="flash.display:Graphics" />
+    <ext id="flash.utils:Dictionary" />
     <ext id="flash.display:StageAlign" />
     <ext id="flash.errors:IllegalOperationError" />
+    <ext id="ArgumentError" />
     <ext id="flash.display:Stage" />
     <ext id="flash.display:StageScaleMode" />
     <ext id="AS3" />

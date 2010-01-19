@@ -3,13 +3,13 @@
   <testsuite errors="0" failures="0" id="0" name="MapTests" package="tests.factorylabs.orange.core.collections" skipped="2" tests="15" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasValue" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="extend" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clear" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="get" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="hasKey" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="dispose" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="keys" status="success" time="0.000" />
 
@@ -17,23 +17,23 @@
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="values" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="each" status="ignore" time="0.000">
-          <skipped />
-
-      </testcase>
-
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clone" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="remove" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="dispose" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="find" status="ignore" time="0.000">
           <skipped />
 
       </testcase>
 
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="clone" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="each" status="ignore" time="0.000">
+          <skipped />
+
+      </testcase>
+
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="length" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="extend" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.collections::MapTests" name="iterator" status="success" time="0.000" />
 
@@ -41,9 +41,9 @@
   <testsuite errors="0" failures="0" id="1" name="FBitmapTests" package="tests.factorylabs.orange.core.display" skipped="0" tests="4" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.display::FBitmapTests" name="setPropertiesExpectsError" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display::FBitmapTests" name="remove" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.display::FBitmapTests" name="constructor" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FBitmapTests" name="remove" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FBitmapTests" name="setProperties" status="success" time="0.000" />
 
@@ -63,41 +63,41 @@
 
       <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="offset" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="bottom" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="top" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="coordinates" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="constructor" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalY" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="x" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="bounds" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="constructor" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="y" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="horizontalCenter" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalY" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalCoordinates" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="verticalCenter" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalX" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="width" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="bounds" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="displayObject" status="success" time="0.000" />
 
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalX" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="coordinates" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="verticalCenter" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="globalCoordinates" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="bottom" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="width" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FDisplayObjectPropertiesTests" name="horizontalCenter" status="success" time="0.000" />
+
   </testsuite>
   <testsuite errors="0" failures="0" id="4" name="FMovieClipTests" package="tests.factorylabs.orange.core.display" skipped="0" tests="4" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.display::FMovieClipTests" name="remove" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.display::FMovieClipTests" name="setPropertiesExpectsError" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FMovieClipTests" name="setProperties" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FMovieClipTests" name="remove" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FMovieClipTests" name="constructor" status="success" time="0.000" />
 
@@ -105,9 +105,9 @@
   <testsuite errors="0" failures="0" id="5" name="FShapeTests" package="tests.factorylabs.orange.core.display" skipped="0" tests="4" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="setPropertiesExpectsError" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="remove" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="setProperties" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="remove" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FShapeTests" name="constructor" status="success" time="0.000" />
 
@@ -115,35 +115,35 @@
   <testsuite errors="0" failures="0" id="6" name="FSpriteTests" package="tests.factorylabs.orange.core.display" skipped="0" tests="4" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.display::FSpriteTests" name="setPropertiesExpectsError" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display::FSpriteTests" name="remove" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.display::FSpriteTests" name="constructor" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FSpriteTests" name="remove" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FSpriteTests" name="setProperties" status="success" time="0.000" />
 
   </testsuite>
   <testsuite errors="0" failures="0" id="7" name="FTextFieldTests" package="tests.factorylabs.orange.core.display" skipped="0" tests="5" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.display::FTextFieldTests" name="constructor" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.display::FTextFieldTests" name="setPropertiesExpectsError" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display::FTextFieldTests" name="remove" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display::FTextFieldTests" name="multiline" status="success" time="0.000" />
 
+      <testcase classname="tests.factorylabs.orange.core.display::FTextFieldTests" name="remove" status="success" time="0.000" />
+
       <testcase classname="tests.factorylabs.orange.core.display::FTextFieldTests" name="setProperties" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display::FTextFieldTests" name="constructor" status="success" time="0.000" />
 
   </testsuite>
   <testsuite errors="0" failures="0" id="8" name="BitmapFillTests" package="tests.factorylabs.orange.core.display.fills" skipped="0" tests="9" time="0.0">
       <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="source" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="bitmapData" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="rotation" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="colorTransform" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="blendMode" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="constructor" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="rotation" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="bitmapData" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="repeat" status="success" time="0.000" />
 
@@ -151,25 +151,25 @@
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="clipRect" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="blendMode" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="colorTransform" status="success" time="0.000" />
 
   </testsuite>
   <testsuite errors="0" failures="0" id="9" name="GradientFillTests" package="tests.factorylabs.orange.core.display.fills" skipped="0" tests="9" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="ratios" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="rotation" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="alphas" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="type" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="colors" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="focalPointRatio" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="ratios" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="alphas" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="focalPointRatio" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="interpolationMethod" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="constructor" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="rotation" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.fills::GradientFillTests" name="spreadMethod" status="success" time="0.000" />
 
@@ -305,9 +305,7 @@
 
   </testsuite>
   <testsuite errors="0" failures="0" id="17" name="FPolygonTests" package="tests.factorylabs.orange.core.display.graphics" skipped="0" tests="12" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="fill" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="angle" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="y" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="width" status="success" time="0.000" />
 
@@ -317,9 +315,9 @@
 
       <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="x" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="gfx" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="fill" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="y" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="gfx" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="autoRedraw" status="success" time="0.000" />
 
@@ -328,6 +326,8 @@
       <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="radius" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="height" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.display.graphics::FPolygonTests" name="angle" status="success" time="0.000" />
 
   </testsuite>
   <testsuite errors="0" failures="0" id="18" name="FRectCorneredComplexTests" package="tests.factorylabs.orange.core.display.graphics" skipped="0" tests="13" time="0.0">
@@ -599,19 +599,19 @@
 
   </testsuite>
   <testsuite errors="0" failures="0" id="31" name="LoggerTests" package="tests.factorylabs.orange.core.logging" skipped="0" tests="10" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="warn" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="trace" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="isSilent" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="name" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="error" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="fatal" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="debug" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.logging::LoggerTests" name="core" status="success" time="0.000" />
 
@@ -653,13 +653,13 @@
 
   </testsuite>
   <testsuite errors="0" failures="0" id="34" name="ArrayMethodsTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="7" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="shuffle" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="loop" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="random" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="loop" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="remove" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="shuffle" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::ArrayMethodsTests" name="clone" status="success" time="0.000" />
 
@@ -691,17 +691,17 @@
 
   </testsuite>
   <testsuite errors="0" failures="0" id="37" name="LocaleTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="4" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="language" status="success" time="0.000" />
-
       <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="variant" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="reset" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="languageVariant" status="success" time="0.000" />
 
+      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="reset" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::LocaleTests" name="language" status="success" time="0.000" />
+
   </testsuite>
   <testsuite errors="0" failures="0" id="38" name="StringMethodsTests" package="tests.factorylabs.orange.core.utils" skipped="3" tests="32" time="0.0">
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeLast" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isEmpty" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="editDistance" status="success" time="0.000" />
 
@@ -726,25 +726,21 @@
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="similarity" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="remove" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trim" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isNumeric" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="hasText" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isNumeric" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="quote" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="block" status="success" time="0.000" />
 
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beforeLast" status="success" time="0.000" />
+
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="properCase" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="isEmpty" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="formatNumber" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trim" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="beginsWith" status="success" time="0.000" />
-
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="quote" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="padLeft" status="ignore" time="0.000">
           <skipped />
@@ -753,9 +749,13 @@
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="stripTags" status="success" time="0.000" />
 
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="endsWith" status="success" time="0.000" />
+
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="formatNumber" status="success" time="0.000" />
+
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="swapCase" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterLast" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="remove" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="truncate" status="ignore" time="0.000">
           <skipped />
@@ -764,15 +764,15 @@
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="countOf" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="removeExtraWhitespace" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterLast" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="endsWith" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterFirst" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="trimRight" status="success" time="0.000" />
 
       <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="between" status="success" time="0.000" />
 
-      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="afterFirst" status="success" time="0.000" />
+      <testcase classname="tests.factorylabs.orange.core.utils::StringMethodsTests" name="removeExtraWhitespace" status="success" time="0.000" />
 
   </testsuite>
   <testsuite errors="0" failures="0" id="39" name="ValidateMethodsTests" package="tests.factorylabs.orange.core.utils" skipped="0" tests="5" time="0.0">
