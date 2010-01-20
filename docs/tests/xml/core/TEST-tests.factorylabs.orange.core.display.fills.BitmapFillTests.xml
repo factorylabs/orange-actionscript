@@ -2,12 +2,12 @@
 
 <testsuite name="tests.factorylabs.orange.core.display.fills.BitmapFillTests" tests="9" failures="0" errors="0" skipped="0" time="0.0">
   <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="source" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="rotation" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="blendMode" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="constructor" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="bitmapData" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="repeat" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="smooth" time="0.000" status="success"/>
-  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="clipRect" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="bitmapData" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="constructor" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="rotation" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="repeat" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="blendMode" time="0.000" status="success"/>
   <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="colorTransform" time="0.000" status="success"/>
+  <testcase classname="tests.factorylabs.orange.core.display.fills::BitmapFillTests" name="clipRect" time="0.000" status="success"/>
 </testsuite>

@@ -41,7 +41,9 @@ package tests.factorylabs.orange.core.logging
 	public class LoggerTests 
 	{
 		private var _logger	:Logger;
-		
+//		private var _signal :Signal;
+//		private var _timer :Timer;
+
 		[BeforeClass]
 		public static function runBeforeClass():void
 		{
@@ -57,7 +59,10 @@ package tests.factorylabs.orange.core.logging
 		[Before]
 		public function runBeforeEachTest():void
 		{
-			_logger = new Logger( '[Test Logger]' );			
+//			_timer = new Timer( 100, 1 );
+			_logger = new Logger( '[Test Logger]' );
+//			_signal = _logger.signal;
+//			_signal.add( onGenericEvent );			
 		}
 		
 		[After]
@@ -82,17 +87,28 @@ package tests.factorylabs.orange.core.logging
 			assertThat( _logger.name, equalTo( '[TEMP NAME Logger]' ) );
 		}
 		
-		[Test(async,timeout='100')]
-		public function trace() :void
+		[Test(async)]
+		public function a_trace() :void
 		{
 			var msg :String = '[LoggerTest].trace()';
 			var obj	:Object = { x: 100 };
 			var level :String = 'MK';
 			var pass :Object = { msg: msg, obj: obj, level: level };
 			
+//			_signal.add( Async.handleEvent( this, target, eventName, eventHandler, timeout, passThroughData, timeoutHandler))
+			
+//			_signal.add( Async.asyncResponder( this, onLoggerEvent, 100, pass, onLoggerEventFailed ) );
+			
+//			_signal.add( Async.handleEvent( this ) );
+//			Async.asyncResponder( this, _signal.add(listener), 100, pass, onLoggerEventFailed );
 			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
 			_logger.trace( msg, obj, level );
 		}
+		
+//		private function onGenericEvent( $str :String = '', $obj :Object = null, $level :String = '', name :String = '' ) :void
+//		{
+//			trace( '[LoggerTests].onGenericEvent() => ' + $str );
+//		}
 		
 		[Test(async,timeout='100')]
 		public function log() :void

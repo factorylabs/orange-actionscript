@@ -565,7 +565,7 @@
       <dep id="org.flexunit.token:ChildResult" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1263945250330" size="3169" optimizedsize="2516">
+    <script name="_FCoreTestRunner_mx_managers_SystemManager.as" mod="1264003252506" size="3169" optimizedsize="2516">
       <def id="_FCoreTestRunner_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -2160,7 +2160,7 @@
       <dep id="AS3" />
       <dep id="tests.factorylabs.orange.helpers:MockBaseClass" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/ILogger.as" mod="1259648457000" size="2259" optimizedsize="475">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/ILogger.as" mod="1264003212000" size="2259" optimizedsize="475">
       <def id="com.factorylabs.orange.core.logging:ILogger" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -2685,7 +2685,7 @@
       <dep id="XML" />
       <dep id="AS3" />
     </script>
-    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1263945250328" size="2268" optimizedsize="1958">
+    <script name="_FCoreTestRunner_FlexInit-generated.as" mod="1264003252504" size="2268" optimizedsize="1958">
       <def id="_FCoreTestRunner_FlexInit" />
       <pre id="Object" />
       <dep id="mx.core:IFlexModuleFactory" />
@@ -3672,7 +3672,7 @@
       <dep id="AS3" />
       <dep id="mx.styles:CSSStyleDeclaration" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorTests.as" mod="1263266304000" size="7680" optimizedsize="3875">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/gc/JanitorTests.as" mod="1264003102000" size="7680" optimizedsize="3875">
       <def id="tests.factorylabs.orange.core.gc:JanitorTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />
@@ -4594,7 +4594,7 @@
       <dep id="AS3" />
       <dep id="flexunit.framework:TestResult" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/Logger.as" mod="1259129170000" size="3422" optimizedsize="1358">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/Logger.as" mod="1264003197000" size="3422" optimizedsize="1358">
       <def id="com.factorylabs.orange.core.logging:Logger" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="com.factorylabs.orange.core.logging:ILogger" />
@@ -5749,7 +5749,7 @@
       <dep id="org.flexunit.async:AsyncLocator" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggerTests.as" mod="1263266336000" size="4171" optimizedsize="2017">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/logging/LoggerTests.as" mod="1264003160000" size="4204" optimizedsize="2028">
       <def id="tests.factorylabs.orange.core.logging:LoggerTests" />
       <pre id="Object" />
       <dep id="org.hamcrest:assertThat" />

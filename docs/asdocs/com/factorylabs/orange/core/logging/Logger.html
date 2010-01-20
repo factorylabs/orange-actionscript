@@ -82,13 +82,13 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isSilent">isSilent</a> : Boolean<div class="summaryTableDescription">
    
-   Whether this logger is suppressing it's events.</div>
+   Whether this logger is suppressing it's signals.</div>
 </td><td class="summaryTableOwnerCol">Logger</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : String<div class="summaryTableDescription">
    
-   The name of the logger dispatching events.</div>
+   The name of the logger dispatching signals.</div>
 </td><td class="summaryTableOwnerCol">Logger</td>
 </tr>
 </table>
@@ -200,7 +200,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <a class="signatureLink" href="#toString()">toString</a>():String</div>
 <div class="summaryTableDescription">
    
-   </div>
+   The <code>Signal</code> object used for sending log details.</div>
 </td><td class="summaryTableOwnerCol">Logger</td>
 </tr>
 <tr class="">
@@ -247,7 +247,7 @@ showHideInherited();
 <div class="detailBody">
 <code>isSilent:Boolean</code>&nbsp;&nbsp;[read-write]<p>
    
-   Whether this logger is suppressing it's events. 
+   Whether this logger is suppressing it's signals. 
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isSilent():Boolean</code>
@@ -264,7 +264,7 @@ showHideInherited();
 <div class="detailBody">
 <code>name:String</code>&nbsp;&nbsp;[read-write]<p>
    
-   The name of the logger dispatching events.
+   The name of the logger dispatching signals.
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():String</code>
@@ -586,12 +586,12 @@ showHideInherited();
 <div class="detailBody">
 <code>public function toString():String</code><p>
    
+   The <code>Signal</code> object used for sending log details.
    </p><p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20"></td><td><code>String</code> &mdash; The string equivalent of this class
-   </td>
+<td width="20"></td><td><code>String</code></td>
 </tr>
 </table>
 </div>
@@ -606,7 +606,7 @@ showHideInherited();
    
    Handles the basic necessities of logging a message, all class methods are filtered through here.
    Precondition: An optional message, optional object and optional level
-   Postcondition: A dispatched log event if there are listeners and the logger isn't silenced.
+   Postcondition: A dispatched log signal if there are listeners and the logger isn't silenced.
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
@@ -683,8 +683,8 @@ showHideInherited();
 <hr>
 <br>
 <p></p>
-<center class="copyright">Factory Design Labs - www.factorylabs.com - Generated at: 01/19/2010 04:54 PM</center>
+<center class="copyright">Factory Design Labs - www.factorylabs.com - Generated at: 01/20/2010 09:02 AM</center>
 </div>
 </body>
 </html>
-<!--Factory Design Labs - www.factorylabs.com - Generated at: 01/19/2010 04:54 PM-->
+<!--Factory Design Labs - www.factorylabs.com - Generated at: 01/20/2010 09:02 AM-->

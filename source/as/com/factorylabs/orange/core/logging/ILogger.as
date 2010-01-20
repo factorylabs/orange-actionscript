@@ -1,6 +1,7 @@
 
 package com.factorylabs.orange.core.logging 
 {
+
 	/**
 	 * Basic necessities for capturing incoming messages and objects categorized by levels and a logger's indentifier.
 	 * 
@@ -32,16 +33,22 @@ package com.factorylabs.orange.core.logging
 	public interface ILogger
 	{
 		/**
-		 * The name of the logger dispatching events.
+		 * The name of the logger dispatching signals.
 		 */
 		function get name() :String;
 		function set name( $name :String ) :void;
 		
 		/**
-		 * Whether this logger is suppressing it's events. 
+		 * Whether this logger is suppressing it's signals. 
 		 */
 		function get isSilent() :Boolean;
 		function set isSilent( $isSilent :Boolean ) :void;
+		
+		/**
+		 * The <code>Signal</code> object used for sending log details.
+		 */
+//		function get signal() :Signal;
+//		function set signal( $signal :Signal ) :void;
 			
 		/**
 		 * @return The string equivalent of this class
@@ -51,7 +58,7 @@ package com.factorylabs.orange.core.logging
 		/**
 		 * Handles the basic necessities of logging a message, all class methods are filtered through here.
 		 * Precondition:	An optional message, optional object and optional level
-		 * Postcondition:	A dispatched log event if there are listeners and the logger isn't silenced.
+		 * Postcondition:	A dispatched log signal if there are listeners and the logger isn't silenced.
 		 * @param $msg		<code>String</code> message to trace out.
 		 * @param $object	<code>Object</code> to be inspected via the debugger.
 		 * @param $level	<code>LogLevels</code> constant or custom notification filter.
@@ -87,7 +94,7 @@ package com.factorylabs.orange.core.logging
 	 	 * <listing version="3.0" >
 	 	 * var logger :Logger = new Logger();
 	 	 * logger.level = LogLevels.DEBUG;
-	 	 * logger..debug( "[AbstractView].initialize()", _data );
+	 	 * logger.debug( "[AbstractView].initialize()", _data );
 	 	 * </listing>
 		 */
 		function debug( $msg :String = '', $object :Object = null ) :void;

@@ -1,6 +1,6 @@
 <report>
   <scripts>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/as3-signals.swc(org/osflash/signals/Signal)" mod="1263872227000" size="3046" optimizedsize="1918">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/as3-signals.swc(org/osflash/signals/Signal)" mod="1263945727000" size="3132" optimizedsize="1957">
       <def id="org.osflash.signals:Signal" />
       <pre id="org.osflash.signals:ISignal" />
       <pre id="org.osflash.signals:IDispatcher" />
@@ -20,7 +20,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1263945141000" size="2364" optimizedsize="1314">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1264003335000" size="2364" optimizedsize="1314">
       <def id="com.factorylabs.barebones:Main" />
       <pre id="flash.display:MovieClip" />
       <pre id="com.factorylabs.orange.core:IDisposable" />
