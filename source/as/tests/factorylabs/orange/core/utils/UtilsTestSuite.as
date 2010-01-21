@@ -30,7 +30,6 @@ package tests.factorylabs.orange.core.utils
 	 * @version		1.0.0 :: Nov 14, 2009
 	 */
 	[Suite]
-	[RunWith('org.flexunit.runners.Suite')]
 	public class UtilsTestSuite 
 	{
 		public var theArrayMethodsTests		:ArrayMethodsTests;

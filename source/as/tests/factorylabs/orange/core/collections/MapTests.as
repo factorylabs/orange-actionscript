@@ -41,18 +41,6 @@ package tests.factorylabs.orange.core.collections
 	{
 		private var _map 		:Map;
 		
-		[BeforeClass]
-		public static function runBeforeClass():void
-		{
-			
-		}
-		
-		[AfterClass]
-		public static function runAfterClass():void
-		{
-			
-		}
-		
 		[Before]
 		public function runBeforeEachTest():void
 		{

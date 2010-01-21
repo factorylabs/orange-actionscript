@@ -49,7 +49,7 @@
         <echo message="[test-unit-core] => Compiles, tests and generates reports for the orange.${tests.core.packagename} package"/>
         <echo message="----------------------------------------------------------------------------------------------"/>
         <echo message="www.factorylabs.com"/>
-      </target>
+    </target>
     
     <!-- 
     public -->

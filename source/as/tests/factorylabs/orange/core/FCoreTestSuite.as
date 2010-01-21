@@ -2,6 +2,8 @@
 package tests.factorylabs.orange.core 
 {
 	import tests.factorylabs.orange.core.collections.CollectionsTestSuite;
+	import tests.factorylabs.orange.core.math.MathTestSuite;
+	import tests.factorylabs.orange.core.utils.UtilsTestSuite;
 
 	/**
 	 * Suite of test cases for the core package.
@@ -39,7 +41,7 @@ package tests.factorylabs.orange.core
 //		public var errorTestSuite		:ErrorsTestSuite;
 //		public var gcTestSuite			:GCTestSuite;
 //		public var loggingTestSuite		:LoggingTestSuite;
-//		public var mathTestSuite		:MathTestSuite;
-//		public var utilsTestSuite		:UtilsTestSuite;
+		public var mathTestSuite		:MathTestSuite;
+		public var utilsTestSuite		:UtilsTestSuite;
 	}
 }

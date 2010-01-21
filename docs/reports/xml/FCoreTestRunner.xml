@@ -1,15 +1,16 @@
 <report>
   <scripts>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/printers/FlashDevelopPrinter)" mod="1259173391491" size="2634" optimizedsize="1281">
-      <def id="asunit4.printers:FlashDevelopPrinter" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/Locale.as" mod="1263266061000" size="3209" optimizedsize="1360">
+      <def id="com.factorylabs.orange.core.utils:Locale" />
       <pre id="Object" />
-      <pre id="asunit4.framework:IRunListener" />
-      <dep id="asunit4.framework:Method" />
-      <dep id="asunit.framework:ITestFailure" />
-      <dep id="RegExp" />
-      <dep id="asunit4.framework:IResult" />
-      <dep id="asunit4.framework:ITestSuccess" />
-      <dep id="trace" />
+      <dep id="Date" />
+      <dep id="flash.system:Capabilities" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertEqualsArraysIgnoringOrder)" mod="1258608495941" size="443" optimizedsize="145">
+      <def id="asunit.asserts:assertEqualsArraysIgnoringOrder" />
+      <dep id="asunit.framework:Assert" />
+      <dep id="Function" />
       <dep id="AS3" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/runners/BaseRunner)" mod="1258608496249" size="1124" optimizedsize="590">
@@ -30,86 +31,10 @@
       <dep id="AS3" />
       <dep id="flash.display:Shape" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/util/Iterator)" mod="1258608494494" size="677" optimizedsize="207">
-      <def id="asunit.util:Iterator" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/Map.as" mod="1263265777000" size="3662" optimizedsize="1726">
-      <def id="com.factorylabs.orange.core.collections:Map" />
-      <pre id="com.factorylabs.orange.core.collections:IMap" />
-      <pre id="com.factorylabs.orange.core:ICloneable" />
-      <pre id="Error" />
-      <pre id="com.factorylabs.orange.core:IDisposable" />
-      <pre id="Object" />
-      <dep id="flash.utils:Dictionary" />
-      <dep id="AS3" />
-    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/framework/Command)" mod="1258608495305" size="505" optimizedsize="150">
       <def id="asunit.framework:Command" />
       <pre id="Object" />
       <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/Result)" mod="1259172078123" size="3711" optimizedsize="1859">
-      <def id="asunit4.framework:Result" />
-      <pre id="flash.events:EventDispatcher" />
-      <pre id="asunit4.framework:IResult" />
-      <dep id="asunit4.framework:Method" />
-      <dep id="asunit.framework:ITestFailure" />
-      <dep id="asunit4.framework:ITestSuccess" />
-      <dep id="AS3" />
-      <dep id="asunit4.framework:IRunListener" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertFalse)" mod="1258608495880" size="383" optimizedsize="125">
-      <def id="asunit.asserts:assertFalse" />
-      <dep id="asunit.framework:Assert" />
-      <dep id="Function" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/TestIterator)" mod="1259173456739" size="4297" optimizedsize="2604">
-      <def id="asunit4.framework:TestIterator" />
-      <pre id="Object" />
-      <dep id="asunit4.framework:Method" />
-      <dep id="flash.utils:describeType" />
-      <dep id="asunit.util:Iterator" />
-      <dep id="asunit.util:ArrayIterator" />
-      <dep id="XMLList" />
-      <dep id="XML" />
-      <dep id="ArgumentError" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/async/TimeoutCommand)" mod="1259976465125" size="3625" optimizedsize="1989">
-      <def id="asunit4.async:TimeoutCommand" />
-      <pre id="asunit.framework:Command" />
-      <pre id="flash.events:EventDispatcher" />
-      <dep id="flash.events:TimerEvent" />
-      <dep id="flash.errors:IllegalOperationError" />
-      <dep id="Error" />
-      <dep id="asunit.framework:ErrorEvent" />
-      <dep id="flash.utils:Timer" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/Method)" mod="1258608496681" size="1750" optimizedsize="1185">
-      <def id="asunit4.framework:Method" />
-      <pre id="Object" />
-      <dep id="XMLList" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertTrue)" mod="1258608495669" size="380" optimizedsize="124">
-      <def id="asunit.asserts:assertTrue" />
-      <dep id="asunit.framework:Assert" />
-      <dep id="Function" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(com/bit101/components/VBox)" mod="1258608493715" size="1587" optimizedsize="815">
-      <def id="com.bit101.components:VBox" />
-      <pre id="com.bit101.components:Container" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.display:DisplayObjectContainer" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="Math" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/framework/ErrorEvent)" mod="1258608495278" size="807" optimizedsize="337">
       <def id="asunit.framework:ErrorEvent" />
@@ -117,39 +42,40 @@
       <dep id="Error" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/framework/ITestFailure)" mod="1258608495253" size="1273" optimizedsize="351">
-      <def id="asunit.framework:ITestFailure" />
-      <pre id="Object" />
-      <dep id="Error" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(com/bit101/components/Text)" mod="1258608493785" size="2386" optimizedsize="1304">
-      <def id="com.bit101.components:Text" />
-      <pre id="com.bit101.components:Component" />
-      <dep id="com.bit101.components:Panel" />
-      <dep id="flash.text:TextFieldType" />
-      <dep id="flash.text:TextField" />
-      <dep id="flash.display:DisplayObjectContainer" />
-      <dep id="com.bit101.components:Style" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="flash.text:TextFormat" />
-    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/IMap.as" mod="1263265696000" size="2415" optimizedsize="507">
       <def id="com.factorylabs.orange.core.collections:IMap" />
       <pre id="Object" />
       <dep id="flash.utils:Dictionary" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertEquals)" mod="1258608496048" size="386" optimizedsize="126">
-      <def id="asunit.asserts:assertEquals" />
-      <dep id="asunit.framework:Assert" />
-      <dep id="Function" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/ICloneable.as" mod="1263266087000" size="582" optimizedsize="176">
-      <def id="com.factorylabs.orange.core:ICloneable" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/MathMethodsTests.as" mod="1264053470000" size="2653" optimizedsize="1181">
+      <def id="tests.factorylabs.orange.core.math:MathMethodsTests" />
       <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="Math" />
+      <dep id="asunit.asserts:assertEquals" />
+      <dep id="com.factorylabs.orange.core.math:MathMethods" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ArrayMethods.as" mod="1263266040000" size="2058" optimizedsize="947">
+      <def id="com.factorylabs.orange.core.utils:ArrayMethods" />
+      <pre id="Object" />
+      <dep id="flash.utils:ByteArray" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/LocaleTests.as" mod="1264055945000" size="1750" optimizedsize="806">
+      <def id="tests.factorylabs.orange.core.utils:LocaleTests" />
+      <pre id="Object" />
+      <dep id="flash.system:Capabilities" />
+      <dep id="AS3" />
+      <dep id="com.factorylabs.orange.core.utils:Locale" />
+      <dep id="asunit.asserts:assertEquals" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/MathTestSuite.as" mod="1264053496000" size="706" optimizedsize="316">
+      <def id="tests.factorylabs.orange.core.math:MathTestSuite" />
+      <pre id="Object" />
+      <dep id="tests.factorylabs.orange.core.math:PhysicsMethodsTests" />
+      <dep id="tests.factorylabs.orange.core.math:MathMethodsTests" />
       <dep id="AS3" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/runners/FCoreTestRunner.as" mod="1264045920000" size="850" optimizedsize="470">
@@ -158,13 +84,13 @@
       <dep id="tests.factorylabs.orange.core:FCoreTestSuite" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(com/bit101/components/Container)" mod="1258608494330" size="1417" optimizedsize="730">
-      <def id="com.bit101.components:Container" />
-      <pre id="com.bit101.components:Component" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.display:DisplayObjectContainer" />
-      <dep id="flash.events:Event" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ValidateMethodsTests.as" mod="1264056244000" size="2135" optimizedsize="927">
+      <def id="tests.factorylabs.orange.core.utils:ValidateMethodsTests" />
+      <pre id="Object" />
+      <dep id="asunit.asserts:assertFalse" />
+      <dep id="com.factorylabs.orange.core.utils:ValidateMethods" />
       <dep id="AS3" />
+      <dep id="asunit.asserts:assertTrue" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/ui/MinimalRunnerUI)" mod="1259173485226" size="1244" optimizedsize="772">
       <def id="asunit4.ui:MinimalRunnerUI" />
@@ -185,54 +111,18 @@
       <dep id="AS3" />
       <dep id="flash.utils:getQualifiedClassName" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/MapTests.as" mod="1264050984000" size="4781" optimizedsize="2175">
-      <def id="tests.factorylabs.orange.core.collections:MapTests" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/math/PhysicsMethodsTests.as" mod="1264052490000" size="1219" optimizedsize="538">
+      <def id="tests.factorylabs.orange.core.math:PhysicsMethodsTests" />
       <pre id="Object" />
-      <dep id="flash.utils:Dictionary" />
-      <dep id="asunit.asserts:assertFalse" />
-      <dep id="com.factorylabs.orange.core.collections:Map" />
       <dep id="AS3" />
+      <dep id="Math" />
+      <dep id="com.factorylabs.orange.core.math:PhysicsMethods" />
       <dep id="asunit.asserts:assertEquals" />
-      <dep id="asunit.asserts:assertTrue" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/ITestSuccess)" mod="1258608496720" size="884" optimizedsize="239">
-      <def id="asunit4.framework:ITestSuccess" />
-      <pre id="Object" />
-      <dep id="AS3" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/CollectionsTestSuite.as" mod="1264046007000" size="700" optimizedsize="274">
       <def id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.collections:MapTests" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/runners/TestRunner)" mod="1259173622067" size="4527" optimizedsize="2631">
-      <def id="asunit4.runners:TestRunner" />
-      <pre id="flash.events:EventDispatcher" />
-      <dep id="flash.utils:setTimeout" />
-      <dep id="flash.events:TimerEvent" />
-      <dep id="flash.errors:IllegalOperationError" />
-      <dep id="flash.utils:clearTimeout" />
-      <dep id="asunit.framework:Assert" />
-      <dep id="flash.utils:Timer" />
-      <dep id="asunit.framework:ErrorEvent" />
-      <dep id="flash.events:Event" />
-      <dep id="asunit4.framework:IResult" />
-      <dep id="asunit4.framework:TestFailure" />
-      <dep id="AS3" />
-      <dep id="asunit4.framework:TestIterator" />
-      <dep id="asunit4.async:TimeoutCommand" />
-      <dep id="asunit4.framework:Method" />
-      <dep id="asunit4.async:Async" />
-      <dep id="asunit4.framework:TestSuccess" />
-      <dep id="flash.utils:getTimer" />
-      <dep id="Error" />
-      <dep id="flash.utils:getDefinitionByName" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1264046315000" size="664" optimizedsize="298">
-      <def id="tests.factorylabs.orange.core:FCoreTestSuite" />
-      <pre id="Object" />
-      <dep id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
       <dep id="AS3" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/IResult)" mod="1259173611346" size="2689" optimizedsize="727">
@@ -263,39 +153,10 @@
       <dep id="Math" />
       <dep id="flash.display:StageAlign" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/TestFailure)" mod="1258608496591" size="1691" optimizedsize="745">
-      <def id="asunit4.framework:TestFailure" />
-      <pre id="asunit.framework:ITestFailure" />
-      <pre id="Object" />
-      <dep id="asunit.errors:AssertionFailedError" />
-      <dep id="Error" />
-      <dep id="AS3" />
-      <dep id="flash.utils:getQualifiedClassName" />
-    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(com/bit101/components/Style)" mod="1258608493817" size="810" optimizedsize="376">
       <def id="com.bit101.components:Style" />
       <pre id="Object" />
       <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/SuiteIterator)" mod="1259172087451" size="2023" optimizedsize="1138">
-      <def id="asunit4.framework:SuiteIterator" />
-      <pre id="Object" />
-      <dep id="flash.utils:describeType" />
-      <dep id="XMLList" />
-      <dep id="XML" />
-      <dep id="AS3" />
-      <dep id="asunit4.framework:TestIterator" />
-      <dep id="flash.utils:getDefinitionByName" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/async/Async)" mod="1259173370227" size="1836" optimizedsize="933">
-      <def id="asunit4.async:Async" />
-      <pre id="Object" />
-      <dep id="asunit4.async:addAsync" />
-      <dep id="asunit.framework:ErrorEvent" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="asunit4.async:TimeoutCommand" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/runners/SuiteRunner)" mod="1259173638558" size="1565" optimizedsize="810">
       <def id="asunit4.runners:SuiteRunner" />
@@ -319,6 +180,282 @@
       <dep id="Math" />
       <dep id="flash.utils:getQualifiedClassName" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ValidateMethods.as" mod="1263266078000" size="1725" optimizedsize="750">
+      <def id="com.factorylabs.orange.core.utils:ValidateMethods" />
+      <pre id="Object" />
+      <dep id="RegExp" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/StringMethods.as" mod="1263266070000" size="8838" optimizedsize="3801">
+      <def id="com.factorylabs.orange.core.utils:StringMethods" />
+      <pre id="Object" />
+      <dep id="RegExp" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/async/addAsync)" mod="1258608496865" size="452" optimizedsize="145">
+      <def id="asunit4.async:addAsync" />
+      <dep id="asunit4.async:Async" />
+      <dep id="int" />
+      <dep id="Function" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1263266092000" size="604" optimizedsize="191">
+      <def id="com.factorylabs.orange.core:IDisposable" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/printers/FlashDevelopPrinter)" mod="1259173391491" size="2634" optimizedsize="1281">
+      <def id="asunit4.printers:FlashDevelopPrinter" />
+      <pre id="Object" />
+      <pre id="asunit4.framework:IRunListener" />
+      <dep id="asunit4.framework:Method" />
+      <dep id="asunit.framework:ITestFailure" />
+      <dep id="RegExp" />
+      <dep id="asunit4.framework:IResult" />
+      <dep id="asunit4.framework:ITestSuccess" />
+      <dep id="trace" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ConvertTests.as" mod="1264055753000" size="1392" optimizedsize="629">
+      <def id="tests.factorylabs.orange.core.utils:ConvertTests" />
+      <pre id="Object" />
+      <dep id="asunit.asserts:assertFalse" />
+      <dep id="com.factorylabs.orange.core.utils:Convert" />
+      <dep id="AS3" />
+      <dep id="asunit.asserts:assertEquals" />
+      <dep id="asunit.asserts:assertTrue" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/math/MathMethods.as" mod="1263266024000" size="2558" optimizedsize="990">
+      <def id="com.factorylabs.orange.core.math:MathMethods" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/util/Iterator)" mod="1258608494494" size="677" optimizedsize="207">
+      <def id="asunit.util:Iterator" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/Result)" mod="1259172078123" size="3711" optimizedsize="1859">
+      <def id="asunit4.framework:Result" />
+      <pre id="flash.events:EventDispatcher" />
+      <pre id="asunit4.framework:IResult" />
+      <dep id="asunit4.framework:Method" />
+      <dep id="asunit.framework:ITestFailure" />
+      <dep id="asunit4.framework:ITestSuccess" />
+      <dep id="AS3" />
+      <dep id="asunit4.framework:IRunListener" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/collections/Map.as" mod="1263265777000" size="3662" optimizedsize="1726">
+      <def id="com.factorylabs.orange.core.collections:Map" />
+      <pre id="com.factorylabs.orange.core.collections:IMap" />
+      <pre id="com.factorylabs.orange.core:ICloneable" />
+      <pre id="Error" />
+      <pre id="com.factorylabs.orange.core:IDisposable" />
+      <pre id="Object" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/TestIterator)" mod="1259173456739" size="4297" optimizedsize="2604">
+      <def id="asunit4.framework:TestIterator" />
+      <pre id="Object" />
+      <dep id="asunit4.framework:Method" />
+      <dep id="flash.utils:describeType" />
+      <dep id="asunit.util:Iterator" />
+      <dep id="asunit.util:ArrayIterator" />
+      <dep id="XMLList" />
+      <dep id="XML" />
+      <dep id="ArgumentError" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertFalse)" mod="1258608495880" size="383" optimizedsize="125">
+      <def id="asunit.asserts:assertFalse" />
+      <dep id="asunit.framework:Assert" />
+      <dep id="Function" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/async/TimeoutCommand)" mod="1259976465125" size="3625" optimizedsize="1989">
+      <def id="asunit4.async:TimeoutCommand" />
+      <pre id="asunit.framework:Command" />
+      <pre id="flash.events:EventDispatcher" />
+      <dep id="flash.events:TimerEvent" />
+      <dep id="flash.errors:IllegalOperationError" />
+      <dep id="Error" />
+      <dep id="asunit.framework:ErrorEvent" />
+      <dep id="flash.utils:Timer" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/Method)" mod="1258608496681" size="1750" optimizedsize="1185">
+      <def id="asunit4.framework:Method" />
+      <pre id="Object" />
+      <dep id="XMLList" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertTrue)" mod="1258608495669" size="380" optimizedsize="124">
+      <def id="asunit.asserts:assertTrue" />
+      <dep id="asunit.framework:Assert" />
+      <dep id="Function" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertNotNull)" mod="1258608495846" size="389" optimizedsize="127">
+      <def id="asunit.asserts:assertNotNull" />
+      <dep id="asunit.framework:Assert" />
+      <dep id="Function" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(com/bit101/components/VBox)" mod="1258608493715" size="1587" optimizedsize="815">
+      <def id="com.bit101.components:VBox" />
+      <pre id="com.bit101.components:Container" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(com/bit101/components/Text)" mod="1258608493785" size="2386" optimizedsize="1304">
+      <def id="com.bit101.components:Text" />
+      <pre id="com.bit101.components:Component" />
+      <dep id="com.bit101.components:Panel" />
+      <dep id="flash.text:TextFieldType" />
+      <dep id="flash.text:TextField" />
+      <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="com.bit101.components:Style" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="flash.text:TextFormat" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/framework/ITestFailure)" mod="1258608495253" size="1273" optimizedsize="351">
+      <def id="asunit.framework:ITestFailure" />
+      <pre id="Object" />
+      <dep id="Error" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/Convert.as" mod="1263266053000" size="1412" optimizedsize="698">
+      <def id="com.factorylabs.orange.core.utils:Convert" />
+      <pre id="Error" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/asserts/assertEquals)" mod="1258608496048" size="386" optimizedsize="126">
+      <def id="asunit.asserts:assertEquals" />
+      <dep id="asunit.framework:Assert" />
+      <dep id="Function" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/ICloneable.as" mod="1263266087000" size="582" optimizedsize="176">
+      <def id="com.factorylabs.orange.core:ICloneable" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(com/bit101/components/Container)" mod="1258608494330" size="1417" optimizedsize="730">
+      <def id="com.bit101.components:Container" />
+      <pre id="com.bit101.components:Component" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/MapTests.as" mod="1264052164000" size="4493" optimizedsize="2102">
+      <def id="tests.factorylabs.orange.core.collections:MapTests" />
+      <pre id="Object" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="asunit.asserts:assertFalse" />
+      <dep id="com.factorylabs.orange.core.collections:Map" />
+      <dep id="AS3" />
+      <dep id="asunit.asserts:assertEquals" />
+      <dep id="asunit.asserts:assertTrue" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/ITestSuccess)" mod="1258608496720" size="884" optimizedsize="239">
+      <def id="asunit4.framework:ITestSuccess" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/StringMethodsTests.as" mod="1264057233000" size="7065" optimizedsize="3012">
+      <def id="tests.factorylabs.orange.core.utils:StringMethodsTests" />
+      <pre id="Object" />
+      <dep id="asunit.asserts:assertFalse" />
+      <dep id="AS3" />
+      <dep id="com.factorylabs.orange.core.utils:StringMethods" />
+      <dep id="asunit.asserts:assertEquals" />
+      <dep id="asunit.asserts:assertTrue" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/runners/TestRunner)" mod="1259173622067" size="4527" optimizedsize="2631">
+      <def id="asunit4.runners:TestRunner" />
+      <pre id="flash.events:EventDispatcher" />
+      <dep id="flash.utils:setTimeout" />
+      <dep id="flash.events:TimerEvent" />
+      <dep id="flash.errors:IllegalOperationError" />
+      <dep id="flash.utils:clearTimeout" />
+      <dep id="asunit.framework:Assert" />
+      <dep id="flash.utils:Timer" />
+      <dep id="asunit.framework:ErrorEvent" />
+      <dep id="flash.events:Event" />
+      <dep id="asunit4.framework:IResult" />
+      <dep id="asunit4.framework:TestFailure" />
+      <dep id="AS3" />
+      <dep id="asunit4.framework:TestIterator" />
+      <dep id="asunit4.async:TimeoutCommand" />
+      <dep id="asunit4.framework:Method" />
+      <dep id="asunit4.async:Async" />
+      <dep id="asunit4.framework:TestSuccess" />
+      <dep id="flash.utils:getTimer" />
+      <dep id="Error" />
+      <dep id="flash.utils:getDefinitionByName" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/utils/ColorMethods.as" mod="1263266045000" size="1670" optimizedsize="662">
+      <def id="com.factorylabs.orange.core.utils:ColorMethods" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1264053584000" size="845" optimizedsize="453">
+      <def id="tests.factorylabs.orange.core:FCoreTestSuite" />
+      <pre id="Object" />
+      <dep id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
+      <dep id="tests.factorylabs.orange.core.math:MathTestSuite" />
+      <dep id="tests.factorylabs.orange.core.utils:UtilsTestSuite" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ColorMethodsTests.as" mod="1264055077000" size="2042" optimizedsize="994">
+      <def id="tests.factorylabs.orange.core.utils:ColorMethodsTests" />
+      <pre id="Object" />
+      <dep id="com.factorylabs.orange.core.utils:ColorMethods" />
+      <dep id="asunit.asserts:assertFalse" />
+      <dep id="AS3" />
+      <dep id="asunit.asserts:assertEquals" />
+      <dep id="asunit.asserts:assertTrue" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/TestFailure)" mod="1258608496591" size="1691" optimizedsize="745">
+      <def id="asunit4.framework:TestFailure" />
+      <pre id="asunit.framework:ITestFailure" />
+      <pre id="Object" />
+      <dep id="asunit.errors:AssertionFailedError" />
+      <dep id="Error" />
+      <dep id="AS3" />
+      <dep id="flash.utils:getQualifiedClassName" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/SuiteIterator)" mod="1259172087451" size="2023" optimizedsize="1138">
+      <def id="asunit4.framework:SuiteIterator" />
+      <pre id="Object" />
+      <dep id="flash.utils:describeType" />
+      <dep id="XMLList" />
+      <dep id="XML" />
+      <dep id="AS3" />
+      <dep id="asunit4.framework:TestIterator" />
+      <dep id="flash.utils:getDefinitionByName" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/async/Async)" mod="1259173370227" size="1836" optimizedsize="933">
+      <def id="asunit4.async:Async" />
+      <pre id="Object" />
+      <dep id="asunit4.async:addAsync" />
+      <dep id="asunit.framework:ErrorEvent" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="asunit4.async:TimeoutCommand" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/printers/MinimalPrinter)" mod="1259173411798" size="4894" optimizedsize="2942">
       <def id="asunit4.printers:MinimalPrinter" />
       <pre id="flash.display:Sprite" />
@@ -338,6 +475,12 @@
       <dep id="flash.utils:getQualifiedClassName" />
       <dep id="flash.display:Shape" />
     </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/math/PhysicsMethods.as" mod="1263266029000" size="1143" optimizedsize="452">
+      <def id="com.factorylabs.orange.core.math:PhysicsMethods" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/framework/IRunListener)" mod="1258608496749" size="1387" optimizedsize="419">
       <def id="asunit4.framework:IRunListener" />
       <pre id="Object" />
@@ -347,16 +490,27 @@
       <dep id="asunit4.framework:ITestSuccess" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/async/addAsync)" mod="1258608496865" size="452" optimizedsize="145">
-      <def id="asunit4.async:addAsync" />
-      <dep id="asunit4.async:Async" />
-      <dep id="int" />
-      <dep id="Function" />
-      <dep id="AS3" />
-    </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1263266092000" size="604" optimizedsize="191">
-      <def id="com.factorylabs.orange.core:IDisposable" />
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/ArrayMethodsTests.as" mod="1264054579000" size="2897" optimizedsize="1378">
+      <def id="tests.factorylabs.orange.core.utils:ArrayMethodsTests" />
       <pre id="Object" />
+      <dep id="com.factorylabs.orange.core.utils:ArrayMethods" />
+      <dep id="asunit.asserts:assertFalse" />
+      <dep id="asunit.asserts:assertNotNull" />
+      <dep id="AS3" />
+      <dep id="Math" />
+      <dep id="asunit.asserts:assertEquals" />
+      <dep id="asunit.asserts:assertTrue" />
+      <dep id="asunit.asserts:assertEqualsArraysIgnoringOrder" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/utils/UtilsTestSuite.as" mod="1264056264000" size="953" optimizedsize="504">
+      <def id="tests.factorylabs.orange.core.utils:UtilsTestSuite" />
+      <pre id="Object" />
+      <dep id="tests.factorylabs.orange.core.utils:ArrayMethodsTests" />
+      <dep id="tests.factorylabs.orange.core.utils:ValidateMethodsTests" />
+      <dep id="tests.factorylabs.orange.core.utils:StringMethodsTests" />
+      <dep id="tests.factorylabs.orange.core.utils:LocaleTests" />
+      <dep id="tests.factorylabs.orange.core.utils:ConvertTests" />
+      <dep id="tests.factorylabs.orange.core.utils:ColorMethodsTests" />
       <dep id="AS3" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit/errors/AssertionFailedError)" mod="1258608495560" size="587" optimizedsize="225">
@@ -381,7 +535,9 @@
     <ext id="Function" />
     <ext id="flash.display:Shape" />
     <ext id="flash.events:IEventDispatcher" />
+    <ext id="Date" />
     <ext id="flash.utils:Timer" />
+    <ext id="flash.utils:ByteArray" />
     <ext id="flash.utils:getTimer" />
     <ext id="Error" />
     <ext id="flash.display:StageScaleMode" />
