@@ -1,10 +1,11 @@
 
-package tests.factorylabs.orange.core 
+package tests.factorylabs.orange.runners 
 {
-	import tests.factorylabs.orange.core.collections.CollectionsTestSuite;
+	import tests.factorylabs.orange.core.FCoreTestSuite;
+	import asunit4.ui.MinimalRunnerUI;
 
 	/**
-	 * Suite of test cases for the core package.
+	 * Runs the test suite associated with the <code>orange.core</code> package.
 	 *
 	 * <hr />
 	 * <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
@@ -29,17 +30,14 @@ package tests.factorylabs.orange.core
 	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	 *
 	 * @author		Matthew Kitt
-	 * @version		1.0.0 :: Nov 14, 2009
+	 * @version		1.0.0 :: Jan 20, 2010
 	 */
-	[Suite]
-	public class FCoreTestSuite 
+	public class FCoreTestRunner
+		extends MinimalRunnerUI 
 	{
-		public var collectionsTestSuite	:CollectionsTestSuite;
-//		public var displayTestSuite		:DisplayTestSuite;
-//		public var errorTestSuite		:ErrorsTestSuite;
-//		public var gcTestSuite			:GCTestSuite;
-//		public var loggingTestSuite		:LoggingTestSuite;
-//		public var mathTestSuite		:MathTestSuite;
-//		public var utilsTestSuite		:UtilsTestSuite;
+		public function FCoreTestRunner() 
+		{
+			run( FCoreTestSuite );
+		}
 	}
 }

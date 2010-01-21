@@ -24,8 +24,9 @@
 	<!-- Include the properties for running builds -->
 	<property file="./build/build.properties"/>
     
-    <!-- Setup FlexUnit Ant tasks -->
+    <!-- Setup FlexUnit Ant tasks 
     <taskdef resource="flexUnitTasks.tasks" classpath="${build.tasks}/flexUnitTasks.jar"/>
+    -->
 
 <!-- MELT FACES PUBLICLY =========================================================================================== -->
     
@@ -55,11 +56,11 @@
     <target name="test-unit-core" 
         description="Compiles, tests and generates reports for the orange.${tests.core.packagename} package">
         <echo>[test-unit-core] Running unit test tasks for the orange.${tests.core.packagename} package</echo>
-        
+        <!--
         <antcall target="init-test-docs">
             <param name="param.package" value="${tests.core.packagename}"/>
         </antcall>
-        
+        -->
         <antcall target="-compile-mxmlc">
             <param name="param.mainclass" value="${test.core.runner}"/>
             <param name="param.swf" value="${test.core.swf}"/>
@@ -70,15 +71,17 @@
             <param name="param.isDebug" value="true"/>
             <param name="param.reportname" value="${test.core.reportname}"/>
         </antcall>
-        
+        <!--
         <antcall target="-run-flexunit">
             <param name="param.swf" value="${test.core.swf}"/>
             <param name="param.package" value="${tests.core.packagename}"/>
         </antcall>
-        
+        -->
+        <!--
         <antcall target="-publish-junit-report">
             <param name="param.package" value="${tests.core.packagename}"/>
         </antcall>
+        -->
         
         <antcall target="-publish-link-report">
             <param name="param.reportname" value="${test.core.reportname}"/>
@@ -273,7 +276,7 @@
 	 	private: Runs the FlexUnit 4 test on the specified swf.
 	 	@param param.swf		The file to run the FlexUnit tests on.
 	 	@param param.package	The directory to output the xml results of the tests.
- 	-->
+ 	
     <target name="-run-flexunit">
         <echo>[-run-flexunit] Running FlexUnit tests</echo>
         <flexunit 
@@ -284,6 +287,7 @@
             localTrusted="true"/>
         <echo>[-run-flexunit] FlexUnit tests complete :: All Tests Passed</echo>
     </target>
+    -->
 
 <!-- PRIVATE REPORTING ============================================================================================= -->    
     
