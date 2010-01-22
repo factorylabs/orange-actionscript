@@ -30,12 +30,11 @@ package tests.factorylabs.orange.core.gc
 	 * @version		1.0.0 :: Nov 14, 2009
 	 */
 	[Suite]
-	[RunWith('org.flexunit.runners.Suite')]
 	public class GCTestSuite 
 	{
-		public var theJanitorTests					:JanitorTests;
-		public var theJanitorManagerTests			:JanitorManagerTests;
-		public var theJanitorSoundChannelTests		:JanitorSoundChannelTests;
+//		public var theJanitorTests					:JanitorTests;
+//		public var theJanitorManagerTests			:JanitorManagerTests;
+//		public var theJanitorSoundChannelTests		:JanitorSoundChannelTests;
 		public var theWeakReferenceTests			:WeakReferenceTests;
 	}
 }

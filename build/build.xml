@@ -86,6 +86,9 @@
         <antcall target="-publish-link-report">
             <param name="param.reportname" value="${test.core.reportname}"/>
         </antcall>
+        
+        
+        
         <echo>[test-unit-core] Unit test tasks for the orange.${tests.core.packagename} package complete</echo>
     </target>
     
@@ -141,7 +144,17 @@
 	public -->
     <target name="fdt-test-unit-core" depends="fdt-reset-fcsh, -fdt-start-debugger, test-unit-core"
     	description="FDT specific: debugs the test-unit-core tasks with the FDT debugger enabled">
+        <!-- 
         <fdt.browse location="${test.core.url}"/>
+        ${test.core.url} 
+        -->
+        
+        <fdt.extSWFViewer.startSWF 
+        	file="${test.core.url}" 
+            width="200" 
+            height="200"  
+            focusprocess="executable"
+        />
     </target>
     
     <!--
@@ -149,6 +162,49 @@
     <target name="fdt-barebones" depends="debug-barebones, fdt-reset-fcsh, -fdt-start-debugger"
     	description="FDT specific: debugs the barebones app with the FDT debugger enabled">
         <fdt.browse location="${bb.url}"/>
+    </target>
+    
+    <target name="fdt-TEST" description="TESTING FOR THE EXTERNAL VIEWER!" depends="-fdt-start-debugger">
+        
+        
+        <fdt.launch.application 
+            		projectname="${project.name}" 
+            		mainclass="${test.core.runner}"
+            		debug="true"
+            		target="${test.core.swf}" 
+            		startswf="true"
+            		swflauncher = "Adobe Flash Player"
+            		compilerarguments="-default-size 200 200 -default-frame-rate 30 -default-background-color ${test.core.color} -as3=true -optimize=true -show-actionscript-warnings=true"
+            	/>
+    </target>
+    
+    <target name='-fdtCompileSimple' >
+    	<!--
+    	 <delete file='${webapp.swf}'/>
+    	 
+    	 -include-libraries ${webapp.libs} 
+    	-->
+        <echo>${project.name}</echo>
+        <delete file='${param.swf}'/>
+    	<fdt.launch.application
+    		projectname="${project.name}" 
+    		mainclass="${param.mainclass}"
+    		debug="${param.isDebug}" 
+    		target="${param.swf}" 
+    		startswf="true"
+    		compilerarguments="-target-player ${target.player} -default-size ${param.width} ${param.height} -default-frame-rate ${framerate} -default-background-color=${test.core.color} -as3=true -optimize=true -show-actionscript-warnings=false"
+    	/>
+        
+        
+        <!--
+        <fdt.extSWFViewer.startSWF 
+                	file="${test.core.swf}" 
+                    width="${param.width}" 
+                    height="${param.height}"  
+                    focusprocess="executable"
+                />
+                
+    	-->
     </target>
     
 <!-- PROTECTED TASKS =============================================================================================== -->

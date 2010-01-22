@@ -1,14 +1,16 @@
 
 package tests.factorylabs.orange.core.logging 
 {
+	import asunit.asserts.assertEquals;
+	import asunit.asserts.assertFalse;
+	import asunit.asserts.assertTrue;
+
+	import asunit4.async.addAsync;
+
 	import com.factorylabs.orange.core.logging.LogLevels;
 	import com.factorylabs.orange.core.logging.Logger;
-	import com.factorylabs.orange.core.logging.LoggerEvent;
 
-	import org.flexunit.Assert;
-	import org.flexunit.async.Async;
-	import org.hamcrest.assertThat;
-	import org.hamcrest.object.equalTo;
+	import org.osflash.signals.Signal;
 
 	/**
 	 * Generate the test cases for the Logger class.
@@ -41,162 +43,140 @@ package tests.factorylabs.orange.core.logging
 	public class LoggerTests 
 	{
 		private var _logger	:Logger;
-//		private var _signal :Signal;
-//		private var _timer :Timer;
+		private var _signal :Signal;
+		private var _msg	:String;
+		private var _obj	:Object;
+		private var _level	:String;
+		private var _name	:String;
 
-		[BeforeClass]
-		public static function runBeforeClass():void
-		{
-			
-		}
-		
-		[AfterClass]
-		public static function runAfterClass():void
-		{
-			
-		}
-		
 		[Before]
 		public function runBeforeEachTest():void
 		{
-//			_timer = new Timer( 100, 1 );
 			_logger = new Logger( '[Test Logger]' );
-//			_signal = _logger.signal;
-//			_signal.add( onGenericEvent );			
+			_signal = _logger.signal;
+			_msg = '';
+			_obj = {};
+			_level = '';
+			_name = '[Test Logger]';
 		}
 		
 		[After]
 		public function runAfterEachTest():void
 		{
+			_signal.removeAll( );
 			_logger = null;
 		}
 		
 		[Test]
 		public function isSilent() :void
 		{
-			assertThat( _logger.isSilent, equalTo( false ) );
+			assertFalse( _logger.isSilent );
 			_logger.isSilent = true;
-			assertThat( _logger.isSilent, equalTo( true ) );
+			assertTrue( _logger.isSilent );
 		}
 		
 		[Test]
 		public function name() :void
 		{
-			assertThat( _logger.name, equalTo( '[Test Logger]' ) );
+			assertEquals( _logger.name, '[Test Logger]' );
 			_logger.name = '[TEMP NAME Logger]';
-			assertThat( _logger.name, equalTo( '[TEMP NAME Logger]' ) );
+			assertEquals( _logger.name, '[TEMP NAME Logger]' );
+		}
+
+		[Test(async)]
+		public function trace() :void
+		{
+			_msg = '[LoggerTest].trace()';
+			_obj = { x: 100 };
+			_level = 'MK';
+			
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.trace( _msg, _obj, _level );
+		}
+
+		[Test(async)]
+		public function log() :void
+		{
+			_msg = '[LoggerTest].log()';
+			_obj = { x: 100 };
+			_level = LogLevels.LOG;
+			
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.log( _msg, _obj );
 		}
 		
 		[Test(async)]
-		public function a_trace() :void
-		{
-			var msg :String = '[LoggerTest].trace()';
-			var obj	:Object = { x: 100 };
-			var level :String = 'MK';
-			var pass :Object = { msg: msg, obj: obj, level: level };
-			
-//			_signal.add( Async.handleEvent( this, target, eventName, eventHandler, timeout, passThroughData, timeoutHandler))
-			
-//			_signal.add( Async.asyncResponder( this, onLoggerEvent, 100, pass, onLoggerEventFailed ) );
-			
-//			_signal.add( Async.handleEvent( this ) );
-//			Async.asyncResponder( this, _signal.add(listener), 100, pass, onLoggerEventFailed );
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.trace( msg, obj, level );
-		}
-		
-//		private function onGenericEvent( $str :String = '', $obj :Object = null, $level :String = '', name :String = '' ) :void
-//		{
-//			trace( '[LoggerTests].onGenericEvent() => ' + $str );
-//		}
-		
-		[Test(async,timeout='100')]
-		public function log() :void
-		{
-			var msg :String = '[LoggerTest].log()';
-			var obj	:Object = { x: 100 };
-			var pass :Object = { msg: msg, obj: obj, level: LogLevels.LOG };
-			
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.log( msg, obj );
-		}
-		
-		[Test(async,timeout='100')]
 		public function debug() :void
 		{
-			var msg :String = '[LoggerTest].debug()';
-			var obj	:Object = { x: 100 };
-			var pass :Object = { msg: msg, obj: obj, level: LogLevels.DEBUG };
-			
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.debug( msg, obj );
+			_msg = '[LoggerTest].debug()';
+			_obj = { x: 100 };
+			_level = LogLevels.DEBUG;
+		
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.debug( _msg, _obj );
 		}
 		
-		[Test(async,timeout='100')]
+		[Test(async)]
 		public function info() :void
 		{
-			var msg :String = '[LoggerTest].info()';
-			var obj	:Object = { x: 100 };
-			var pass :Object = { msg: msg, obj: obj, level: LogLevels.INFO };
+			_msg = '[LoggerTest].info()';
+			_obj = { x: 100 };
+			_level = LogLevels.INFO;
 			
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.info( msg, obj );
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.info( _msg, _obj );
 		}
 		
-		[Test(async,timeout='100')]
+		[Test(async)]
 		public function warn() :void
 		{
-			var msg :String = '[LoggerTest].warn()';
-			var obj	:Object = { x: 100 };
-			var pass :Object = { msg: msg, obj: obj, level: LogLevels.WARN };
+			_msg = '[LoggerTest].warn()';
+			_obj = { x: 100 };
+			_level = LogLevels.WARN;
 			
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.warn( msg, obj );
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.warn( _msg, _obj );
 		}
 		
-		[Test(async,timeout='100')]
+		[Test(async)]
 		public function error() :void
 		{
-			var msg :String = '[LoggerTest].error()';
-			var obj	:Object = { x: 100 };
-			var pass :Object = { msg: msg, obj: obj, level: LogLevels.ERROR };
+			_msg = '[LoggerTest].error()';
+			_obj = { x: 100 };
+			_level = LogLevels.ERROR;
 			
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.error( msg, obj );
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.error( _msg, _obj );
 		}
 		
-		[Test(async,timeout='100')]
+		[Test(async)]
 		public function fatal() :void
 		{
-			var msg :String = '[LoggerTest].fatal()';
-			var obj	:Object = { x: 100 };
-			var pass :Object = { msg: msg, obj: obj, level: LogLevels.FATAL };
+			_msg = '[LoggerTest].fatal()';
+			_obj = { x: 100 };
+			_level = LogLevels.FATAL;
 			
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.fatal( msg, obj );
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.fatal( _msg, _obj );
 		}
 		
-		[Test(async,timeout='100')]
+		[Test(async)]
 		public function core() :void
 		{
-			var msg :String = '[LoggerTest].core()';
-			var obj	:Object = { x: 100 };
-			var pass :Object = { msg: msg, obj: obj, level: LogLevels.CORE };
+			_msg = '[LoggerTest].core()';
+			_obj = { x: 100 };
+			_level = LogLevels.CORE;
 			
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.core( msg, obj );
+			_signal.add( addAsync( onCompleted, 10 ) );
+			_logger.core( _msg, _obj );
 		}
-		
-		private function onLoggerEvent( $e :LoggerEvent, $pass :Object ) :void
+
+		private function onCompleted( $msg :String = '', $object :Object = null, $level :String = '', $name :String = '' ) :void
 		{
-			Assert.assertEquals( $e.message, $pass[ 'msg' ] );
-			Assert.assertEquals( $e.object, $pass[ 'obj' ] );
-			Assert.assertEquals( $e.level, $pass[ 'level' ] );
-		}
-		
-		private function onLoggerEventFailed( $pass :Object ) :void
-		{
-			Assert.fail( '[LoggerTest].onLoggerEventFailed()' + String( $pass[ 'msg' ] ) );
+			assertEquals( $msg, _msg );
+			assertEquals( $object, _obj );
+			assertEquals( $level, _level );
+			assertEquals( $name, _name ); 
 		}
 	}
 }

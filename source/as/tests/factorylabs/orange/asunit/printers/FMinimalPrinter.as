@@ -1,8 +1,8 @@
 
 package tests.factorylabs.orange.asunit.printers 
 {
+	import flash.display.Shape;
 	import com.bit101.components.Style;
-	import com.bit101.components.VBox;
 	import asunit.framework.ITestFailure;
 
 	import asunit4.framework.IResult;
@@ -11,6 +11,7 @@ package tests.factorylabs.orange.asunit.printers
 	import asunit4.framework.Method;
 
 	import com.bit101.components.Text;
+	import com.bit101.components.VBox;
 
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -89,6 +90,18 @@ package tests.factorylabs.orange.asunit.printers
 		
 		public function onRunCompleted(result :IResult) :void
 		{
+			var fill :uint = ( result.errorCount > 0 || result.failureCount > 0 ) ? 0x8B0000 : 0x006400;
+			var shape :Shape = new Shape();
+			shape.graphics.beginFill( fill, .5 );
+			shape.graphics.drawRect( 0, 0, stage.stageWidth, stage.stageHeight );
+			shape.graphics.endFill();
+			addChild( shape );
+			broadcastComplete();
+		}
+		
+		protected function broadcastComplete() :void
+		{
+			dispatchEvent( new Event( Event.COMPLETE ) );
 		}
 		
 		protected function onAddedToStage(e:Event):void 
@@ -99,6 +112,7 @@ package tests.factorylabs.orange.asunit.printers
 		
 		protected function initUI() :void
 		{
+			Style.LABEL_TEXT = 0xFFFFFF;
 			var vbox :VBox = new VBox( this );
 			vbox.spacing = 0;
 			dots = new Text( vbox );

@@ -1,5 +1,16 @@
 <report>
   <scripts>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/ILogger.as" mod="1264141985000" size="2551" optimizedsize="534">
+      <def id="com.factorylabs.orange.core.logging:ILogger" />
+      <pre id="Object" />
+      <dep id="org.osflash.signals:Signal" />
+      <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/LogLevels.as" mod="1263266015000" size="1021" optimizedsize="461">
+      <def id="com.factorylabs.orange.core.logging:LogLevels" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/as3-signals.swc(org/osflash/signals/Signal)" mod="1263945727000" size="3132" optimizedsize="1957">
       <def id="org.osflash.signals:Signal" />
       <pre id="org.osflash.signals:ISignal" />
@@ -20,7 +31,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1264003335000" size="2364" optimizedsize="1314">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/barebones/Main.as" mod="1264142226000" size="2697" optimizedsize="1515">
       <def id="com.factorylabs.barebones:Main" />
       <pre id="flash.display:MovieClip" />
       <pre id="com.factorylabs.orange.core:IDisposable" />
@@ -31,12 +42,21 @@
       <dep id="trace" />
       <dep id="AS3" />
       <dep id="org.osflash.signals:Signal" />
+      <dep id="com.factorylabs.orange.core.logging:Logger" />
       <dep id="flash.display:StageAlign" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/IDisposable.as" mod="1263266092000" size="599" optimizedsize="186">
       <def id="com.factorylabs.orange.core:IDisposable" />
       <pre id="Object" />
       <dep id="AS3" />
+    </script>
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/com/factorylabs/orange/core/logging/Logger.as" mod="1264142863000" size="2730" optimizedsize="1060">
+      <def id="com.factorylabs.orange.core.logging:Logger" />
+      <pre id="com.factorylabs.orange.core.logging:ILogger" />
+      <pre id="Object" />
+      <dep id="com.factorylabs.orange.core.logging:LogLevels" />
+      <dep id="AS3" />
+      <dep id="org.osflash.signals:Signal" />
     </script>
   </scripts>
   <external-defs>

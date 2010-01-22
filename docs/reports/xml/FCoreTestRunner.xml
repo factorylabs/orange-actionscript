@@ -181,7 +181,7 @@
       <dep id="AS3" />
       <dep id="Math" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/printers/FMinimalPrinter.as" mod="1264121579000" size="2582" optimizedsize="1216">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/printers/FMinimalPrinter.as" mod="1264139449000" size="3085" optimizedsize="1557">
       <def id="tests.factorylabs.orange.asunit.printers:FMinimalPrinter" />
       <pre id="flash.display:Sprite" />
       <pre id="asunit4.framework:IRunListener" />
@@ -189,10 +189,12 @@
       <dep id="asunit.framework:ITestFailure" />
       <dep id="com.bit101.components:Text" />
       <dep id="com.bit101.components:VBox" />
+      <dep id="com.bit101.components:Style" />
       <dep id="flash.events:Event" />
       <dep id="asunit4.framework:IResult" />
       <dep id="asunit4.framework:ITestSuccess" />
       <dep id="AS3" />
+      <dep id="flash.display:Shape" />
     </script>
     <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc(asunit4/async/addAsync)" mod="1258608496865" size="452" optimizedsize="145">
       <def id="asunit4.async:addAsync" />
@@ -226,15 +228,18 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/ui/FMinimalRunnerUI.as" mod="1264122074000" size="1392" optimizedsize="850">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/ui/FMinimalRunnerUI.as" mod="1264139720000" size="1702" optimizedsize="1042">
       <def id="tests.factorylabs.orange.asunit.ui:FMinimalRunnerUI" />
       <pre id="flash.display:MovieClip" />
-      <dep id="asunit4.runners:BaseRunner" />
       <dep id="flash.display:StageScaleMode" />
+      <dep id="asunit4.runners:BaseRunner" />
+      <dep id="flash.events:Event" />
       <dep id="asunit4.framework:IResult" />
+      <dep id="trace" />
+      <dep id="flash.system:fscommand" />
       <dep id="AS3" />
-      <dep id="tests.factorylabs.orange.asunit.printers:ConsolePrinter" />
       <dep id="tests.factorylabs.orange.asunit.printers:FMinimalPrinter" />
+      <dep id="tests.factorylabs.orange.asunit.printers:ConsolePrinter" />
       <dep id="flash.display:StageAlign" />
       <dep id="asunit4.framework:Result" />
     </script>
@@ -340,7 +345,7 @@
       <dep id="AS3" />
       <dep id="Math" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/printers/ConsolePrinter.as" mod="1264120108000" size="4563" optimizedsize="2491">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/printers/ConsolePrinter.as" mod="1264120108000" size="4569" optimizedsize="2496">
       <def id="tests.factorylabs.orange.asunit.printers:ConsolePrinter" />
       <pre id="Object" />
       <pre id="asunit4.framework:IRunListener" />
@@ -374,7 +379,7 @@
       <dep id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/MapTests.as" mod="1264122567000" size="4494" optimizedsize="2102">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/collections/MapTests.as" mod="1264134115000" size="4494" optimizedsize="2102">
       <def id="tests.factorylabs.orange.core.collections:MapTests" />
       <pre id="Object" />
       <dep id="flash.utils:Dictionary" />
@@ -426,7 +431,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1264053584000" size="845" optimizedsize="453">
+    <script name="/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/core/FCoreTestSuite.as" mod="1264053584000" size="850" optimizedsize="458">
       <def id="tests.factorylabs.orange.core:FCoreTestSuite" />
       <pre id="Object" />
       <dep id="tests.factorylabs.orange.core.collections:CollectionsTestSuite" />
@@ -518,6 +523,7 @@
   </scripts>
   <external-defs>
     <ext id="flash.utils:Dictionary" />
+    <ext id="flash.system:fscommand" />
     <ext id="flash.system:Capabilities" />
     <ext id="flash.display:StageAlign" />
     <ext id="flash.text:TextFieldType" />

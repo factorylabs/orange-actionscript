@@ -37,7 +37,6 @@ package tests.factorylabs.orange.runners
 	{
 		public function FCoreTestRunner() 
 		{
-			super();
 			run( FCoreTestSuite );
 		}
 	}

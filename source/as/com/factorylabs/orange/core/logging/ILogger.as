@@ -1,6 +1,7 @@
 
 package com.factorylabs.orange.core.logging 
 {
+	import org.osflash.signals.Signal;
 
 	/**
 	 * Basic necessities for capturing incoming messages and objects categorized by levels and a logger's indentifier.
@@ -47,8 +48,8 @@ package com.factorylabs.orange.core.logging
 		/**
 		 * The <code>Signal</code> object used for sending log details.
 		 */
-//		function get signal() :Signal;
-//		function set signal( $signal :Signal ) :void;
+		function get signal() :Signal;
+		function set signal( $signal :Signal ) :void;
 			
 		/**
 		 * @return The string equivalent of this class

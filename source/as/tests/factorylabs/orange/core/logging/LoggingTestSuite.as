@@ -30,10 +30,9 @@ package tests.factorylabs.orange.core.logging
 	 * @version		1.0.0 :: Nov 16, 2009
 	 */
 	[Suite]
-	[RunWith('org.flexunit.runners.Suite')]
 	public class LoggingTestSuite 
 	{		
 		public var theLoggerTests		:LoggerTests;
-		public var theLoggerEventTests	:LoggerEventTests;
+//		public var theLoggerEventTests	:LoggerEventTests;
 	}
 }

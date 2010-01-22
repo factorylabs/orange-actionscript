@@ -1,9 +1,7 @@
 ﻿
 package com.factorylabs.orange.core.logging
 {
-	import flash.events.Event;
-	import flash.events.EventDispatcher;
-	import flash.events.IEventDispatcher;
+	import org.osflash.signals.Signal;
 
 	/**
 	 * Captures incoming messages and objects categorized by levels and a logger's identifier, broadcasts their log information out to observers.
@@ -37,11 +35,11 @@ package com.factorylabs.orange.core.logging
  	 * @version		1.0.0 :: Feb 16, 2009
  	 */
 	public class Logger
-		implements ILogger, IEventDispatcher
+		implements ILogger
 	{
-		private var _dispatcher		:EventDispatcher;
 		private var _name			:String;
 		private var _isSilent		:Boolean;
+		private  var _signal		:Signal;
 		
 		/**
 		 * @inheritDoc
@@ -59,6 +57,15 @@ package com.factorylabs.orange.core.logging
 		public function set isSilent( $isSilent :Boolean ) :void
 		{
 			_isSilent = $isSilent;
+		}
+		
+		/**
+		 * @inheritDoc
+		 */
+		public function get signal() :Signal { return _signal; }
+		public function set signal( $signal :Signal ) :void
+		{
+			_signal = $signal;
 		}
 	
 		/**
@@ -78,7 +85,7 @@ package com.factorylabs.orange.core.logging
 		{
 			_name = $name;
 			_isSilent = $isSilent;
-			_dispatcher = new EventDispatcher( this );
+			_signal = new Signal( String, Object, String, String );
 		}
 		
 		/**
@@ -94,9 +101,7 @@ package com.factorylabs.orange.core.logging
 		 */
 		public function trace( $msg :String = '', $object :Object = null, $level :String = null ) :void
 		{
-			var hasListener		:Boolean = hasEventListener( LoggerEvent.UPDATE );
-			if( hasListener == true && isSilent == false ) 
-				dispatchEvent( new LoggerEvent( LoggerEvent.UPDATE, $msg, $object, $level, _name ) );
+			_signal.dispatch( $msg, $object, $level, _name );
 		}
 		
 		/**
@@ -153,46 +158,6 @@ package com.factorylabs.orange.core.logging
 		public function core( $msg :String = '', $object :Object = null ) :void
 		{
 			trace( $msg, $object, LogLevels.CORE );
-		}
-		
-		/**
-		 * @inheritDoc
-		 */
-		public function dispatchEvent( e :Event ) :Boolean
-		{
-			return _dispatcher.dispatchEvent( e );
-		}
-
-		/**
-		 * @inheritDoc
-		 */
-		public function addEventListener( type :String, listener :Function, useCapture :Boolean = false, priority :int = 0, useWeakReference :Boolean = false ) :void
-		{
-			_dispatcher.addEventListener( type, listener, useCapture, priority, useWeakReference );
-		}
-	
-		/**
-		 * @inheritDoc
-		 */
-		public function removeEventListener( type :String, listener :Function, useCapture :Boolean = false ) :void
-		{
-			_dispatcher.removeEventListener( type, listener, useCapture );
-		}
-
-		/**
-		 * @inheritDoc
-		 */
-		public function hasEventListener( type :String ) :Boolean
-		{
-			return _dispatcher.hasEventListener( type );
-		}
-	
-		/**
-		 * @inheritDoc
-		 */
-		public function willTrigger( type :String ) :Boolean
-		{
-			return _dispatcher.willTrigger( type );
 		}
 	}
 }

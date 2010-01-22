@@ -1,12 +1,11 @@
 
 package tests.factorylabs.orange.core.gc 
 {
+	import asunit.asserts.assertEquals;
+
 	import tests.factorylabs.orange.helpers.MockBaseClass;
 
 	import com.factorylabs.orange.core.gc.WeakReference;
-
-	import org.hamcrest.assertThat;
-	import org.hamcrest.object.equalTo;
 
 	/**
 	 * Generates the test cases for the WeakReference class.
@@ -41,18 +40,6 @@ package tests.factorylabs.orange.core.gc
 		private var _weak		:WeakReference;
 		private var _mocker		:MockBaseClass;
 		
-		[BeforeClass]
-		public static function runBeforeClass():void
-		{
-			
-		}
-		
-		[AfterClass]
-		public static function runAfterAfter():void
-		{
-			
-		}
-		
 		[Before]
 		public function runBeforeEachTest():void
 		{
@@ -70,7 +57,7 @@ package tests.factorylabs.orange.core.gc
 		[Test]
 		public function get() :void
 		{
-			assertThat( _weak.get(), equalTo( _mocker ) );
+			assertEquals( _weak.get(), _mocker );
 		}
 	}
 }

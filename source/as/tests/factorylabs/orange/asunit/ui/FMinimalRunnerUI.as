@@ -11,6 +11,8 @@ package tests.factorylabs.orange.asunit.ui
 	import flash.display.MovieClip;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
+	import flash.events.Event;
+	import flash.system.fscommand;
 
 	/**
 	 * Summary.
@@ -59,16 +61,23 @@ package tests.factorylabs.orange.asunit.ui
 		
 		public function run( suite :Class ) :void
 		{
-			printer = new FMinimalPrinter();
-			addChild( printer );
-			
 			result = new Result();
-			result.addListener( printer );
+			
 			
 			result.addListener( new ConsolePrinter() );
 			
+			printer = new FMinimalPrinter();
+			printer.addEventListener( Event.COMPLETE, onRunnerComplete );
+			result.addListener( printer );
+			addChild( printer );
+			
 			runner = new BaseRunner();
 			runner.run(suite, result);
+		}
+		
+		protected function onRunnerComplete( $e :Event ) :void
+		{
+			fscommand('quit');
 		}
 	}
 }
