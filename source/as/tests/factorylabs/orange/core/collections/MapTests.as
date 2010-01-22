@@ -165,14 +165,14 @@ package tests.factorylabs.orange.core.collections
 			assertFalse( _map.hasValue( 'value_missing' ) );
 		}
 		
-		[Ignore('Need to figure out how to test this')]
+		[Ignore('Need to figure out how to test this.')]
 		[Test]
 		public function find() :void
 		{
 			
 		}
 		
-		[Ignore('Need to figure out how to test this')]
+		[Ignore('Need to figure out how to test this.')]
 		[Test]
 		public function each() :void
 		{

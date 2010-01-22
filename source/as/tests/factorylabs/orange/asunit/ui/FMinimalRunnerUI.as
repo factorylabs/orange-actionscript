@@ -1,11 +1,21 @@
 
-package tests.factorylabs.orange.runners 
+package tests.factorylabs.orange.asunit.ui 
 {
-	import tests.factorylabs.orange.asunit.ui.FMinimalRunnerUI;
-	import tests.factorylabs.orange.core.FCoreTestSuite;
+	import asunit4.framework.IResult;
+	import asunit4.framework.Result;
+	import asunit4.runners.BaseRunner;
+
+	import tests.factorylabs.orange.asunit.printers.ConsolePrinter;
+	import tests.factorylabs.orange.asunit.printers.FMinimalPrinter;
+
+	import flash.display.MovieClip;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
 
 	/**
-	 * Runs the test suite associated with the <code>orange.core</code> package.
+	 * Summary.
+	 * 
+	 * <p>Description.</p>
 	 *
 	 * <hr />
 	 * <p>Copyright 2004-2010 by <a href="http://www.factorylabs.com/">Factory Design Labs</a></p>
@@ -30,15 +40,35 @@ package tests.factorylabs.orange.runners
 	 * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	 *
 	 * @author		Matthew Kitt
-	 * @version		1.0.0 :: Jan 20, 2010
+	 * @version		1.0.0 :: Jan 21, 2010
 	 */
-	public class FCoreTestRunner
-		extends FMinimalRunnerUI 
+	public class FMinimalRunnerUI extends MovieClip 
 	{
-		public function FCoreTestRunner() 
+		protected var printer	:FMinimalPrinter;
+		protected var runner	:BaseRunner;
+		protected var result	:IResult;
+		
+		public function FMinimalRunnerUI()
 		{
-			super();
-			run( FCoreTestSuite );
+			if (stage) 
+			{
+				stage.align = StageAlign.TOP_LEFT;
+				stage.scaleMode = StageScaleMode.NO_SCALE;
+			}
+		}
+		
+		public function run( suite :Class ) :void
+		{
+			printer = new FMinimalPrinter();
+			addChild( printer );
+			
+			result = new Result();
+			result.addListener( printer );
+			
+			result.addListener( new ConsolePrinter() );
+			
+			runner = new BaseRunner();
+			runner.run(suite, result);
 		}
 	}
 }

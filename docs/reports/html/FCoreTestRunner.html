@@ -149,38 +149,34 @@
 </tr>
 <tr>
 <td>
-<div class="class-name" title="MinimalPrinter">
-<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc">MinimalPrinter</a>
+<div class="class-name" title="ConsolePrinter">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/printers/ConsolePrinter.as">ConsolePrinter</a>
 </div>
 </td>
 <td>1</td>
 <td>
 <div class="hierarchy">
-<div title="asunit4.printers:MinimalPrinter">asunit4.printers:MinimalPrinter</div>
+<div title="tests.factorylabs.orange.asunit.printers:ConsolePrinter">tests.factorylabs.orange.asunit.printers:ConsolePrinter</div>
 <ul class="prequisites">
-<li class="prequisite external">flash.display:Sprite</li>
+<li class="prequisite external">Object</li>
 <li class="prequisite ">asunit4.framework:IRunListener</li>
 </ul>
 <ul class="dependencies">
+<li class="dependency ">asunit4.framework:Method</li>
 <li class="dependency ">asunit.framework:ITestFailure</li>
 <li class="dependency external">RegExp</li>
-<li class="dependency ">com.bit101.components:VBox</li>
-<li class="dependency ">com.bit101.components:Style</li>
-<li class="dependency external">flash.events:Event</li>
+<li class="dependency external">flash.utils:getTimer</li>
+<li class="dependency external">XMLList</li>
 <li class="dependency ">asunit4.framework:IResult</li>
 <li class="dependency ">asunit4.framework:ITestSuccess</li>
+<li class="dependency external">trace</li>
 <li class="dependency external">AS3</li>
-<li class="dependency ">asunit4.framework:Method</li>
-<li class="dependency ">com.bit101.components:Text</li>
-<li class="dependency external">flash.utils:getTimer</li>
-<li class="dependency external">flash.system:Capabilities</li>
 <li class="dependency external">flash.utils:getQualifiedClassName</li>
-<li class="dependency external">flash.display:Shape</li>
 </ul>
 </div>
 </td>
 <td class="number">
-<div class="size">4.8 KB</div>
+<div class="size">4.5 KB</div>
 </td>
 </tr>
 <tr>
@@ -498,31 +494,32 @@
 </tr>
 <tr>
 <td>
-<div class="class-name" title="FlashDevelopPrinter">
-<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc">FlashDevelopPrinter</a>
+<div class="class-name" title="FMinimalPrinter">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/printers/FMinimalPrinter.as">FMinimalPrinter</a>
 </div>
 </td>
 <td>1</td>
 <td>
 <div class="hierarchy">
-<div title="asunit4.printers:FlashDevelopPrinter">asunit4.printers:FlashDevelopPrinter</div>
+<div title="tests.factorylabs.orange.asunit.printers:FMinimalPrinter">tests.factorylabs.orange.asunit.printers:FMinimalPrinter</div>
 <ul class="prequisites">
-<li class="prequisite external">Object</li>
+<li class="prequisite external">flash.display:Sprite</li>
 <li class="prequisite ">asunit4.framework:IRunListener</li>
 </ul>
 <ul class="dependencies">
 <li class="dependency ">asunit4.framework:Method</li>
 <li class="dependency ">asunit.framework:ITestFailure</li>
-<li class="dependency external">RegExp</li>
+<li class="dependency ">com.bit101.components:Text</li>
+<li class="dependency ">com.bit101.components:VBox</li>
+<li class="dependency external">flash.events:Event</li>
 <li class="dependency ">asunit4.framework:IResult</li>
 <li class="dependency ">asunit4.framework:ITestSuccess</li>
-<li class="dependency external">trace</li>
 <li class="dependency external">AS3</li>
 </ul>
 </div>
 </td>
 <td class="number">
-<div class="size">2.6 KB</div>
+<div class="size">2.5 KB</div>
 </td>
 </tr>
 <tr>
@@ -1006,6 +1003,35 @@
 </tr>
 <tr>
 <td>
+<div class="class-name" title="FMinimalRunnerUI">
+<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/source/as/tests/factorylabs/orange/asunit/ui/FMinimalRunnerUI.as">FMinimalRunnerUI</a>
+</div>
+</td>
+<td>1</td>
+<td>
+<div class="hierarchy">
+<div title="tests.factorylabs.orange.asunit.ui:FMinimalRunnerUI">tests.factorylabs.orange.asunit.ui:FMinimalRunnerUI</div>
+<ul class="prequisites">
+<li class="prequisite external">flash.display:MovieClip</li>
+</ul>
+<ul class="dependencies">
+<li class="dependency ">asunit4.runners:BaseRunner</li>
+<li class="dependency external">flash.display:StageScaleMode</li>
+<li class="dependency ">asunit4.framework:IResult</li>
+<li class="dependency external">AS3</li>
+<li class="dependency ">tests.factorylabs.orange.asunit.printers:ConsolePrinter</li>
+<li class="dependency ">tests.factorylabs.orange.asunit.printers:FMinimalPrinter</li>
+<li class="dependency external">flash.display:StageAlign</li>
+<li class="dependency ">asunit4.framework:Result</li>
+</ul>
+</div>
+</td>
+<td class="number">
+<div class="size">1.4 KB</div>
+</td>
+</tr>
+<tr>
+<td>
 <div class="class-name" title="IRunListener">
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc">IRunListener</a>
 </div>
@@ -1046,35 +1072,6 @@
 <ul class="dependencies">
 <li class="dependency external">Error</li>
 <li class="dependency external">AS3</li>
-</ul>
-</div>
-</td>
-<td class="number">
-<div class="size">1.2 KB</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class="class-name" title="MinimalRunnerUI">
-<a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc">MinimalRunnerUI</a>
-</div>
-</td>
-<td>1</td>
-<td>
-<div class="hierarchy">
-<div title="asunit4.ui:MinimalRunnerUI">asunit4.ui:MinimalRunnerUI</div>
-<ul class="prequisites">
-<li class="prequisite external">flash.display:MovieClip</li>
-</ul>
-<ul class="dependencies">
-<li class="dependency ">asunit4.runners:BaseRunner</li>
-<li class="dependency external">flash.display:StageScaleMode</li>
-<li class="dependency ">asunit4.framework:IResult</li>
-<li class="dependency external">AS3</li>
-<li class="dependency ">asunit4.printers:MinimalPrinter</li>
-<li class="dependency external">flash.display:StageAlign</li>
-<li class="dependency ">asunit4.framework:Result</li>
-<li class="dependency ">asunit4.printers:FlashDevelopPrinter</li>
 </ul>
 </div>
 </td>
@@ -1264,7 +1261,7 @@
 <div class="hierarchy">
 <div title="tests.factorylabs.orange.runners:FCoreTestRunner">tests.factorylabs.orange.runners:FCoreTestRunner</div>
 <ul class="prequisites">
-<li class="prequisite ">asunit4.ui:MinimalRunnerUI</li>
+<li class="prequisite ">tests.factorylabs.orange.asunit.ui:FMinimalRunnerUI</li>
 </ul>
 <ul class="dependencies">
 <li class="dependency ">tests.factorylabs.orange.core:FCoreTestSuite</li>
@@ -1273,7 +1270,7 @@
 </div>
 </td>
 <td class="number">
-<div class="size">0.8 KB</div>
+<div class="size">0.9 KB</div>
 </td>
 </tr>
 <tr>
@@ -1307,7 +1304,7 @@
 <a href="file://localhost/Users/mkitt/Desktop/workspace/orange-actionscript/libs/asunit4-alpha.swc">Style</a>
 </div>
 </td>
-<td>4</td>
+<td>3</td>
 <td>
 <div class="hierarchy">
 <div title="com.bit101.components:Style">com.bit101.components:Style</div>
@@ -1643,7 +1640,7 @@
 <td/>
 <td/>
 <td>
-<div class="size">121.4 KB</div>
+<div class="size">121.2 KB</div>
 </td>
 </tr>
 </tfoot>
