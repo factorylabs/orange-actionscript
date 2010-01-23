@@ -33,6 +33,5 @@ package tests.factorylabs.orange.core.logging
 	public class LoggingTestSuite 
 	{		
 		public var theLoggerTests		:LoggerTests;
-//		public var theLoggerEventTests	:LoggerEventTests;
 	}
 }

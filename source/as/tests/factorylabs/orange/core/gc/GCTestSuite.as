@@ -32,9 +32,9 @@ package tests.factorylabs.orange.core.gc
 	[Suite]
 	public class GCTestSuite 
 	{
-//		public var theJanitorTests					:JanitorTests;
-//		public var theJanitorManagerTests			:JanitorManagerTests;
-//		public var theJanitorSoundChannelTests		:JanitorSoundChannelTests;
+		public var theJanitorTests					:JanitorTests;
+		public var theJanitorManagerTests			:JanitorManagerTests;
+		public var theJanitorSoundChannelTests		:JanitorSoundChannelTests;
 		public var theWeakReferenceTests			:WeakReferenceTests;
 	}
 }

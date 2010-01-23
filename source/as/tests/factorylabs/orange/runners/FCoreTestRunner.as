@@ -3,6 +3,7 @@ package tests.factorylabs.orange.runners
 {
 	import tests.factorylabs.orange.asunit.ui.FMinimalRunnerUI;
 	import tests.factorylabs.orange.core.FCoreTestSuite;
+	import tests.factorylabs.orange.helpers.MockCanvas;
 
 	/**
 	 * Runs the test suite associated with the <code>orange.core</code> package.
@@ -37,6 +38,7 @@ package tests.factorylabs.orange.runners
 	{
 		public function FCoreTestRunner() 
 		{
+			MockCanvas.canvas = stage;	// this is dirty but at least it gives the MockCanvas a reference to the stage for testing visual components.
 			run( FCoreTestSuite );
 		}
 	}

@@ -144,7 +144,7 @@ package tests.factorylabs.orange.asunit.printers
 		
 		protected function printTimeSummary() :String 
 		{
-			durations.sortOn('time', Array.NUMERIC | Array.DESCENDING);
+			durations.sortOn( ['time', 'num'], [Array.NUMERIC | Array.DESCENDING, Array.NUMERIC | Array.DESCENDING]);
 			var s :String = 'Time Summary:\n';
 
             var len:Number = durations.length;

@@ -1,11 +1,10 @@
 
 package tests.factorylabs.orange.core.gc 
 {
-	import com.factorylabs.orange.core.gc.JanitorSoundChannel;
+	import asunit.asserts.assertNull;
+	import asunit.asserts.assertNotNull;
 
-	import org.hamcrest.assertThat;
-	import org.hamcrest.object.notNullValue;
-	import org.hamcrest.object.nullValue;
+	import com.factorylabs.orange.core.gc.JanitorSoundChannel;
 
 	import flash.media.SoundChannel;
 
@@ -41,18 +40,6 @@ package tests.factorylabs.orange.core.gc
 	{
 		private var _soundChannel	:SoundChannel;
 		private var _janitor 		:JanitorSoundChannel;
-
-		[BeforeClass]
-		public static function runBeforeClass():void
-		{
-			
-		}
-		
-		[AfterClass]
-		public static function runAfterClass():void
-		{
-			
-		}
 		
 		[Before]
 		public function runBeforeEachTest():void
@@ -73,17 +60,17 @@ package tests.factorylabs.orange.core.gc
 		public function addSoundChannel() :void
 		{
 			_janitor.addSoundChannel( _soundChannel );
-			assertThat( _janitor.soundChannels[ _soundChannel ], notNullValue() );
+			assertNotNull( _janitor.soundChannels[ _soundChannel ] );
 		}
 		
 		[Test]
 		public function removeSoundChannel() :void
 		{
 			_janitor.addSoundChannel( _soundChannel );
-			assertThat( _janitor.soundChannels[ _soundChannel ], notNullValue() );
+			assertNotNull( _janitor.soundChannels[ _soundChannel ] );
 			
 			_janitor.removeSoundChannel( _soundChannel );
-			assertThat( _janitor.soundChannels[ _soundChannel ], nullValue() );
+			assertNull( _janitor.soundChannels[ _soundChannel ] );
 		}
 		
 		[Test]
@@ -93,12 +80,12 @@ package tests.factorylabs.orange.core.gc
 			
 			_janitor.addSoundChannel( _soundChannel );
 			_janitor.addSoundChannel( soundChannel2 );
-			assertThat( _janitor.soundChannels[ _soundChannel ], notNullValue() );
-			assertThat( _janitor.soundChannels[ soundChannel2 ], notNullValue() );
+			assertNotNull( _janitor.soundChannels[ _soundChannel ] );
+			assertNotNull( _janitor.soundChannels[ soundChannel2 ] );
 			
 			_janitor.cleanUpSoundChannels();
-			assertThat( _janitor.soundChannels[ _soundChannel ], nullValue() );
-			assertThat( _janitor.soundChannels[ soundChannel2 ], nullValue() );
+			assertNull( _janitor.soundChannels[ _soundChannel ] );
+			assertNull( _janitor.soundChannels[ soundChannel2 ] );
 		}		
 	}
 }

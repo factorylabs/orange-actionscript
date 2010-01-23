@@ -2,9 +2,9 @@
 package tests.factorylabs.orange.helpers 
 {
 	import flash.display.DisplayObject;
-	import org.fluint.uiImpersonation.UIImpersonator;
-	import mx.containers.Canvas;
-	
+	import flash.display.Sprite;
+	import flash.display.Stage;
+
 	/**
 	 * MockCanvas is a hook into adding and removing items directly to the <code>Stage</code> via a <code>Canvas</code> 
 	 * object and FlexUnit's <code>UIImpersonator</code>.
@@ -37,22 +37,25 @@ package tests.factorylabs.orange.helpers
 	 * @version		1.0.0 :: Dec 5, 2009
 	 */
 	public class MockCanvas
-		extends Canvas 
+		extends Sprite 
 	{
+		// this should be set by the runner, dirty dirty dirty... and not in the good "dirty" way.
+		public static var canvas :Stage;
+		
 		public function MockCanvas() 
 		{
 			super();
-			UIImpersonator.addChild( this );
+			canvas.addChild( this );
 		}
 		
 		public function add( $child :DisplayObject ) :void
 		{
-			stage.addChild( $child );
+			addChild( $child );
 		}
 		
 		public function remove( $child :DisplayObject ) :void
 		{
-			stage.removeChild( $child );
+			removeChild( $child );
 		}
 	}
 }

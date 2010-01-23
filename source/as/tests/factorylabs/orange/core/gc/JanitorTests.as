@@ -1,25 +1,26 @@
 
 package tests.factorylabs.orange.core.gc 
 {
+	import asunit.asserts.assertEquals;
+	import asunit.asserts.assertFalse;
+	import asunit.asserts.assertNotNull;
+	import asunit.asserts.assertNull;
+	import asunit.asserts.assertTrue;
+
+	import asunit4.async.addAsync;
+
 	import tests.factorylabs.orange.helpers.MockBaseClass;
 	import tests.factorylabs.orange.helpers.MockDisposableClass;
 
 	import com.factorylabs.orange.core.gc.Janitor;
-	import com.factorylabs.orange.core.logging.Logger;
-	import com.factorylabs.orange.core.logging.LoggerEvent;
-
-	import org.flexunit.Assert;
-	import org.flexunit.async.Async;
-	import org.hamcrest.assertThat;
-	import org.hamcrest.object.equalTo;
-	import org.hamcrest.object.notNullValue;
-	import org.hamcrest.object.nullValue;
 
 	import flash.display.Bitmap;
 	import flash.display.Loader;
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.events.EventDispatcher;
+	import flash.events.IEventDispatcher;
 	import flash.utils.Timer;
 
 	/**
@@ -54,21 +55,8 @@ package tests.factorylabs.orange.core.gc
 	{
 		private var _janitor	:Janitor;
 		private var _container	:Sprite;
-		private var _logger		:Logger;
 		private var _timer		:Timer;
 		private var _mocker		:MockBaseClass;
-		
-		[BeforeClass]
-		public static function runBeforeClass():void
-		{
-			
-		}
-		
-		[AfterClass]
-		public static function runAfterClass():void
-		{
-			
-		}
 		
 		[Before]
 		public function runBeforeEachTest():void
@@ -76,7 +64,6 @@ package tests.factorylabs.orange.core.gc
 			_container = new Sprite();
 			_janitor = new Janitor( _container );
 			_timer = new Timer( 500, 0 );
-			_logger = new Logger();
 			_mocker = new MockBaseClass();
 		}
 		
@@ -85,34 +72,35 @@ package tests.factorylabs.orange.core.gc
 		{
 			_janitor.cleanUp();
 			_janitor = null;
-			_logger = null;
 			_container = null;
 			_mocker = null;
 			_timer.stop();
 			_timer = null;
 		}
 		
-		[Test(async,timeout='100')]
+		[Test(async)]
 		public function addEventListener() :void
 		{
-			var msg :String = '[JanitorTests].addEventListener()';
-			var obj	:Object = { x: 100 };
-			var level :String = 'MK';
-			var pass :Object = { msg: msg, obj: obj, level: level };
+			var dispatcher :IEventDispatcher = new EventDispatcher();
+			var handler :Function = addAsync( onEventHandler, 10 );
 			
-			_janitor.addEventListener( _logger, LoggerEvent.UPDATE, onFauxEventListener );
-			assertThat( _janitor.listeners[ _logger ][ LoggerEvent.UPDATE ], notNullValue() );
-			Async.handleEvent( this, _logger, LoggerEvent.UPDATE, onLoggerEvent, 100, pass, onLoggerEventFailed );
-			_logger.trace( msg, obj, level );
+			_janitor.addEventListener( dispatcher, Event.CHANGE, handler );
+			assertNotNull( _janitor.listeners[ dispatcher ][ Event.CHANGE ] );
+			dispatcher.dispatchEvent( new Event( Event.CHANGE ) );
 		}
 		
 		[Test]
 		public function removeEventListener() :void
 		{
-			_janitor.addEventListener( _logger, LoggerEvent.UPDATE, onFauxEventListener );
-			assertThat( _janitor.listeners[ _logger ][ LoggerEvent.UPDATE ], notNullValue() );
-			_janitor.removeEventListener( _logger, LoggerEvent.UPDATE, onFauxEventListener );
-			assertThat( _janitor.listeners[ _logger ][ LoggerEvent.UPDATE ], nullValue() );
+			var dispatcher :IEventDispatcher = new EventDispatcher();
+			var handler :Function = addAsync( onEventHandler, 10 );
+			
+			_janitor.addEventListener( dispatcher, Event.CHANGE, handler );
+			assertNotNull( _janitor.listeners[ dispatcher ][ Event.CHANGE ] );
+			dispatcher.dispatchEvent( new Event( Event.CHANGE ) );
+			
+			_janitor.removeEventListener( dispatcher, Event.CHANGE, handler );
+			assertNull( _janitor.listeners[ dispatcher ][ Event.CHANGE ] );
 		}
 		
 		[Test]
@@ -121,13 +109,14 @@ package tests.factorylabs.orange.core.gc
 			var sprite1 :Sprite = new Sprite();
 			var sprite2 :Sprite = new Sprite();
 			
-			_janitor.addEventListener( sprite1, Event.COMPLETE, onFauxEventListener );
-			_janitor.addEventListener( sprite2, Event.COMPLETE, onFauxEventListener );
-			assertThat( _janitor.listeners[ sprite1 ][ Event.COMPLETE ], notNullValue() );
-			assertThat( _janitor.listeners[ sprite2 ][ Event.COMPLETE ], notNullValue() );
+			_janitor.addEventListener( sprite1, Event.COMPLETE, onEventHandler );
+			_janitor.addEventListener( sprite2, Event.COMPLETE, onEventHandler );
+			
+			assertNotNull( _janitor.listeners[ sprite1 ][ Event.COMPLETE ] );
+			assertNotNull( _janitor.listeners[ sprite2 ][ Event.COMPLETE ] );
 			
 			_janitor.cleanUpEventListeners();
-			assertThat( _janitor.listeners, nullValue() );
+			assertNull( _janitor.listeners );
 		}
 		
 		[Test]
@@ -138,9 +127,9 @@ package tests.factorylabs.orange.core.gc
 			_container.addChild( sprite1 );
 			_container.addChild( sprite2 );
 			
-			assertThat( _container.numChildren, equalTo( 2 ) );
+			assertEquals( _container.numChildren, 2 );
 			_janitor.cleanUpChildren();
-			assertThat( _container.numChildren, equalTo( 0 ) );
+			assertEquals( _container.numChildren, 0 );
 		}
 		
 		[Test]
@@ -167,35 +156,35 @@ package tests.factorylabs.orange.core.gc
 			_container.addChild( childbmp );
 			_container.addChild( childldr );
 			
-			assertThat( _container.numChildren, equalTo( 4 ) );
-			assertThat( childspr.numChildren, equalTo( 4 ) );
-			assertThat( childmc.numChildren, equalTo( 0 ) );
-			assertThat( gchildspr.numChildren, equalTo( 1 ) );
-			
+			assertEquals( _container.numChildren, 4 );
+			assertEquals( childspr.numChildren, 4 );
+			assertEquals( childmc.numChildren, 0 );
+			assertEquals( gchildspr.numChildren, 1 );
+
 			_janitor.recurseCleanChildren( _container );
 			
-			assertThat( _container.numChildren, equalTo( 0 ) );
-			assertThat( childspr.numChildren, equalTo( 0 ) );
-			assertThat( childmc.numChildren, equalTo( 0 ) );
-			assertThat( gchildspr.numChildren, equalTo( 0 ) );
+			assertEquals( _container.numChildren, 0 );
+			assertEquals( childspr.numChildren, 0 );
+			assertEquals( childmc.numChildren, 0 );
+			assertEquals( gchildspr.numChildren, 0 );
 		}
 		
 		[Test]
 		public function addConnection() :void
 		{
 			_janitor.addConnection( _mocker );
-			assertThat( _janitor.connections, notNullValue() );
-			assertThat( _janitor.connections[ _mocker ], notNullValue() );
+			assertNotNull( _janitor.connections );
+			assertNotNull( _janitor.connections[ _mocker ] );
 		}
 		
 		[Test]
 		public function removeConnection() :void
 		{
 			_janitor.addConnection( _mocker );
-			assertThat( _janitor.connections, notNullValue() );
+			assertNotNull( _janitor.connections );
 			
 			_janitor.removeConnection( _mocker );
-			assertThat( _janitor.connections[ _mocker ], nullValue() );
+			assertNull( _janitor.connections[ _mocker ] );
 		}
 		
 		[Test]
@@ -205,13 +194,13 @@ package tests.factorylabs.orange.core.gc
 			
 			_janitor.addConnection( _mocker );
 			_janitor.addConnection( mocker2 );
-			assertThat( _janitor.connections, notNullValue() );
-			assertThat( _janitor.connections[ _mocker ], notNullValue() );
-			assertThat( _janitor.connections[ mocker2 ], notNullValue() );
+			assertNotNull( _janitor.connections );
+			assertNotNull( _janitor.connections[ _mocker ] );
+			assertNotNull( _janitor.connections[ mocker2 ] );
 			
 			_janitor.cleanUpConnections();
-			assertThat( _janitor.connections[ _mocker ], nullValue() );
-			assertThat( _janitor.connections[ mocker2 ], nullValue() );
+			assertNull( _janitor.connections[ _mocker ] );
+			assertNull( _janitor.connections[ mocker2 ] );
 		}
 		
 		[Test]
@@ -219,7 +208,7 @@ package tests.factorylabs.orange.core.gc
 		{
 			var disposer1 :MockDisposableClass = new MockDisposableClass();
 			_janitor.addDisposable( disposer1 );
-			assertThat( _janitor.disposables[ disposer1 ], notNullValue() );
+			assertNotNull( _janitor.disposables[ disposer1 ] );
 		}
 		
 		[Test]
@@ -229,9 +218,9 @@ package tests.factorylabs.orange.core.gc
 			var disposer2 :MockDisposableClass = new MockDisposableClass();
 			var disposer3 :MockDisposableClass = new MockDisposableClass();
 			_janitor.addDisposables( disposer1, disposer2, disposer3 );
-			assertThat( _janitor.disposables[ disposer1 ], notNullValue() );
-			assertThat( _janitor.disposables[ disposer2 ], notNullValue() );
-			assertThat( _janitor.disposables[ disposer3 ], notNullValue() );
+			assertNotNull( _janitor.disposables[ disposer1 ] );
+			assertNotNull( _janitor.disposables[ disposer2 ] );
+			assertNotNull( _janitor.disposables[ disposer3 ] );
 		}
 		
 		[Test(description='Only removes the IDisposable from access to the Janitor, does not call the dispose method')]
@@ -239,10 +228,10 @@ package tests.factorylabs.orange.core.gc
 		{
 			var disposer1 :MockDisposableClass = new MockDisposableClass();
 			_janitor.addDisposable( disposer1 );
-			assertThat( _janitor.disposables[ disposer1 ], notNullValue() );
+			assertNotNull( _janitor.disposables[ disposer1 ] );
 			_janitor.removeDisposable( disposer1 );
-			assertThat( _janitor.disposables[ disposer1 ], nullValue() );
-			assertThat( disposer1.isDisposed, equalTo( false ) );
+			assertNull( _janitor.disposables[ disposer1 ] );
+			assertFalse( disposer1.isDisposed );
 		}
 		
 		[Test(description='Removes the IDisposable and calls the dispose method')]
@@ -250,10 +239,10 @@ package tests.factorylabs.orange.core.gc
 		{
 			var disposer1 :MockDisposableClass = new MockDisposableClass();
 			_janitor.addDisposable( disposer1 );
-			assertThat( _janitor.disposables[ disposer1 ], notNullValue() );
+			assertNotNull( _janitor.disposables[ disposer1 ] );
 			_janitor.cleanUpDisposable( disposer1 );
-			assertThat( _janitor.disposables[ disposer1 ], nullValue() );
-			assertThat( disposer1.isDisposed, equalTo( true ) );
+			assertNull( _janitor.disposables[ disposer1 ] );
+			assertTrue( disposer1.isDisposed );
 		}
 		
 		[Test]
@@ -264,47 +253,47 @@ package tests.factorylabs.orange.core.gc
 			var disposer3 :MockDisposableClass = new MockDisposableClass();
 			
 			_janitor.addDisposables( disposer1, disposer2, disposer3 );
-			assertThat( _janitor.disposables[ disposer1 ], notNullValue() );
-			assertThat( _janitor.disposables[ disposer2 ], notNullValue() );
-			assertThat( _janitor.disposables[ disposer3 ], notNullValue() );
-			assertThat( disposer1.isDisposed, equalTo( false ) );
-			assertThat( disposer2.isDisposed, equalTo( false ) );
-			assertThat( disposer3.isDisposed, equalTo( false ) );
+			assertNotNull( _janitor.disposables[ disposer1 ] );
+			assertNotNull( _janitor.disposables[ disposer2 ] );
+			assertNotNull( _janitor.disposables[ disposer3 ] );
+			assertFalse( disposer1.isDisposed );
+			assertFalse( disposer2.isDisposed );
+			assertFalse( disposer3.isDisposed );
 			
 			_janitor.cleanUpDisposables();
-			assertThat( _janitor.disposables[ disposer1 ], nullValue() );
-			assertThat( _janitor.disposables[ disposer2 ], nullValue() );
-			assertThat( _janitor.disposables[ disposer3 ], nullValue() );
-			assertThat( disposer1.isDisposed, equalTo( true ) );
-			assertThat( disposer2.isDisposed, equalTo( true ) );
-			assertThat( disposer3.isDisposed, equalTo( true ) );
+			assertNull( _janitor.disposables[ disposer1 ] );
+			assertNull( _janitor.disposables[ disposer2 ] );
+			assertNull( _janitor.disposables[ disposer3 ] );
+			assertTrue( disposer1.isDisposed );
+			assertTrue( disposer2.isDisposed );
+			assertTrue( disposer3.isDisposed );
 		}
 		
 		[Test]
 		public function addTimer() :void
 		{
 			_janitor.addTimer( _timer );
-			assertThat( _janitor.timers[ _timer ], notNullValue() );
+			assertNotNull( _janitor.timers[ _timer ] );
 		}
 		
 		[Test]
 		public function removeTimer() :void
 		{
 			_janitor.addTimer( _timer );
-			assertThat( _janitor.timers[ _timer ], notNullValue() );
+			assertNotNull( _janitor.timers[ _timer ] );
 			_janitor.removeTimer( _timer );
-			assertThat( _janitor.timers[ _timer ], nullValue() );
+			assertNull( _janitor.timers[ _timer ] );
 		}
 		
 		[Test]
 		public function cleanUpTimer() :void
 		{
 			_janitor.addTimer( _timer );
-			assertThat( _janitor.timers[ _timer ], notNullValue() );
+			assertNotNull( _janitor.timers[ _timer ] );
 			_timer.start();	
 			_janitor.cleanUpTimer( _timer );
-			assertThat( _timer.running, equalTo( false ) );
-			assertThat( _janitor.timers[ _timer ], nullValue() );
+			assertFalse( _timer.running );
+			assertNull( _janitor.timers[ _timer ] );
 		}
 		
 		[Test]
@@ -314,32 +303,20 @@ package tests.factorylabs.orange.core.gc
 			
 			_janitor.addTimer( _timer );
 			_janitor.addTimer( timer2 );
-			assertThat( _janitor.timers[ _timer ], notNullValue() );
-			assertThat( _janitor.timers[ timer2 ], notNullValue() );
+			assertNotNull( _janitor.timers[ _timer ] );
+			assertNotNull( _janitor.timers[ timer2 ] );
 			_timer.start();
 			timer2.start();
 			_janitor.cleanUpTimers();
-			assertThat( _timer.running, equalTo( false ) );
-			assertThat( timer2.running, equalTo( false ) );
-			assertThat( _janitor.timers[ _timer ], nullValue() );
-			assertThat( _janitor.timers[ timer2 ], nullValue() );
+			assertFalse( _timer.running );
+			assertFalse( timer2.running );
+			assertNull( _janitor.timers[ _timer ] );
+			assertNull( _janitor.timers[ timer2 ] );
 		}
 		
-		private function onFauxEventListener( $e :LoggerEvent ) :void
+		private function onEventHandler( $e :Event ) :void
 		{
-			assertThat( $e.message, equalTo( '[JanitorTests].addEventListener()' ) );
-		}
-		
-		private function onLoggerEvent( $e :LoggerEvent, $pass :Object ) :void
-		{
-			Assert.assertEquals( $e.message, $pass[ 'msg' ] );
-			Assert.assertEquals( $e.object, $pass[ 'obj' ] );
-			Assert.assertEquals( $e.level, $pass[ 'level' ] );
-		}
-		
-		private function onLoggerEventFailed( $pass :Object ) :void
-		{
-			Assert.fail( '[JanitorTests].onLoggerEventFailed()' + String( $pass[ 'msg' ] ) );
+			assertEquals( Event.CHANGE, $e.type );
 		}
 	}
 }

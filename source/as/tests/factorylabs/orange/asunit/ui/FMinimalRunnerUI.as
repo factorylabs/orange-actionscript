@@ -45,7 +45,7 @@ package tests.factorylabs.orange.asunit.ui
 	 * @version		1.0.0 :: Jan 21, 2010
 	 */
 	public class FMinimalRunnerUI extends MovieClip 
-	{
+	{		
 		protected var printer	:FMinimalPrinter;
 		protected var runner	:BaseRunner;
 		protected var result	:IResult;

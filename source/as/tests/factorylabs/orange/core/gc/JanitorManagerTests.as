@@ -1,15 +1,14 @@
 
 package tests.factorylabs.orange.core.gc 
 {
+	import asunit.asserts.assertNull;
+	import asunit.asserts.assertNotNull;
+
 	import tests.factorylabs.orange.helpers.MockDisposableClass;
 
 	import com.factorylabs.orange.core.gc.Janitor;
 	import com.factorylabs.orange.core.gc.JanitorManager;
 	import com.factorylabs.orange.core.gc.JanitorSoundChannel;
-
-	import org.hamcrest.assertThat;
-	import org.hamcrest.object.notNullValue;
-	import org.hamcrest.object.nullValue;
 
 	import flash.display.Sprite;
 	import flash.media.SoundChannel;
@@ -52,18 +51,6 @@ package tests.factorylabs.orange.core.gc
 		private var _disposer		:MockDisposableClass;
 		private var _sprite			:Sprite;
 		private var _soundChannel 	:SoundChannel;
-
-		[BeforeClass]
-		public static function runBeforeClass():void
-		{
-			
-		}
-		
-		[AfterClass]
-		public static function runAfterClass():void
-		{
-			
-		}
 		
 		[Before]
 		public function runBeforeEachTest():void
@@ -96,8 +83,8 @@ package tests.factorylabs.orange.core.gc
 		{
 			_manager.addJanitor( _janitor );
 			_manager.addJanitor( _jSound );
-			assertThat( _manager.map.get( _janitor ), notNullValue() );
-			assertThat( _manager.map.get( _jSound ), notNullValue() );
+			assertNotNull( _manager.map.get( _janitor ) );
+			assertNotNull( _manager.map.get( _jSound ) );
 		}
 		
 		[Test]
@@ -105,23 +92,23 @@ package tests.factorylabs.orange.core.gc
 		{
 			_manager.addJanitor( _janitor );
 			_manager.addJanitor( _jSound );
-			assertThat( _manager.map.get( _janitor ), notNullValue() );
-			assertThat( _manager.map.get( _jSound ), notNullValue() );
+			assertNotNull( _manager.map.get( _janitor ) );
+			assertNotNull( _manager.map.get( _jSound ) );
 			
 			_manager.removeJanitor( _janitor );
 			_manager.removeJanitor( _jSound );
 			
-			assertThat( _manager.map.get( _janitor ), nullValue() );
-			assertThat( _manager.map.get( _jSound ), nullValue() );
+			assertNull( _manager.map.get( _janitor ) );
+			assertNull( _manager.map.get( _jSound ) );
 		}
 		
 		[Test]
 		public function cleanUpJanitor() :void
 		{
 			_manager.addJanitor( _janitor );
-			assertThat( _manager.map.get( _janitor ), notNullValue() );
+			assertNotNull( _manager.map.get( _janitor ) );
 			_manager.cleanUpJanitor( _janitor );
-			assertThat( _manager.map.get( _janitor ), nullValue() );
+			assertNull( _manager.map.get( _janitor ) );
 		}
 		
 		[Test]
@@ -129,13 +116,13 @@ package tests.factorylabs.orange.core.gc
 		{
 			_manager.addJanitor( _janitor );
 			_manager.addJanitor( _jSound );
-			assertThat( _manager.map.get( _janitor ), notNullValue() );
-			assertThat( _manager.map.get( _jSound ), notNullValue() );
+			assertNotNull( _manager.map.get( _janitor ) );
+			assertNotNull( _manager.map.get( _jSound ) );
 			
 			_manager.cleanUp();
 			
-			assertThat( _manager.map.get( _janitor ), nullValue() );
-			assertThat( _manager.map.get( _jSound ), nullValue() );
+			assertNull( _manager.map.get( _janitor ) );
+			assertNull( _manager.map.get( _jSound ) );
 		}
 	}
 }
