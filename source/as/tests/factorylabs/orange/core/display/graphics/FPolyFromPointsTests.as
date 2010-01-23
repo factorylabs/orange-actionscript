@@ -1,13 +1,14 @@
 
 package tests.factorylabs.orange.core.display.graphics
 {
+	import asunit.asserts.assertEquals;
+	import asunit.asserts.assertEqualsArrays;
+	import asunit.asserts.assertTrue;
+
 	import tests.factorylabs.orange.helpers.MockCanvas;
 
 	import com.factorylabs.orange.core.display.fills.SolidFill;
 	import com.factorylabs.orange.core.display.graphics.FPolyFromPoints;
-
-	import org.hamcrest.assertThat;
-	import org.hamcrest.object.equalTo;
 
 	import flash.display.Shape;
 
@@ -46,19 +47,7 @@ package tests.factorylabs.orange.core.display.graphics
 		private var _fpoly		:FPolyFromPoints;
 		private var _magenta	:SolidFill;
 		
-		[BeforeClass]
-		public static function runBeforeClass() :void
-		{
-			
-		}
-		
-		[AfterClass]
-		public static function runAfterClass() :void
-		{
-			
-		}
-		
-		[Before]
+		[Before(ui)]
 		public function runBeforeEachTest() :void
 		{
 			_canvas = new MockCanvas();
@@ -68,7 +57,7 @@ package tests.factorylabs.orange.core.display.graphics
 			_canvas.add( _shape );
 		}
 		
-		[After]
+		[After(ui)]
 		public function runAfterEachTest() :void
 		{
 			_shape.graphics.clear();
@@ -80,16 +69,16 @@ package tests.factorylabs.orange.core.display.graphics
 		[Test(description='Checks both the getter and setter.', tracker_id='')]
 		public function gfx() :void
 		{
-			assertThat( _fpoly.gfx, equalTo( _shape.graphics ) );
+			assertEquals( _fpoly.gfx, _shape.graphics );
 			var tmpshape :Shape = new Shape();
 			_fpoly.gfx = tmpshape.graphics;
-			assertThat( _fpoly.gfx, equalTo( tmpshape.graphics ) );
+			assertEquals( _fpoly.gfx, tmpshape.graphics );
 		}
 		
 		[Test(description='We only check the getter, the setter throws an error since we all know you have to alter the points property to get a new x right?', tracker_id='')]
 		public function x() :void
 		{
-			assertThat( _fpoly.x, equalTo( 0 ) );
+			assertEquals( _fpoly.x, 0 );
 		}
 		
 		[Test(expects='ArgumentError')]
@@ -101,7 +90,7 @@ package tests.factorylabs.orange.core.display.graphics
 		[Test(description='We only check the getter, the setter throws an error since we all know you have to alter the points property to get a new y right?', tracker_id='')]
 		public function y() :void
 		{
-			assertThat( _fpoly.y, equalTo( 0 ) );
+			assertEquals( _fpoly.y, 0 );
 		}
 		
 		[Test(expects='ArgumentError')]
@@ -113,7 +102,7 @@ package tests.factorylabs.orange.core.display.graphics
 		[Test(description='We only check the getter, the setter throws an error since we all know you have to alter the points property to get a new width right?', tracker_id='')]
 		public function width() :void
 		{
-			assertThat( _fpoly.width, equalTo( 350 ) );
+			assertEquals( _fpoly.width, 350 );
 		}
 		
 		[Test(expects='ArgumentError')]
@@ -125,7 +114,7 @@ package tests.factorylabs.orange.core.display.graphics
 		[Test(description='We only check the getter, the setter throws an error since we all know you have to alter the points property to get a new height right?', tracker_id='')]
 		public function height() :void
 		{
-			assertThat( _fpoly.height, equalTo( 300 ) );
+			assertEquals( _fpoly.height, 300 );
 		}
 		
 		[Test(expects='ArgumentError')]
@@ -138,26 +127,26 @@ package tests.factorylabs.orange.core.display.graphics
 		public function points() :void
 		{
 			var pts :Array = _fpoly.points;
-			assertThat( [ [0, 0], [0, 100], [100, 200], [ 350, 300] ], equalTo( pts ) );
+			assertEqualsArrays( _fpoly.points, pts );
 			
 			var pts2 :Array = [ [10, 10], [10, 1100], [1100, 1200], [ 1350, 1300] ];
 			_fpoly.points = pts2;
-			assertThat( pts2, equalTo( _fpoly.points ) );
+			assertEqualsArrays( pts2, _fpoly.points );
 		}
 		
 		[Test(description='Checks both the getter and setter.', tracker_id='')]
 		public function fill() :void
 		{
-			assertThat( _fpoly.fill, equalTo( _magenta ) );
+			assertEquals( _fpoly.fill, _magenta );
 			var sf :SolidFill = new SolidFill( 0x000000, .4 );
 			_fpoly.fill = sf;
-			assertThat( _fpoly.fill, equalTo( sf ) );
+			assertEquals( _fpoly.fill, sf );
 		}
 		
 		[Test(description='Checks both the getter and setter.', tracker_id='')]
 		public function autoRedraw() :void
 		{
-			assertThat( _fpoly.autoRedraw, equalTo( true ) );
+			assertTrue( _fpoly.autoRedraw );
 			_fpoly.autoRedraw = false;
 		}
 		
@@ -166,11 +155,11 @@ package tests.factorylabs.orange.core.display.graphics
 		{
 			_fpoly.autoRedraw = false;
 			_fpoly.points = [ [0, 0], [0, 100], [100, 200], [ 250, 200] ];
-			assertThat( _shape.width, equalTo( 350 ) );
-			assertThat( _shape.height, equalTo( 300 ) );
+			assertEquals( _shape.width, 350 );
+			assertEquals( _shape.height, 300 );
 			_fpoly.redraw();
-			assertThat( _shape.width, equalTo( 250 ) );
-			assertThat( _shape.height, equalTo( 200 ) );
+			assertEquals( _shape.width, 250 );
+			assertEquals( _shape.height, 200 );
 		}
 	}
 }
