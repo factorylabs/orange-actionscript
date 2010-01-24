@@ -2,9 +2,6 @@
 .idea
 log/
 log/*.log
-config/database.yml
-config/*.sphinx.conf
-db/sphinx/
 *.iml
 *.ipr
 *.iws
@@ -15,4 +12,7 @@ db/sphinx/
 .project
 .settings
 .svn
-.launch
+build/*.launch
+bin/*
+deploy/*
+docs/*
