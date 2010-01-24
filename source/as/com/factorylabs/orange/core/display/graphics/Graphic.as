@@ -201,7 +201,7 @@ package com.factorylabs.orange.core.display.graphics
 		 * @param $fill			Fill or line style to apply to the shape.
 		 * @param $center		Whether to draw the shape from a center registration.
 		 * @param $autoRedraw	Determines if the graphic should auto redraw when a setter is called.
-		 */		public function Graphic( $gfx :Graphics = null, $x :Number = 0, $y :Number = 0, $width :Number = 10, $height :Number = 10, $fill :IFill = null, $center :Boolean = false, $autoRedraw :Boolean = true ) 
+		 */		public function Graphic( $gfx :Graphics = null, $x :Number = 0, $y :Number = 0, $width :Number = 10, $height :Number = 10, $fill :IFill = null, $center :Boolean = false, $autoRedraw :Boolean = false ) 
 		{
 			_gfx = $gfx;
 			_x = $x;
@@ -224,17 +224,45 @@ package com.factorylabs.orange.core.display.graphics
 		/**
 		 * @inheritDoc
 		 */
+		public function draw( $object :Object = null ) :void
+		{
+			if( $object )
+				setProperties( $object );
+			internalDraw();
+		}
+
+		/**
+		 * @inheritDoc
+		 */
 		public function redraw() :void
 		{
 			_gfx.clear();
-			draw();
+			internalDraw();
+		}
+		
+		/**
+		 * @inheritDoc
+		 */
+		public function setProperties( $object :Object ) :void
+		{
+			var auto :Boolean = _autoRedraw;
+			_autoRedraw = false;
+			
+			for( var it :String in $object )
+			{
+				if( this.hasOwnProperty( it ) ) 
+					this[ it ] = $object[ it ];
+				else
+					throw new ArgumentError( 'An invalid property assignment was attempted on ' + this.toString() + ' for the property ' + it );
+			}
+			_autoRedraw = auto;
 		}	
 		
 		/**
 		 * Calls subroutines for starting a fill/stroke, drawing the shape, and closing the fill/stroke.
 		 * <p>This will fail silently if the graphics object is null. If there is a null fill, it will draw the shape but not fill it.</p> 
 		 */
-		protected function draw() :void
+		protected function internalDraw() :void
 		{
 			if( _center == true ) 
 				offset();

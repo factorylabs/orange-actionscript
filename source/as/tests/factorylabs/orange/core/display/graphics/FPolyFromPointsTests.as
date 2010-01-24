@@ -1,6 +1,7 @@
 
 package tests.factorylabs.orange.core.display.graphics
 {
+	import asunit.asserts.assertFalse;
 	import asunit.asserts.assertEquals;
 	import asunit.asserts.assertEqualsArrays;
 	import asunit.asserts.assertTrue;
@@ -53,7 +54,7 @@ package tests.factorylabs.orange.core.display.graphics
 			_canvas = new MockCanvas();
 			_shape = new Shape();
 			_magenta = new SolidFill( 0xff00ff, .8 );
-			_fpoly = new FPolyFromPoints( _shape.graphics, [ [0, 0], [0, 100], [100, 200], [ 350, 300] ], _magenta );
+			_fpoly = new FPolyFromPoints( _shape.graphics, [ [0, 0], [0, 100], [100, 200], [ 350, 300] ], _magenta, false );
 			_canvas.add( _shape );
 		}
 		
@@ -146,9 +147,33 @@ package tests.factorylabs.orange.core.display.graphics
 		[Test(description='Checks both the getter and setter.', tracker_id='')]
 		public function autoRedraw() :void
 		{
+			assertFalse( _fpoly.autoRedraw );
+			_fpoly.autoRedraw = true;
 			assertTrue( _fpoly.autoRedraw );
-			_fpoly.autoRedraw = false;
 		}
+		
+		[Test]
+		public function draw() :void
+		{
+			_shape.graphics.clear();
+			_fpoly.draw( { points: [ [0, 0], [0, 100], [100, 200], [ 250, 200] ] } );
+			assertEquals( _shape.width, 250 );
+			assertEquals( _shape.height, 200 );
+		}
+
+		[Test]
+		public function setProperties() :void
+		{
+			var pts :Array = [ [0, 0], [0, 100], [100, 200], [ 250, 200] ];
+			_fpoly.setProperties( { points: pts } );
+			assertEquals( _fpoly.points, pts );
+		}
+		
+		[Test(expects='ArgumentError')]
+		public function setPropertiesExpectsError() :void
+		{
+			_fpoly.setProperties( { fail: true } );
+		}		
 		
 		[Test]
 		public function redraw() :void

@@ -146,14 +146,14 @@ package com.factorylabs.orange.core.display.graphics
 	 	 * var dl :FDashedLine = new FDashedLine( _gfx.graphics, 0, 0, 500, 0, 5, 5, ss );
 	 	 * </listing>
 		 */		
-		public function FDashedLine( $gfx :Graphics, $x :Number = 0, $y :Number = 0, $endX :Number = 10, $endY :Number = 0, $dashLength :Number = 1, $gapLength :Number = 1, $fill :IFill = null, $autoRedraw :Boolean = true ) 
+		public function FDashedLine( $gfx :Graphics, $x :Number = 0, $y :Number = 0, $endX :Number = 10, $endY :Number = 0, $dashLength :Number = 1, $gapLength :Number = 1, $fill :IFill = null, $autoRedraw :Boolean = false ) 
 		{
 			super( $gfx, $x, $y, Math.abs( $x - $endX ), Math.abs( $y - $endY ), $fill, false, $autoRedraw );
 			_endX = $endX;
 			_endY = $endY;
 			_dashLength = $dashLength;
 			_gapLength = $gapLength;
-			draw();
+			internalDraw();
 		}
 		
 		/**

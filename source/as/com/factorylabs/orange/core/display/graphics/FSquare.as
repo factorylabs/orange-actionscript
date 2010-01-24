@@ -88,10 +88,10 @@ package com.factorylabs.orange.core.display.graphics
 	 	 * var sf : SolidFill = new SolidFill( 0x666666, .8 );
 	 	 * var s1 : FSquare = new FSquare( _gfx.graphics, 0, 110, 200, sf );
 	 	 * </listing>
-		 */				public function FSquare( $gfx :Graphics = null, $x :Number = 0, $y :Number = 0, $size :Number = 10, $fill :IFill = null, $center :Boolean = false, $autoRedraw :Boolean = true )
+		 */				public function FSquare( $gfx :Graphics = null, $x :Number = 0, $y :Number = 0, $size :Number = 10, $fill :IFill = null, $center :Boolean = false, $autoRedraw :Boolean = false )
 		{			super( $gfx, $x, $y, $size, $size, $fill, $center, $autoRedraw );
 			_size = $size;
-			draw();
+			internalDraw();
 		}
 		
 		/**

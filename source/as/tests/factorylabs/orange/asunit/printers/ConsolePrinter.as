@@ -110,24 +110,21 @@ package tests.factorylabs.orange.asunit.printers
 		
 		public function onRunCompleted(result :IResult) :void
 		{
+			var m :String = ( result.wasSuccessful ) ? printSuccessSummary( result ) : printFailureSummary( result ); 
 			var s :String = '...Test Complete\n';
-			s += divider + '\n';
-			
-			if( result.wasSuccessful )
-				s += printSuccessSummary( result );
-			else
-				s += printFailureSummary( result );
+			s += divider;
 			s += '\n';
 			s += printTimeSummary();
 			s += '\n';
 			s += printIgnoredSummary( result );
 			s += divider;
+			s += m;
 			trace( s );
 		}
 		
 		protected function printSuccessSummary( $result :IResult ) :String
 		{
-			return 'Test Summary:\nOK (' + $result.runCount + ' test' + ($result.runCount == 1 ? '' : 's' + ')\n');
+			return 'Test Summary:\nOK (' + $result.runCount + ' test' + ($result.runCount == 1 ? '' : 's' + ')\n') + divider;
 		}
 		
 		protected function printFailureSummary( $result :IResult ) :String
@@ -135,7 +132,7 @@ package tests.factorylabs.orange.asunit.printers
 			var s :String = 'FAILURES!!!\n';
 			s += 'Tests run: ' + $result.runCount + '\n';
 			s += 'Failures: ' + $result.failureCount + '\n';
-			s += 'Errors: ' + $result.errorCount + '\n\n';
+			s += 'Errors: ' + $result.errorCount + '\n';
 			s += divider + '\n';
 			s += failed;
 			s += divider;

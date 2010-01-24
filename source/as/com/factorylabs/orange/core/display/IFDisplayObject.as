@@ -35,7 +35,7 @@ package com.factorylabs.orange.core.display
 	{
 		/**
 		 * Maps all the object's properties to the <code>DisplayObject</code>.
-		 * If there are properties that do not exist, an error is thrown. 
+		 * <p>If there are properties that do not exist, an error is thrown.</p> 
 		 * @param $object	Object to map properties from.
 		 * @throws	ArgumentError <code>ArgumentError</code> When an invalid property assignment was attempted.
 		 */
