@@ -11,6 +11,7 @@
 	TODO: Enable junit reporting with asunit.
 	TODO: Figure out a way to get success messages from asunit to the tasks so we can fail the ant tasks if a unit test fails.
 	TODO: There is a an XSLT stylesheet needed for link reports, we will add this in later for now see MK.
+	TODO: Tie in the swc generation to a release task.
 -->
 <project name="orange-actionscript" basedir="../" default="usage">
 
@@ -47,9 +48,9 @@
     </target>
     
     <!-- 
-    public --> 
+    public generate-swc-core --> 
 	<target name="asdoc" description="Generates the ASDocumentation for all orange packages"
-	    depends="-generate-time-stamp, asunit-core, generate-swc-core, compile-barebones, init-asdocs">
+	    depends="-generate-time-stamp, asunit-core, compile-barebones, init-asdocs">
 	    
 	    <echo>[asdoc] Generating ASDocs</echo>
 	    <java jar="${FLEX_HOME}/lib/asdoc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
