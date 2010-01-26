@@ -6,9 +6,7 @@ package com.factorylabs.orange.performance.core.display.graphics
 	import flash.display.Shape;
 
 	/**
-	 * Summary.
-	 * 
-	 * <p>Description.</p>
+	 * Generate the performance test cases for the FRectangle class.
 	 *
 	 * <hr />
 	 * <p><a target="_top" href="http://github.com/factorylabs/orange-actionscript/MIT-LICENSE.txt">MIT LICENSE</a></p>

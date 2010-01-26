@@ -1,17 +1,18 @@
 
 package com.factorylabs.orange.performance.runners 
 {
+	import com.factorylabs.orange.performance.core.display.FSpritePerformanceTests;
 	import com.factorylabs.orange.performance.core.display.fills.SolidFillPerformanceTests;
 	import com.factorylabs.orange.performance.core.display.graphics.FRectanglePerformanceTests;
-	import com.factorylabs.orange.performance.core.display.FSpritePerformanceTests;
 	import com.gskinner.utils.PerformanceTest;
+
 	import flash.display.MovieClip;
 
 	/**
-	 * Summary.
-	 * 
-	 * <p>Description.</p>
+	 * Runs gskinner's performance suite on the core project.
 	 *
+	 * <p><a target="_top" href="http://www.gskinner.com/blog/archives/2009/04/as3_performance.html">gskinner blog post</a>.</p>
+	 * 
 	 * <hr />
 	 * <p><a target="_top" href="http://github.com/factorylabs/orange-actionscript/MIT-LICENSE.txt">MIT LICENSE</a></p>
 	 * <p>Copyright (c) 2004-2010 <a target="_top" href="http://www.factorylabs.com/">Factory Design Labs</a></p>
@@ -29,6 +30,7 @@ package com.factorylabs.orange.performance.runners
 		{
 			var test :PerformanceTest = PerformanceTest.getInstance();
 			test.out = print;
+						
 			test.testSuite( new FSpritePerformanceTests() );
 			test.testSuite( new FRectanglePerformanceTests() );
 			test.testSuite( new SolidFillPerformanceTests() );

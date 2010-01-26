@@ -39,6 +39,7 @@
         <echo message="[compile-barebones] => Compiles the barebones package using MXMLC"/>
         <echo message="[fdt-asunit-core] => FDT specific: debugs the asunit tests for the orange.${test.core.packagename} package via FDT ant tasks"/>
         <echo message="[fdt-barebones] => FDT specific: debugs the barebones package via FDT ant tasks"/>
+        <echo message="[fdt-gstest-core] => FDT Specific: Generates performance test for the core package"/>
         <echo message="[fdt-reset-fcsh] => FDT specific: forces the mxmlc to refresh its cached data"/>
         <echo message="[generate-swc-core] => Generates the swc for the core package"/>
         <echo message="----------------------------------------------------------------------------------------------"/>
@@ -159,7 +160,7 @@
         <antcall target="-fdt-start-debugger"></antcall>
     </target>
     
-    <target name="fdt-gstest-core" description="Generates performance test for the core package.">
+    <target name="fdt-gstest-core" description="FDT Specific: Generates performance test for the core package">
         <antcall target="-compile-fdt">
             <param name="param.mainclass" value="${perf.core.runner}"/>
             <param name="param.swf" value="${perf.core.swf}"/>

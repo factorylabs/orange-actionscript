@@ -4,9 +4,7 @@ package com.factorylabs.orange.performance.core.display
 	import com.factorylabs.orange.core.display.FSprite;
 
 	/**
-	 * Summary.
-	 * 
-	 * <p>http://www.gskinner.com/blog/archives/2009/04/as3_performance.html.</p>
+	 * Generate the performance test cases for the FSprite class.
 	 *
 	 * <hr />
 	 * <p><a target="_top" href="http://github.com/factorylabs/orange-actionscript/MIT-LICENSE.txt">MIT LICENSE</a></p>

@@ -5,9 +5,7 @@ package com.factorylabs.orange.performance.core.display.fills
 	import com.factorylabs.orange.core.display.fills.SolidFill;
 
 	/**
-	 * Summary.
-	 * 
-	 * <p>Description.</p>
+	 * Generate the performance test cases for the SolidFill class.
 	 *
 	 * <hr />
 	 * <p><a target="_top" href="http://github.com/factorylabs/orange-actionscript/MIT-LICENSE.txt">MIT LICENSE</a></p>

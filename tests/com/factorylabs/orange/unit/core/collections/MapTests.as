@@ -55,7 +55,7 @@ package com.factorylabs.orange.unit.core.collections
 		{
 			assertEquals( _map.length, 5 );
 		}
-		
+
 		[Test]
 		public function keys() :void
 		{
