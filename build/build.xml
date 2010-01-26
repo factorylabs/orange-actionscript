@@ -153,10 +153,24 @@
             <param name="param.autostart" value="true"/>
             <param name="param.launcher" value="Adobe Flash Player"/>
             <param name="param.width" value="${test.core.width}"/>
-            <param name="param.height" value="${test.core.width}"/>
+            <param name="param.height" value="${test.core.height}"/>
             <param name="param.color" value="${test.core.color}"/>
         </antcall>
         <antcall target="-fdt-start-debugger"></antcall>
+    </target>
+    
+    <target name="fdt-gstest-core" description="Generates performance test for the core package.">
+        <antcall target="-compile-fdt">
+            <param name="param.mainclass" value="${perf.core.runner}"/>
+            <param name="param.swf" value="${perf.core.swf}"/>
+            <param name="param.autostart" value="false"/>
+            <param name="param.launcher" value=""/>
+            <param name="param.width" value="${perf.core.width}"/>
+            <param name="param.height" value="${perf.core.height}"/>
+            <param name="param.color" value="${perf.core.color}"/>
+        </antcall>
+        <antcall target="-fdt-start-debugger"></antcall>
+        <fdt.browse location="${perf.core.url}"/>
     </target>
     
     <!--
