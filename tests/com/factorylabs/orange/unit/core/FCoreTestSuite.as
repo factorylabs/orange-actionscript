@@ -6,6 +6,7 @@ package com.factorylabs.orange.unit.core
 	import com.factorylabs.orange.unit.core.gc.GCTestSuite;
 	import com.factorylabs.orange.unit.core.logging.LoggingTestSuite;
 	import com.factorylabs.orange.unit.core.math.MathTestSuite;
+	import com.factorylabs.orange.unit.core.signals.SignalsTestSuite;
 	import com.factorylabs.orange.unit.core.utils.UtilsTestSuite;
 
 	/**
@@ -29,6 +30,7 @@ package com.factorylabs.orange.unit.core
 		public var gcTestSuite			:GCTestSuite;
 		public var loggingTestSuite		:LoggingTestSuite;
 		public var mathTestSuite		:MathTestSuite;
+		public var signalsTestSuite		:SignalsTestSuite;
 		public var utilsTestSuite		:UtilsTestSuite;
 	}
 }

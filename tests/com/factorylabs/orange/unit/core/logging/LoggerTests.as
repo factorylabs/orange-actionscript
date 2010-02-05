@@ -49,6 +49,7 @@ package com.factorylabs.orange.unit.core.logging
 		public function runAfterEachTest():void
 		{
 			_signal.removeAll( );
+			_signal = null;
 			_logger = null;
 		}
 		
