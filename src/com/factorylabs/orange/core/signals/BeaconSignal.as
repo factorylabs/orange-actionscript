@@ -1,6 +1,7 @@
 
 package com.factorylabs.orange.core.signals 
 {
+	import flash.display.MovieClip;
 	import org.osflash.signals.Signal;
 
 	/**
@@ -27,10 +28,12 @@ package com.factorylabs.orange.core.signals
 		/**
 		 * @private
 		 */
-		protected var _twoframe	:TwoFrame;
+		protected var _twoframe	:MovieClip;
 		
 		/**
 		 * Instantiates a beacon instance.
+		 * 
+		 * @param $mc	A 2 frame <code>MovieClip</code> used for creating the loop events.
 		 * 
 		 * @example The following code instantiates and starts listening to a beacon. 
 	 	 * <listing version="3.0" >
@@ -38,10 +41,10 @@ package com.factorylabs.orange.core.signals
 	 	 * _beacon.add( beaconTick );
 	 	 * </listing>
 		 */
-		public function BeaconSignal() 
+		public function BeaconSignal( $mc :MovieClip ) 
 		{
 			super();
-			_twoframe = new TwoFrame();
+			_twoframe = $mc;
 			_twoframe.stop();
 			addFrameScripts( );
 			_twoframe.nextFrame();
