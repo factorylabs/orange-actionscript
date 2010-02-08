@@ -72,7 +72,8 @@ package com.factorylabs.orange.core.display
 		{
 			for( var it :String in $object )
 			{
-				if( this.hasOwnProperty( it ) ) this[ it ] = $object[ it ];
+				if( this.hasOwnProperty( it ) ) 
+					this[ it ] = $object[ it ];
 				else
 					throw new ArgumentError( 'An invalid property assignment was attempted on ' + this.toString() + ' for the property ' + it );
 			}
