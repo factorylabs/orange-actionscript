@@ -8,6 +8,7 @@ package com.factorylabs.orange.unit.core
 	import com.factorylabs.orange.unit.core.math.MathTestSuite;
 	import com.factorylabs.orange.unit.core.printing.PrintingTestSuite;
 	import com.factorylabs.orange.unit.core.signals.SignalsTestSuite;
+	import com.factorylabs.orange.unit.core.text.TextTestSuite;
 	import com.factorylabs.orange.unit.core.utils.UtilsTestSuite;
 
 	/**
@@ -33,6 +34,7 @@ package com.factorylabs.orange.unit.core
 		public var mathTestSuite		:MathTestSuite;
 		public var printingTestSuite	:PrintingTestSuite;
 		public var signalsTestSuite		:SignalsTestSuite;
+		public var textTestSuite		:TextTestSuite;
 		public var utilsTestSuite		:UtilsTestSuite;
 	}
 }
