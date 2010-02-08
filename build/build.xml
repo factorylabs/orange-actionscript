@@ -156,6 +156,7 @@
             <param name="param.width" value="${test.core.width}"/>
             <param name="param.height" value="${test.core.height}"/>
             <param name="param.color" value="${test.core.color}"/>
+            <param name="param.isDebug" value="true"/>
         </antcall>
         <antcall target="-fdt-start-debugger"></antcall>
     </target>
@@ -169,8 +170,9 @@
             <param name="param.width" value="${perf.core.width}"/>
             <param name="param.height" value="${perf.core.height}"/>
             <param name="param.color" value="${perf.core.color}"/>
+            <param name="param.isDebug" value="false"/>
         </antcall>
-        <antcall target="-fdt-start-debugger"></antcall>
+        <!-- <antcall target="-fdt-start-debugger"></antcall> -->
         <fdt.browse location="${perf.core.url}"/>
     </target>
     
@@ -185,6 +187,7 @@
             <param name="param.width" value="${bb.width}"/>
             <param name="param.height" value="${bb.height}"/>
             <param name="param.color" value="${bb.color}"/>
+            <param name="param.isDebug" value="true"/>
         </antcall>
         <antcall target="-fdt-start-debugger"></antcall>
         <fdt.browse location="${bb.url}"/>
@@ -264,14 +267,15 @@
 	 	@param param.launcher	The launcher object either External SWF Viewer, Adobe Flash Player, Browser, Internal SWF Viewer or an empty string 
 	 	@param param.width		The width value of the swf.
 	 	@param param.height		The height value of the swf.
-	 	@param param.color		The background color of the swf. 
+	 	@param param.color		The background color of the swf.
+	 	@param param.isDebug	Whether to compile in debug mode, benchmark and verbose stack traces. 
 	-->
     <target name="-compile-fdt">
         <echo>[-compile-fdt] Compiling fdt.launch.application</echo>
         <fdt.launch.application 
 			projectname="${project.name}" 
 			mainclass="${param.mainclass}"
-			debug="true"
+			debug="${param.isDebug}"
 			target="${param.swf}" 
 			startswf="${param.autostart}"
             swflauncher = "${param.launcher}"

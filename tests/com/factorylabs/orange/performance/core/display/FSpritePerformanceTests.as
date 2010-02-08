@@ -1,6 +1,8 @@
 
 package com.factorylabs.orange.performance.core.display 
 {
+	import com.gskinner.performance.MethodTest;
+	import com.gskinner.performance.TestSuite;
 	import com.factorylabs.orange.core.display.FSprite;
 
 	/**
@@ -16,15 +18,30 @@ package com.factorylabs.orange.performance.core.display
 	 * @author		Matthew Kitt
 	 * @version		1.0.0 :: Jan 26, 2010
 	 */
-	public class FSpritePerformanceTests 
+	public class FSpritePerformanceTests
+		extends TestSuite 
 	{
-		public var description	:String = 'Testing properties on FSprite.';
 		protected var loops		:uint = 100000;
 		
-		public function FSpritePerformanceTests() 
+		public function FSpritePerformanceTests()
 		{
+			name = 'FSpritePerformanceTests';
+			description = 'Iterating various ways to set properties on an FSprite. ' + loops + ' loops.';
+			tareTest = new MethodTest( tare );
+			initFunction = init;
+			iterations = 4;
+			tests = 
+			[
+				new MethodTest( without_init_object, null, 'without_init_object' ),
+				new MethodTest( with_init_object, null, 'with_init_object')
+			];
 		}
 		
+		protected function init() :void
+		{
+			
+		}
+
 		public function tare() :void
 		{
 			for( var i :uint = 0; i < loops; ++i )
@@ -32,7 +49,7 @@ package com.factorylabs.orange.performance.core.display
 			}
 		}
 		
-		public function new_sprite_without_init_object_setting_properties_manually() :void
+		public function without_init_object() :void
 		{
 			for( var i :uint = 0; i < loops; ++i )
 			{
@@ -42,7 +59,7 @@ package com.factorylabs.orange.performance.core.display
 			}
 		}
 		
-		public function new_sprite_with_init_object() :void
+		public function with_init_object() :void
 		{
 			for( var i :uint = 0; i < loops; ++i )
 			{

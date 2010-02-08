@@ -1,8 +1,11 @@
 
 package com.factorylabs.orange.performance.core.display.graphics 
 {
-	import com.factorylabs.orange.core.display.graphics.FRectangle;
 	import com.factorylabs.orange.core.display.fills.SolidFill;
+	import com.factorylabs.orange.core.display.graphics.FRectangle;
+	import com.gskinner.performance.MethodTest;
+	import com.gskinner.performance.TestSuite;
+
 	import flash.display.Shape;
 
 	/**
@@ -18,15 +21,33 @@ package com.factorylabs.orange.performance.core.display.graphics
 	 * @author		Matthew Kitt
 	 * @version		1.0.0 :: Jan 26, 2010
 	 */
-	public class FRectanglePerformanceTests 
+	public class FRectanglePerformanceTests
+		extends TestSuite
 	{
-		public var description	:String = 'Testing the different ways to render a Graphic shape.';
 		protected var loops		:uint = 100000;
-		protected var shape		:Shape = new Shape();
-		protected var fill		:SolidFill = new SolidFill( 0xFF00FF, 1 );
+		protected var shape		:Shape;
+		protected var fill		:SolidFill;
 		
 		public function FRectanglePerformanceTests() 
 		{
+			name = 'FRectanglePerformanceTests';
+			description = 'Tests different ways to render a Graphic shape. ' + loops + ' loops.';
+			tareTest = new MethodTest( tare );
+			initFunction = init;
+			iterations = 4;
+			tests = 
+			[
+				new MethodTest( drawing_through_instantiation, null, 'drawing_through_instantiation' ),
+				new MethodTest( drawing_through_reference_with_init, null, 'drawing_through_reference_with_init'),
+				new MethodTest( drawing_through_reference_without_init, null, 'drawing_through_reference_without_init'),
+				new MethodTest( drawing_without_FRectangle, null, 'drawing_without_FRectangle')
+			];
+		}
+		
+		protected function init() :void
+		{
+			shape = new Shape();
+			fill = new SolidFill( 0xFF00FF, 1 );
 		}
 		
 		public function tare() :void
@@ -44,7 +65,7 @@ package com.factorylabs.orange.performance.core.display.graphics
 			}
 		}
 		
-		public function drawing_through_reference_with_init_object() :void
+		public function drawing_through_reference_with_init() :void
 		{
 			var frect :FRectangle = new FRectangle( shape.graphics, 0, 0, 100, 1, fill ); 
 			for( var i :uint = 0; i < loops; ++i )
@@ -53,7 +74,7 @@ package com.factorylabs.orange.performance.core.display.graphics
 			}
 		}
 		
-		public function drawing_through_reference_without_init_object() :void
+		public function drawing_through_reference_without_init() :void
 		{
 			var frect :FRectangle = new FRectangle( shape.graphics, 0, 0, 100, 1, fill ); 
 			for( var i :uint = 0; i < loops; ++i )

@@ -1,8 +1,11 @@
 
 package com.factorylabs.orange.performance.core.display.fills 
 {
-	import mx.graphics.SolidColor;
 	import com.factorylabs.orange.core.display.fills.SolidFill;
+	import com.gskinner.performance.MethodTest;
+	import com.gskinner.performance.TestSuite;
+
+	import mx.graphics.SolidColor;
 
 	/**
 	 * Generate the performance test cases for the SolidFill class.
@@ -17,13 +20,28 @@ package com.factorylabs.orange.performance.core.display.fills
 	 * @author		Matthew Kitt
 	 * @version		1.0.0 :: Jan 26, 2010
 	 */
-	public class SolidFillPerformanceTests 
+	public class SolidFillPerformanceTests
+		extends TestSuite 
 	{
-		public var description	:String = 'Testing the difference between SolidFill and the native SolidColor instantiation.';
 		protected var loops		:uint = 100000;
 		
 		public function SolidFillPerformanceTests() 
 		{
+			name = 'SolidFillPerformanceTests';
+			description = 'Testing the difference between SolidFill and the native SolidColor instantiation. ' + loops + ' loops.';
+			tareTest = new MethodTest( tare );
+			initFunction = init;
+			iterations = 4;
+			tests = 
+			[
+				new MethodTest( test_SolidFill_instantiation, null, 'test_SolidFill_instantiation' ),
+				new MethodTest( test_SolidColor_instantiation, null, 'test_SolidColor_instantiation')
+			];
+		}
+		
+		protected function init() :void
+		{
+			
 		}
 		
 		public function tare() :void
