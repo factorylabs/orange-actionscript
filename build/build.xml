@@ -148,6 +148,7 @@
     <!--
 	public -->
     <target name="fdt-asunit-core" description="FDT specific: debugs the asunit tests for the orange.${test.core.packagename} package via FDT ant tasks" >
+        <antcall target="-fdt-start-debugger"></antcall>
         <antcall target="-compile-fdt">
             <param name="param.mainclass" value="${test.core.runner}"/>
             <param name="param.swf" value="${test.core.swf}"/>
@@ -158,7 +159,6 @@
             <param name="param.color" value="${test.core.color}"/>
             <param name="param.isDebug" value="true"/>
         </antcall>
-        <antcall target="-fdt-start-debugger"></antcall>
     </target>
     
     <target name="fdt-gstest-core" description="FDT Specific: Generates performance test for the core package">
@@ -179,6 +179,7 @@
     <!--
 	public -->
     <target name="fdt-barbones" description="FDT specific: debugs the barebones package via FDT ant tasks" >
+        <antcall target="-fdt-start-debugger"></antcall>
         <antcall target="-compile-fdt">
             <param name="param.mainclass" value="${bb.main}"/>
             <param name="param.swf" value="${bb.swf}"/>
@@ -189,7 +190,6 @@
             <param name="param.color" value="${bb.color}"/>
             <param name="param.isDebug" value="true"/>
         </antcall>
-        <antcall target="-fdt-start-debugger"></antcall>
         <fdt.browse location="${bb.url}"/>
     </target>
     

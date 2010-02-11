@@ -1,6 +1,7 @@
 
 package com.factorylabs.orange.performance.runners 
 {
+	import com.factorylabs.orange.performance.natives.ConditionalPerformanceTests;
 	import com.factorylabs.orange.performance.core.display.FButtonPerformanceTests;
 	import com.factorylabs.orange.performance.core.display.FSpritePerformanceTests;
 	import com.factorylabs.orange.performance.core.display.fills.SolidFillPerformanceTests;
@@ -103,6 +104,7 @@ package com.factorylabs.orange.performance.runners
 		protected function startTests() :void
 		{
 			PerformanceTest.queue( new ArrayPerformanceTests() );
+			PerformanceTest.queue( new ConditionalPerformanceTests() );
 			PerformanceTest.queue( new FButtonPerformanceTests() );
 			PerformanceTest.queue( new FSpritePerformanceTests() );
 			PerformanceTest.queue( new FRectanglePerformanceTests() );
