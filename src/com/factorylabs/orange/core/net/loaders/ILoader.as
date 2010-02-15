@@ -1,8 +1,7 @@
 
 package com.factorylabs.orange.core.net.loaders 
 {
-	import org.osflash.signals.Signal;
-
+	import flash.events.IEventDispatcher;
 	import flash.net.URLRequest;
 
 	/**
@@ -21,9 +20,9 @@ package com.factorylabs.orange.core.net.loaders
 	public interface ILoader 
 	{
 		/**
-		 * Reference to the signal object that will dispatch load notification events.
+		 * Reference to the event dispatcher object that will dispatch load notification events.
 		 */
-		function get signal() :Signal;
+		function get dispatcher() :IEventDispatcher;
 		
 		/**
 		 * Returns the number of bytes that have been loaded by the Loader. 

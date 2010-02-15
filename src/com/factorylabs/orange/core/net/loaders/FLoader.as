@@ -1,16 +1,16 @@
 
 package com.factorylabs.orange.core.net.loaders 
 {
-	import flash.events.ProgressEvent;
-	import flash.events.HTTPStatusEvent;
-	import flash.display.LoaderInfo;
-	import org.osflash.signals.ISignal;
 	import org.osflash.signals.Signal;
 
 	import flash.display.Loader;
+	import flash.display.LoaderInfo;
 	import flash.events.ErrorEvent;
 	import flash.events.Event;
+	import flash.events.HTTPStatusEvent;
+	import flash.events.IEventDispatcher;
 	import flash.events.IOErrorEvent;
+	import flash.events.ProgressEvent;
 	import flash.events.SecurityErrorEvent;
 	import flash.net.URLRequest;
 	import flash.system.ApplicationDomain;
@@ -56,11 +56,19 @@ package com.factorylabs.orange.core.net.loaders
 		protected var _signal		:Signal;
 		
 		/**
-		 * @inheritDoc
+		 * Provide an optional signal for sending out events.
 		 */
 		public function get signal() :Signal
 		{
 			return _signal;
+		}
+		
+		/**
+		 * @inheritDoc
+		 */
+		public function get dispatcher():IEventDispatcher
+		{
+			return contentLoaderInfo;
 		}
 		
 		/**
