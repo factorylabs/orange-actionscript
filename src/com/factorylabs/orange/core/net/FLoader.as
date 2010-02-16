@@ -1,5 +1,5 @@
 
-package com.factorylabs.orange.core.net.loaders 
+package com.factorylabs.orange.core.net 
 {
 	import org.osflash.signals.Signal;
 
@@ -121,7 +121,7 @@ package com.factorylabs.orange.core.net.loaders
 		 */
 		override public function toString() :String 
 		{
-			return 'com.factorylabs.orange.core.net.loaders.FLoader';
+			return 'com.factorylabs.orange.core.net.FLoader';
 		}
 		
 		/**

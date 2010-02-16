@@ -1,5 +1,5 @@
 
-package com.factorylabs.orange.core.net.loaders 
+package com.factorylabs.orange.core.net 
 {
 	import flash.events.IEventDispatcher;
 	import flash.net.URLRequest;
