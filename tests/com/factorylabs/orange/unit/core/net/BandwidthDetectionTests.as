@@ -1,4 +1,5 @@
-package com.factorylabs.orange.unit.core.net{	import asunit.asserts.assertFalse;
+package com.factorylabs.orange.unit.core.net{	import flash.net.navigateToURL;
+	import asunit.asserts.assertFalse;
 	import asunit4.async.addAsync;
 	import asunit.asserts.assertEquals;
 	import org.osflash.signals.Signal;

@@ -160,6 +160,21 @@
             <param name="param.isDebug" value="true"/>
         </antcall>
     </target>
+	
+	<target name="fdt-asunit-core-browser" description="FDT specific: debugs the asunit tests for the orange.${test.core.packagename} package via FDT ant tasks" >
+	        <antcall target="-fdt-start-debugger"></antcall>
+	        <antcall target="-compile-fdt">
+	            <param name="param.mainclass" value="${test.core.runner}"/>
+	            <param name="param.swf" value="${test.core.swf}"/>
+	            <param name="param.autostart" value="false"/>
+	            <param name="param.launcher" value=""/>
+	            <param name="param.width" value="${test.core.width}"/>
+	            <param name="param.height" value="${test.core.height}"/>
+	            <param name="param.color" value="${test.core.color}"/>
+	            <param name="param.isDebug" value="true"/>
+	        </antcall>
+			<fdt.browse location="http://localhost/orange-actionscript/docs/reports/tests/index.html" />
+	    </target>
     
     <target name="fdt-gstest-core" description="FDT Specific: Generates performance test for the core package">
         <antcall target="-compile-fdt">
