@@ -193,8 +193,7 @@
     
     <!--
 	public -->
-    <target name="fdt-barbones" description="FDT specific: debugs the barebones package via FDT ant tasks" >
-        <antcall target="-fdt-start-debugger"></antcall>
+    <target name="fdt-barebones" description="FDT specific: debugs the barebones package via FDT ant tasks" >
         <antcall target="-compile-fdt">
             <param name="param.mainclass" value="${bb.main}"/>
             <param name="param.swf" value="${bb.swf}"/>
@@ -206,6 +205,7 @@
             <param name="param.isDebug" value="true"/>
         </antcall>
         <fdt.browse location="${bb.url}"/>
+        <antcall target="-fdt-start-debugger"></antcall>
     </target>
     
     <!--  
