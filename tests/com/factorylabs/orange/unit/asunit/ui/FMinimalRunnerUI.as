@@ -12,6 +12,8 @@ package com.factorylabs.orange.unit.asunit.ui
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
+	import flash.external.ExternalInterface;
+	import flash.system.Security;
 	import flash.system.fscommand;
 
 	/**
@@ -62,7 +64,10 @@ package com.factorylabs.orange.unit.asunit.ui
 		
 		protected function onRunnerComplete( $e :Event ) :void
 		{
-			fscommand('quit');
+			if( Security.sandboxType == Security.REMOTE )
+				ExternalInterface.call( "window.close" );
+							if( Security.sandboxType == Security.LOCAL_WITH_NETWORK )
+				fscommand('quit');
 		}
 	}
 }
