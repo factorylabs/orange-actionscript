@@ -24,7 +24,7 @@ package com.factorylabs.orange.core.logging
 	{
 		private var _name			:String;
 		private var _isSilent		:Boolean;
-		private  var _signal		:Signal;
+		private var _signal			:Signal;
 		
 		/**
 		 * @inheritDoc

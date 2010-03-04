@@ -38,6 +38,7 @@
         <echo message="[asunit-core] => Compiles, tests and generates reports for the orange.${test.core.packagename} package"/>
         <echo message="[compile-barebones] => Compiles the barebones package using MXMLC"/>
         <echo message="[fdt-asunit-core] => FDT specific: debugs the asunit tests for the orange.${test.core.packagename} package via FDT ant tasks"/>
+    	<echo message="[fdt-asunit-net] => FDT specific: debugs the asunit tests for the orange.${test.net.packagename} package via FDT ant tasks"/>
         <echo message="[fdt-barebones] => FDT specific: debugs the barebones package via FDT ant tasks"/>
         <echo message="[fdt-gstest-core] => FDT Specific: Generates performance test for the core package"/>
         <echo message="[fdt-reset-fcsh] => FDT specific: forces the mxmlc to refresh its cached data"/>
@@ -160,6 +161,21 @@
             <param name="param.isDebug" value="true"/>
         </antcall>
     </target>
+	
+	<target name="fdt-asunit-core-net" description="FDT specific: debugs the asunit tests for the orange.${test.net.packagename} package via FDT ant tasks" >
+	        <antcall target="-compile-fdt">
+	            <param name="param.mainclass" value="${test.net.runner}"/>
+	            <param name="param.swf" value="${test.net.swf}"/>
+	            <param name="param.autostart" value="false"/>
+	            <param name="param.launcher" value=""/>
+	            <param name="param.width" value="${test.net.width}"/>
+	            <param name="param.height" value="${test.net.height}"/>
+	            <param name="param.color" value="${test.net.color}"/>
+	            <param name="param.isDebug" value="true"/>
+	        </antcall>
+			<fdt.browse location="${test.net.url}" />
+	        <antcall target="-fdt-start-debugger"></antcall>
+	    </target>
     
     <target name="fdt-gstest-core" description="FDT Specific: Generates performance test for the core package">
         <antcall target="-compile-fdt">
@@ -178,8 +194,7 @@
     
     <!--
 	public -->
-    <target name="fdt-barbones" description="FDT specific: debugs the barebones package via FDT ant tasks" >
-        <antcall target="-fdt-start-debugger"></antcall>
+    <target name="fdt-barebones" description="FDT specific: debugs the barebones package via FDT ant tasks" >
         <antcall target="-compile-fdt">
             <param name="param.mainclass" value="${bb.main}"/>
             <param name="param.swf" value="${bb.swf}"/>
@@ -191,6 +206,7 @@
             <param name="param.isDebug" value="true"/>
         </antcall>
         <fdt.browse location="${bb.url}"/>
+        <antcall target="-fdt-start-debugger"></antcall>
     </target>
     
     <!--  

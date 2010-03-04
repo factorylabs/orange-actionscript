@@ -1,6 +1,7 @@
 
 package com.factorylabs.orange.unit.core.collections 
 {
+	import asunit4.async.addAsync;
 	import asunit.asserts.assertEquals;
 	import asunit.asserts.assertFalse;
 	import asunit.asserts.assertTrue;
@@ -150,20 +151,37 @@ package com.factorylabs.orange.unit.core.collections
 			assertFalse( _map.hasValue( 'value_missing' ) );
 		}
 		
-		[Ignore('Need to figure out how to test this.')]
 		[Test]
 		public function find() :void
 		{
-			
+			var map :Map = new Map();
+			map.add( 'key', 'value' );
+			var value :String = map.find( returnKeyForFind );
+			assertEquals( 'value', value );
 		}
 		
-		[Ignore('Need to figure out how to test this.')]
+		private function returnKeyForFind( $key :String, $value :String ) :Boolean
+		{
+			if( $key == 'key' && $value == 'value' )
+				return true;
+			return false;
+		}
+
 		[Test]
 		public function each() :void
 		{
-			
+			var map :Map = new Map();
+			map.add( 'key', 'value' );
+			addAsync( completeForEach, 100 );
+			map.each( completeForEach );
 		}
 		
+		private function completeForEach( $key :String, $value :String ) :void
+		{
+			assertEquals( $key, 'key' );
+			assertEquals( $value, 'value' );
+		}
+
 		[Test]
 		public function clear() :void
 		{
