@@ -48,6 +48,10 @@
         <echo message="----------------------------------------------------------------------------------------------"/>
         <echo message="www.factorylabs.com"/>
     </target>
+	
+	<target name="print" description="Test">
+		<echo>${FLEX_HOME}</echo>
+	</target>
     
     <!-- 
     public generate-swc-core --> 
